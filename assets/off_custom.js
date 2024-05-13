@@ -605,7 +605,8 @@ if(itemslistCollection){
 
             console.log('count');
     
-            if ($this.querySelector('.etichetta_sales_in_euro')) {
+            if ($this.lastElementChild.children[0].children[2]) {
+                console.log('enter');
                 var salesPrice = cleanAndParsePrice($this.querySelector('span.boost-pfs-filter-product-item-sale-price').textContent);
                 var comparedPrice = cleanAndParsePrice($this.querySelector('s').textContent);
 
