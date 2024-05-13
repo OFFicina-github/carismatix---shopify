@@ -582,22 +582,6 @@ setTimeout(() => {
 }, 2000);
 
 
-
-
-    // Codice Liquid da eseguire
-
-    setTimeout(function(){
-        const liquidCode = `{% assign etichetta_euro_percentuale = product.metafields.custom.etichetta_di_sconto_in_euro %}
-        {%- if etichetta_euro_percentuale == true -%}
-            {% assign scontoEuro = product.compare_at_price | minus: product.price | money %}
-            <div class="euro">RISPARMIA {{scontoEuro}}€</div>
-        {%- endif -%}`;
-    
-        //$('div[data-id="8077008437477"]').append(liquidCode);
-        //console.log('stamp');
-    }, 5000);
-
-
 /*etichetta in differenza euro*/
 function cleanAndParsePrice(priceString) {
     var cleanedPrice = priceString.replace('€', '').replace(',', '.');
@@ -613,8 +597,8 @@ function formatPrice(priceNumero) {
 var itemslistCollection = document.querySelectorAll('.boost-pfs-filter-product-item');
 
 if(itemslistCollection){
+    console.log('boostItems');
     setTimeout(function(){
-
 
         itemslistCollection.forEach(function(item){
             var $this = item;
