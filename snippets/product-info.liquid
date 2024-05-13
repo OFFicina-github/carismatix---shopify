@@ -4,7 +4,7 @@
 {% if product.metafields.custom.etichetta_sconto_in_euro %}
 
   {%- assign price_difference = product.selected_or_first_available_variant.compare_at_price | minus: product.selected_or_first_available_variant.price -%}
-  {% assign price_difference_in_euro = price_difference | divided_by: 100 | money %}
+  {% assign price_difference_in_euro = price_difference | divided_by: 100 %}
 
 {% endif %}
 
