@@ -5,13 +5,12 @@
 
   {%- assign price_difference = product.selected_or_first_available_variant.compare_at_price | minus: product.selected_or_first_available_variant.price -%}
 
+  {% comment %}{{ price_difference | money }} {% endcomment %}
 
 {% endif %}
 
 
 <div class="product__info">
-
-  <p class="meta_off">{{ price_difference | money }}</p>
 
   <!-- PRODUCT META -->
 
