@@ -617,7 +617,7 @@ if(itemslistCollection){
             }
         });
     
-    }, 1000);
+    }, 3000);
 }
 
 
