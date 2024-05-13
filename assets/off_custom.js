@@ -602,26 +602,15 @@ if(itemslistCollection){
 
         itemslistCollection.forEach(function(item){
             var $this = item;
-
-            console.log('count');
     
-            if ($this.lastElementChild.children[0].children[2]) {
-                console.log('enter');
+            if ($this.querySelector('.etichetta_sales_in_euro')) {
                 var salesPrice = cleanAndParsePrice($this.querySelector('span.boost-pfs-filter-product-item-sale-price').textContent);
                 var comparedPrice = cleanAndParsePrice($this.querySelector('s').textContent);
-
-                console.log(salesPrice);
-                console.log(comparedPrice);
 
                 var diffPrice = comparedPrice - salesPrice;
                 var diffPriceFormattato = formatPrice(diffPrice);
 
-                console.log(diffPrice);
-                console.log(diffPriceFormattato);
-    
                 var etichettaSale = $this.querySelector('.sale');
-
-                console.log(etichettaSale);
 
                 if(etichettaSale){
                         etichettaSale.textContent = 'RISPARMIA ' + diffPriceFormattato;
