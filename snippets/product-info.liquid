@@ -10,6 +10,9 @@
 
 <div class="product__info">
 
+  {{ product.selected_or_first_available_variant.compare_at_price }}
+  {{ product.selected_or_first_available_variant.price }}
+
   <p class="meta_off">{{ price_difference }}</p>
 
   <!-- PRODUCT META -->
