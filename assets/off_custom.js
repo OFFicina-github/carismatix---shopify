@@ -604,13 +604,13 @@ if(itemslistCollection){
             var $this = item;
     
             if ($this.querySelector('.etichetta_sales_in_euro')) {
-                var salesPrice = cleanAndParsePrice($this.querySelector('.boost-pfs-filter-product-item-price > span.boost-pfs-filter-product-item-sale-price').textContent);
-                var comparedPrice = cleanAndParsePrice($this.querySelector('.boost-pfs-filter-product-item-price > s').textContent);
+                var salesPrice = cleanAndParsePrice($this.querySelector('span.boost-pfs-filter-product-item-sale-price').textContent);
+                var comparedPrice = cleanAndParsePrice($this.querySelector('s').textContent);
     
                 var diffPrice = comparedPrice - salesPrice;
                 var diffPriceFormattato = formatPrice(diffPrice);
     
-                var etichettaSale = $this.querySelector('.boost-pfs-filter-product-item-label > .sale');
+                var etichettaSale = $this.querySelector('.sale');
                 if(etichettaSale){
                         etichettaSale.textContent = 'RISPARMIA ' + diffPriceFormattato;
                 }
