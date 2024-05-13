@@ -617,7 +617,7 @@ if(itemslistCollection){
 
                 var etichettaSale = $this.querySelector('.sale');
 
-zZ                if(etichettaSale){
+                if(etichettaSale){
                         etichettaSale.textContent = 'RISPARMIA ' + diffPriceFormattato;
                 }
             }
