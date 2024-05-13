@@ -101,17 +101,29 @@
               {%- endif -%}
 
               <div class="product-meta__label-list label-list" data-product-label-list>
-                {%- unless product.selected_or_first_available_variant.available -%}
-                  <span class="label label--subdued">{{ 'collection.product.sold_out' | t }}</span>
-                {%- elsif product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
-                  {%- if settings.discount_mode == 'percentage' -%}
-                    {%- assign savings = product.selected_or_first_available_variant.compare_at_price | minus: product.selected_or_first_available_variant.price | times: 100.0 | divided_by: product.selected_or_first_available_variant.compare_at_price | round | append: '%' -%}
-                  {%- else -%}
-                    {%- capture savings -%}{{ product.selected_or_first_available_variant.compare_at_price | minus: product.selected_or_first_available_variant.price | money }}{%- endcapture -%}
-                  {%- endif -%}
-        
-                  <span class="label label--highlight">{{ 'collection.product.discount_html' | t: savings: savings }}</span>
-                {%- endunless -%}
+                <p>ciao</p>
+                {% if product.metafields.custom.etichetta_sconto_in_euro %}
+                  {{ product.metafields.custom.etichetta_sconto_in_euro }}
+                  {%- assign price_difference = product.selected_or_first_available_variant.compare_at_price | minus: product.selected_or_first_available_variant.price -%}
+                  <span class="label label--highlight differenza_euro">RISPARMIA {{ price_difference }}€</span>
+                {% elsif %}
+
+                  {%- unless product.selected_or_first_available_variant.available -%}
+                    <span class="label label--subdued">{{ 'collection.product.sold_out' | t }}</span>
+                  {%- elsif product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
+                    {%- if settings.discount_mode == 'percentage' -%}
+                      {%- assign savings = product.selected_or_first_available_variant.compare_at_price | minus: product.selected_or_first_available_variant.price | times: 100.0 | divided_by: product.selected_or_first_available_variant.compare_at_price | round | append: '%' -%}
+                    {%- else -%}
+                      {%- capture savings -%}{{ product.selected_or_first_available_variant.compare_at_price | minus: product.selected_or_first_available_variant.price | money }}{%- endcapture -%}
+                    {%- endif -%}
+          
+                    <span class="label label--highlight">{{ 'collection.product.discount_html' | t: savings: savings }}</span>
+                  {%- endunless -%}
+
+                {% endif %}
+
+
+
               </div>
             
             </span>
@@ -228,8 +240,6 @@
         </div>
       </div> -->
 
-  </product-meta>
-
   {%- render 'product-form', product: product, update_url: update_url -%}
 
   {%- assign help_page = section.settings.help_page -%}
@@ -343,7 +353,8 @@
     </popover-content>
   {%- endif -%}
 
-<a target="_blank" href="https://carismatix.it/pages/faq/#category-template--16611715973349__faq-e49a9c5b-f3ce-4081-b261-f33d5af2ea0b" class="pagamento_rate_banner"><svg width="100%" height="100%" viewBox="0 0 202 209" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-miterlimit:2;">
+<a target="_blank" href="https://carismatix.it/pages/faq/#category-template--16611715973349__faq-e49a9c5b-f3ce-4081-b261-f33d5af2ea0b" class="pagamento_rate_banner">
+  <svg width="100%" height="100%" viewBox="0 0 202 209" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-miterlimit:2;">
     <g transform="matrix(4.16667,0,0,4.16667,-999.188,-330.405)">
         <path d="M249.318,92.005L248.521,92.803C247.641,93.684 247.381,94.852 247.942,95.412L248.956,96.425C249.516,96.985 250.684,96.725 251.564,95.843L252.361,95.046C253.047,94.359 253.388,93.459 253.191,92.828L252.403,90.305C252.205,89.674 252.456,88.864 253.303,88.017C254.15,87.169 255.351,86.875 255.911,87.435L256.926,88.449C257.486,89.008 257.226,90.176 256.346,91.058L255.549,91.855" style="fill:none;stroke:rgb(2,34,34);stroke-width:2px;"/>
     </g>
@@ -390,6 +401,7 @@
         <path d="M244.676,119.986L245.914,123.45C247.111,126.798 252.346,127.988 257.607,126.108C262.869,124.228 266.164,119.99 264.967,116.642L263.729,113.178" style="fill:none;stroke:rgb(2,34,34);stroke-width:2px;"/>
     </g>
 </svg>Paga in 3 comode rate con PayPal</a>
+
 <a target="_blank" href="https://carismatix.it/pages/faq" class="pagamento_rate_banner fattura">
     <svg width="100%" height="100%" viewBox="0 0 1591 1411" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2;">
     <g transform="matrix(4.16667,0,0,4.16667,-4277.08,-7959.26)">
@@ -418,19 +430,7 @@
         </g>
 </svg>Ti serve fattura? Puoi richiederla dopo aver completato l'acquisto!
 </a>
-<style type="text/css">
-  
-	.st0{fill:none;stroke:#000000;stroke-width:10;stroke-miterlimit:10;}
-</style>
-<circle class="st0" cx="256" cy="256" r="240.6"/>
-<g>
-	<path d="M217.1,333.7h23.3v-62.2h-23.3c-12.9,0-23.3-10.4-23.3-23.3s10.4-23.3,23.3-23.3h46.6c12.9,0,23.3,10.4,23.3,23.3v85.5h7.8
-		c12.9,0,23.3,10.4,23.3,23.3c0,12.9-10.4,23.3-23.3,23.3h-77.7c-12.9,0-23.3-10.4-23.3-23.3C193.8,344.1,204.2,333.7,217.1,333.7z"
-		/>
-	<circle cx="256" cy="162.7" r="31.1"/>
-</g>
-</svg>
-</a>
+
 
 <div class="th_pb_section" id="th_product_bundle" data-id="{{ product.id }}"></div>
 <!---NATALE 
@@ -459,5 +459,6 @@
 </div> <!-- FINE - BOX GRIGIO -->
 
 {% endif %}
-      
+      </product-meta>
+
 </div>
