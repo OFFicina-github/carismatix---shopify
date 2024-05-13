@@ -573,7 +573,6 @@ function handleChange() {
 //tolgo righe extra pagina account utente > programma fedeltà
 setTimeout(() => {
     const puntiNegativi = document.querySelectorAll('.bon-text-danger');
-    console.log('neg');
     if (puntiNegativi) {
         puntiNegativi.forEach(function(elemento) {
         elemento.parentNode.remove();

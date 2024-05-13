@@ -127,23 +127,4 @@
  *
  * "photoswipe": v4.1.3. PhotoSwipe is only loaded on demand to power the zoom feature on product page. If the zoom
  * feature is disabled, then this script is never loaded.
-
-
-   console.log('-cus');
-
-
-
-   //trasformo stringa Scheda Tecnica in lista
-const par_specifiche_tecniche = document.querySelector('.product-tabs .product-tabs__content div.product-tabs__tab-item-wrapper:nth-child(2) .product-tabs__tab-item-content p');
-if (par_specifiche_tecniche) {
-  
-  const pezziStringa = par_specifiche_tecniche.textContent.split(', ');
-
-  pezziStringa.forEach(function(pezzo) {
-    const elementoI = document.createElement('i');
-    elementoI.textContent = pezzo;
-    par_specifiche_tecniche.parentNode.insertBefore(elementoI, par_specifiche_tecniche.nextSibling);
-  });
-
-  par_specifiche_tecniche.parentNode.removeChild(par_specifiche_tecniche);
-}
+ **/
