@@ -219,14 +219,16 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
       {%- endunless -%}
     </div>
 
-    {% if collection %}
-      <p>collection</p>
-      {% if collection.metafields.custom.descrizione_seo %}
-        <section id="descrizione_seo" class="container">
-          {{ collection.metafields.custom.descrizione_seo }}
-        </section>
-      {% endif %}
-    {% endif %}
+{% comment %}
+{% if collection %}
+  <p>collection</p>
+  {% if collection.metafields.custom.descrizione_seo %}
+    <section id="descrizione_seo" class="container">
+      {{ collection.metafields.custom.descrizione_seo | strip_html }}
+    </section>
+  {% endif %}
+{% endif %}
+{% endcomment %}
 
     {%- if request.page_type != 'gift_card' and request.page_type != 'password' -%}
       {%- section 'footer' -%}
