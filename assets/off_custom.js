@@ -603,7 +603,7 @@ if(itemslistCollection){
         itemslistCollection.forEach(function(item){
             var $this = item;
 
-            console.log(item);
+            console.log('count');
     
             if ($this.querySelector('.etichetta_sales_in_euro')) {
                 var salesPrice = cleanAndParsePrice($this.querySelector('span.boost-pfs-filter-product-item-sale-price').textContent);
