@@ -7,13 +7,13 @@
   <span class="label label--highlight differenza_euro"></span>
   {% assign totale_price_sale =  'RISPARMIA '{{ price_difference }}'€' %}
 
-{% elsif %}
-
 {% endif %}
 
-<p class="meta_off">{{ product.metafields.custom.etichetta_sconto_in_euro }}</p>
 
 <div class="product__info">
+
+  <p class="meta_off">{{ totale_price_sale }} {{ product.metafields.custom.etichetta_sconto_in_euro }}</p>
+
   <!-- PRODUCT META -->
 
   <product-meta form-id="{{ product_form_id }}" price-class="price--large" class="product-meta">
