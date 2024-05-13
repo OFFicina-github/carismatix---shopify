@@ -18,17 +18,10 @@
       "type": "collection-template-boost-pfs-filter",
       "settings": {
       }
-    },
-    "off_collections_description_qpRgPf": {
-      "type": "off_collections_description",
-      "settings": {
-        "descrizione_seo": "<p>Ciao<\/p>"
-      }
     }
   },
   "order": [
     "collection-banner",
-    "main",
-    "off_collections_description_qpRgPf"
+    "main"
   ]
 }
