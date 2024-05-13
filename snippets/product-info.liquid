@@ -5,7 +5,7 @@
 
   {%- assign price_difference = product.selected_or_first_available_variant.compare_at_price | minus: product.selected_or_first_available_variant.price -%}
   <span class="label label--highlight differenza_euro"></span>
-  {% assign totale_price_sale =  'RISPARMIA '{{ price_difference }}'€' %}
+  {% assign totale_price_sale =  'RISPARMIA {{ price_difference }}€' %}
 
 {% endif %}
 
