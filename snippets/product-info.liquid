@@ -4,15 +4,13 @@
 {% if product.metafields.custom.etichetta_sconto_in_euro %}
 
   {%- assign price_difference = product.selected_or_first_available_variant.compare_at_price | minus: product.selected_or_first_available_variant.price -%}
-  <span class="label label--highlight differenza_euro"></span>
-  {% assign totale_price_sale =  'RISPARMIA ' price_difference '€' %}
-
+  
 {% endif %}
 
 
 <div class="product__info">
 
-  <p class="meta_off">{{ price_difference }} {{ product.metafields.custom.etichetta_sconto_in_euro }}</p>
+  <p class="meta_off">{{ price_difference }}</p>
 
   <!-- PRODUCT META -->
 
