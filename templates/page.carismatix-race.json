@@ -1,0 +1,117 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "page_width": "small"
+      }
+    },
+    "1b83dbd1-0a1d-4148-92fb-d4064d1b7b8e": {
+      "type": "image-with-text-block",
+      "settings": {
+        "reveal_on_scroll": true,
+        "image": "shopify:\/\/shop_images\/Tavola_disegno_176_f458bf33-02d3-4f08-ae4e-169e79ebafb6.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Tavola_disegno_176_f458bf33-02d3-4f08-ae4e-169e79ebafb6.jpg",
+        "subheading": "Le auto ti piacciono, ma sai anche guidarle?",
+        "title": "CARISMATIX CHAMPIONSHIP",
+        "content": "<p>Mettiti alla prova sul nostro <strong>SIMULATORE DI GUIDA<\/strong>, segna il miglior tempo e porta a casa il premio!<\/p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_position": "left",
+        "text_alignment": "left",
+        "text_background": "#ffffff",
+        "text_color": "#0a1320",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "979ef05f-3937-4714-a997-ca8f4a1eded0": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "subheading": "Partecipare è semplice!",
+        "title": "Regolamento",
+        "content": "<p>Hai a disposizione 2 giri sul nostro simulatore di guida per realizzare il tuo miglior tempo.<\/p><p>Il Campionato si svolgerà in 3 tappe (Padova, Milano, Parma) e come nelle migliori competizioni premieremo i primi 3 piloti di ogni tappa.<\/p><p><strong>TAPPA 1: <\/strong>20-23 Ottobre 2022 | Auto e Moto d'Epoca (Padova Fiere)<\/p><p><strong>TAPPA 2: <\/strong>18-20 Novembre 2022 | Milano Auto Classica (Rho Fiere)<\/p><p><strong>TAPPA 3: <\/strong>3-5 Marzo 2023 | Automotoretrò (Fiere di Parma)<\/p><p><strong>REQUISITI PER PARTECIPARE<br\/><\/strong>- 18 anni compiuti<br\/>- Liberatoria e accettazione del regolamento (da compilare e firmare in loco)<br\/>- Segui il nostro profilo <a href=\"https:\/\/www.instagram.com\/cartecitalia\/\" target=\"_blank\" title=\"Instagram\">INSTAGRAM<\/a><br\/>- Realizza una storia al nostro stand con il tag @carismatix.it<\/p><p><\/p><p><strong>Facci vedere come guidi, ti aspettiamo!<\/strong><\/p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "left",
+        "background": "#ffffff",
+        "text_color": "#0a1320",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "5e5d0541-ce71-4d28-9033-6d1f5c7bcdb9": {
+      "type": "image-with-text-block",
+      "settings": {
+        "reveal_on_scroll": true,
+        "image": "shopify:\/\/shop_images\/MDR_7816.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/MDR_7816.jpg",
+        "subheading": "Ragazzi... che gara!!!",
+        "title": "Vincitori della TAPPA 1",
+        "content": "<p><strong>1° Posto: Luca Compagnin - 1:27,778<br\/><\/strong>2° Posto: Duccio Becherucci - 1:28,938<br\/>3° Posto: Pietro Sonino - 1:30,156<\/p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_position": "right",
+        "text_alignment": "left",
+        "text_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "c1843aa6-0447-4c4e-a4d9-ee3e66c62c6d": {
+      "type": "image-with-text-block",
+      "settings": {
+        "reveal_on_scroll": true,
+        "image": "shopify:\/\/shop_images\/MDR_8368.jpg",
+        "subheading": "Che spettacolo!",
+        "title": "Vincitori della TAPPA 2",
+        "content": "<p><strong>1° Posto: Marco Di Paolantonio - 1:25,754<br\/><\/strong>2° Posto: Federico Ramoni - 1:26,46<br\/>3° Posto: Leonardo Piazzi - 1:26,735<\/p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_position": "left",
+        "text_alignment": "center",
+        "text_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "8234534c-ee6d-4004-a482-76d4be9fc8f2": {
+      "type": "image-with-text-block",
+      "settings": {
+        "reveal_on_scroll": true,
+        "image": "shopify:\/\/shop_images\/MDR_8381.jpg",
+        "subheading": "Un finale col botto!",
+        "title": "Vincitori della TAPPA 3",
+        "content": "<p><strong>1° Posto: Michele Mascherpa - 1:28,272<br\/><\/strong>2° Posto: Daniele Polacci - 1:29,359<br\/>3° Posto: Raul Marcuta - 1:29,632<\/p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_position": "right",
+        "text_alignment": "center",
+        "text_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1b83dbd1-0a1d-4148-92fb-d4064d1b7b8e",
+    "979ef05f-3937-4714-a997-ca8f4a1eded0",
+    "5e5d0541-ce71-4d28-9033-6d1f5c7bcdb9",
+    "c1843aa6-0447-4c4e-a4d9-ee3e66c62c6d",
+    "8234534c-ee6d-4004-a482-76d4be9fc8f2"
+  ]
+}
