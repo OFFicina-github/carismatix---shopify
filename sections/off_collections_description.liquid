@@ -3,12 +3,11 @@
 </style>
 
 <section id="descrizione_seo" class="container test">
-  {% if collection.metafields.custom.descrizione_seo %}
-    {% collection.metafields.custom.descrizione_seo %}
+
+  {% if section.settings.descrizione_seo %}
+    {% section.settings.descrizione_seo %}
   {% endif %}
-  {% if settings.section.descrizione_seo %}
-    {% settings.section.descrizione_seo %}
-  {% endif %}
+  
 </section>
 
 
