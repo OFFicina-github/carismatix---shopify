@@ -593,17 +593,19 @@ function formatPrice(priceNumero) {
     return formattedPrice;
 }
 
-var itemslistCollection = document.querySelectorAll('.boost-pfs-filter-product-item');
+setTimeout(function(){
 
-if(itemslistCollection){
-    console.log('boostItems');
-    setTimeout(function(){
+    var itemslistCollection = document.querySelectorAll('.boost-pfs-filter-product-item');
 
+    if(itemslistCollection){
+
+        console.log('boostItems');
+        
         itemslistCollection.forEach(function(item){
             var $this = item;
 
             console.log('count');
-    
+
             if ($this.querySelector('.etichetta_sales_in_euro')) {
 
                 console.log('enter');
@@ -621,9 +623,9 @@ if(itemslistCollection){
                 }
             }
         });
-    
-    }, 3000);
-}
+    }
+}, 3000);
+
 
 
 
