@@ -1,5 +1,18 @@
 {%- capture product_form_id -%}product-form-{{ section.id }}-{{ product.id }}{%- endcapture -%}
 
+<!-- sconto in euro -->
+{% if product.metafields.custom.etichetta_sconto_in_euro %}
+
+  {%- assign price_difference = product.selected_or_first_available_variant.compare_at_price | minus: product.selected_or_first_available_variant.price -%}
+  <span class="label label--highlight differenza_euro"></span>
+  {% assign totale_price_sale =  'RISPARMIA '{{ price_difference }}'€' %}
+
+{% elsif %}
+
+{% endif %}
+
+{{totale_price_sale}}
+
 <div class="product__info">
   <!-- PRODUCT META -->
 
