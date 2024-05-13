@@ -610,30 +610,31 @@ function formatPrice(priceNumero) {
     return formattedPrice;
 }
 
-  console.log('priceEuro');
+var itemslistCollection = document.querySelectorAll('.boost-pfs-filter-product-item');
 
-setTimeout(function(){
+if(itemslistCollection){
+    setTimeout(function(){
 
-    var itemslistCollection = document.querySelectorAll('body#collection .boost-pfs-filter-product-item');
 
-    itemslistCollection.forEach(function(item){
-        var $this = item;
-
-        if ($this.querySelector('.etichetta_sales_in_euro')) {
-            var salesPrice = cleanAndParsePrice($this.querySelector('.boost-pfs-filter-product-item-price > span.boost-pfs-filter-product-item-sale-price').textContent);
-            var comparedPrice = cleanAndParsePrice($this.querySelector('.boost-pfs-filter-product-item-price > s').textContent);
-
-            var diffPrice = comparedPrice - salesPrice;
-            var diffPriceFormattato = formatPrice(diffPrice);
-
-            var etichettaSale = $this.querySelector('.boost-pfs-filter-product-item-label > .sale');
-            if(etichettaSale){
-                    etichettaSale.textContent = 'RISPARMIA ' + diffPriceFormattato;
+        itemslistCollection.forEach(function(item){
+            var $this = item;
+    
+            if ($this.querySelector('.etichetta_sales_in_euro')) {
+                var salesPrice = cleanAndParsePrice($this.querySelector('.boost-pfs-filter-product-item-price > span.boost-pfs-filter-product-item-sale-price').textContent);
+                var comparedPrice = cleanAndParsePrice($this.querySelector('.boost-pfs-filter-product-item-price > s').textContent);
+    
+                var diffPrice = comparedPrice - salesPrice;
+                var diffPriceFormattato = formatPrice(diffPrice);
+    
+                var etichettaSale = $this.querySelector('.boost-pfs-filter-product-item-label > .sale');
+                if(etichettaSale){
+                        etichettaSale.textContent = 'RISPARMIA ' + diffPriceFormattato;
+                }
             }
-        }
-    });
-
-}, 1000);
+        });
+    
+    }, 1000);
+}
 
 
 
