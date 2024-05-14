@@ -2890,4 +2890,8 @@ body#index #scroll_to_nl_natale:hover img {
 /* nascondo etichetta sconto:_in_euro */
 .etichetta_sales_in_euro {
   opacity: 0;
+}
+
+#descrizione_seo {
+  margin-bottom: 60px;
 }/*# sourceMappingURL=off_custom.css.map */
