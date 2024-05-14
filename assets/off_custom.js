@@ -587,14 +587,11 @@ function cleanAndParsePrice(priceString) {
     var parsedPrice = parseFloat(cleanedPrice);
     return parsedPrice;
 }
-
 function formatPrice(priceNumero) {
     var formattedPrice = priceNumero.toFixed(2).replace('.', ',') + '€';
     return formattedPrice;
 }
-
-setTimeout(function(){
-
+function differenza_prezzo_on_sales() {
     var itemslistCollection = document.querySelectorAll('.boost-pfs-filter-product-item');
 
     if(itemslistCollection){
@@ -619,7 +616,20 @@ setTimeout(function(){
             }
         });
     }
+}
+
+setTimeout(function(){
+    differenza_prezzo_on_sales();
 }, 1000);
+
+var contenitore_filtri_collection = $('.boost-pfs-filter-products > *');
+if(contenitore_filtri_collection.length) {
+    setTimeout(function(){
+        differenza_prezzo_on_sales();
+    }, 1000);
+}
+
+
 
 
 
