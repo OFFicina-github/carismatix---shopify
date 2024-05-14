@@ -295,13 +295,21 @@ else if(getVendorText === 'Brühl Dryer'){
     var btnBannerText = 'VEDI I PRODOTTI BRÜHL DRYER';
     var btnBannerUrl = '/collections/bruhl-dryer';
 }
-  else if(getVendorText === 'Sibelum'){
+else if(getVendorText === 'Sibelum'){
     var imgBannerUrl = 'https://cdn.shopify.com/s/files/1/0602/0975/8437/files/Sibelum.jpg?v=1705399944';
     var logoMarcaText = 'Spazzole dal carattere unico';
     var titoloBannerText = 'SIBELUM';
     var descrizioneBannerText = "SIBELUM azienda specializzata nella lavorazione del legno e delle setole naturali, che dà vita ad accessori di altissima qualità e caratterizzati da una durata incredibile.";
     var btnBannerText = 'VEDI I PRODOTTI SIBELUM';
     var btnBannerUrl = '/collections/chamaleon';
+}
+else if(getVendorText === 'KRANZLE'){
+    var imgBannerUrl = 'https://cdn.shopify.com/s/files/1/0602/0975/8437/files/Kranzle.jpg?v=1715674099';
+    var logoMarcaText = 'Qualità eccezionale e perfezione tecnica!';
+    var titoloBannerText = 'KRANZLE';
+    var descrizioneBannerText = "Leader mondiale della qualità nel settore delle idropulitrici, fin dall’inizio Kränzle ha attribuito grande importanza alla massima qualità dei materiali e dei componenti facendone lo standard del marchio, senza compromessi.";
+    var btnBannerText = 'VEDI I PRODOTTI KRANZLE';
+    var btnBannerUrl = '/collections/kranzle';
 }
 else {
     var imgBannerUrl = '';
