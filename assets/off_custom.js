@@ -617,19 +617,19 @@ function differenza_prezzo_on_sales() {
         });
     }
 }
-
+//etichetta in differenza euro - al caricamento
 setTimeout(function(){
     differenza_prezzo_on_sales();
 }, 1000);
-
-var contenitore_filtri_collection = $('.boost-pfs-filter-products > *');
-if(contenitore_filtri_collection.length) {
-    contenitore_filtri_collection.on('change', function(){
-        setTimeout(function(){
-            differenza_prezzo_on_sales();
-        }, 1000);    
-    });
-}
+//etichetta in differenza euro - al cambio di content box filtri
+var contenitore_filtri_collection = document.querySelector('.boost-pfs-filter-products');
+var observer = new MutationObserver(function(mutations) {
+    setTimeout(function(){
+        differenza_prezzo_on_sales();
+    }, 1000);    
+});
+var config = { childList: true, subtree: true };
+observer.observe(contenitore_filtri_collection, config);
 
 
 
