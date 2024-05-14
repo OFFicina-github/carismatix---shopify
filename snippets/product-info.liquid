@@ -121,8 +121,13 @@
                   {%- else -%}
                     {%- capture savings -%}{{ product.selected_or_first_available_variant.compare_at_price | minus: product.selected_or_first_available_variant.price | money }}{%- endcapture -%}
                   {%- endif -%}
-        
-                  <span class="label label--highlight">{{ 'collection.product.discount_html' | t: savings: savings }}</span>
+                  
+                  {% if price_difference %}
+                    <span class="label label--highlight price_difference">RISPARIMIA {{ price_difference }}</span>
+                  {% else %}
+                    <span class="label label--highlight">{{ 'collection.product.discount_html' | t: savings: savings }}</span>
+                  {% endif %}
+
                 {%- endunless -%}
 
               </div>
