@@ -624,9 +624,11 @@ setTimeout(function(){
 
 var contenitore_filtri_collection = $('.boost-pfs-filter-products > *');
 if(contenitore_filtri_collection.length) {
-    setTimeout(function(){
-        differenza_prezzo_on_sales();
-    }, 1000);
+    contenitore_filtri_collection.on('change', function(){
+        setTimeout(function(){
+            differenza_prezzo_on_sales();
+        }, 1000);    
+    });
 }
 
 
