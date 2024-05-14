@@ -222,7 +222,7 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
 {% if collection %}
   {% if collection.metafields.custom.descrizione_seo %}
     <section id="descrizione_seo" class="container">
-      {{ collection.metafields.custom.descrizione_seo.value | metafield_tag }}
+      {{ collection.metafields.custom.descrizione_seo.value }}
     </section>
   {% endif %}
 {% endif %}
