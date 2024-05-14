@@ -123,7 +123,7 @@
                   {%- endif -%}
                   
                   {% if price_difference %}
-                    <span class="label label--highlight price_difference">RISPARIMIA {{ price_difference }}</span>
+                    <span class="label label--highlight price_difference">RISPARIMIA {{ price_difference | money }}</span>
                   {% else %}
                     <span class="label label--highlight">{{ 'collection.product.discount_html' | t: savings: savings }}</span>
                   {% endif %}
