@@ -55,6 +55,8 @@
     {%- endif -%}
 
     <div class="container">
+      {% render 'off_bradecrumbs_product' %}
+      {% comment %}
       <nav aria-label="{{ 'general.breadcrumb.title' | t }}" class="breadcrumb text--xsmall text--subdued hidden-phone">
         <ol class="breadcrumb__list" role="list">
           <li class="breadcrumb__item">
@@ -72,6 +74,7 @@
           </li>
         </ol>
       </nav>
+      {% endcomment %}
 
       <!-- PRODUCT TOP PART -->
       <div class="product product--thumbnails-{{ section.settings.desktop_thumbnails_position }}">
