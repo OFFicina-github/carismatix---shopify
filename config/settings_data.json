@@ -58,20 +58,8 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "blocks": {
-          "0660bc8e-2b63-4900-988b-f6aba1a96ef7": {
-            "type": "message",
-            "settings": {
-              "text": "",
-              "learn_more_text": "Scopri le PROMOZIONI del mese🔥",
-              "title": "",
-              "content": "<p>Scopri tutte le promozioni per il mese di Maggio. I nostro prodotti più popolari per prenderti cura dell'auto a 360°, accompagnati da incredibili omaggi!<\/p><p>Le promo saranno valide fino al 31\/05.<\/p>",
-              "button_text": "🔥 Approfittane subito 🔥",
-              "button_link": "shopify:\/\/collections\/promozioni-del-mese"
-            }
-          },
           "message-1": {
             "type": "message",
-            "disabled": true,
             "settings": {
               "text": "Nuovo Programma Fedeltà",
               "learn_more_text": "Scopri tutti i vantaggi 💪",
@@ -80,19 +68,6 @@
               "content": "<p><\/p><ol><li>Iscriviti adesso o accedi al tuo Account e scopri il piacere di essere premiato.<\/li><li>Accumula punti per ogni acquisto sul nostro Shop e accedi ai premi.<\/li><li>Rafforza la nostra relazione e aumenta di livello per vantaggi ancora più esclusivi!<\/li><\/ol>",
               "button_text": "Inizia subito",
               "button_link": ""
-            }
-          },
-          "ff5f1d0b-55d5-4dec-a2e4-7ba392788713": {
-            "type": "message",
-            "disabled": true,
-            "settings": {
-              "text": "",
-              "learn_more_text": "Iscriviti ai CARISMATIX TRAINING DAYS✨",
-              "image": "shopify:\/\/shop_images\/CTD_CDIY_Sito.jpg",
-              "title": "Corsi di formazione completi",
-              "content": "<p>Dal lavaggio alla lucidatura, alla protezione delle superfici del veicolo, vieni a scoprire le tecniche, gli accorgimenti e le soluzioni che ti permetteranno di incrementare l'efficienza nel tuo lavoro, garantendoti risultati impeccabili!<\/p><p><strong>PER INFORMAZIONI E DATE<\/strong><\/p>",
-              "button_text": "✨ CLICCA QUI ✨",
-              "button_link": "https:\/\/carismatix.it\/collections\/training-days"
             }
           },
           "05726331-b5a6-434c-8b9e-a07fd58156a0": {
@@ -116,14 +91,39 @@
               "button_text": "",
               "button_link": ""
             }
+          },
+          "0660bc8e-2b63-4900-988b-f6aba1a96ef7": {
+            "type": "message",
+            "disabled": true,
+            "settings": {
+              "text": "",
+              "learn_more_text": "Scopri le PROMOZIONI del mese🔥",
+              "title": "",
+              "content": "<p>Scopri tutte le promozioni per il mese di Maggio. I nostro prodotti più popolari per prenderti cura dell'auto a 360°, accompagnati da incredibili omaggi!<\/p><p>Le promo saranno valide fino al 31\/05.<\/p>",
+              "button_text": "🔥 Approfittane subito 🔥",
+              "button_link": "shopify:\/\/collections\/promozioni-del-mese"
+            }
+          },
+          "ff5f1d0b-55d5-4dec-a2e4-7ba392788713": {
+            "type": "message",
+            "disabled": true,
+            "settings": {
+              "text": "",
+              "learn_more_text": "Iscriviti ai CARISMATIX TRAINING DAYS✨",
+              "image": "shopify:\/\/shop_images\/CTD_CDIY_Sito.jpg",
+              "title": "Corsi di formazione completi",
+              "content": "<p>Dal lavaggio alla lucidatura, alla protezione delle superfici del veicolo, vieni a scoprire le tecniche, gli accorgimenti e le soluzioni che ti permetteranno di incrementare l'efficienza nel tuo lavoro, garantendoti risultati impeccabili!<\/p><p><strong>PER INFORMAZIONI E DATE<\/strong><\/p>",
+              "button_text": "✨ CLICCA QUI ✨",
+              "button_link": "https:\/\/carismatix.it\/collections\/training-days"
+            }
           }
         },
         "block_order": [
-          "0660bc8e-2b63-4900-988b-f6aba1a96ef7",
           "message-1",
-          "ff5f1d0b-55d5-4dec-a2e4-7ba392788713",
           "05726331-b5a6-434c-8b9e-a07fd58156a0",
-          "b0000afe-8836-45c7-95a9-c13d92659cb6"
+          "b0000afe-8836-45c7-95a9-c13d92659cb6",
+          "0660bc8e-2b63-4900-988b-f6aba1a96ef7",
+          "ff5f1d0b-55d5-4dec-a2e4-7ba392788713"
         ],
         "settings": {
           "announcement_bar_position": "non_sticky",
