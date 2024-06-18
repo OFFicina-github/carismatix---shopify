@@ -2608,6 +2608,13 @@ product-item.product-item .product-item__quick-form {
 product-item.product-item .price.price--compare:after {
     content: none!important;
 }
+.boost-pfs-filter-bottom-pagination-default>ul>li:first-child:not(.boost-pfs-filter-pagination-disabled):hover,
+.boost-pfs-filter-bottom-pagination-default>ul>li:last-child:not(.boost-pfs-filter-pagination-disabled):hover {
+  background: #3d4246;
+  svg path {
+    fill: #fff !important;
+  }
+}
 
 /*Confezione Regalo*/
 #ptw-wrapin .ptw-app-gnote {
