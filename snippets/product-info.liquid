@@ -29,7 +29,12 @@
     {%- endif -%}
 
     {% unless featured %}
-      <h1 class="product-meta__title heading h3">{{ product.title }}</h1>
+    <h1 class="product-meta__title heading h3">
+      {{ product.title }}
+      {% if product.metafields.custom.sottotitolo != blank %}
+        <span class="sottotitolo">{{ product.metafields.custom.sottotitolo }}</span>
+      {% endif %}
+    </h1>
     {% else %}
       <h2 class="product-meta__title heading h3">
         <a href="{{ product.url }}">{{ product.title }}</a>
@@ -39,10 +44,6 @@
     {%- comment -%}
     OFF - custom
     {%- endcomment -%}
-
-    {% if product.metafields.custom.sottotitolo != blank %}
-      <h2 class="sottotitolo">{{ product.metafields.custom.sottotitolo }}</h2>
-    {% endif %}
 
             {%- if section.settings.show_product_rating or section.settings.show_sku -%}
   
