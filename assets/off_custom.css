@@ -2637,8 +2637,8 @@ product-item.product-item .price.price--compare:after {
 .boost-pfs-filter-bottom-pagination-default > ul > li:last-child:not(.boost-pfs-filter-pagination-disabled):hover {
   background: #3d4246;
 }
-.boost-pfs-filter-bottom-pagination-default > ul > li:first-child:not(.boost-pfs-filter-pagination-disabled):hover svg path,
-.boost-pfs-filter-bottom-pagination-default > ul > li:last-child:not(.boost-pfs-filter-pagination-disabled):hover svg path {
+.boost-pfs-filter-bottom-pagination-default > ul > li:first-child:not(.boost-pfs-filter-pagination-disabled):hover a svg path,
+.boost-pfs-filter-bottom-pagination-default > ul > li:last-child:not(.boost-pfs-filter-pagination-disabled):hover a svg path {
   fill: #fff !important;
 }
 
