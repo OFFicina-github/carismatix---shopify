@@ -463,6 +463,9 @@
       },
       "order_summary": {
         "pickup_label": "Ritiro in sede CARISMATIX"
+      },
+      "delivery_options": {
+        "pick_up_from_store": "Ritiro in sede CARISMATIX"
       }
     }
   }
