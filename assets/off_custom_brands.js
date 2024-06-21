@@ -214,7 +214,7 @@ else if(getVendorText === 'KRANZLE'){
   var btnBannerText = 'VEDI I PRODOTTI KRANZLE';
   var btnBannerUrl = '/collections/kranzle';
 }
-else if(getVendorText === 'SANTOEMMA'){
+else if(getVendorText === 'Santoemma'){
     var imgBannerUrl = 'https://cdn.shopify.com/s/files/1/0602/0975/8437/files/Santoemma.jpg?v=1718954589';
     var logoMarcaText = 'Macchine professionali a iniezione-estrazione';
     var titoloBannerText = 'SANTOEMMA';
