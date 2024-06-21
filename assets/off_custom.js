@@ -386,15 +386,17 @@ function differenza_prezzo_on_sales() {
 setTimeout(function(){
     differenza_prezzo_on_sales();
 }, 1000);
-//etichetta in differenza euro - al cambio di content box filtri
+// Etichetta in differenza euro - al cambio di content box filtri
 var contenitore_filtri_collection = document.querySelector('.boost-pfs-filter-products');
-var observer = new MutationObserver(function(mutations) {
-    setTimeout(function(){
-        differenza_prezzo_on_sales();
-    }, 1000);    
-});
-var config = { childList: true, subtree: true };
-observer.observe(contenitore_filtri_collection, config);
+if (contenitore_filtri_collection) {
+    var observer = new MutationObserver(function(mutations) {
+        setTimeout(function() {
+            differenza_prezzo_on_sales();
+        }, 1000);
+    });
+    var config = { childList: true, subtree: true };
+    observer.observe(contenitore_filtri_collection, config);
+}
 
 
 
