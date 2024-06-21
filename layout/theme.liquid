@@ -70,7 +70,9 @@ NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing 
     <link rel="preload" as="script" href="{{ 'vendor.js' | asset_url }}">
     <link rel="preload" as="script" href="{{ 'theme.js' | asset_url }}">
     <link rel="preload" as="script" href="{{ 'off_custom.js' | asset_url }}">
-    <link rel="preload" as="script" href="{{ 'off_custom_brands.js' | asset_url }}">
+    {%- if template contains 'custom' -%}
+      <link rel="preload" as="script" href="{{ 'off_custom_brands.js' | asset_url }}">
+    {%- endif -%}
     <!-- <link rel="preload" as="script" href="{{ # 'custom_bf.js' | asset_url }}"> -->
     <link rel="preload" as="style" href="{{ 'off_custom.css' | asset_url }}">
     <link rel="preload" as="style" href="{{ 'off_custom_star.css' | asset_url }}">
