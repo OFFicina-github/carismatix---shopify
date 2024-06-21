@@ -130,7 +130,7 @@ const upBar = document.querySelector('.announcement-bar__message.text--xsmall p'
 //upBar.html('<img style="margin:0 5px; height: 18px;" src="https://cdn.shopify.com/s/files/1/0660/5252/2209/files/lettering_carismatix_c31cb1f6-7169-4adb-8c98-6857b5147578_400x.png?v=1663582740" alt="Carismatix"> È IL NUOVO MARCHIO DI <img style="height: 36px; margin: -8px 5px -8px 5px;" src="https://cdn.shopify.com/s/files/1/0660/5252/2209/files/cartec_quadrato.jpg?v=1665413033" alt="Cartec"> ITALIA → <button class="link" data-action="open-content">Cosa cambia?</button>');
 
 //rimuovo barra da prodotti no vendita
-const productTitle = document.querySelector('h1.product-meta__title');
+var productTitle = document.querySelector('h1.product-meta__title');
 if(productTitle){
   productTitle = productTitle.textContent;
 }
