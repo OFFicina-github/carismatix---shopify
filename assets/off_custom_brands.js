@@ -214,6 +214,14 @@ else if(getVendorText === 'KRANZLE'){
   var btnBannerText = 'VEDI I PRODOTTI KRANZLE';
   var btnBannerUrl = '/collections/kranzle';
 }
+else if(getVendorText === 'SANTOEMMA'){
+    var imgBannerUrl = 'https://cdn.shopify.com/s/files/1/0602/0975/8437/files/Santoemma.jpg?v=1718954589';
+    var logoMarcaText = 'Macchine professionali a iniezione-estrazione';
+    var titoloBannerText = 'SANTOEMMA';
+    var descrizioneBannerText = "Scopri le macchine Santoemma, progettate per offrire efficienza, affidabilità e lunga durata. La gamma CAR Wash propone soluzioni avanzate per la pulizia professionale di sedili e interni auto, rimuovendo completamente lo sporco e lasciando le superfici rapidamente asciutte.";
+    var btnBannerText = 'VEDI I PRODOTTI SANTOEMMA';
+    var btnBannerUrl = '/collections/santoemma';
+  }
 else {
   var imgBannerUrl = '';
   var logoMarcaText = '';
