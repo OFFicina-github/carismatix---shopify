@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -35,13 +44,19 @@
             "buy_now_button_background": "rgba(0,0,0,0)",
             "buy_now_button_text_color": "rgba(0,0,0,0)"
           }
+        },
+        "rebolt_bundle_products_single_quantity_bundle_aFhyqA": {
+          "type": "shopify:\/\/apps\/rebolt-bundle-products\/blocks\/single-quantity-bundle\/0a9e67ff-0413-4374-921d-e70fb17c7dbc",
+          "settings": {
+          }
         }
       },
       "block_order": [
         "16dc4fdd-3149-4a8e-9b25-708db61448fb",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons"
+        "buy_buttons",
+        "rebolt_bundle_products_single_quantity_bundle_aFhyqA"
       ],
       "settings": {
         "show_vendor": true,
