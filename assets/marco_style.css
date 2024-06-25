@@ -1,6 +1,6 @@
-.th_pb_qty_bundle_cls .th_pb_qty_bundle_l2_grid_inner .th_pb_qty_bundle_l2_title_text h6 span {
+#th_pb_qty_bundle .th_pb_qty_bundle_cls .th_pb_qty_bundle_l2_grid_inner .th_pb_qty_bundle_l2_title_text h6 span {
     color: #000000 !important;
 }
-.th_pb_qty_bundle_l2_grid_inner .th_pb_qty_bundle_l2_grid_discount_section {
+#th_pb_qty_bundle .th_pb_qty_bundle_l2_grid_inner .th_pb_qty_bundle_l2_grid_discount_section {
     border-radius: 5px;
 }
