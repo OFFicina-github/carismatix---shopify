@@ -5,9 +5,13 @@
     border-radius: 0;
     border: none !important;
 }
-#th_pb_qty_bundle  .th_pb_qty_bundle_l2_grid_inner .th_pb_qty_bundle_l2_grid_discount_val {
+#th_pb_qty_bundle .th_pb_qty_bundle_l2_grid_inner .th_pb_qty_bundle_l2_grid_discount_val {
     font-size: 11px;
     line-height: 1.25;
     padding: 3px 15px;
     text-transform: uppercase;
+}
+#th_pb_qty_bundle .th_pb_qty_bundle_grid_inner {
+    background-color: #fff !important;
+    box-shadow: 0 0 20px #00000015 !important;
 }
