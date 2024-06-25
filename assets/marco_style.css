@@ -19,6 +19,6 @@
 #th_pb_qty_bundle .wc_this_is_active_at_the_moment {
     box-shadow: 0 0 20px #4bdd0d44 !important;
 }
-.boost-pfs-enable-app .product .box_decor_gray:after {
-    z-index: -1;
+.product .box_decor_gray:after {
+    z-index: -1 !important;
 }
