@@ -3,4 +3,5 @@
 }
 #th_pb_qty_bundle .th_pb_qty_bundle_l2_grid_inner .th_pb_qty_bundle_l2_grid_discount_section {
     border-radius: 0;
+    border: none !important;
 }
