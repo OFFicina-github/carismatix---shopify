@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "slideshow": {
@@ -12,25 +21,6 @@
             "title": "",
             "button_1_text": "",
             "button_1_link": "https:\/\/carismatix.it\/collections\/training-days",
-            "button_2_text": "",
-            "button_2_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "b3144448-2242-4de3-83bd-bf6e8fd93945": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Slide-Promozione-Maggio2.jpg",
-            "text_position": "middle_center",
-            "subheading": "",
-            "title": "",
-            "button_1_text": "",
-            "button_1_link": "shopify:\/\/collections\/promozioni-del-mese",
             "button_2_text": "",
             "button_2_link": "",
             "text_color": "#ffffff",
@@ -94,14 +84,32 @@
             "overlay_color": "#000000",
             "overlay_opacity": 0
           }
+        },
+        "b3144448-2242-4de3-83bd-bf6e8fd93945": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "text_position": "middle_center",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
         }
       },
       "block_order": [
         "abed36a1-1389-4b9c-a595-26cf83331879",
-        "b3144448-2242-4de3-83bd-bf6e8fd93945",
         "f3d58442-7c50-4a38-942e-3ade70efdd99",
         "1fef35ac-4f51-4739-b719-1b13258f3894",
-        "slide-1"
+        "slide-1",
+        "b3144448-2242-4de3-83bd-bf6e8fd93945"
       ],
       "settings": {
         "section_height": "auto",
