@@ -180,6 +180,7 @@
       "block_order": [
         "49e00277-aa0b-4492-8099-7452931d4106"
       ],
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": true,
         "background_type": "boxed",
