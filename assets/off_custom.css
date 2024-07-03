@@ -3036,4 +3036,24 @@ body#index #scroll_to_nl_natale:hover img {
   color: #4BDD0E;
   display: inline-block;
   padding: 0 0 0 4px;
+}
+
+#cffPCbootstrapContainer .modal-dialog .modal-header h4 {
+  color: #46cf0f;
+}
+#cffPCbootstrapContainer .modal-dialog .modal-header #cffPCConflictModalMessage {
+  text-align: center;
+  font-size: 14px;
+}
+#cffPCbootstrapContainer .modal-dialog #cffPCFoundCartTitle,
+#cffPCbootstrapContainer .modal-dialog #cffPCCurrentCartTitle,
+#cffPCbootstrapContainer .modal-dialog #cffPCConflictModalSelectOptionString {
+  font-size: 14px;
+  padding: 10px 0 20px 0;
+}
+#cffPCbootstrapContainer .modal-dialog #cffPCFoundCartCartTableMainBody > tr,
+#cffPCbootstrapContainer .modal-dialog #cffPCCurrentCartTableMainBody > tr {
+  background-color: #f0f0f0;
+  line-height: 80px;
+  border-bottom: 10px solid #fff;
 }/*# sourceMappingURL=off_custom.css.map */
