@@ -3054,7 +3054,7 @@ body#index #scroll_to_nl_natale:hover img {
 #cffPCbootstrapContainer .modal-dialog #cffPCFoundCartCartTableMainBody > tr,
 #cffPCbootstrapContainer .modal-dialog #cffPCCurrentCartTableMainBody > tr {
   background-color: #f0f0f0;
-  line-height: 80px;
+  height: 80px;
   border-bottom: 10px solid #fff;
 }
 #cffPCbootstrapContainer .modal-dialog #cffPCFoundCartCartTableMainBody > tr > td,
