@@ -3038,6 +3038,9 @@ body#index #scroll_to_nl_natale:hover img {
   padding: 0 0 0 4px;
 }
 
+#cffPCbootstrapContainer .modal-dialog {
+  margin-top: 2.5vh;
+}
 #cffPCbootstrapContainer .modal-dialog .modal-header h4 {
   color: #46cf0f;
   font-size: 18px;
