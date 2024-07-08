@@ -221,7 +221,15 @@ else if(getVendorText === 'Santoemma'){
     var descrizioneBannerText = "Scopri le macchine Santoemma, progettate per offrire efficienza, affidabilità e lunga durata. La gamma CAR Wash propone soluzioni avanzate per la pulizia professionale di sedili e interni auto, rimuovendo completamente lo sporco e lasciando le superfici rapidamente asciutte.";
     var btnBannerText = 'VEDI I PRODOTTI SANTOEMMA';
     var btnBannerUrl = '/collections/santoemma';
-  }
+}
+else if(getVendorText === 'Vikan'){
+  var imgBannerUrl = 'https://cdn.shopify.com/s/files/1/0602/0975/8437/files/Vikan.jpg?v=1720427744';
+  var logoMarcaText = 'Strumenti di pulizia efficaci e durevoli';
+  var titoloBannerText = 'VIKAN';
+  var descrizioneBannerText = "Vikan è un'azienda leader che offre un'ampia gamma di attrezzature per la pulizia dei veicoli, garantendo standard igienici elevati. Manici e impugnature hanno forme ergonomiche che consentono di pulire con maggiore efficienza e senza sforzi.";
+  var btnBannerText = 'VEDI I PRODOTTI VIKAN';
+  var btnBannerUrl = '/collections/vikan';
+}
 else {
   var imgBannerUrl = '';
   var logoMarcaText = '';
