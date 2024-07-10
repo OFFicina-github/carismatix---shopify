@@ -69,7 +69,6 @@
         "blocks": {
           "message-1": {
             "type": "message",
-            "disabled": true,
             "settings": {
               "text": "Nuovo Programma Fedeltà",
               "learn_more_text": "Scopri tutti i vantaggi 💪",
@@ -82,7 +81,6 @@
           },
           "05726331-b5a6-434c-8b9e-a07fd58156a0": {
             "type": "message",
-            "disabled": true,
             "settings": {
               "text": "TI SERVE FATTURA? Richiedila dopo l'acquisto!",
               "learn_more_text": "",
@@ -94,7 +92,6 @@
           },
           "b0000afe-8836-45c7-95a9-c13d92659cb6": {
             "type": "message",
-            "disabled": true,
             "settings": {
               "text": "SPEDIZIONE GRATUITA da 29€ 📦",
               "learn_more_text": "Learn more",
@@ -106,9 +103,11 @@
           },
           "0660bc8e-2b63-4900-988b-f6aba1a96ef7": {
             "type": "message",
+            "disabled": true,
             "settings": {
               "text": "Torna la CARISMATIX RACE!",
               "learn_more_text": "Scopri di più 🏁🏁",
+              "image": "shopify:\/\/shop_images\/MDR_9806Q.jpg",
               "title": "",
               "content": "<p>In occasione dell'evento <strong>MadNess 2024 <\/strong>torna la Carismatix Race!<\/p><p>Una gara di abilità in pista, dove ogni pilota sfiderà sé stesso per segnare il tempo migliore e vincere i premi in palio.<\/p><p>Ti aspettiamo <strong>Sabato 13<\/strong> Luglio da <strong>Nomad Customs<\/strong>,<br\/>Via Cesare Battisti 37, Limena (PD).<\/p><p><strong>SCENDI IN PISTA CON NOI E DIVERTITI!<\/strong><\/p>",
               "button_text": "🏁 Scopri il regolamento 🏁",
