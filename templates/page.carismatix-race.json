@@ -37,6 +37,26 @@
         "button_text_color": "rgba(0,0,0,0)"
       }
     },
+    "5e5d0541-ce71-4d28-9033-6d1f5c7bcdb9": {
+      "type": "image-with-text-block",
+      "settings": {
+        "reveal_on_scroll": true,
+        "image": "shopify:\/\/shop_images\/CXRace.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/CXRace.jpg",
+        "subheading": "Ragazzi... che gara!!!",
+        "title": "I Vincitori della corsa",
+        "content": "<p><strong>1° Posto: Fabio Grossetti - 2'09\"<br\/><\/strong>2° Posto: Mattia Bottacini - 2'16\"<br\/>3° Posto: Gaetano Pisciotta - 2'17\"<\/p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_position": "right",
+        "text_alignment": "left",
+        "text_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
     "979ef05f-3937-4714-a997-ca8f4a1eded0": {
       "type": "rich-text",
       "settings": {
@@ -51,27 +71,6 @@
         "text_alignment": "left",
         "background": "#ffffff",
         "text_color": "#0a1320",
-        "button_background": "rgba(0,0,0,0)",
-        "button_text_color": "rgba(0,0,0,0)"
-      }
-    },
-    "5e5d0541-ce71-4d28-9033-6d1f5c7bcdb9": {
-      "type": "image-with-text-block",
-      "disabled": true,
-      "settings": {
-        "reveal_on_scroll": true,
-        "image": "shopify:\/\/shop_images\/MDR_7816.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/MDR_7816.jpg",
-        "subheading": "Ragazzi... che gara!!!",
-        "title": "Vincitori della TAPPA 1",
-        "content": "<p><strong>1° Posto: Luca Compagnin - 1:27,778<br\/><\/strong>2° Posto: Duccio Becherucci - 1:28,938<br\/>3° Posto: Pietro Sonino - 1:30,156<\/p>",
-        "button_text": "",
-        "button_link": "",
-        "background_type": "full_width",
-        "text_position": "right",
-        "text_alignment": "left",
-        "text_background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)",
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
       }
@@ -120,8 +119,8 @@
   "order": [
     "main",
     "1b83dbd1-0a1d-4148-92fb-d4064d1b7b8e",
-    "979ef05f-3937-4714-a997-ca8f4a1eded0",
     "5e5d0541-ce71-4d28-9033-6d1f5c7bcdb9",
+    "979ef05f-3937-4714-a997-ca8f4a1eded0",
     "c1843aa6-0447-4c4e-a4d9-ee3e66c62c6d",
     "8234534c-ee6d-4004-a482-76d4be9fc8f2"
   ]
