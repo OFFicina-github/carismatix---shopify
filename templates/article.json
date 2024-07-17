@@ -22,7 +22,7 @@
       "settings": {
         "subheading": "",
         "title": "",
-        "html": "<iframe width=\"100%\" height=\"auto\" src=\"https:\/\/www.youtube.com\/embed\/MCOEnhylXLk?si=eGYIfghIaYYcRZjc\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen=\"\"><\/iframe>",
+        "html": "<div style=\"width:100%; display: flex; flex-direction:row;\"><iframe style=\"width:auto; height:500; margin: auto;\" src=\"https:\/\/www.youtube.com\/embed\/MCOEnhylXLk?si=eGYIfghIaYYcRZjc\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen=\"\"><\/iframe><\/div>",
         "add_vertical_spacing": false,
         "background_type": "full_width",
         "background": "rgba(0,0,0,0)",
