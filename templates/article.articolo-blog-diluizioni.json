@@ -26,20 +26,6 @@
         "show_share_buttons": true
       }
     },
-    "video_xJ9648": {
-      "type": "video",
-      "disabled": true,
-      "settings": {
-        "subheading": "",
-        "title": "",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=WWcT0XAn3qQ&t=202s&pp=ygUMbHVjYSBjYW5lbGxh",
-        "background_type": "boxed",
-        "video_size": "medium",
-        "autoplay": false,
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)"
-      }
-    },
     "custom_html_6kmiKn": {
       "type": "custom-html",
       "settings": {
@@ -68,7 +54,6 @@
   "order": [
     "blog-post-banner",
     "main",
-    "video_xJ9648",
     "custom_html_6kmiKn",
     "blog-post-prev-next",
     "blog-post-comments"
