@@ -23,8 +23,8 @@
         "subheading": "",
         "title": "",
         "video_url": "https:\/\/www.youtube.com\/watch?v=WWcT0XAn3qQ&t=202s&pp=ygUMbHVjYSBjYW5lbGxh",
-        "background_type": "full_width",
-        "video_size": "auto",
+        "background_type": "boxed",
+        "video_size": "medium",
         "autoplay": true,
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)"
