@@ -28,6 +28,7 @@
     },
     "custom_html_6kmiKn": {
       "type": "custom-html",
+      "disabled": true,
       "settings": {
         "subheading": "Vai sul sicuro!",
         "title": "Calcola qui la diluizione in flacone",
