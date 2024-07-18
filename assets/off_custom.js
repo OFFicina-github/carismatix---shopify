@@ -401,6 +401,7 @@ if (contenitore_filtri_collection) {
 //bundle - volume | acquisto multiplo, utente deve poter scegliere 1 variante per tutto il pacchetto
 const selects = document.querySelectorAll('select.th_pb_wf.th_pb_qty_grid_select_cls.wc_single_option_selector');
 selects[0].addEventListener('change', function() {
+    console.log('change');
     const selectedValue = this.value;
     selects.forEach((select, index) => {
         if (index !== 0) {
