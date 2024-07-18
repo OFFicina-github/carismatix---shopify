@@ -399,16 +399,36 @@ if (contenitore_filtri_collection) {
 }
 
 //bundle - volume | acquisto multiplo, utente deve poter scegliere 1 variante per tutto il pacchetto
+
 const selects = document.querySelectorAll('select.th_pb_wf.th_pb_qty_grid_select_cls.wc_single_option_selector');
-selects[0].addEventListener('change', function() {
-    console.log('change');
-    const selectedValue = this.value;
-    selects.forEach((select, index) => {
-        if (index !== 0) {
-            select.value = selectedValue;
-        }
+    
+// Verifica che gli elementi siano stati selezionati correttamente
+console.log('Select elements found:', selects.length);
+
+// Aggiungi un event listener al primo elemento <select>
+if (selects.length > 0) {
+    selects[0].addEventListener('change', function() {
+        console.log('Change event detected');
+        const selectedValue = this.value;
+        selects.forEach((select, index) => {
+            if (index !== 0) {
+                select.value = selectedValue;
+            }
+        });
     });
-});
+
+    selects[0].addEventListener('input', function() {
+        console.log('Input event detected');
+        const selectedValue = this.value;
+        selects.forEach((select, index) => {
+            if (index !== 0) {
+                select.value = selectedValue;
+            }
+        });
+    });
+} else {
+    console.log('No select elements found');
+}
 
 
 
