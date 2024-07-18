@@ -15,6 +15,7 @@
     background-color: #fff !important;
     box-shadow: 0 0 20px #00000015 !important;
     transition: all 300MS;
+    border:none !important;
 }
 #th_pb_qty_bundle .wc_this_is_active_at_the_moment {
     box-shadow: 0 0 5px #4bdd0dc4 !important;
