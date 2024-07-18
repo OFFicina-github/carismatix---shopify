@@ -3045,3 +3045,10 @@ opacity:0;
     }
   }
 }
+
+//bundle
+.th_pb_qty_layout_grid_inner.th_pb_qty_bundle_l2_variants_grid {
+  & > div:not(:first-child) {
+    display:none !important;
+  }
+}
