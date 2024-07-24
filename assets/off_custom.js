@@ -445,6 +445,7 @@ if (selects.length > 0) {
 document.addEventListener('DOMContentLoaded', function() {
     setTimeout(function() {
       var wishlistHeader = document.querySelector('.swym-wishlist-detail-header');
+      console.log(wishlistHeader);
       if (wishlistHeader) {
           // Applica lo stile CSS
           wishlistHeader.style.justifyContent = 'space-between';
