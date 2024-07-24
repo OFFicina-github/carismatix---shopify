@@ -12,6 +12,19 @@ function wrapAll(elements, wrapper) {
     });
 }
 
+function updateMegaMenuTitles() {
+    const elements = document.querySelectorAll('a.mega-menu__title');
+    elements.forEach(element => {
+        const text = element.textContent;
+        if (text.includes('__big')) {
+            const newText = text.replace('__big', '');
+            element.textContent = newText;
+            element.classList.add('heading--small');
+        }
+    });
+}
+updateMegaMenuTitles();
+
 
 //___Marchi
 const menuMarchiCol1Elements = document.querySelectorAll(
