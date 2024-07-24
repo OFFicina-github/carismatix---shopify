@@ -463,7 +463,13 @@ if (selects.length > 0) {
 setTimeout(function(){
     var titoloBundleElement = document.querySelector('.thpb_combo_wflex .thpb_combo_title .thpb_combo_wflex');
     if (titoloBundleElement && titoloBundleElement.textContent.includes('Questo KIT contiene')) {
-        document.querySelector('.swym-button-bar.swym-wishlist-button-bar.swym-inject').classList.add('attivo_fixed');
+        var buttonWishlist = document.querySelector('.swym-button-bar.swym-wishlist-button-bar.swym-inject')
+        if(buttonWishlist){
+            buttonWishlist.classList.add('attivo_fixed');
+        }
+        else {
+            console.log('no_wbtn');
+        }
     }
 }, 5000);
 
