@@ -18,8 +18,12 @@
     border:none !important;
 }
 #th_pb_qty_bundle .wc_this_is_active_at_the_moment {
-    box-shadow: 0 0 20px #4bdd0d42 !important;
+   
 }
 .product .box_decor_gray:after {
     z-index: -1 !important;
+}
+div.th_pb_list_content,
+div.th_pb_qty_bundle_cls .th_pb_qty_innercode {
+    border: none !important;
 }
