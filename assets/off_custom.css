@@ -207,8 +207,11 @@ body {
   pointer-events: none !important;
 }
 
-.swym-wishlist-detail-header > *:not(:first-child) {
+.swym-wishlist-detail-header > * {
   display: none !important;
+}
+.swym-wishlist-detail-header > * > div:first-child {
+  display: block !important;
 }
 
 .product .product-form .product-form__payment-container .swym-button-bar {
