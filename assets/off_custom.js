@@ -463,9 +463,8 @@ if (selects.length > 0) {
 setTimeout(function(){
     const titoloBundleElement = document.querySelector('.thpb_combo_wflex .thpb_combo_title .thpb_combo_wflex');
     if (titoloBundleElement && titoloBundleElement.textContent.includes('Questo KIT contiene')) {
-        querySelector('.swym-btn-container .swym-button').classList.add('attivo_fixed');
+        document.querySelector('.swym-btn-container .swym-button').classList.add('attivo_fixed');
     }
 }, 5000);
-
 
 });
