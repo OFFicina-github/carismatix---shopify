@@ -232,7 +232,15 @@ body {
 }
 
 .swym-ui-component .swym-wishlist-grid {
-  max-width: 100%;
+  max-width: 100% !important;
+}
+.swym-ui-component .swym-wishlist-grid .swym-wishlist-item {
+  border: none !important;
+  box-shadow: 0 0 20px rgba(204, 204, 204, 0.2901960784) !important;
+}
+
+.swym-ui-component .swym-simple-wishlist-container .swym-simple-wishlist-container-content .swym-wishlist-detail {
+  overflow: visible;
 }
 
 .product .product-form .product-form__payment-container .swym-button-bar {
