@@ -3130,6 +3130,7 @@ body#index #scroll_to_nl_natale:hover img {
 
 .swym-btn-container .swym-button.attivo_fixed:after {
   position: absolute;
+  z-index: 12;
   top: 0px;
   left: 0px;
 }/*# sourceMappingURL=off_custom.css.map */
