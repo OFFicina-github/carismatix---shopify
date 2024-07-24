@@ -3128,9 +3128,11 @@ body#index #scroll_to_nl_natale:hover img {
   display: none !important;
 }
 
-.swym-btn-container .swym-button.attivo_fixed:after {
-  position: absolute;
-  z-index: 12;
-  top: 0px;
-  left: 0px;
+.swym-button-bar.swym-wishlist-button-bar.swym-inject.attivo_fixed {
+  position: fixed;
+  z-index: 340;
+  bottom: 10px;
+  left: 10px;
+  background-color: #fff;
+  border-radius: 2px;
 }/*# sourceMappingURL=off_custom.css.map */
