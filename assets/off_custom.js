@@ -441,53 +441,21 @@ if (selects.length > 0) {
     console.log('No select elements found');
 }
 
-
-
-
-
-
-/*contdown js*/
-/*(function () {
-    const second = 1000,
-        minute = second * 60,
-        hour = minute * 60,
-        day = hour * 24;
-
-    //I'm adding this section so I don't have to keep updating this pen every year :-)
-    //remove this if you don't need it
-    let today = new Date(),
-        dd = String(today.getDate()).padStart(2, "0"),
-        mm = String(today.getMonth() + 1).padStart(2, "0"),
-        yyyy = today.getFullYear(),
-        nextYear = yyyy + 1,
-        dayMonth = "11/29/",
-        birthday = dayMonth + yyyy;
-
-    today = mm + "/" + dd + "/" + yyyy;
-    if (today > birthday) {
-        birthday = dayMonth + nextYear;
-    }
-    //end
-
-    const countDown = new Date(birthday).getTime(),
-        x = setInterval(function() {
-
-            const now = new Date().getTime(),
-                distance = countDown - now;
-
-            document.getElementById("days").innerText = Math.floor(distance / (day)),
-                document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
-                document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
-                document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
-
-            //do something later when date is reached
-            if (distance < 0) {
-                document.querySelector("container_count").classList.add('none');
-                clearInterval(x);
-            }
-            //seconds
-        }, 0)
-}());*/
-/*contdown js - end*/
+// WISHLIST
+document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(function() {
+      var wishlistHeader = document.querySelector('.swym-wishlist-detail-header');
+      if (wishlistHeader) {
+          // Applica lo stile CSS
+          wishlistHeader.style.justifyContent = 'space-between';
+  
+          // Crea i nuovi elementi
+          var newHtml = '<div><a href="https://carismatix.it/account" class="fade-in" style="display:inline-block;margin-right:20px;">Torna al tuo Account</a><a href="https://carismatix.it/" class="fade-in">Torna alla Home</a></div>';
+  
+          // Inserisci i nuovi elementi come primi elementi
+          wishlistHeader.innerHTML = newHtml + wishlistHeader.innerHTML;
+      }
+    }, 2000);
+});
 
 });
