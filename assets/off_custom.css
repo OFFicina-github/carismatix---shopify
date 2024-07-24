@@ -222,8 +222,8 @@ body {
 
 @media (max-width: 999px) {
   .swym-ui-component.swym-wishlist-page .swym-simple-wishlist-detail .swym-wishlist-detail-header {
-    padding: 40px 0;
-    flex-direction: column-reverse;
+    padding: 20px 0 !important;
+    flex-direction: column-reverse !important;
   }
   .swym-ui-component .swym-wishlist-detail-separator {
     display: none !important;
