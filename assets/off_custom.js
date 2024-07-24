@@ -3,15 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
 console.log('-fl4v10-');
 
 //customizzazione megamenu
-
-function wrapAll(elements, wrapper) {
-    elements[0].parentNode.insertBefore(wrapper, elements[0]);
-
-    Array.from(elements).forEach(element => {
-        wrapper.appendChild(element);
-    });
-}
-
 function updateMegaMenuTitles() {
     const elements = document.querySelectorAll('a.mega-menu__title');
     elements.forEach(element => {
@@ -25,6 +16,13 @@ function updateMegaMenuTitles() {
 }
 updateMegaMenuTitles();
 
+function wrapAll(elements, wrapper) {
+    elements[0].parentNode.insertBefore(wrapper, elements[0]);
+
+    Array.from(elements).forEach(element => {
+        wrapper.appendChild(element);
+    });
+}
 
 //___Marchi
 const menuMarchiCol1Elements = document.querySelectorAll(
