@@ -449,6 +449,7 @@ if (selects.length > 0) {
       if (wishlistHeader) {
           // Applica lo stile CSS
           wishlistHeader.style.justifyContent = 'space-between';
+          wishlistHeader.style.flexDirection = 'row-reverse';
   
           // Crea i nuovi elementi
           var newHtml = '<div><a href="https://carismatix.it/account" class="fade-in" style="display:inline-block;margin-right:20px;">Torna al tuo Account</a><a href="https://carismatix.it/" class="fade-in">Torna alla Home</a></div>';
