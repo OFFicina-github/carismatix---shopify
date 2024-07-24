@@ -32,3 +32,10 @@ div.th_pb_qty_bundle_cls .th_pb_qty_innercode {
     padding: 0 20px;
     background-color: #ebebeb;
 }
+div.th_pb_qty_bundle_l2_grid_inner .th_pb_qty_bundle_l2_variants_loop {
+    border-bottom: none !important;
+}
+div.th_pb_qty_bundle_l2_grid_inner .th_pb_qty_bundle_l2_single_variant {
+    max-width: 250px;
+    margin: auto;
+}
