@@ -4,7 +4,7 @@ console.log('-fl4v10-');
 
 //customizzazione megamenu
 function updateMegaMenuTitles() {
-    const elements = document.querySelectorAll('a.mega-menu__title');
+    const elements = document.querySelectorAll('a.link--faded');
     elements.forEach(element => {
         const text = element.textContent;
         if (text.includes('__big')) {
