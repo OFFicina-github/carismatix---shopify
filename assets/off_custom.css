@@ -229,6 +229,7 @@ body {
   color: #4cdd0f;
   margin-right: 0;
   text-transform: uppercase;
+  flex-grow: unset;
 }
 
 .swym-ui-component .swym-wishlist-grid {
