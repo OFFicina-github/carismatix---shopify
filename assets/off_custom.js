@@ -461,8 +461,8 @@ if (selects.length > 0) {
 
 // Se bundle KIT allora whishlist in fixed
 setTimeout(function(){
-const element = document.querySelector('.thpb_combo_wflex .thpb_combo_title .thpb_combo_wflex');
-    if (element && element.textContent.includes('Questo KIT contiene')) {
+const titoloBundleElement = document.querySelector('.thpb_combo_wflex .thpb_combo_title .thpb_combo_wflex');
+    if (titoloBundleElement && titoloBundleElement.textContent.includes('Questo KIT contiene')) {
         querySelector('.swym-btn-container .swym-button').classList.add('attivo_fixed');
     }
 }, 3000);
