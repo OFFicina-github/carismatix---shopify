@@ -218,10 +218,16 @@ body {
     flex-grow: unset;
   }
 }
-.swym-ui-component.swym-wishlist-page .swym-simple-wishlist-detail .swym-wishlist-detail-header {
-  padding:40px 0;
-
+@media (max-width:999px) {
+  .swym-ui-component.swym-wishlist-page .swym-simple-wishlist-detail .swym-wishlist-detail-header {
+    padding:40px 0;
+  
+  }
+  .swym-wishlist-detail-separator {
+    display: none !important;
+  }
 }
+
 .swym-ui-component .swym-simple-wishlist-container .swym-wishlist-detail h2.swym-wishlist-main-title,
 .swym-ui-component .swym-wishlist-detail-header h2.swym-wishlist-main-title {
   font-style: normal;
