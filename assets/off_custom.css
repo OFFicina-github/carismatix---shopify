@@ -202,6 +202,15 @@ body {
   width: 75% !important;
 }
 
+.swym-wishlist-container-title-bar {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+.swym-wishlist-detail-header:not(:first-child) {
+  display: none;
+}
+
 .product .product-form .product-form__payment-container .swym-button-bar {
   margin: 0 0 0 10px;
   display: inline-block;
