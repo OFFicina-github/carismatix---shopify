@@ -213,6 +213,9 @@ body {
 .swym-wishlist-detail-header > *:first-child {
   display: block !important;
 }
+.swym-wishlist-detail-header h2 {
+  display: block !important;
+}
 
 .product .product-form .product-form__payment-container .swym-button-bar {
   margin: 0 0 0 10px;

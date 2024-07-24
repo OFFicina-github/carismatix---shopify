@@ -205,9 +205,14 @@ body {
   opacity: 0 !important;
   pointer-events: none !important;
 }
-.swym-wishlist-detail-header > * {
-  display: none !important;
-  &:first-child {
+.swym-wishlist-detail-header {
+  & > * {
+    display: none !important;
+    &:first-child {
+      display: block !important;
+    }
+  }
+  h2 {
     display: block !important;
   }
 }
