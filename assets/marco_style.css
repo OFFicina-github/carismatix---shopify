@@ -4,6 +4,7 @@
 #th_pb_qty_bundle .th_pb_qty_bundle_l2_grid_inner .th_pb_qty_bundle_l2_grid_discount_section {
     border-radius: 0;
     border: none !important;
+    background-color: #4BDD0E !important;
 }
 #th_pb_qty_bundle .th_pb_qty_bundle_l2_grid_inner .th_pb_qty_bundle_l2_grid_discount_val {
     font-size: 11px;
@@ -30,8 +31,4 @@ div.th_pb_qty_bundle_cls .th_pb_qty_innercode {
 #th_pb_qty_bundle {
     padding: 0 20px;
     background-color: #ebebeb;
-}
-.th_pb_qty_bundle_l2_grid_inner .th_pb_qty_bundle_l2_grid_discount_section {
-    background-color: #4BDD0E !important;
-    border: none !important;
 }
