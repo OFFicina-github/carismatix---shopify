@@ -27,3 +27,8 @@ div.th_pb_list_content,
 div.th_pb_qty_bundle_cls .th_pb_qty_innercode {
     border: none !important;
 }
+#th_pb_qty_bundle {
+    padding: 0 20px;
+    border-radius: 20px;
+    background-color: #f9f9f9;
+}
