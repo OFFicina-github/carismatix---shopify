@@ -39,3 +39,16 @@ div.th_pb_qty_bundle_l2_grid_inner .th_pb_qty_bundle_l2_single_variant {
     max-width: 250px;
     margin: auto;
 }
+
+.swym-ui-component .swym-atw-notification-container .swym-atw-notification-header-container .swym-atw-notification-header-wrapper .swym-close-btn {
+    margin-right: 7px !important;
+}
+
+.swym-button-bar.swym-wishlist-button-bar.swym-inject {
+    position: fixed;
+    z-index: 340;
+    bottom: 10px;
+    left: 10px;
+    background-color: #fff;
+    border-radius: 2px;
+}
