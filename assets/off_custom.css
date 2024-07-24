@@ -3130,9 +3130,11 @@ body#index #scroll_to_nl_natale:hover img {
 
 .swym-button-bar.swym-wishlist-button-bar.swym-inject.attivo_fixed {
   position: fixed;
+  transform: scale(0.85);
   z-index: 340;
-  bottom: 10px;
-  left: 10px;
+  bottom: 5px;
+  left: 5px;
   background-color: #fff;
   border-radius: 2px;
+  box-shadow: 0 0 20px rgba(121, 121, 121, 0.2901960784) !important;
 }/*# sourceMappingURL=off_custom.css.map */
