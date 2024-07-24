@@ -206,7 +206,7 @@ body {
   pointer-events: none !important;
 }
 .swym-wishlist-detail-header:not(:first-child){
-  display: none;
+  display: none !important;
 }
 .product .product-form .product-form__payment-container .swym-button-bar {
   margin: 0 0 0 10px;
