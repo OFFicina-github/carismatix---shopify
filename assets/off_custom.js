@@ -442,7 +442,7 @@ if (selects.length > 0) {
 }
 
 // WISHLIST
-document.addEventListener('DOMContentLoaded', function() {
+
     setTimeout(function() {
       var wishlistHeader = document.querySelector('.swym-wishlist-detail-header');
       console.log(wishlistHeader);
@@ -457,6 +457,6 @@ document.addEventListener('DOMContentLoaded', function() {
           wishlistHeader.innerHTML = newHtml + wishlistHeader.innerHTML;
       }
     }, 2000);
-});
+
 
 });
