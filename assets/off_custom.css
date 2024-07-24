@@ -207,7 +207,7 @@ body {
   pointer-events: none !important;
 }
 
-.swym-wishlist-detail-header:not(:first-child) {
+.swym-wishlist-detail-header > *:not(:first-child) {
   display: none !important;
 }
 
