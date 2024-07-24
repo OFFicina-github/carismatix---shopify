@@ -3126,4 +3126,10 @@ body#index #scroll_to_nl_natale:hover img {
 
 .th_pb_qty_layout_grid_inner.th_pb_qty_bundle_l2_variants_grid > div:not(:first-child) {
   display: none !important;
+}
+
+.swym-btn-container .swym-button.attivo_fixed:after {
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }/*# sourceMappingURL=off_custom.css.map */

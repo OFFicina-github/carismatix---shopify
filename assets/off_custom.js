@@ -459,5 +459,13 @@ if (selects.length > 0) {
       }
     }, 2000);
 
+// Se bundle KIT allora whishlist in fixed
+  const element = document.querySelector('.thpb_combo_wflex .thpb_combo_title .thpb_combo_wflex');
+  if (element && element.textContent.includes('Questo KIT contiene')) {
+    setTimeout(function(){
+        querySelector('.swym-btn-container .swym-button').classList.add('attivo_fixed');
+    }, 3000);
+  }
+
 
 });
