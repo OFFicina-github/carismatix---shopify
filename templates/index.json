@@ -313,6 +313,20 @@
         "button_text_color": "rgba(0,0,0,0)"
       }
     },
+    "blog-posts": {
+      "type": "blog-posts",
+      "settings": {
+        "blog": "guide",
+        "subheading": "Se lo fai, fallo bene!",
+        "title": "Guide e Tutorial",
+        "articles_count": 3,
+        "stack_mobile": false,
+        "show_category": true,
+        "show_excerpt": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
     "image-with-text-block": {
       "type": "image-with-text-block",
       "settings": {
@@ -330,20 +344,6 @@
         "text_color": "rgba(0,0,0,0)",
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
-      }
-    },
-    "blog-posts": {
-      "type": "blog-posts",
-      "settings": {
-        "blog": "guide",
-        "subheading": "Se lo fai, fallo bene!",
-        "title": "Guide e Tutorial",
-        "articles_count": 3,
-        "stack_mobile": false,
-        "show_category": true,
-        "show_excerpt": false,
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)"
       }
     },
     "text-with-icons": {
@@ -421,8 +421,8 @@
     "slideshow",
     "166428221801c0d141",
     "166437661130d46066",
-    "image-with-text-block",
     "blog-posts",
+    "image-with-text-block",
     "text-with-icons",
     "newsletter"
   ]
