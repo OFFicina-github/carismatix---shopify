@@ -14,7 +14,6 @@
       "blocks": {
         "abed36a1-1389-4b9c-a595-26cf83331879": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Slide-Q1-20.jpg",
             "text_position": "middle_center",
