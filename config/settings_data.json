@@ -67,19 +67,6 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "blocks": {
-          "message-1": {
-            "type": "message",
-            "disabled": true,
-            "settings": {
-              "text": "",
-              "learn_more_text": "Scopri i vantaggi del Programma Fedeltà💰",
-              "image": "shopify:\/\/shop_images\/fidelity-cx.jpg",
-              "title": "Metti una marcia in più",
-              "content": "<p><\/p><ol><li>Iscriviti adesso o accedi al tuo Account e scopri il piacere di essere premiato.<\/li><li>Accumula punti per ogni acquisto sul nostro Shop e accedi ai premi.<\/li><li>Rafforza la nostra relazione e aumenta di livello per vantaggi ancora più esclusivi!<\/li><\/ol>",
-              "button_text": "Inizia subito",
-              "button_link": ""
-            }
-          },
           "05726331-b5a6-434c-8b9e-a07fd58156a0": {
             "type": "message",
             "settings": {
@@ -102,17 +89,17 @@
               "button_link": ""
             }
           },
-          "0660bc8e-2b63-4900-988b-f6aba1a96ef7": {
+          "message-1": {
             "type": "message",
             "disabled": true,
             "settings": {
-              "text": "Torna la CARISMATIX RACE!",
-              "learn_more_text": "Scopri di più 🏁🏁",
-              "image": "shopify:\/\/shop_images\/MDR_9806Q.jpg",
-              "title": "SCENDI IN PISTA CON NOI E DIVERTITI",
-              "content": "<p>In occasione dell'evento <strong>MadNess 2024 <\/strong>torna la <strong>CARISMATIX RACE<\/strong>!<\/p><p>Una gara di abilità sul nostro simulatore di guida, dove ogni pilota sfiderà sé stesso per segnare il tempo migliore e vincere i premi in palio.<\/p>",
-              "button_text": "🏁 Scopri i vincitori 🏁",
-              "button_link": "https:\/\/carismatix.it\/pages\/carismatix-championship"
+              "text": "",
+              "learn_more_text": "Scopri i vantaggi del Programma Fedeltà💰",
+              "image": "shopify:\/\/shop_images\/fidelity-cx.jpg",
+              "title": "Metti una marcia in più",
+              "content": "<p><\/p><ol><li>Iscriviti adesso o accedi al tuo Account e scopri il piacere di essere premiato.<\/li><li>Accumula punti per ogni acquisto sul nostro Shop e accedi ai premi.<\/li><li>Rafforza la nostra relazione e aumenta di livello per vantaggi ancora più esclusivi!<\/li><\/ol>",
+              "button_text": "Inizia subito",
+              "button_link": ""
             }
           },
           "ff5f1d0b-55d5-4dec-a2e4-7ba392788713": {
@@ -127,14 +114,27 @@
               "button_text": "✨ CLICCA QUI ✨",
               "button_link": "https:\/\/carismatix.it\/collections\/training-days"
             }
+          },
+          "0660bc8e-2b63-4900-988b-f6aba1a96ef7": {
+            "type": "message",
+            "disabled": true,
+            "settings": {
+              "text": "Torna la CARISMATIX RACE!",
+              "learn_more_text": "Scopri di più 🏁🏁",
+              "image": "shopify:\/\/shop_images\/MDR_9806Q.jpg",
+              "title": "SCENDI IN PISTA CON NOI E DIVERTITI",
+              "content": "<p>In occasione dell'evento <strong>MadNess 2024 <\/strong>torna la <strong>CARISMATIX RACE<\/strong>!<\/p><p>Una gara di abilità sul nostro simulatore di guida, dove ogni pilota sfiderà sé stesso per segnare il tempo migliore e vincere i premi in palio.<\/p>",
+              "button_text": "🏁 Scopri i vincitori 🏁",
+              "button_link": "https:\/\/carismatix.it\/pages\/carismatix-championship"
+            }
           }
         },
         "block_order": [
-          "message-1",
           "05726331-b5a6-434c-8b9e-a07fd58156a0",
           "b0000afe-8836-45c7-95a9-c13d92659cb6",
-          "0660bc8e-2b63-4900-988b-f6aba1a96ef7",
-          "ff5f1d0b-55d5-4dec-a2e4-7ba392788713"
+          "message-1",
+          "ff5f1d0b-55d5-4dec-a2e4-7ba392788713",
+          "0660bc8e-2b63-4900-988b-f6aba1a96ef7"
         ],
         "settings": {
           "announcement_bar_position": "non_sticky",
