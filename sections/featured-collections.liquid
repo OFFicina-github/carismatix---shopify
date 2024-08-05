@@ -68,7 +68,7 @@
     <div class="container {% unless blends_with_background %}vertical-breather{% endunless %}">
       {%- if section.settings.title != blank or section.settings.subheading != blank or section.settings.content != blank -%}
         <header class="section__header {% if section.settings.content != blank %}section__header--tight{% endif %}">
-          <div class="text-container">
+          <!-- <div class="text-container">
             {%- if section.settings.subheading != blank -%}
               <h2 class="heading heading--small">{{ section.settings.subheading }}</h2>
             {%- endif -%}
@@ -80,7 +80,7 @@
             {%- if section.settings.content != blank -%}
               {{- section.settings.content -}}
             {%- endif -%}
-          </div>
+          </div> -->
 
           {%- if section.blocks.size > 1 -%}
             <tabs-nav class="tabs-nav tabs-nav--center tabs-nav--edge2edge">
