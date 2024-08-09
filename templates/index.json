@@ -258,7 +258,7 @@
           "type": "collection",
           "settings": {
             "collection": "i-piu-venduti",
-            "label": "ON FIRE",
+            "label": "I più Venduti",
             "button_text": "Tutti i più venduti",
             "button_url": "shopify:\/\/collections\/i-piu-venduti"
           }
