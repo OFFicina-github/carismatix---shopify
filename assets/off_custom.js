@@ -625,9 +625,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             });
         });
-        
-        if (wishlistPop) {
-            observerPop.observe(document.body, { childList: true, subtree: true });
-        }
+        observerPop.observe(document.body, { childList: true, subtree: true });
+
     }, 2500);
 });
