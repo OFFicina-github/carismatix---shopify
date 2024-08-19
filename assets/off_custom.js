@@ -478,21 +478,24 @@ if (selects.length > 0) {
     }, 2500);
 
     // aggiornamento numerino carrello quando metto in carrello prodotto da wishlist
+    setTimeout(function(){
 
-    const notificationBanner = document.querySelector('.swym-wishlist-notifications-container');
-    if(notificationBanner){
-        console.log('ifpassed');
-        const observer = new MutationObserver(function(mutations) {
-            mutations.forEach(function(mutation) {
-                if (mutation.addedNodes.length > 0) {
-                    console.log('mutetionpassed');
-                    let numerinoCarrello = document.querySelector('.cart-count.header__cart-count');
-                    let newNumber = parseInt(numerinoCarrello.textContent) + 1;
-                    numerinoCarrello.textContent = newNumber;
-                }
+        const notificationBanner = document.querySelector('.swym-wishlist-notifications-container');
+        if(notificationBanner){
+            console.log('ifpassed');
+            const observer = new MutationObserver(function(mutations) {
+                mutations.forEach(function(mutation) {
+                    if (mutation.addedNodes.length > 0) {
+                        console.log('mutetionpassed');
+                        let numerinoCarrello = document.querySelector('.cart-count.header__cart-count');
+                        let newNumber = parseInt(numerinoCarrello.textContent) + 1;
+                        numerinoCarrello.textContent = newNumber;
+                    }
+                });
             });
-        });
-        observer.observe(notificationBanner, { childList: true });
-    }
+            observer.observe(notificationBanner, { childList: true });
+        }
+
+    }, 2500);
 
 });
