@@ -582,52 +582,53 @@ document.addEventListener("DOMContentLoaded", function () {
   }, 2500);
 
   //whishPopup
-  const wishlistPop = document.querySelector("#swym-plugin");
-  const elLogin = `
-    <h2 id="swym-remind-me-modal-heading" class="swym-text-heading swym-heading swym-heading-1">Iscriviti ora e ritrova la tua lista dei desideri!</h2>
-    <h3 class="swym-sub-heading swym-heading swym-heading-2">Registrati ora per salvare il contentuo della tua lista dei desideri</h3>
-    <div class="account__block-list"><div class="account__block-item"><form method="post" action="/account" id="register-customer" accept-charset="UTF-8" data-login-with-shop-sign-up="true" name="create" class="form"><input type="hidden" name="form_type" value="create_customer"><input type="hidden" name="utf8" value="✓"><div class="input">
-            <input type="text" id="customer[first_name]" class="input__field" name="customer[first_name]" required="required" autocomplete="given-name">
-            <label for="customer[first_name]" class="input__label">Nome</label>
-        </div>
-        <div class="input">
-            <input type="text" id="customer[last_name]" class="input__field" name="customer[last_name]" required="required" autocomplete="family-name">
-            <label for="customer[last_name]" class="input__label">Cognome</label>
-        </div><div class="input">
-        <input type="email" id="customer[email]" class="input__field" name="customer[email]" required="required" autocomplete="email">
-        <label for="customer[email]" class="input__label">E-mail</label>
-        </div>
-        <div class="input">
-        <input type="password" id="customer[password]" class="input__field" name="customer[password]" required="required" autocomplete="new-password">
-        <label for="customer[password]" class="input__label">Password</label>
-        </div>
-        <button type="submit" is="loader-button" class="form__submit button button--primary button--full">
-      <span class="loader-button__text">Crea account</span>
-      <span class="loader-button__loader" hidden="">
-        <div class="spinner">
-          <svg focusable="false" width="24" height="24" class="icon icon--spinner" viewBox="25 25 50 50">
-            <circle cx="50" cy="50" r="20" fill="none" stroke="currentColor" stroke-width="5"></circle>
-          </svg>
-        </div>
-      </span>
-    </button>
-    <span class="form__secondary-action text--subdued">Hai già un account ?<a href="/account/login" class="link">Login</a>
-    `;
+  setTimeout(function () {
+    const wishlistPop = document.querySelector("#swym-plugin");
+    const elLogin = `
+        <h2 id="swym-remind-me-modal-heading" class="swym-text-heading swym-heading swym-heading-1">Iscriviti ora e ritrova la tua lista dei desideri!</h2>
+        <h3 class="swym-sub-heading swym-heading swym-heading-2">Registrati ora per salvare il contentuo della tua lista dei desideri</h3>
+        <div class="account__block-list"><div class="account__block-item"><form method="post" action="/account" id="register-customer" accept-charset="UTF-8" data-login-with-shop-sign-up="true" name="create" class="form"><input type="hidden" name="form_type" value="create_customer"><input type="hidden" name="utf8" value="✓"><div class="input">
+                <input type="text" id="customer[first_name]" class="input__field" name="customer[first_name]" required="required" autocomplete="given-name">
+                <label for="customer[first_name]" class="input__label">Nome</label>
+            </div>
+            <div class="input">
+                <input type="text" id="customer[last_name]" class="input__field" name="customer[last_name]" required="required" autocomplete="family-name">
+                <label for="customer[last_name]" class="input__label">Cognome</label>
+            </div><div class="input">
+            <input type="email" id="customer[email]" class="input__field" name="customer[email]" required="required" autocomplete="email">
+            <label for="customer[email]" class="input__label">E-mail</label>
+            </div>
+            <div class="input">
+            <input type="password" id="customer[password]" class="input__field" name="customer[password]" required="required" autocomplete="new-password">
+            <label for="customer[password]" class="input__label">Password</label>
+            </div>
+            <button type="submit" is="loader-button" class="form__submit button button--primary button--full">
+        <span class="loader-button__text">Crea account</span>
+        <span class="loader-button__loader" hidden="">
+            <div class="spinner">
+            <svg focusable="false" width="24" height="24" class="icon icon--spinner" viewBox="25 25 50 50">
+                <circle cx="50" cy="50" r="20" fill="none" stroke="currentColor" stroke-width="5"></circle>
+            </svg>
+            </div>
+        </span>
+        </button>
+        <span class="form__secondary-action text--subdued">Hai già un account ?<a href="/account/login" class="link">Login</a>
+        `;
 
-    const observer = new MutationObserver(function (mutations) {
-        mutations.forEach(function (mutation) {
-            let wishlistPopDialog = document.querySelector(".swym-mailing-list-modal-dialog");
-            if (wishlistPopDialog) {
-                console.log("mutationpassed");
-                const forms = wishlistPopDialog.querySelectorAll("form");
-                forms.forEach(form => form.remove());
-                wishlistPopDialog.insertAdjacentHTML('beforeend', elLogin);
-            }
+        const observer = new MutationObserver(function (mutations) {
+            mutations.forEach(function (mutation) {
+                let wishlistPopDialog = document.querySelector(".swym-mailing-list-modal-dialog");
+                if (wishlistPopDialog) {
+                    console.log("mutationpassed");
+                    const forms = wishlistPopDialog.querySelectorAll("form");
+                    forms.forEach(form => form.remove());
+                    wishlistPopDialog.insertAdjacentHTML('beforeend', elLogin);
+                }
+            });
         });
-    });
-    
-    if (wishlistPop) {
-        observer.observe(wishlistPop, { childList: true });
-    }
-
+        
+        if (wishlistPop) {
+            observer.observe(wishlistPop, { childList: true });
+        }
+    }, 2500);
 });
