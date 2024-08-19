@@ -3186,5 +3186,14 @@ h2.swym-wishlist-main-title:first-of-type {
   background-color: #eeeeee;
   text-transform: uppercase;
   color: #777;
-  font-size: 12px !important;
+  font-size: 10px !important;
+}
+
+.swym-ui-component .swym-wishlist-product-detail-content .swym-wishlist-variants-container .swym-select select {
+  height: 45px;
+}
+
+.swym-ui-component.swym-wishlist-page .swym-wishlist-detail .swym-action-bar .swym-back-btn {
+  font-weight: 700;
+  font-size: 10px;
 }/*# sourceMappingURL=off_custom.css.map */
