@@ -445,7 +445,7 @@ if (selects.length > 0) {
 
     setTimeout(function() {
       var wishlistHeader = document.querySelector('.swym-wishlist-detail-header');
-      console.log(wishlistHeader);
+      //console.log(wishlistHeader);
       if (wishlistHeader) {
           // Applica lo stile CSS
           wishlistHeader.style.justifyContent = 'space-between';
@@ -481,9 +481,11 @@ if (selects.length > 0) {
 
     const notificationBanner = document.querySelector('.swym-wishlist-notifications-container');
     if(notificationBanner){
+        console.log('ifpassed');
         const observer = new MutationObserver(function(mutations) {
             mutations.forEach(function(mutation) {
                 if (mutation.addedNodes.length > 0) {
+                    console.log('mutetionpassed');
                     let numerinoCarrello = document.querySelector('.cart-count.header__cart-count');
                     let newNumber = parseInt(numerinoCarrello.textContent) + 1;
                     numerinoCarrello.textContent = newNumber;
