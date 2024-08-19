@@ -487,7 +487,7 @@ if (selects.length > 0) {
                 mutations.forEach(function(mutation) {
                     if (mutation.addedNodes.length > 0) {
                         console.log('mutetionpassed');
-                        let numerinoCarrello = document.querySelector('.cart-count.header__cart-count');
+                        let numerinoCarrello = document.querySelector('cart-count.header__cart-count');
                         let newNumber = parseInt(numerinoCarrello.textContent) + 1;
                         numerinoCarrello.textContent = newNumber;
                     }
