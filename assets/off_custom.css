@@ -3190,7 +3190,7 @@ h2.swym-wishlist-main-title:first-of-type {
 }
 
 .swym-ui-component .swym-wishlist-product-detail-content .swym-wishlist-variants-container .swym-select select {
-  height: 45px;
+  height: 45px !important;
 }
 
 .swym-ui-component.swym-wishlist-page .swym-wishlist-detail .swym-action-bar .swym-back-btn {
