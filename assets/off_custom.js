@@ -583,7 +583,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //whishPopup
   setTimeout(function () {
-    const wishlistPop = document.querySelector("#swym-plugin");
     const elLogin = `
         <h2 id="swym-remind-me-modal-heading" class="swym-text-heading swym-heading swym-heading-1">Iscriviti ora e ritrova la tua lista dei desideri!</h2>
         <h3 class="swym-sub-heading swym-heading swym-heading-2">Registrati ora per salvare il contentuo della tua lista dei desideri</h3>
@@ -628,7 +627,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
         
         if (wishlistPop) {
-            observerPop.observe(wishlistPop, { childList: true });
+            observerPop.observe(document.body, { childList: true, subtree: true });
         }
     }, 2500);
 });
