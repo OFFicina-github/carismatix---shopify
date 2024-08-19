@@ -615,7 +615,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <span class="form__secondary-action text--subdued">Hai già un account ?<a href="/account/login" class="link">Login</a>
         `;
 
-        const observer = new MutationObserver(function (mutations) {
+        const observerPop = new MutationObserver(function (mutations) {
             mutations.forEach(function (mutation) {
                 let wishlistPopDialog = document.querySelector(".swym-mailing-list-modal-dialog");
                 if (wishlistPopDialog) {
@@ -628,7 +628,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
         
         if (wishlistPop) {
-            observer.observe(wishlistPop, { childList: true });
+            observerPop.observe(wishlistPop, { childList: true });
         }
     }, 2500);
 });
