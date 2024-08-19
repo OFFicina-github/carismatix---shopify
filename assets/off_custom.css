@@ -3175,4 +3175,15 @@ h2.swym-wishlist-main-title:last-of-type {
 
 h2.swym-wishlist-main-title:first-of-type {
   display: block !important;
+}
+
+.swym-wishlist-product-detail-tab-bar {
+  display: none !important;
+}
+
+.swym-ui-component .swym-wishlist-product-detail-content .swym-more-details-btn:only-child {
+  padding: 10px 20px;
+  background-color: #eeeeee;
+  text-transform: uppercase;
+  color: #777;
 }/*# sourceMappingURL=off_custom.css.map */
