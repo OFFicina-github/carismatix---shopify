@@ -478,16 +478,16 @@ if (selects.length > 0) {
     }, 2500);
 
     // aggiornamento numerino carrello quando metto in carrello prodotto da wishlist
-    setTimeout(function(){
+    setTimeout(function() {
 
         const notificationBanner = document.querySelector('.swym-wishlist-notifications-container');
-        if(notificationBanner){
-            console.log('ifpassed');
+        if (notificationBanner) {
             const observer = new MutationObserver(function(mutations) {
                 mutations.forEach(function(mutation) {
-                    if (mutation.addedNodes.length > 0) {
-                        console.log('mutetionpassed');
-                        let numerinoCarrello = document.querySelector('cart-count.header__cart-count');
+                    let notificationBannerNoProd = document.querySelector('.swym-wishlist-notifications-container .swym-details');
+                    
+                    if (mutation.addedNodes.length > 0 && (!notificationBannerNoProd || !notificationBannerNoProd.textContent.includes('Non puoi aggiungere'))) {
+                        let numerinoCarrello = document.querySelector('.cart-count.header__cart-count');
                         let newNumber = parseInt(numerinoCarrello.textContent) + 1;
                         numerinoCarrello.textContent = newNumber;
                     }
@@ -495,7 +495,13 @@ if (selects.length > 0) {
             });
             observer.observe(notificationBanner, { childList: true });
         }
-
+    
     }, 2500);
 
+    
+
 });
+
+
+
+
