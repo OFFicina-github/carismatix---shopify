@@ -482,12 +482,14 @@ if (selects.length > 0) {
 
         const notificationBanner = document.querySelector('.swym-wishlist-notifications-container');
         if (notificationBanner) {
+            console.log('ifpassed');
             const observer = new MutationObserver(function(mutations) {
                 mutations.forEach(function(mutation) {
                     let notificationBannerNoProd = document.querySelector('.swym-wishlist-notifications-container .swym-details');
                     
                     if (mutation.addedNodes.length > 0 && (!notificationBannerNoProd || !notificationBannerNoProd.textContent.includes('Non puoi aggiungere'))) {
-                        let numerinoCarrello = document.querySelector('.cart-count.header__cart-count');
+                        console.log('mutationpassed');
+                        let numerinoCarrello = document.querySelector('cart-count.header__cart-count');
                         let newNumber = parseInt(numerinoCarrello.textContent) + 1;
                         numerinoCarrello.textContent = newNumber;
                     }
@@ -497,6 +499,7 @@ if (selects.length > 0) {
         }
     
     }, 2500);
+    
 
     
 
