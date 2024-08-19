@@ -3132,6 +3132,10 @@ body#index #scroll_to_nl_natale:hover img {
   flex-wrap: nowrap;
 }
 
+.thpb_combo_p_grid_detail {
+  margin-left: 0 !important;
+}
+
 .swym-button-bar.swym-wishlist-button-bar.swym-inject.attivo_bundle {
   margin: 0 0 0 10px;
   display: inline-block;
