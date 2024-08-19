@@ -484,6 +484,7 @@ if (selects.length > 0) {
     function aggiornaNumerino(btnAggiungi) {
         btnAggiungi.forEach(function(button) {
             button.addEventListener('click', function() {
+                console.log('click');
                 let numerinoCarrello = document.querySelector('.cart-count.header__cart-count');
                 let newNumber = parseInt(numerinoCarrello.textContent) + 1;
                 numerinoCarrello.textContent = newNumber;
