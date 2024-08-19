@@ -3118,8 +3118,6 @@ opacity:0;
 .thpb_combo_inner_start .thpb_combo_title {
   padding: 0;
 }
-
-//KIT whishlist
 .swym-button-bar.swym-wishlist-button-bar.swym-inject.attivo_bundle {
   margin: 0 0 0 10px;
   display: inline-block;
@@ -3133,4 +3131,10 @@ opacity:0;
     background-size: 60%;
     background-position: center;
   }
+}
+
+//whishlist
+.swym-ui-component .swym-wishlist-grid .swym-wishlist-image-wrapper {
+  max-height: unset !important;
+  height: auto !important;
 }
