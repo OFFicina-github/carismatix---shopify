@@ -478,23 +478,19 @@ if (selects.length > 0) {
     }, 2500);
 
     // aggiornamento numerino carrello quando metto in carrello prodotto da wishlist
-    const btnAggiungiMini = document.querySelectorAll('.swym-wishlist-page .swym-add-to-cart-btn');
-    const btnAggiungiWishProduct = document.querySelectorAll('.swym-wishlist-page .swym-wishlist-add-to-cart-btn');
 
-    function aggiornaNumerino(btnAggiungi) {
-        btnAggiungi.forEach(function(button) {
-            button.addEventListener('click', function() {
-                console.log('click');
-                let numerinoCarrello = document.querySelector('.cart-count.header__cart-count');
-                let newNumber = parseInt(numerinoCarrello.textContent) + 1;
-                numerinoCarrello.textContent = newNumber;
+    const notificationBanner = document.querySelector('.swym-wishlist-notifications-container');
+    if(notificationBanner){
+        const observer = new MutationObserver(function(mutations) {
+            mutations.forEach(function(mutation) {
+                if (mutation.addedNodes.length > 0) {
+                    let numerinoCarrello = document.querySelector('.cart-count.header__cart-count');
+                    let newNumber = parseInt(numerinoCarrello.textContent) + 1;
+                    numerinoCarrello.textContent = newNumber;
+                }
             });
         });
-    }
-
-    if (btnAggiungiMini.length || btnAggiungiWishProduct.length) {
-        aggiornaNumerino(btnAggiungiMini);
-        aggiornaNumerino(btnAggiungiWishProduct);
+        observer.observe(notificationBanner, { childList: true });
     }
 
 });
