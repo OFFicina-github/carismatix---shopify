@@ -3171,4 +3171,8 @@ body#index #scroll_to_nl_natale:hover img {
 
 h2.swym-wishlist-main-title:last-of-type {
   display: none !important;
+}
+
+h2.swym-wishlist-main-title:first-of-type {
+  display: none !important;
 }/*# sourceMappingURL=off_custom.css.map */
