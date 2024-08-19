@@ -462,10 +462,13 @@ if (selects.length > 0) {
 // Se bundle KIT allora whishlist in fixed
 setTimeout(function(){
     var titoloBundleElement = document.querySelector('.thpb_combo_wflex .thpb_combo_title .thpb_combo_wflex');
+    var targetSection = document.querySelector('.thpb_combo_cta_btn_section');
+
     if (titoloBundleElement && titoloBundleElement.textContent.includes('Questo KIT contiene')) {
         var buttonWishlist = document.querySelector('.swym-button-bar.swym-wishlist-button-bar.swym-inject')
         if(buttonWishlist){
-            buttonWishlist.classList.add('attivo_fixed');
+            buttonWishlist.remove();
+            targetSection.appendChild(buttonWishlist);
         }
         else {
             console.log('no_wbtn');
