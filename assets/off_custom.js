@@ -459,21 +459,22 @@ if (selects.length > 0) {
       }
     }, 2000);
 
-// Se bundle KIT allora whishlist in fixed
-setTimeout(function(){
-    var titoloBundleElement = document.querySelector('.thpb_combo_wflex .thpb_combo_title .thpb_combo_wflex');
-    var targetSection = document.querySelector('.thpb_combo_cta_btn_section');
+    // Se bundle KIT allora whishlist in fixed
+    setTimeout(function(){
+        var titoloBundleElement = document.querySelector('.thpb_combo_wflex .thpb_combo_title .thpb_combo_wflex');
+        var targetSection = document.querySelector('.thpb_combo_cta_btn_section');
 
-    if (titoloBundleElement && titoloBundleElement.textContent.includes('Questo KIT contiene')) {
-        var buttonWishlist = document.querySelector('.swym-button-bar.swym-wishlist-button-bar.swym-inject')
-        if(buttonWishlist){
-            buttonWishlist.remove();
-            targetSection.appendChild(buttonWishlist);
+        if (titoloBundleElement && titoloBundleElement.textContent.includes('Questo KIT contiene')) {
+            var buttonWishlist = document.querySelector('.swym-button-bar.swym-wishlist-button-bar.swym-inject')
+            if(buttonWishlist){
+                buttonWishlist.remove();
+                targetSection.appendChild(buttonWishlist);
+                buttonWishlist.classList.add('attivo_bundle');
+            }
+            else {
+                console.log('no_wbtn');
+            }
         }
-        else {
-            console.log('no_wbtn');
-        }
-    }
-}, 5000);
+    }, 5000);
 
 });
