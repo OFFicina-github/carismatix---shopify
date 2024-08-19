@@ -3113,4 +3113,11 @@ opacity:0;
   padding: 8px;
   background-color: #fff;
   width: 21%;
+  .swym-btn-container .swym-add-to-wishlist.swym-heart:after {
+    content: "" !important;
+    background-image: url(https://cdn.shopify.com/s/files/1/0660/5252/2209/files/heart_wishlist.png?v=1663756445);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+}
 }

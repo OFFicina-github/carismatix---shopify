@@ -3134,4 +3134,11 @@ body#index #scroll_to_nl_natale:hover img {
   padding: 8px;
   background-color: #fff;
   width: 21%;
+}
+.swym-button-bar.swym-wishlist-button-bar.swym-inject.attivo_bundle .swym-btn-container .swym-add-to-wishlist.swym-heart:after {
+  content: "" !important;
+  background-image: url(https://cdn.shopify.com/s/files/1/0660/5252/2209/files/heart_wishlist.png?v=1663756445);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: center;
 }/*# sourceMappingURL=off_custom.css.map */
