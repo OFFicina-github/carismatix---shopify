@@ -123,7 +123,6 @@
 
   <script>
     // The script for this is very minimal so we just embed it here
-    window.addEventListener('DOMContentLoaded', () => {
       const loginFormElement = document.getElementById('login-form-container'),
         recoverFormElement = document.getElementById('recover-form-container');
 
@@ -140,13 +139,9 @@
         }
       {% endif %}
 
-      /*Array.from(document.querySelectorAll('[data-action="switch-login-form"]')).forEach((button) => {
+      Array.from(document.querySelectorAll('[data-action="switch-login-form"]')).forEach((button) => {
         button.addEventListener('click', () => switchForms());
-      });*/
-      document.querySelectorAll('[data-action="switch-login-form"]')).forEach((button) => {
-        button.addEventListener('click', () => switchForms());
-      }
-    });
+      });
   </script>
 </section>
 
