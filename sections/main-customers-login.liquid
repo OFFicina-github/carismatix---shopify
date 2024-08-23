@@ -140,9 +140,12 @@
         }
       {% endif %}
 
-      Array.from(document.querySelectorAll('[data-action="switch-login-form"]')).forEach((button) => {
+      /*Array.from(document.querySelectorAll('[data-action="switch-login-form"]')).forEach((button) => {
         button.addEventListener('click', () => switchForms());
-      });
+      });*/
+      document.querySelectorAll('[data-action="switch-login-form"]')).forEach((button) => {
+        button.addEventListener('click', () => switchForms());
+      }
     });
   </script>
 </section>

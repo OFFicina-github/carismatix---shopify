@@ -576,6 +576,7 @@ document.addEventListener("DOMContentLoaded", function () {
             numerinoCarrello.textContent = newNumber;
           }
         });
+        
       });
       observer.observe(notificationBanner, { childList: true });
     }
