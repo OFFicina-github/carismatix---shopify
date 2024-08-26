@@ -111,21 +111,6 @@
       "settings": {
       }
     },
-    "custom_html_zb7aXB": {
-      "type": "custom-html",
-      "custom_css": [
-
-      ],
-      "settings": {
-        "subheading": "",
-        "title": "",
-        "html": "<video width=\"640\" height=\"360\" controls=\"\" poster=\"poster.jpg\">\n        <source src=\"https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/412684806ea34a708f134fa7ed57cbfd.mp4\" type=\"video\/mp4\"><\/source><\/video>",
-        "add_vertical_spacing": true,
-        "background_type": "full_width",
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)"
-      }
-    },
     "16638372400e7cd77a": {
       "type": "product-recommendations",
       "settings": {
@@ -165,7 +150,6 @@
     "main",
     "product-content",
     "9dcf7299-35df-4e4e-a291-e399561de65a",
-    "custom_html_zb7aXB",
     "16638372400e7cd77a",
     "16632549475637d077",
     "8627cf54-1ec3-4026-b3f1-5b7f8ca5b3ce"
