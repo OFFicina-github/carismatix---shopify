@@ -3196,4 +3196,10 @@ h2.swym-wishlist-main-title:first-of-type {
 .swym-ui-component.swym-wishlist-page .swym-wishlist-detail .swym-action-bar .swym-back-btn {
   font-weight: 700 !important;
   font-size: 10px !important;
+}
+
+@media (max-width: 999px) {
+  .announcement-bar--multiple {
+    justify-content: center;
+  }
 }/*# sourceMappingURL=off_custom.css.map */

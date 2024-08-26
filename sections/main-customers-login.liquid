@@ -123,25 +123,25 @@
 
   <script>
     // The script for this is very minimal so we just embed it here
-      const loginFormElement = document.getElementById('login-form-container'),
-        recoverFormElement = document.getElementById('recover-form-container');
+    const loginFormElement = document.getElementById('login-form-container'),
+      recoverFormElement = document.getElementById('recover-form-container');
 
-      const switchForms = () => {
-        loginFormElement.style.display = (window.getComputedStyle(loginFormElement).display) === 'block' ? 'none' : 'block';
-        recoverFormElement.style.display = (window.getComputedStyle(recoverFormElement).display) === 'block' ? 'none' : 'block';
-      }
+    const switchForms = () => {
+      loginFormElement.style.display = (window.getComputedStyle(loginFormElement).display) === 'block' ? 'none' : 'block';
+      recoverFormElement.style.display = (window.getComputedStyle(recoverFormElement).display) === 'block' ? 'none' : 'block';
+    }
 
-      {% if is_recover_posted_successfully %}
+    {% if is_recover_posted_successfully %}
+      switchForms();
+    {% else %}
+      if (window.location.hash === '#recover') {
         switchForms();
-      {% else %}
-        if (window.location.hash === '#recover') {
-          switchForms();
-        }
-      {% endif %}
+      }
+    {% endif %}
 
-      Array.from(document.querySelectorAll('[data-action="switch-login-form"]')).forEach((button) => {
-        button.addEventListener('click', () => switchForms());
-      });
+    Array.from(document.querySelectorAll('[data-action="switch-login-form"]')).forEach((button) => {
+      button.addEventListener('click', () => switchForms());
+    });
   </script>
 </section>
 
