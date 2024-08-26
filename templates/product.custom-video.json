@@ -116,7 +116,7 @@
       "settings": {
         "subheading": "",
         "title": "VIdeo",
-        "liquid": "{{ product.metafields.custom.video_modo_d_uso_youtube_url.value }}",
+        "liquid": "{% if product.metafields.custom.video_modo_d_uso_youtube_url.value %}\n  <div class=\"video-container\">\n    <iframe width=\"560\" height=\"315\" src=\"{{ product.metafields.custom.video_modo_d_uso_youtube_url.value }}\" frameborder=\"0\" allowfullscreen><\/iframe>\n  <\/div>\n{% endif %}",
         "add_vertical_spacing": true,
         "background_type": "full_width",
         "background": "rgba(0,0,0,0)",
