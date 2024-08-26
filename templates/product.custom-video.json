@@ -111,12 +111,12 @@
       "settings": {
       }
     },
-    "custom_liquid_CWCNaC": {
-      "type": "custom-liquid",
+    "custom_html_WQkY8g": {
+      "type": "custom-html",
       "settings": {
         "subheading": "",
         "title": "Video",
-        "liquid": "{% if product.metafields.custom.videotrue %}\n    <div class=\"video-container\">\n      <!-- Puoi usare un iframe per video da piattaforme come YouTube, oppure un elemento video locale -->\n      <iframe src=\"{{ product.metafields.custom.videotrue }}\" frameborder=\"0\" allowfullscreen><\/iframe>\n    <\/div>\n  {% else %}\n    <p>Nessun video disponibile.<\/p>\n  {% endif %}",
+        "html": "<iframe width=\"600\" height=\"400\" src=\"custom.videotrue\" frameborder=\"0\" allowfullscreen=\"\"><\/iframe>",
         "add_vertical_spacing": true,
         "background_type": "full_width",
         "background": "rgba(0,0,0,0)",
@@ -162,7 +162,7 @@
     "main",
     "product-content",
     "9dcf7299-35df-4e4e-a291-e399561de65a",
-    "custom_liquid_CWCNaC",
+    "custom_html_WQkY8g",
     "16638372400e7cd77a",
     "16632549475637d077",
     "8627cf54-1ec3-4026-b3f1-5b7f8ca5b3ce"
