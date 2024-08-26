@@ -116,7 +116,7 @@
       "settings": {
         "subheading": "",
         "title": "Video",
-        "liquid": "{% if product.metafields.custom.videotrue %}\n  <meta name=\"custom.videotrue\" content=\"{{ product.metafields.custom.videotrue }}\">\n{% endif %}",
+        "liquid": "{% if product.metafields.custom.videotrue %}\n    <div class=\"video-container\">\n      <!-- Puoi usare un iframe per video da piattaforme come YouTube, oppure un elemento video locale -->\n      <iframe src=\"{{ product.metafields.custom.videotrue }}\" frameborder=\"0\" allowfullscreen><\/iframe>\n    <\/div>\n  {% else %}\n    <p>Nessun video disponibile.<\/p>\n  {% endif %}",
         "add_vertical_spacing": true,
         "background_type": "full_width",
         "background": "rgba(0,0,0,0)",
