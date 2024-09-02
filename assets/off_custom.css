@@ -654,6 +654,15 @@ section.video_tutorial h3 .verde {
   color: #46cf0f;
   text-transform: uppercase;
 }
+section.video_tutorial .product-content__tabs {
+  padding-left: 24px;
+  padding-right: 24px;
+  width: 100%;
+  margin: 0;
+}
+section.video_tutorial .product-content__tabs h3 {
+  font-size: 30px;
+}
 
 /*template COLLECTIONS */
 .flex_custom.collection_description {
