@@ -11,19 +11,19 @@
                     <p class="descrizione">{{ value | descrizione_modo_uso }}</p>
                 {% endfor %}
                 <div class="icone">
-                    {% if product.metafields.custom.video_modo_d_uso_youtube_url != blank %}
+                    {% if product.metafields.custom.video_modo_d_uso_youtube_url != blank and product.metafields.custom.icona_prodotto_1 != blank %}
                         <img src="{{product.metafields.custom.icona_prodotto_1  | image_url }}" alt="">
                     {% endif %}
-                    {% if product.metafields.custom.video_modo_d_uso_youtube_url != blank %}
+                    {% if product.metafields.custom.video_modo_d_uso_youtube_url != blank and product.metafields.custom.icona_prodotto_2 != blank %}
                         <img src="{{product.metafields.custom.icona_prodotto_2  | image_url }}" alt="">
                     {% endif %}
-                    {% if product.metafields.custom.video_modo_d_uso_youtube_url != blank %}
+                    {% if product.metafields.custom.video_modo_d_uso_youtube_url != blank and product.metafields.custom.icona_prodotto_3 != blank %}
                         <img src="{{product.metafields.custom.icona_prodotto_3  | image_url }}" alt="">
                     {% endif %}
-                    {% if product.metafields.custom.video_modo_d_uso_youtube_url != blank %}
+                    {% if product.metafields.custom.video_modo_d_uso_youtube_url != blank and product.metafields.custom.icona_prodotto_4 != blank %}
                         <img src="{{product.metafields.custom.icona_prodotto_4  | image_url }}" alt="">
                     {% endif %}
-                    {% if product.metafields.custom.video_modo_d_uso_youtube_url != blank %}
+                    {% if product.metafields.custom.video_modo_d_uso_youtube_url != blank and product.metafields.custom.icona_prodotto_5 != blank %}
                         <img src="{{product.metafields.custom.icona_prodotto_5  | image_url }}" alt="">
                     {% endif %}
                 </div>
