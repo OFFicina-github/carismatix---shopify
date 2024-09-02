@@ -331,7 +331,7 @@
       {{- product_content -}}
       
       {% if product.metafields.custom.video_modo_uso != blank %}
-          <div class="image_metafield_descrizione video">{{ product.metafields.custom.video_modo_uso}}</div>
+          <div class="image_metafield_descrizione video">{{ product.metafields.custom.video_modo_uso | file_url }}</div>
       {%- elsif product.metafields.custom.immagine_descrizione != blank -%}
           {%- comment -%} OFF - inserimento immagine metafield {%- endcomment -%}
           <div class="image_metafield_descrizione"><img src="{{ product.metafields.custom.immagine_descrizione |  img_url: 'master' }}" alt=""></div>
