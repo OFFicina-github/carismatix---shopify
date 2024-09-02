@@ -11,19 +11,19 @@
                     <p class="descrizione">{{ value | descrizione_modo_uso }}</p>
                 {% endfor %}
                 <div class="icone">
-                    {% if product.metafields.custom.video_modo_d_uso_youtube_url != blank and product.metafields.custom.icona_prodotto_1 != blank %}
+                    {% if product.metafields.custom.icona_prodotto_1 != blank %}
                         <img src="{{product.metafields.custom.icona_prodotto_1  | image_url }}" alt="">
                     {% endif %}
-                    {% if product.metafields.custom.video_modo_d_uso_youtube_url != blank and product.metafields.custom.icona_prodotto_2 != blank %}
+                    {% if product.metafields.custom.icona_prodotto_2 != blank %}
                         <img src="{{product.metafields.custom.icona_prodotto_2  | image_url }}" alt="">
                     {% endif %}
-                    {% if product.metafields.custom.video_modo_d_uso_youtube_url != blank and product.metafields.custom.icona_prodotto_3 != blank %}
+                    {% if product.metafields.custom.icona_prodotto_3 != blank %}
                         <img src="{{product.metafields.custom.icona_prodotto_3  | image_url }}" alt="">
                     {% endif %}
-                    {% if product.metafields.custom.video_modo_d_uso_youtube_url != blank and product.metafields.custom.icona_prodotto_4 != blank %}
+                    {% if product.metafields.custom.icona_prodotto_4 != blank %}
                         <img src="{{product.metafields.custom.icona_prodotto_4  | image_url }}" alt="">
                     {% endif %}
-                    {% if product.metafields.custom.video_modo_d_uso_youtube_url != blank and product.metafields.custom.icona_prodotto_5 != blank %}
+                    {% if product.metafields.custom.icona_prodotto_5 != blank %}
                         <img src="{{product.metafields.custom.icona_prodotto_5  | image_url }}" alt="">
                     {% endif %}
                 </div>
@@ -52,11 +52,7 @@
                 </svg>
             </div>
 
-            {% if product.metafields.custom.video_modo_d_uso_youtube_url != blank %}
-            <div class="video box_2">
-                <iframe style="aspect-ratio:16/9;" width="100%" height="100%" src="https://www.youtube.com/embed/{{product.metafields.custom.video_modo_d_uso_youtube_url}}" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            {% elsif product.metafields.custom.immagine_modo_uso != blank %}
+            {% if product.metafields.custom.immagine_modo_uso != blank %}
             <div class="immagine box_2">
                 <img src="{{ product.metafields.custom.immagine_modo_uso | image_url }}" alt="">
             </div>
@@ -65,6 +61,11 @@
         </div>
     </div>
 </section>
+{% endif %}
+{% if product.metafields.custom.video_modo_d_uso_youtube_url != blank %}
+    <section class="video_tutorial">
+        <iframe style="aspect-ratio:16/9;" width="100%" height="100%" src="https://www.youtube.com/embed/{{product.metafields.custom.video_modo_d_uso_youtube_url}}" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
 {% endif %}
 
 
@@ -77,10 +78,10 @@
 
 ],
 "presets": [
-{
-"name": "Modi d'uso",
-"category": "ADVANCED LAYOUT"
-}
+    {
+    "name": "Modi d'uso",
+    "category": "ADVANCED LAYOUT"
+    }
 ]
 }
 {% endschema %}
