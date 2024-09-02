@@ -32,6 +32,7 @@
         },
         "b3144448-2242-4de3-83bd-bf6e8fd93945": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Slide-Agosto2024.jpg",
             "text_position": "middle_center",
