@@ -67,7 +67,7 @@
       "settings": {
         "subheading": "",
         "title": "",
-        "html": "<div id=\"videotutorial\" style=\"height: 48px;\"><\/div>",
+        "html": "<div id=\"videotutorial\" style=\"height: 50px;\"><\/div>",
         "add_vertical_spacing": true,
         "background_type": "full_width",
         "background": "rgba(0,0,0,0)",
