@@ -38,24 +38,13 @@
         "show_share_buttons": true
       }
     },
-    "custom_html_9Xz7ra": {
-      "type": "custom-html",
-      "settings": {
-        "subheading": "",
-        "title": "",
-        "html": "<a name=\"calcolodiluizione\"><\/a>",
-        "add_vertical_spacing": true,
-        "background_type": "full_width",
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)"
-      }
-    },
     "custom_html_WFkE4d": {
       "type": "custom-html",
+      "disabled": true,
       "settings": {
         "subheading": "",
         "title": "",
-        "html": "",
+        "html": "<div id=\"Calcolatore\" style=\"height: 35px;\"><\/div>",
         "add_vertical_spacing": true,
         "background_type": "full_width",
         "background": "rgba(0,0,0,0)",
@@ -115,7 +104,6 @@
     "blog-post-banner",
     "custom_html_hhEcPc",
     "main",
-    "custom_html_9Xz7ra",
     "custom_html_WFkE4d",
     "custom_html_6kmiKn",
     "custom_html_UTzKdn",
