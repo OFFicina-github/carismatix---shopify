@@ -37,12 +37,18 @@
       "settings": {
         "show_gravatar": true
       }
+    },
+    "modiuso_aBhFe7": {
+      "type": "modiuso",
+      "settings": {
+      }
     }
   },
   "order": [
     "blog-post-banner",
     "main",
     "blog-post-prev-next",
-    "blog-post-comments"
+    "blog-post-comments",
+    "modiuso_aBhFe7"
   ]
 }
