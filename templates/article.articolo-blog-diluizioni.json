@@ -55,7 +55,7 @@
       "settings": {
         "subheading": "",
         "title": "",
-        "html": "<div style=\"text-align: center; font-size: 8vw; font-weight: bold;\">\n    VIDEO <span style=\"color: #4bdd0e;\">TUTORIAL<\/span>\n<\/div>\n<div style=\"display: flex; justify-content: center; align-items: center; height: 40vh;\">\n    <iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/dS3OFVj4OPU?si=k3DgAEpDLS7qBe43\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen=\"\"><\/iframe>\n<\/div>",
+        "html": "<div style=\"text-align: center; font-size: 5vw; font-weight: bold;\">\n    VIDEO <span style=\"color: #4bdd0e;\">TUTORIAL<\/span>\n<\/div>\n<div style=\"display: flex; justify-content: center; align-items: center; height: 40vh;\">\n    <iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/dS3OFVj4OPU?si=k3DgAEpDLS7qBe43\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen=\"\"><\/iframe>\n<\/div>",
         "add_vertical_spacing": true,
         "background_type": "full_width",
         "background": "rgba(0,0,0,0)",
