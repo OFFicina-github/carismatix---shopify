@@ -50,6 +50,18 @@
         "text_color": "rgba(0,0,0,0)"
       }
     },
+    "custom_html_WFkE4d": {
+      "type": "custom-html",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "html": "<div id=\"Calcolatore\" style=\"height: 48px;\"><\/div>",
+        "add_vertical_spacing": true,
+        "background_type": "full_width",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
     "custom_html_6kmiKn": {
       "type": "custom-html",
       "settings": {
@@ -104,6 +116,7 @@
     "custom_html_hhEcPc",
     "main",
     "custom_html_9Xz7ra",
+    "custom_html_WFkE4d",
     "custom_html_6kmiKn",
     "custom_html_UTzKdn",
     "custom_html_9dqQdc",
