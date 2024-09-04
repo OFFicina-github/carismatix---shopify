@@ -3036,7 +3036,7 @@ body#index #scroll_to_nl_natale:hover img {
 
 @media (max-width: 999px) {
   .freccia_mobile {
-    display: block;
+    display: none;
     padding: 0 16px;
     margin-bottom: -25px;
     font-size: 12px;
