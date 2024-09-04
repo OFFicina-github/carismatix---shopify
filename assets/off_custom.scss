@@ -848,6 +848,9 @@ section.video_tutorial {
       grid-area: a;
       padding: 0;
       width: 100%;
+      button {
+        padding-left: 0 !important;
+      }
     }
   }
 }
