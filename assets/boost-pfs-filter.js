@@ -617,7 +617,7 @@ ProductSorting.prototype.compileTemplate = function() {
         sortingItemsHtml += '<li aria-label="' + sortingArr[k] + '"><a href="#" data-sort="' + k + '" class="' + activeClass + '"  title="' + sortingArr[k] + '" aria-label="' + sortingArr[k] + '">' + sortingArr[k] + '</a></li>';
       }
       html = html.replace(/{{sortingItems}}/g, sortingItemsHtml);
-      html = html.replace(/{{sortingLabel}}/g, Labels.sorting);
+      html = html.replace(/{{sortingLabel}}/g, Labels?.sortByOptions?.sorting ? Labels.sortByOptions.sorting : Labels.sorting);
     }
   }
   return html;
