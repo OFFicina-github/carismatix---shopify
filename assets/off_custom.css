@@ -840,12 +840,18 @@ section.video_tutorial h3 .verde {
   }
   .boost-pfs-filter-default-toolbar div.boost-pfs-filter-default-toolbar-inner .boost-pfs-filter-display-type-m {
     grid-area: c;
+    padding: 0;
+    width: 100%;
   }
   .boost-pfs-filter-default-toolbar div.boost-pfs-filter-default-toolbar-inner .boost-pfs-filter-toolbar-count-m {
     grid-area: b;
+    padding: 0;
+    width: 100%;
   }
   .boost-pfs-filter-default-toolbar div.boost-pfs-filter-default-toolbar-inner .boost-pfs-filter-sort-active {
     grid-area: a;
+    padding: 0;
+    width: 100%;
   }
 }
 
