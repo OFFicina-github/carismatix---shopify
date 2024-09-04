@@ -356,6 +356,7 @@ endif
 
 {%- comment -%} TOOLBAR DESKTOP {%- endcomment -%}
 {%- unless switch_layout_filter == 'switch_layout_filter_vertical' and filter_tree_vertical_style == 'style-default' -%}
+  check
   {%- render 'boost-pfs-filter-toolbar-desktop',
       layout_type: layout_type,
       enable_filter_sticky_d: enable_filter_sticky_d,
