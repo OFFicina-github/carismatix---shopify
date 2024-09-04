@@ -814,6 +814,17 @@ section.video_tutorial {
   background-color: #f7f7f7;
 }
 
+.boost-pfs-filter-default-toolbar .boost-pfs-filter-toolbar-item label {
+  text-transform: none;
+}
+
+div.boost-pfs-filter-default-toolbar-inner {
+  padding: 10px 0!important;
+  background-color: transparent;
+  min-height: unset;
+  font-size: 12px;
+}
+
 /*articoli blog*/
 .article__image {
   width: 100%;
