@@ -852,6 +852,9 @@ section.video_tutorial h3 .verde {
     grid-area: a;
     padding: 0;
     width: 100%;
+    display: flex !important;
+    justify-content: flex-start !important;
+    text-align: left !important;
   }
   .boost-pfs-filter-default-toolbar div.boost-pfs-filter-default-toolbar-inner .boost-pfs-filter-top-sorting label {
     display: block !important;

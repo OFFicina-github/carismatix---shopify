@@ -848,6 +848,9 @@ section.video_tutorial {
       grid-area: a;
       padding: 0;
       width: 100%;
+      display: flex !important;
+      justify-content: flex-start !important;
+      text-align: left !important;
       label {
         display: block !important;
       }
