@@ -848,12 +848,12 @@ section.video_tutorial h3 .verde {
     padding: 0;
     width: 100%;
   }
-  .boost-pfs-filter-default-toolbar div.boost-pfs-filter-default-toolbar-inner .boost-pfs-filter-sort-active {
+  .boost-pfs-filter-default-toolbar div.boost-pfs-filter-default-toolbar-inner .boost-pfs-filter-top-sorting {
     grid-area: a;
     padding: 0;
     width: 100%;
   }
-  .boost-pfs-filter-default-toolbar div.boost-pfs-filter-default-toolbar-inner .boost-pfs-filter-sort-active button {
+  .boost-pfs-filter-default-toolbar div.boost-pfs-filter-default-toolbar-inner .boost-pfs-filter-top-sorting button {
     padding-left: 0 !important;
   }
 }
