@@ -819,10 +819,10 @@ section.video_tutorial h3 .verde {
 }
 
 .boost-pfs-filter-default-toolbar .boost-pfs-filter-toolbar-item label {
-  text-transform: none;
+  text-transform: none !important;
 }
 
-div.boost-pfs-filter-default-toolbar-inner {
+.boost-pfs-filter-default-toolbar div.boost-pfs-filter-default-toolbar-inner {
   padding: 10px 0 !important;
   background-color: transparent;
   min-height: unset;
