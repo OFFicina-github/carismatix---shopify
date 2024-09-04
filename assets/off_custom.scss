@@ -828,6 +828,13 @@ section.video_tutorial {
   min-height: unset;
   font-size: 12px;
 
+  .boost-pfs-filter-top-sorting {
+    display: flex !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+    text-align: right !important;
+  }
+
   @media (max-width:999px) {
     display: grid !important;
     grid-template-columns: 1fr 1fr;

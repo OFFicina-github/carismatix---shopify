@@ -832,6 +832,12 @@ section.video_tutorial h3 .verde {
   min-height: unset;
   font-size: 12px;
 }
+.boost-pfs-filter-default-toolbar div.boost-pfs-filter-default-toolbar-inner .boost-pfs-filter-top-sorting {
+  display: flex !important;
+  justify-content: flex-end !important;
+  align-items: center !important;
+  text-align: right !important;
+}
 @media (max-width: 999px) {
   .boost-pfs-filter-default-toolbar div.boost-pfs-filter-default-toolbar-inner {
     display: grid !important;
