@@ -822,11 +822,31 @@ section.video_tutorial h3 .verde {
   text-transform: none !important;
 }
 
+.boost-pfs-filter-default-toolbar .boost-pfs-filter-top-sorting {
+  display: block !important;
+}
+
 .boost-pfs-filter-default-toolbar div.boost-pfs-filter-default-toolbar-inner {
   padding: 10px 0 !important;
   background-color: transparent;
   min-height: unset;
   font-size: 12px;
+}
+@media (max-width: 999px) {
+  .boost-pfs-filter-default-toolbar div.boost-pfs-filter-default-toolbar-inner {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "a a" "b c";
+  }
+  .boost-pfs-filter-default-toolbar div.boost-pfs-filter-default-toolbar-inner .boost-pfs-filter-display-type-m {
+    grid-area: c;
+  }
+  .boost-pfs-filter-default-toolbar div.boost-pfs-filter-default-toolbar-inner .boost-pfs-filter-toolbar-count-m {
+    grid-area: b;
+  }
+  .boost-pfs-filter-default-toolbar div.boost-pfs-filter-default-toolbar-inner .boost-pfs-filter-sort-active {
+    grid-area: a;
+  }
 }
 
 /*articoli blog*/
