@@ -568,18 +568,6 @@
         "settings": {
         }
       },
-      "uppromote-affiliate-referral-customer-referral-59693-64c32457-930d-4cb9-9641-e24c0d9cf1f4": {
-        "type": "shopify:\/\/apps\/uppromote-affiliate-referral\/blocks\/customer-referral\/64c32457-930d-4cb9-9641-e24c0d9cf1f4",
-        "disabled": true,
-        "settings": {
-        }
-      },
-      "uppromote-affiliate-referral-message-bar-59693-64c32457-930d-4cb9-9641-e24c0d9cf1f4": {
-        "type": "shopify:\/\/apps\/uppromote-affiliate-referral\/blocks\/message-bar\/64c32457-930d-4cb9-9641-e24c0d9cf1f4",
-        "disabled": true,
-        "settings": {
-        }
-      },
       "1759773598402494664": {
         "type": "shopify:\/\/apps\/rt-whatsapp-chat-live-chat\/blocks\/app-embed\/9baee9b7-6929-47af-9935-05bcdc376396",
         "disabled": false,
