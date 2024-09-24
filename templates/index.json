@@ -286,7 +286,7 @@
         "73c1cede-f191-415d-a0c2-2578148bf089": {
           "type": "collection",
           "settings": {
-            "collection": "effetto-wow",
+            "collection": "outlet",
             "label": "Outlet",
             "button_text": "Vai all'Outlet",
             "button_url": "shopify://collections/outlet"
