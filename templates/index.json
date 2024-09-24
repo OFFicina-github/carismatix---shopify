@@ -285,18 +285,8 @@
         },
         "73c1cede-f191-415d-a0c2-2578148bf089": {
           "type": "collection",
-          "disabled": true,
           "settings": {
             "collection": "effetto-wow",
-            "label": "EFFETTO WOW",
-            "button_text": "Tutti i prodotti wow",
-            "button_url": "shopify://collections/effetto-wow"
-          }
-        },
-        "collection_U96RhY": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
             "label": "Outlet",
             "button_text": "Vai all'Outlet",
             "button_url": "shopify://collections/outlet"
@@ -307,8 +297,7 @@
         "1664376611a10e7fea-0",
         "5a3f71bb-5230-4b94-af70-b83ab6868ff0",
         "05912f6f-440c-4d47-a64f-8ec2bee37ea1",
-        "73c1cede-f191-415d-a0c2-2578148bf089",
-        "collection_U96RhY"
+        "73c1cede-f191-415d-a0c2-2578148bf089"
       ],
       "settings": {
         "subheading": "",
