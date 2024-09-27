@@ -22,7 +22,7 @@
       "settings": {
         "subheading": "entra ora nel",
         "title": "Team carismatix",
-        "html": "<p style=\"text-align:center\">Le persone che lavorano con noi sono la nostra forza e la nostra principale risorsa. Crediamo fortemente nel \"gioco di squadra\", dove persone con specializzazione, VISIONE, mentalità e punti di vista diversi collaborano e mettono in comune le loro menti in funzione dell'obiettivo aziendale.<\/p>\n<p style=\"text-align:center\"><strong>Inviaci il tuo curriculum per candidature spontanee<\/strong> oppure <strong>seleziona una delle opportunità di lavoro per le posizioni che abbiamo aperte<\/strong> in questo momento. Valuteremo con attenzione la tua candidatura con l’obiettivo di coinvolgerti nelle nostre ricerche di personale.<\/p>\n<h5 style=\"text-align:center; text-transform: uppercase\">Offerte di lavoro rivolte ambosessi<\/h5>",
+        "html": "<p style=\"text-align:center\">Le persone che lavorano con noi sono la nostra forza e la nostra principale risorsa. Crediamo fortemente nel \"gioco di squadra\", dove persone con specializzazione, VISIONE, mentalità e punti di vista diversi collaborano e mettono in comune le loro menti in funzione dell'obiettivo aziendale.</p>\n<p style=\"text-align:center\"><strong>Inviaci il tuo curriculum per candidature spontanee</strong> oppure <strong>seleziona una delle opportunità di lavoro per le posizioni che abbiamo aperte</strong> in questo momento. Valuteremo con attenzione la tua candidatura con l’obiettivo di coinvolgerti nelle nostre ricerche di personale.</p>\n<h5 style=\"text-align:center; text-transform: uppercase\">Offerte di lavoro rivolte ambosessi</h5>",
         "add_vertical_spacing": true,
         "background_type": "full_width",
         "background": "rgba(0,0,0,0)",
@@ -35,11 +35,11 @@
         "template--16640346325221__4b0b6e0f-3879-454c-b811-b3fdeb4914ac-16684340819f89e055-0": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Tecnico_b52e3a02-af0e-46ae-8c33-1e4e3513cec2.jpg",
+            "image": "shopify://shop_images/Tecnico_b52e3a02-af0e-46ae-8c33-1e4e3513cec2.jpg",
             "tab_label": "",
             "subheading": "POSIZIONE APERTA",
             "title": "TECNICO APPLICATORE",
-            "content": "<p>Siamo alla ricerca di una figura per il Nord Italia con comprovata esperienza nel car refinish e nel car detailing, proveniente dal settore autocarrozzeria, da inserire nel nostro organico.<\/p><p>Per candidarti compila il form sottostante.<\/p>",
+            "content": "<p>Siamo alla ricerca di una figura per il Nord Italia con comprovata esperienza nel car refinish e nel car detailing, proveniente dal settore autocarrozzeria, da inserire nel nostro organico.</p><p>Per candidarti compila il form sottostante.</p>",
             "button_text": "",
             "button_link": ""
           }
@@ -68,11 +68,11 @@
           "type": "item",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/Back_Office.jpg",
+            "image": "shopify://shop_images/Back_Office.jpg",
             "tab_label": "Item",
             "subheading": "Posizione aperta",
             "title": "Back Office commerciale",
-            "content": "<p>Siamo alla ricerca di una figura anche prima esperienza da inserire nel nostro organico.<\/p><p>Per candidarti compila il form sottostante.<\/p>",
+            "content": "<p>Siamo alla ricerca di una figura anche prima esperienza da inserire nel nostro organico.</p><p>Per candidarti compila il form sottostante.</p>",
             "button_text": "",
             "button_link": ""
           }
@@ -102,11 +102,11 @@
           "type": "item",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/Marketing.jpg",
+            "image": "shopify://shop_images/Marketing.jpg",
             "tab_label": "Item",
             "subheading": "Posizione aperta",
             "title": "Marketing",
-            "content": "<p>Siamo alla ricerca di una figura con esperienza da inserire nel nostro organico.<\/p><p>Per candidarti compila il form sottostante.<\/p>",
+            "content": "<p>Siamo alla ricerca di una figura con esperienza da inserire nel nostro organico.</p><p>Per candidarti compila il form sottostante.</p>",
             "button_text": "",
             "button_link": ""
           }
@@ -134,12 +134,13 @@
       "blocks": {
         "item_LkxjrB": {
           "type": "item",
+          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/Commerciale.jpg",
+            "image": "shopify://shop_images/Commerciale.jpg",
             "tab_label": "Item",
             "subheading": "Posizione aperta",
             "title": "Commerciale",
-            "content": "<p>Siamo alla ricerca di una figura per il Nord Italia con comprovata esperienza nel car refinish e nel car detailing, proveniente dal settore autocarrozzeria, da inserire nel nostro organico.<\/p><p>Per candidarti compila il form sottostante.<\/p>",
+            "content": "<p>Siamo alla ricerca di una figura per il Nord Italia con comprovata esperienza nel car refinish e nel car detailing, proveniente dal settore autocarrozzeria, da inserire nel nostro organico.</p><p>Per candidarti compila il form sottostante.</p>",
             "button_text": "",
             "button_link": ""
           }
@@ -148,6 +149,7 @@
       "block_order": [
         "item_LkxjrB"
       ],
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": true,
         "background_type": "boxed",
@@ -167,11 +169,11 @@
         "49e00277-aa0b-4492-8099-7452931d4106": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Tavola_disegno_11_copia.jpg",
+            "image": "shopify://shop_images/Tavola_disegno_11_copia.jpg",
             "tab_label": "Item",
             "subheading": "Posizione aperta",
             "title": "ADDETTO GESTIONE MAGAZZINO",
-            "content": "<p>Siamo alla ricerca di una figura con esperienza in logistica e gestione magazzino da inserire nel nostro organico.<\/p><p>Per candidarti compila il form sottostante.<\/p>",
+            "content": "<p>Siamo alla ricerca di una figura con esperienza in logistica e gestione magazzino da inserire nel nostro organico.</p><p>Per candidarti compila il form sottostante.</p>",
             "button_text": "",
             "button_link": ""
           }
@@ -199,12 +201,13 @@
       "blocks": {
         "item_r6E98c": {
           "type": "item",
+          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/Contabile.jpg",
+            "image": "shopify://shop_images/Contabile.jpg",
             "tab_label": "Item",
             "subheading": "Posizione aperta",
             "title": "contabile",
-            "content": "<p>Siamo alla ricerca di una figura con esperienza da inserire nel nostro organico.<\/p><p>Per candidarti compila il form sottostante.<\/p>",
+            "content": "<p>Siamo alla ricerca di una figura con esperienza da inserire nel nostro organico.</p><p>Per candidarti compila il form sottostante.</p>",
             "button_text": "",
             "button_link": ""
           }
@@ -213,6 +216,7 @@
       "block_order": [
         "item_r6E98c"
       ],
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": true,
         "background_type": "boxed",
@@ -232,11 +236,11 @@
         "item_kfDxKL": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Addetto-E-commerce.jpg",
+            "image": "shopify://shop_images/Addetto-E-commerce.jpg",
             "tab_label": "Item",
             "subheading": "Posizione aperta",
             "title": "Addetto e-commerce",
-            "content": "<p>Siamo alla ricerca di una figura con esperienza da inserire nel nostro organico.<\/p><p>Per candidarti compila il form sottostante.<\/p>",
+            "content": "<p>Siamo alla ricerca di una figura con esperienza da inserire nel nostro organico.</p><p>Per candidarti compila il form sottostante.</p>",
             "button_text": "",
             "button_link": ""
           }
@@ -263,7 +267,7 @@
       "settings": {
         "subheading": "",
         "title": "",
-        "html": "<div data-tf-widget=\"QKcd51Wg\" data-tf-iframe-props=\"title=Lavora con noi\" data-tf-medium=\"snippet\" style=\"width: 100%; height: 600px;\"><\/div>\n<script src=\"\/\/embed.typeform.com\/next\/embed.js\"><\/script>",
+        "html": "<div data-tf-widget=\"QKcd51Wg\" data-tf-iframe-props=\"title=Lavora con noi\" data-tf-medium=\"snippet\" style=\"width: 100%; height: 600px;\"></div>\n<script src=\"//embed.typeform.com/next/embed.js\"></script>",
         "add_vertical_spacing": true,
         "background_type": "full_width",
         "background": "rgba(0,0,0,0)",
