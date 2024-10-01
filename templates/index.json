@@ -32,14 +32,13 @@
         },
         "b3144448-2242-4de3-83bd-bf6e8fd93945": {
           "type": "image",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Slide-Agosto2024.jpg",
+            "image": "shopify://shop_images/Slide-Promo-Refinish-4000.jpg",
             "text_position": "middle_center",
             "subheading": "",
             "title": "",
             "button_1_text": "",
-            "button_1_link": "",
+            "button_1_link": "https://carismatix.it/products/cartec-rapid-cut-4000-tampone-unipad-omaggio",
             "button_2_text": "",
             "button_2_link": "",
             "text_color": "#ffffff",
@@ -51,6 +50,7 @@
         },
         "f3d58442-7c50-4a38-942e-3ade70efdd99": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Slide-Programma-Fedelta_1.jpg",
             "text_position": "middle_center",
@@ -87,6 +87,7 @@
         },
         "slide-1": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Slide-CXTD.jpg",
             "text_position": "middle_center",
