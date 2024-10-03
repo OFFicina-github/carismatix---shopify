@@ -12,24 +12,6 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
-        "abed36a1-1389-4b9c-a595-26cf83331879": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Slide-Q1-20.jpg",
-            "text_position": "middle_center",
-            "subheading": "",
-            "title": "",
-            "button_1_text": "",
-            "button_1_link": "https://carismatix.it/collections/q1-tapes",
-            "button_2_text": "",
-            "button_2_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
         "b3144448-2242-4de3-83bd-bf6e8fd93945": {
           "type": "image",
           "settings": {
@@ -39,6 +21,24 @@
             "title": "",
             "button_1_text": "",
             "button_1_link": "https://carismatix.it/products/cartec-rapid-cut-4000-tampone-unipad-omaggio",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "abed36a1-1389-4b9c-a595-26cf83331879": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Slide-Q1-20.jpg",
+            "text_position": "middle_center",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "https://carismatix.it/collections/q1-tapes",
             "button_2_text": "",
             "button_2_link": "",
             "text_color": "#ffffff",
@@ -106,8 +106,8 @@
         }
       },
       "block_order": [
-        "abed36a1-1389-4b9c-a595-26cf83331879",
         "b3144448-2242-4de3-83bd-bf6e8fd93945",
+        "abed36a1-1389-4b9c-a595-26cf83331879",
         "f3d58442-7c50-4a38-942e-3ade70efdd99",
         "1fef35ac-4f51-4739-b719-1b13258f3894",
         "slide-1"
