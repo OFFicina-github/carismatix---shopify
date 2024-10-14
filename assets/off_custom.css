@@ -1837,6 +1837,9 @@ div.boost-pfs-filter-default-toolbar-inner {
   body#index .pulsanti_home .pulsante .icona_principale {
     margin-bottom: 10px;
   }
+  body#index .pulsanti_home .pulsante .icona_principale.pro_club {
+    height: 32px !important;
+  }
   body#index .shopify-section--image-with-text-block .image-with-text-block__image-wrapper {
     position: relative;
   }
