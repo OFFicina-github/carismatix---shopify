@@ -2778,6 +2778,10 @@ product-item.product-item .price.price--compare:after {
   fill: #fff !important;
 }
 
+.th_cart_fixed_discount_msg {
+  display: none !important;
+}
+
 /*Confezione Regalo*/
 #ptw-wrapin .ptw-app-gnote {
   display: flex;
