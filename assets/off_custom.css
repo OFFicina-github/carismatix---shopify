@@ -1637,6 +1637,13 @@ div.boost-pfs-filter-default-toolbar-inner {
     width: auto;
     height: 25px;
   }
+}
+@media (max-width: 767px) and (max-width: 999px) {
+  body#index .pulsanti_home .pulsante .icona_principale {
+    transform: scale(2);
+  }
+}
+@media (max-width: 767px) {
   body#index .shopify-section--image-with-text-block .image-with-text-block__content .button-wrapper a {
     line-height: 1.5;
     padding-top: 10px;
@@ -1833,12 +1840,6 @@ div.boost-pfs-filter-default-toolbar-inner {
   }
   body#index .pulsanti_home .pulsante .freccetta_home {
     display: none;
-  }
-  body#index .pulsanti_home .pulsante .icona_principale {
-    margin-bottom: 10px;
-  }
-  body#index .pulsanti_home .pulsante .icona_principale.pro_club {
-    height: 32px !important;
   }
   body#index .shopify-section--image-with-text-block .image-with-text-block__image-wrapper {
     position: relative;

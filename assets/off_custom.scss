@@ -1634,6 +1634,9 @@ div.boost-pfs-filter-default-toolbar-inner {
     margin-bottom: 10px;
     width: auto;
     height: 25px;
+    @media (max-width:999px) {
+      transform: scale(2);
+    }
   }
   body#index .shopify-section--image-with-text-block .image-with-text-block__content .button-wrapper a {
     line-height: 1.5;
@@ -1831,12 +1834,6 @@ div.boost-pfs-filter-default-toolbar-inner {
   }
   body#index .pulsanti_home .pulsante .freccetta_home {
     display: none;
-  }
-  body#index .pulsanti_home .pulsante .icona_principale {
-    margin-bottom: 10px;
-    &.pro_club {
-      height: 32px !important;
-    }
   }
   body#index .shopify-section--image-with-text-block .image-with-text-block__image-wrapper {
     position: relative;
