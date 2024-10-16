@@ -1640,7 +1640,9 @@ div.boost-pfs-filter-default-toolbar-inner {
 }
 @media (max-width: 767px) and (max-width: 999px) {
   body#index .pulsanti_home .pulsante .icona_principale {
-    transform: scale(2);
+    margin-bottom: 0;
+    transform: scale(1.5);
+    transform-origin: bottom;
   }
 }
 @media (max-width: 767px) {

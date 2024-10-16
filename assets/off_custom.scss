@@ -1635,7 +1635,9 @@ div.boost-pfs-filter-default-toolbar-inner {
     width: auto;
     height: 25px;
     @media (max-width:999px) {
-      transform: scale(2);
+      margin-bottom: 0;
+      transform: scale(1.5);
+      transform-origin: bottom;
     }
   }
   body#index .shopify-section--image-with-text-block .image-with-text-block__content .button-wrapper a {
