@@ -2253,6 +2253,10 @@ iframe#carismatix_points {
   right: 0;
 }
 
+body.handle_carismatix-centers .page-content.page-content--large {
+  position: relative !important;
+}
+
 .rivela_scroll {
   width: 95%;
   height: 300px;
