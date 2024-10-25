@@ -1170,7 +1170,9 @@ body#index .shopify-section--image-with-text-block .image-with-text-block__conte
   background-repeat: no-repeat;
 }
 
-body#index .shopify-section--image-with-text-block .image-with-text-block__content h2, body#index .shopify-section--image-with-text-block .image-with-text-block__content h3, body#index .shopify-section--image-with-text-block .image-with-text-block__content p {
+body#index .shopify-section--image-with-text-block .image-with-text-block__content h2,
+body#index .shopify-section--image-with-text-block .image-with-text-block__content h3,
+body#index .shopify-section--image-with-text-block .image-with-text-block__content p {
   color: #ffffff;
 }
 
@@ -1423,7 +1425,8 @@ div.boost-pfs-filter-default-toolbar-inner {
   text-shadow: none !important;
 }
 
-.new-review-form.stamped-visible input, .new-review-form.stamped-visible textarea {
+.new-review-form.stamped-visible input,
+.new-review-form.stamped-visible textarea {
   border: none !important;
   background-color: #f7f7f7 !important;
   border-radius: 0 !important;
@@ -1486,7 +1489,8 @@ div.boost-pfs-filter-default-toolbar-inner {
   display: none;
 }
 
-.bundle_wc .thpb_combo_p_grid_variant_select, .bundle_wc .thpb_combo_p_grid_main_variants {
+.bundle_wc .thpb_combo_p_grid_variant_select,
+.bundle_wc .thpb_combo_p_grid_main_variants {
   width: -moz-fit-content !important;
   width: fit-content !important;
   padding-top: 10px !important;
@@ -1948,45 +1952,78 @@ div.boost-pfs-filter-default-toolbar-inner {
     max-height: 635px !important;
   }
 }
-div[data-id="8076895584485"] .product-item-meta__price-list-container, li[data-id="8076895584485"] .product-item-meta__price-list-container,
-div[data-id="8076991758565"] .product-item-meta__price-list-container, li[data-id="8076991758565"] .product-item-meta__price-list-container,
-div[data-id="8076991561957"] .product-item-meta__price-list-container, li[data-id="8076991561957"] .product-item-meta__price-list-container,
-div[data-id="8076932907237"] .product-item-meta__price-list-container, li[data-id="8076932907237"] .product-item-meta__price-list-container,
-div[data-id="8076932514021"] .product-item-meta__price-list-container, li[data-id="8076932514021"] .product-item-meta__price-list-container,
-div[data-id="8076921012453"] .product-item-meta__price-list-container, li[data-id="8076921012453"] .product-item-meta__price-list-container,
-div[data-id="8076963578085"] .product-item-meta__price-list-container, li[data-id="8076963578085"] .product-item-meta__price-list-container,
-div[data-id="8140057346277"] .product-item-meta__price-list-container, li[data-id="8140057346277"] .product-item-meta__price-list-container,
-div[data-id="8076933333221"] .product-item-meta__price-list-container, li[data-id="8076933333221"] .product-item-meta__price-list-container,
-div[data-id="8362624287067"] .product-item-meta__price-list-container, li[data-id="8362624287067"] .product-item-meta__price-list-container,
-div[data-id="8362643685723"] .product-item-meta__price-list-container, li[data-id="8362643685723"] .product-item-meta__price-list-container {
+div[data-id="8076895584485"] .product-item-meta__price-list-container,
+li[data-id="8076895584485"] .product-item-meta__price-list-container,
+div[data-id="8076991758565"] .product-item-meta__price-list-container,
+li[data-id="8076991758565"] .product-item-meta__price-list-container,
+div[data-id="8076991561957"] .product-item-meta__price-list-container,
+li[data-id="8076991561957"] .product-item-meta__price-list-container,
+div[data-id="8076932907237"] .product-item-meta__price-list-container,
+li[data-id="8076932907237"] .product-item-meta__price-list-container,
+div[data-id="8076932514021"] .product-item-meta__price-list-container,
+li[data-id="8076932514021"] .product-item-meta__price-list-container,
+div[data-id="8076921012453"] .product-item-meta__price-list-container,
+li[data-id="8076921012453"] .product-item-meta__price-list-container,
+div[data-id="8076963578085"] .product-item-meta__price-list-container,
+li[data-id="8076963578085"] .product-item-meta__price-list-container,
+div[data-id="8140057346277"] .product-item-meta__price-list-container,
+li[data-id="8140057346277"] .product-item-meta__price-list-container,
+div[data-id="8076933333221"] .product-item-meta__price-list-container,
+li[data-id="8076933333221"] .product-item-meta__price-list-container,
+div[data-id="8362624287067"] .product-item-meta__price-list-container,
+li[data-id="8362624287067"] .product-item-meta__price-list-container,
+div[data-id="8362643685723"] .product-item-meta__price-list-container,
+li[data-id="8362643685723"] .product-item-meta__price-list-container {
   display: none !important;
 }
 
-div[data-id="8076895584485"] .boost-pfs-filter-product-item-price, li[data-id="8076895584485"] .boost-pfs-filter-product-item-price,
-div[data-id="8076991758565"] .boost-pfs-filter-product-item-price, li[data-id="8076991758565"] .boost-pfs-filter-product-item-price,
-div[data-id="8076991561957"] .boost-pfs-filter-product-item-price, li[data-id="8076991561957"] .boost-pfs-filter-product-item-price,
-div[data-id="8076932907237"] .boost-pfs-filter-product-item-price, li[data-id="8076932907237"] .boost-pfs-filter-product-item-price,
-div[data-id="8076932514021"] .boost-pfs-filter-product-item-price, li[data-id="8076932514021"] .boost-pfs-filter-product-item-price,
-div[data-id="8076921012453"] .boost-pfs-filter-product-item-price, li[data-id="8076921012453"] .boost-pfs-filter-product-item-price,
-div[data-id="8076963578085"] .boost-pfs-filter-product-item-price, li[data-id="8076963578085"] .boost-pfs-filter-product-item-price,
-div[data-id="8140057346277"] .boost-pfs-filter-product-item-price, li[data-id="8140057346277"] .boost-pfs-filter-product-item-price,
-div[data-id="8076933333221"] .boost-pfs-filter-product-item-price, li[data-id="8076933333221"] .boost-pfs-filter-product-item-price,
-div[data-id="8362624287067"] .boost-pfs-filter-product-item-price, li[data-id="8362624287067"] .boost-pfs-filter-product-item-price,
-div[data-id="8362643685723"] .boost-pfs-filter-product-item-price, li[data-id="8362643685723"] .boost-pfs-filter-product-item-price {
+div[data-id="8076895584485"] .boost-pfs-filter-product-item-price,
+li[data-id="8076895584485"] .boost-pfs-filter-product-item-price,
+div[data-id="8076991758565"] .boost-pfs-filter-product-item-price,
+li[data-id="8076991758565"] .boost-pfs-filter-product-item-price,
+div[data-id="8076991561957"] .boost-pfs-filter-product-item-price,
+li[data-id="8076991561957"] .boost-pfs-filter-product-item-price,
+div[data-id="8076932907237"] .boost-pfs-filter-product-item-price,
+li[data-id="8076932907237"] .boost-pfs-filter-product-item-price,
+div[data-id="8076932514021"] .boost-pfs-filter-product-item-price,
+li[data-id="8076932514021"] .boost-pfs-filter-product-item-price,
+div[data-id="8076921012453"] .boost-pfs-filter-product-item-price,
+li[data-id="8076921012453"] .boost-pfs-filter-product-item-price,
+div[data-id="8076963578085"] .boost-pfs-filter-product-item-price,
+li[data-id="8076963578085"] .boost-pfs-filter-product-item-price,
+div[data-id="8140057346277"] .boost-pfs-filter-product-item-price,
+li[data-id="8140057346277"] .boost-pfs-filter-product-item-price,
+div[data-id="8076933333221"] .boost-pfs-filter-product-item-price,
+li[data-id="8076933333221"] .boost-pfs-filter-product-item-price,
+div[data-id="8362624287067"] .boost-pfs-filter-product-item-price,
+li[data-id="8362624287067"] .boost-pfs-filter-product-item-price,
+div[data-id="8362643685723"] .boost-pfs-filter-product-item-price,
+li[data-id="8362643685723"] .boost-pfs-filter-product-item-price {
   display: none !important;
 }
 
-div[data-id="8076895584485"] .boost-pfs-search-suggestion-product-price, li[data-id="8076895584485"] .boost-pfs-search-suggestion-product-price,
-div[data-id="8076991758565"] .boost-pfs-search-suggestion-product-price, li[data-id="8076991758565"] .boost-pfs-search-suggestion-product-price,
-div[data-id="8076991561957"] .boost-pfs-search-suggestion-product-price, li[data-id="8076991561957"] .boost-pfs-search-suggestion-product-price,
-div[data-id="8076932907237"] .boost-pfs-search-suggestion-product-price, li[data-id="8076932907237"] .boost-pfs-search-suggestion-product-price,
-div[data-id="8076932514021"] .boost-pfs-search-suggestion-product-price, li[data-id="8076932514021"] .boost-pfs-search-suggestion-product-price,
-div[data-id="8076921012453"] .boost-pfs-search-suggestion-product-price, li[data-id="8076921012453"] .boost-pfs-search-suggestion-product-price,
-div[data-id="8076963578085"] .boost-pfs-search-suggestion-product-price, li[data-id="8076963578085"] .boost-pfs-search-suggestion-product-price,
-div[data-id="8140057346277"] .boost-pfs-search-suggestion-product-price, li[data-id="8140057346277"] .boost-pfs-search-suggestion-product-price,
-div[data-id="8076933333221"] .boost-pfs-search-suggestion-product-price, li[data-id="8076933333221"] .boost-pfs-search-suggestion-product-price,
-div[data-id="8362624287067"] .boost-pfs-search-suggestion-product-price, li[data-id="8362624287067"] .boost-pfs-search-suggestion-product-price,
-div[data-id="8362643685723"] .boost-pfs-search-suggestion-product-price, li[data-id="8362643685723"] .boost-pfs-search-suggestion-product-price {
+div[data-id="8076895584485"] .boost-pfs-search-suggestion-product-price,
+li[data-id="8076895584485"] .boost-pfs-search-suggestion-product-price,
+div[data-id="8076991758565"] .boost-pfs-search-suggestion-product-price,
+li[data-id="8076991758565"] .boost-pfs-search-suggestion-product-price,
+div[data-id="8076991561957"] .boost-pfs-search-suggestion-product-price,
+li[data-id="8076991561957"] .boost-pfs-search-suggestion-product-price,
+div[data-id="8076932907237"] .boost-pfs-search-suggestion-product-price,
+li[data-id="8076932907237"] .boost-pfs-search-suggestion-product-price,
+div[data-id="8076932514021"] .boost-pfs-search-suggestion-product-price,
+li[data-id="8076932514021"] .boost-pfs-search-suggestion-product-price,
+div[data-id="8076921012453"] .boost-pfs-search-suggestion-product-price,
+li[data-id="8076921012453"] .boost-pfs-search-suggestion-product-price,
+div[data-id="8076963578085"] .boost-pfs-search-suggestion-product-price,
+li[data-id="8076963578085"] .boost-pfs-search-suggestion-product-price,
+div[data-id="8140057346277"] .boost-pfs-search-suggestion-product-price,
+li[data-id="8140057346277"] .boost-pfs-search-suggestion-product-price,
+div[data-id="8076933333221"] .boost-pfs-search-suggestion-product-price,
+li[data-id="8076933333221"] .boost-pfs-search-suggestion-product-price,
+div[data-id="8362624287067"] .boost-pfs-search-suggestion-product-price,
+li[data-id="8362624287067"] .boost-pfs-search-suggestion-product-price,
+div[data-id="8362643685723"] .boost-pfs-search-suggestion-product-price,
+li[data-id="8362643685723"] .boost-pfs-search-suggestion-product-price {
   display: none !important;
 }
 
