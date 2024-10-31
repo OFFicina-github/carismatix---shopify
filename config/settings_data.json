@@ -117,13 +117,12 @@
           },
           "0660bc8e-2b63-4900-988b-f6aba1a96ef7": {
             "type": "message",
-            "disabled": true,
             "settings": {
-              "text": "",
-              "learn_more_text": "PRO CLUB, per i professionisti del settore",
+              "text": "PRO CLUB",
+              "learn_more_text": "Per i professionisti del settore",
               "title": "",
-              "content": "<p> </p>",
-              "button_text": "Scopri tutti i vantaggi di essere un PRO",
+              "content": "<p>Sei un professionista del settore?</p><p>Compila il form per scoprire tutti i vantaggi e le promozioni a te riservate.</p><p>Cosa aspetti? E<strong>ntra a fare parte del CARISMATIX Pro Club!</strong></p>",
+              "button_text": "Iscriviti subito",
               "button_link": "https://carismatix.it/pages/carismatix-championship"
             }
           }
