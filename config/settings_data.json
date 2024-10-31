@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "icon_stroke_width": 2,
@@ -51,11 +51,11 @@
     "cart_icon": "shopping_cart",
     "cart_show_free_shipping_threshold": true,
     "cart_free_shipping_threshold": "29",
-    "social_facebook": "https:\/\/www.facebook.com\/carismatix",
-    "social_instagram": "https:\/\/www.instagram.com\/carismatix.it\/",
-    "social_tiktok": "https:\/\/www.tiktok.com\/@carismatix.it?lang=it-IT",
-    "favicon": "shopify:\/\/shop_images\/cx.png",
-    "checkout_logo_image": "shopify:\/\/shop_images\/logo-mail-cx.png",
+    "social_facebook": "https://www.facebook.com/carismatix",
+    "social_instagram": "https://www.instagram.com/carismatix.it/",
+    "social_tiktok": "https://www.tiktok.com/@carismatix.it?lang=it-IT",
+    "favicon": "shopify://shop_images/cx.png",
+    "checkout_logo_image": "shopify://shop_images/logo-mail-cx.png",
     "checkout_logo_size": "small",
     "checkout_body_background_color": "#ffffff",
     "checkout_sidebar_background_color": "#f5f5f5",
@@ -95,9 +95,9 @@
             "settings": {
               "text": "",
               "learn_more_text": "Scopri i vantaggi del Programma Fedeltà💰",
-              "image": "shopify:\/\/shop_images\/fidelity-cx.jpg",
+              "image": "shopify://shop_images/fidelity-cx.jpg",
               "title": "Metti una marcia in più",
-              "content": "<p><\/p><ol><li>Iscriviti adesso o accedi al tuo Account e scopri il piacere di essere premiato.<\/li><li>Accumula punti per ogni acquisto sul nostro Shop e accedi ai premi.<\/li><li>Rafforza la nostra relazione e aumenta di livello per vantaggi ancora più esclusivi!<\/li><\/ol>",
+              "content": "<p></p><ol><li>Iscriviti adesso o accedi al tuo Account e scopri il piacere di essere premiato.</li><li>Accumula punti per ogni acquisto sul nostro Shop e accedi ai premi.</li><li>Rafforza la nostra relazione e aumenta di livello per vantaggi ancora più esclusivi!</li></ol>",
               "button_text": "Inizia subito",
               "button_link": ""
             }
@@ -108,24 +108,22 @@
             "settings": {
               "text": "",
               "learn_more_text": "Iscriviti ai CARISMATIX TRAINING DAYS✨",
-              "image": "shopify:\/\/shop_images\/CTD_CDIY_Sito.jpg",
+              "image": "shopify://shop_images/CTD_CDIY_Sito.jpg",
               "title": "Corsi di formazione completi",
-              "content": "<p>Dal lavaggio alla lucidatura, alla protezione delle superfici del veicolo, vieni a scoprire le tecniche, gli accorgimenti e le soluzioni che ti permetteranno di incrementare l'efficienza nel tuo lavoro, garantendoti risultati impeccabili!<\/p><p><strong>PER INFORMAZIONI E DATE<\/strong><\/p>",
+              "content": "<p>Dal lavaggio alla lucidatura, alla protezione delle superfici del veicolo, vieni a scoprire le tecniche, gli accorgimenti e le soluzioni che ti permetteranno di incrementare l'efficienza nel tuo lavoro, garantendoti risultati impeccabili!</p><p><strong>PER INFORMAZIONI E DATE</strong></p>",
               "button_text": "✨ CLICCA QUI ✨",
-              "button_link": "https:\/\/carismatix.it\/collections\/training-days"
+              "button_link": "https://carismatix.it/collections/training-days"
             }
           },
           "0660bc8e-2b63-4900-988b-f6aba1a96ef7": {
             "type": "message",
-            "disabled": true,
             "settings": {
-              "text": "Torna la CARISMATIX RACE!",
-              "learn_more_text": "Scopri di più 🏁🏁",
-              "image": "shopify:\/\/shop_images\/MDR_9806Q.jpg",
-              "title": "SCENDI IN PISTA CON NOI E DIVERTITI",
-              "content": "<p>In occasione dell'evento <strong>MadNess 2024 <\/strong>torna la <strong>CARISMATIX RACE<\/strong>!<\/p><p>Una gara di abilità sul nostro simulatore di guida, dove ogni pilota sfiderà sé stesso per segnare il tempo migliore e vincere i premi in palio.<\/p>",
-              "button_text": "🏁 Scopri i vincitori 🏁",
-              "button_link": "https:\/\/carismatix.it\/pages\/carismatix-championship"
+              "text": "",
+              "learn_more_text": "PRO CLUB, per i professionisti del settore",
+              "title": "",
+              "content": "",
+              "button_text": "Scopri tutti i vantaggi di essere un PRO",
+              "button_link": "https://carismatix.it/pages/carismatix-championship"
             }
           }
         },
@@ -157,7 +155,7 @@
               "images_position": "right",
               "image_1_heading": "SHOP",
               "image_1_text": "SHOP",
-              "image_1_link": "shopify:\/\/products\/bumper-tyre-care",
+              "image_1_link": "shopify://products/bumper-tyre-care",
               "image_2_heading": "",
               "image_2_text": "",
               "image_2_link": "",
@@ -364,7 +362,7 @@
         ],
         "settings": {
           "enable_sticky_header": true,
-          "logo": "shopify:\/\/shop_images\/lettering_carismatix_c31cb1f6-7169-4adb-8c98-6857b5147578.png",
+          "logo": "shopify://shop_images/lettering_carismatix_c31cb1f6-7169-4adb-8c98-6857b5147578.png",
           "logo_max_width": 200,
           "mobile_logo_max_width": 140,
           "navigation_menu": "main-menu-1",
@@ -385,7 +383,7 @@
           "058daed5-6a02-4994-870c-66968a78a680": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/fav_carismatix.png",
+              "image": "shopify://shop_images/fav_carismatix.png",
               "image_width": 150
             }
           },
@@ -393,7 +391,7 @@
             "type": "social_media",
             "settings": {
               "title": "Carismatix Srl",
-              "content": "<p><a href=\"https:\/\/www.google.it\/maps\/place\/CARISMATIX+by+Cartec+Italia\/@45.5212987,11.4621201,20z\/data=!4m5!3m4!1s0x477f31b351f036eb:0x155cc00166e16ac4!8m2!3d45.52115!4d11.4621091\" target=\"_blank\" title=\"CARISMATIX by Cartec Italia\">Via dei Laghi, 24<br\/>36077 Altavilla Vicentina (VI)<\/a><br\/>P. IVA 04201310242<\/p>"
+              "content": "<p><a href=\"https://www.google.it/maps/place/CARISMATIX+by+Cartec+Italia/@45.5212987,11.4621201,20z/data=!4m5!3m4!1s0x477f31b351f036eb:0x155cc00166e16ac4!8m2!3d45.52115!4d11.4621091\" target=\"_blank\" title=\"CARISMATIX by Cartec Italia\">Via dei Laghi, 24<br/>36077 Altavilla Vicentina (VI)</a><br/>P. IVA 04201310242</p>"
             }
           },
           "26dc825f-e608-4df0-8c2f-43cfa8b86835": {
@@ -428,7 +426,7 @@
           "show_locale_selector": false,
           "show_cookie_bar": false,
           "cookie_bar_title": "Cookie policy",
-          "cookie_bar_content": "<p>I agree to the processing of my data in accordance with the conditions set out in the policy of Privacy.<\/p>"
+          "cookie_bar_content": "<p>I agree to the processing of my data in accordance with the conditions set out in the policy of Privacy.</p>"
         }
       },
       "popup": {
@@ -449,7 +447,7 @@
           "show_only_once": true,
           "image_position": "left",
           "title": "TI PIACCIONO LE SORPRESE?",
-          "content": "<p>Rimani sempre aggiornato sulle <strong>novità più interessanti<\/strong> e goditi le <strong>promozioni esclusive<\/strong> a te riservate ✨<\/p><p>Iscriviti alla newsletter 👇<\/p>"
+          "content": "<p>Rimani sempre aggiornato sulle <strong>novità più interessanti</strong> e goditi le <strong>promozioni esclusive</strong> a te riservate ✨</p><p>Iscriviti alla newsletter 👇</p>"
         }
       },
       "mini-cart": {
@@ -457,7 +455,7 @@
         "settings": {
           "show_order_note": true,
           "show_checkout_button": true,
-          "empty_button_link": "shopify:\/\/collections\/all",
+          "empty_button_link": "shopify://collections/all",
           "show_recommendations": true,
           "recommendations_title": "Potrebbe interessarti"
         }
@@ -469,40 +467,40 @@
             "type": "item",
             "settings": {
               "icon": "picto-box",
-              "custom_icon": "shopify:\/\/shop_images\/spedizione_cx.png",
+              "custom_icon": "shopify://shop_images/spedizione_cx.png",
               "custom_icon_width": 40,
               "title": "ARRIVIAMO SUBITO",
-              "content": "<p>Consegna Rapida entro 48h.<br\/>Se acquisti entro le 16:00 spediamo la merce in giornata.<\/p>"
+              "content": "<p>Consegna Rapida entro 48h.<br/>Se acquisti entro le 16:00 spediamo la merce in giornata.</p>"
             }
           },
           "static-text-with-icons-1": {
             "type": "item",
             "settings": {
               "icon": "picto-phone",
-              "custom_icon": "shopify:\/\/shop_images\/Risorsa_5.png",
+              "custom_icon": "shopify://shop_images/Risorsa_5.png",
               "custom_icon_width": 40,
               "title": "SEMPRE AL TUO FIANCO",
-              "content": "<p>Scrivici su whatsapp per ricevere assistenza prima e dopo l’ordine<\/p>"
+              "content": "<p>Scrivici su whatsapp per ricevere assistenza prima e dopo l’ordine</p>"
             }
           },
           "static-text-with-icons-2": {
             "type": "item",
             "settings": {
               "icon": "picto-lock",
-              "custom_icon": "shopify:\/\/shop_images\/rate_cx.png",
+              "custom_icon": "shopify://shop_images/rate_cx.png",
               "custom_icon_width": 40,
               "title": "PAGA UN PO’ ALLA VOLTA",
-              "content": "<p>Con PayPal puoi pagare in 3 comode rate senza interessi.<\/p>"
+              "content": "<p>Con PayPal puoi pagare in 3 comode rate senza interessi.</p>"
             }
           },
           "static-text-with-icons-3": {
             "type": "item",
             "settings": {
               "icon": "picto-email",
-              "custom_icon": "shopify:\/\/shop_images\/social_cx.png",
+              "custom_icon": "shopify://shop_images/social_cx.png",
               "custom_icon_width": 40,
               "title": "SIAMO SEMPRE IN MOVIMENTO",
-              "content": "<p>Seguici sui social. Novità, idee, tutorial e tanta passione.<\/p>"
+              "content": "<p>Seguici sui social. Novità, idee, tutorial e tanta passione.</p>"
             }
           }
         },
@@ -524,7 +522,7 @@
           "show_section": false,
           "reveal_on_scroll": true,
           "subheading": "Subscribe to our newsletter",
-          "content": "<p>Promotions, new products and sales. Directly to your inbox.<\/p>",
+          "content": "<p>Promotions, new products and sales. Directly to your inbox.</p>",
           "text_position": "right",
           "text_alignment": "left",
           "text_background": "rgba(0,0,0,0)",
@@ -539,7 +537,7 @@
     ],
     "blocks": {
       "4697538150380142411": {
-        "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/reviews-popup\/a103faaf-2125-4b0e-89fa-de5149736723",
+        "type": "shopify://apps/stamped-product-reviews-ugc/blocks/reviews-popup/a103faaf-2125-4b0e-89fa-de5149736723",
         "disabled": true,
         "settings": {
           "layout": "horizontal",
@@ -563,32 +561,32 @@
         }
       },
       "2369874457889669609": {
-        "type": "shopify:\/\/apps\/bundle-products-upsell\/blocks\/app-embed\/0a9e67ff-0413-4374-921d-e70fb17c7dbc",
+        "type": "shopify://apps/bundle-products-upsell/blocks/app-embed/0a9e67ff-0413-4374-921d-e70fb17c7dbc",
         "disabled": false,
         "settings": {
         }
       },
       "1759773598402494664": {
-        "type": "shopify:\/\/apps\/rt-whatsapp-chat-live-chat\/blocks\/app-embed\/9baee9b7-6929-47af-9935-05bcdc376396",
+        "type": "shopify://apps/rt-whatsapp-chat-live-chat/blocks/app-embed/9baee9b7-6929-47af-9935-05bcdc376396",
         "disabled": false,
         "settings": {
         }
       },
       "5946647744298494267": {
-        "type": "shopify:\/\/apps\/wishlist-plus\/blocks\/wishlist-app-embed\/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
+        "type": "shopify://apps/wishlist-plus/blocks/wishlist-app-embed/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
         "disabled": false,
         "settings": {
         }
       },
       "10605408327587305396": {
-        "type": "shopify:\/\/apps\/eg-auto-add-to-cart\/blocks\/app-embed\/0f7d4f74-1e89-4820-aec4-6564d7e535d2",
+        "type": "shopify://apps/eg-auto-add-to-cart/blocks/app-embed/0f7d4f74-1e89-4820-aec4-6564d7e535d2",
         "disabled": true,
         "settings": {
           "version": "v3"
         }
       },
       "4215564508307704909": {
-        "type": "shopify:\/\/apps\/sitemap-noindex-pro-seo\/blocks\/app-embed\/4d815e2c-5af0-46ba-8301-d0f9cf660031",
+        "type": "shopify://apps/sitemap-noindex-pro-seo/blocks/app-embed/4d815e2c-5af0-46ba-8301-d0f9cf660031",
         "disabled": false,
         "settings": {
         }
