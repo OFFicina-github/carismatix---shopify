@@ -117,6 +117,7 @@
           },
           "0660bc8e-2b63-4900-988b-f6aba1a96ef7": {
             "type": "message",
+            "disabled": true,
             "settings": {
               "text": "",
               "learn_more_text": "PRO CLUB, per i professionisti del settore",
