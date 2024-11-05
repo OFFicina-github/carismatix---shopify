@@ -21,7 +21,7 @@
       "type": "image-with-text-overlay",
       "settings": {
         "reveal_on_scroll": true,
-        "section_height": "medium",
+        "section_height": "large",
         "image": "shopify://shop_images/magazine-open.png",
         "subheading": "CARISMATIX",
         "title": "CATALOGO SFOGLIABILE",
