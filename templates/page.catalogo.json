@@ -31,12 +31,12 @@
         "link_style": "button",
         "background_type": "full_width",
         "text_width": "medium",
-        "text_position": "top_center",
+        "text_position": "middle_center",
         "text_color": "#ffffff",
         "button_background": "#4bdd0e",
         "button_text_color": "#ffffff",
         "overlay_color": "#000000",
-        "overlay_opacity": 60
+        "overlay_opacity": 50
       }
     }
   },
