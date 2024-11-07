@@ -14,14 +14,13 @@
       "blocks": {
         "f3d58442-7c50-4a38-942e-3ade70efdd99": {
           "type": "image",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Slide-AME2024_copia.jpg",
+            "image": "shopify://shop_images/Slide-Promozione-IK.jpg",
             "text_position": "middle_center",
             "subheading": "",
             "title": "",
             "button_1_text": "",
-            "button_1_link": "",
+            "button_1_link": "https://carismatix.it/collections/ik-sprayers",
             "button_2_text": "",
             "button_2_link": "",
             "text_color": "#ffffff",
@@ -51,6 +50,7 @@
         },
         "abed36a1-1389-4b9c-a595-26cf83331879": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Slide-Q1-20.jpg",
             "text_position": "middle_center",
