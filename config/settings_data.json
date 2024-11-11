@@ -89,6 +89,17 @@
               "button_link": ""
             }
           },
+          "message_6fKPxN": {
+            "type": "message",
+            "settings": {
+              "text": "⁠Ordina entro le 16:00 e spediamo in giornata",
+              "learn_more_text": "Learn more",
+              "title": "",
+              "content": "",
+              "button_text": "",
+              "button_link": ""
+            }
+          },
           "message-1": {
             "type": "message",
             "disabled": true,
@@ -100,19 +111,6 @@
               "content": "<p></p><ol><li>Iscriviti adesso o accedi al tuo Account e scopri il piacere di essere premiato.</li><li>Accumula punti per ogni acquisto sul nostro Shop e accedi ai premi.</li><li>Rafforza la nostra relazione e aumenta di livello per vantaggi ancora più esclusivi!</li></ol>",
               "button_text": "Inizia subito",
               "button_link": ""
-            }
-          },
-          "ff5f1d0b-55d5-4dec-a2e4-7ba392788713": {
-            "type": "message",
-            "disabled": true,
-            "settings": {
-              "text": "",
-              "learn_more_text": "Iscriviti ai CARISMATIX TRAINING DAYS✨",
-              "image": "shopify://shop_images/CTD_CDIY_Sito.jpg",
-              "title": "Corsi di formazione completi",
-              "content": "<p>Dal lavaggio alla lucidatura, alla protezione delle superfici del veicolo, vieni a scoprire le tecniche, gli accorgimenti e le soluzioni che ti permetteranno di incrementare l'efficienza nel tuo lavoro, garantendoti risultati impeccabili!</p><p><strong>PER INFORMAZIONI E DATE</strong></p>",
-              "button_text": "✨ CLICCA QUI ✨",
-              "button_link": "https://carismatix.it/collections/training-days"
             }
           },
           "0660bc8e-2b63-4900-988b-f6aba1a96ef7": {
@@ -130,8 +128,8 @@
         "block_order": [
           "05726331-b5a6-434c-8b9e-a07fd58156a0",
           "b0000afe-8836-45c7-95a9-c13d92659cb6",
+          "message_6fKPxN",
           "message-1",
-          "ff5f1d0b-55d5-4dec-a2e4-7ba392788713",
           "0660bc8e-2b63-4900-988b-f6aba1a96ef7"
         ],
         "settings": {
@@ -532,9 +530,7 @@
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "blocks": {
       "4697538150380142411": {
         "type": "shopify://apps/stamped-product-reviews-ugc/blocks/reviews-popup/a103faaf-2125-4b0e-89fa-de5149736723",
@@ -563,20 +559,17 @@
       "2369874457889669609": {
         "type": "shopify://apps/bundle-products-upsell/blocks/app-embed/0a9e67ff-0413-4374-921d-e70fb17c7dbc",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "1759773598402494664": {
         "type": "shopify://apps/rt-whatsapp-chat-live-chat/blocks/app-embed/9baee9b7-6929-47af-9935-05bcdc376396",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "5946647744298494267": {
         "type": "shopify://apps/wishlist-plus/blocks/wishlist-app-embed/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "10605408327587305396": {
         "type": "shopify://apps/eg-auto-add-to-cart/blocks/app-embed/0f7d4f74-1e89-4820-aec4-6564d7e535d2",
@@ -588,8 +581,7 @@
       "4215564508307704909": {
         "type": "shopify://apps/sitemap-noindex-pro-seo/blocks/app-embed/4d815e2c-5af0-46ba-8301-d0f9cf660031",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       }
     }
   },
@@ -639,8 +631,7 @@
           "blocks": {
             "message-1": {
               "type": "message",
-              "settings": {
-              }
+              "settings": {}
             }
           },
           "block_order": [
@@ -674,8 +665,7 @@
           "blocks": {
             "text": {
               "type": "text",
-              "settings": {
-              }
+              "settings": {}
             },
             "links": {
               "type": "links",
@@ -685,13 +675,11 @@
             },
             "newsletter": {
               "type": "newsletter",
-              "settings": {
-              }
+              "settings": {}
             },
             "social_media": {
               "type": "social_media",
-              "settings": {
-              }
+              "settings": {}
             }
           },
           "block_order": [
@@ -700,8 +688,7 @@
             "newsletter",
             "social_media"
           ],
-          "settings": {
-          }
+          "settings": {}
         }
       }
     },
@@ -749,8 +736,7 @@
           "blocks": {
             "message-1": {
               "type": "message",
-              "settings": {
-              }
+              "settings": {}
             }
           },
           "block_order": [
@@ -784,8 +770,7 @@
           "blocks": {
             "text": {
               "type": "text",
-              "settings": {
-              }
+              "settings": {}
             },
             "links": {
               "type": "links",
@@ -795,13 +780,11 @@
             },
             "newsletter": {
               "type": "newsletter",
-              "settings": {
-              }
+              "settings": {}
             },
             "social_media": {
               "type": "social_media",
-              "settings": {
-              }
+              "settings": {}
             }
           },
           "block_order": [
@@ -810,8 +793,7 @@
             "newsletter",
             "social_media"
           ],
-          "settings": {
-          }
+          "settings": {}
         }
       }
     },
@@ -864,8 +846,7 @@
           "blocks": {
             "message-1": {
               "type": "message",
-              "settings": {
-              }
+              "settings": {}
             }
           },
           "block_order": [
@@ -899,8 +880,7 @@
           "blocks": {
             "text": {
               "type": "text",
-              "settings": {
-              }
+              "settings": {}
             },
             "links": {
               "type": "links",
@@ -910,13 +890,11 @@
             },
             "newsletter": {
               "type": "newsletter",
-              "settings": {
-              }
+              "settings": {}
             },
             "social_media": {
               "type": "social_media",
-              "settings": {
-              }
+              "settings": {}
             }
           },
           "block_order": [
@@ -925,8 +903,7 @@
             "newsletter",
             "social_media"
           ],
-          "settings": {
-          }
+          "settings": {}
         }
       }
     },
@@ -976,8 +953,7 @@
           "blocks": {
             "message-1": {
               "type": "message",
-              "settings": {
-              }
+              "settings": {}
             }
           },
           "block_order": [
@@ -1011,8 +987,7 @@
           "blocks": {
             "text": {
               "type": "text",
-              "settings": {
-              }
+              "settings": {}
             },
             "links": {
               "type": "links",
@@ -1022,13 +997,11 @@
             },
             "newsletter": {
               "type": "newsletter",
-              "settings": {
-              }
+              "settings": {}
             },
             "social_media": {
               "type": "social_media",
-              "settings": {
-              }
+              "settings": {}
             }
           },
           "block_order": [
@@ -1037,8 +1010,7 @@
             "newsletter",
             "social_media"
           ],
-          "settings": {
-          }
+          "settings": {}
         }
       }
     }
