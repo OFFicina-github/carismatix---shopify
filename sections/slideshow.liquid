@@ -202,13 +202,24 @@
     </a> -->
 
     <a href="https://carismatix.it/pages/carismatix-pro-club" class="pulsante">
-        <img class="icona_principale pro_club" src="https://cdn.shopify.com/s/files/1/0602/0975/8437/files/pro_club.svg?v=1729072890" alt="">
-        <div>
-            <h6>PRO CLUB</h6>
-            <p>Per i professionisti del settore</p>
-        </div>
-        <img class="freccetta_home" src="https://cdn.shopify.com/s/files/1/0660/5252/2209/files/freccetta_home.png?v=1664380494" alt="">
-    </a>
+    <img class="icona_principale pro_club" src="https://cdn.shopify.com/s/files/1/0602/0975/8437/files/pro_club.svg?v=1729072890" alt="">
+    <div>
+        <h6 class="pro_club_text">PRO CLUB</h6>
+        <p>Per i professionisti del settore</p>
+    </div>
+    <img class="freccetta_home" src="https://cdn.shopify.com/s/files/1/0660/5252/2209/files/freccetta_home.png?v=1664380494" alt="">
+</a>
+<style>
+@media (max-width: 768px) {
+    .pro_club_text::after {
+        content: " PROFESSIONALS";
+    }
+    
+    .pro_club_text::before {
+        content: "";
+    }
+}
+</style>
   
     <!-- BLACK FRIDAY <a href="https://carismatix.it/collections/carismatix-black-friday" class="pulsante home_btn_black none">
         <img class="icona_principale" src="https://cdn.shopify.com/s/files/1/0660/5252/2209/files/icone_principale_5.png?v=1664441511" alt="">
