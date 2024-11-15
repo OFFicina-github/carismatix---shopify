@@ -20,7 +20,7 @@
     "a287fef3-d819-4fe3-ab0c-f5ef1c3e67ef": {
       "type": "image-with-text-overlay",
       "settings": {
-        "reveal_on_scroll": true,
+        "reveal_on_scroll": false,
         "section_height": "large",
         "image": "shopify://shop_images/magazine-open.png",
         "subheading": "CARISMATIX",
