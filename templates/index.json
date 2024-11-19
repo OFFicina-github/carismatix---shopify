@@ -33,6 +33,7 @@
         },
         "f3d58442-7c50-4a38-942e-3ade70efdd99": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Slide-Promozione-IK.jpg",
             "text_position": "middle_center",
@@ -51,6 +52,7 @@
         },
         "b3144448-2242-4de3-83bd-bf6e8fd93945": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Slide-Promo-Refinish-4000.jpg",
             "text_position": "middle_center",
@@ -88,9 +90,8 @@
         },
         "slide-1": {
           "type": "image",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Slide-CXTD.jpg",
+            "image": "shopify://shop_images/Slide-BF2024.jpg",
             "text_position": "middle_center",
             "subheading": "",
             "title": "",
