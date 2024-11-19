@@ -100,19 +100,6 @@
               "button_link": ""
             }
           },
-          "message-1": {
-            "type": "message",
-            "disabled": true,
-            "settings": {
-              "text": "",
-              "learn_more_text": "Scopri i vantaggi del Programma Fedeltà💰",
-              "image": "shopify://shop_images/fidelity-cx.jpg",
-              "title": "Metti una marcia in più",
-              "content": "<p></p><ol><li>Iscriviti adesso o accedi al tuo Account e scopri il piacere di essere premiato.</li><li>Accumula punti per ogni acquisto sul nostro Shop e accedi ai premi.</li><li>Rafforza la nostra relazione e aumenta di livello per vantaggi ancora più esclusivi!</li></ol>",
-              "button_text": "Inizia subito",
-              "button_link": ""
-            }
-          },
           "0660bc8e-2b63-4900-988b-f6aba1a96ef7": {
             "type": "message",
             "settings": {
@@ -129,7 +116,6 @@
           "05726331-b5a6-434c-8b9e-a07fd58156a0",
           "b0000afe-8836-45c7-95a9-c13d92659cb6",
           "message_6fKPxN",
-          "message-1",
           "0660bc8e-2b63-4900-988b-f6aba1a96ef7"
         ],
         "settings": {
