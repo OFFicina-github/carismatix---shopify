@@ -119,7 +119,7 @@
           "0660bc8e-2b63-4900-988b-f6aba1a96ef7"
         ],
         "settings": {
-          "announcement_bar_position": "non_sticky",
+          "announcement_bar_position": "sticky",
           "announcement_text_size": "small",
           "autoplay": true,
           "cycle_speed": 5,
