@@ -1,0 +1,97 @@
+{{ 'next_shopby.css' | asset_url | stylesheet_tag }}
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    padding-top: 80px;
+  }
+  @media(max-width:999px){
+    #shopify-section-{{ section.id }} {
+      padding-top: 0;
+    }
+  }
+  {% if section.settings.h1_control == false %}
+    #shopify-section-{{ section.id }} {
+      padding-top: 0;
+    }
+  {% endif %}
+{%- endstyle -%}
+
+<section class="section_hero_shopby">
+  {% if section.settings.h1_control == true %}
+    <div class="page-width hero">
+      <div>
+        <p class="label breadcrumbs">Home - User guide</p>
+        <h1 class="italic">{{ section.settings.titolo }}</h1>
+      </div>
+      <div>
+        <p>{{ section.settings.descrizione }}</p>
+      </div>
+    </div>
+  {% endif %}
+  <div class="page-width sez_grigia">
+    <div>
+      <h2>{{ section.settings.titolo_sezione }}</h2>
+      <div class="desc_grigia">{{ section.settings.descrizione_sezione }}</div>
+    </div>
+    <div>
+      {% if section.settings.icone_control == true %}
+        {% render 'icon_sole' %}
+      {% endif %}
+      <img src="{{ section.settings.immagine | image_url }}" loading="lazy" width="auto" height="auto" alt="shopby">
+      {% if section.settings.icone_control == true %}
+        {% render 'icon_neve' %}
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Hero - shopby",
+  "settings": [
+    {
+      "type": "text",
+      "id": "titolo",
+      "label": "Titolo"
+    },
+    {
+      "type": "text",
+      "id": "descrizione",
+      "label": "Descrizione"
+    },
+    {
+      "type": "text",
+      "id": "titolo_sezione",
+      "label": "Titolo sez. grigia"
+    },
+    {
+      "type": "richtext",
+      "id": "descrizione_sezione",
+      "label": "Descrizione sez. grigia"
+    },
+    {
+      "type": "image_picker",
+      "id": "immagine",
+      "label": "Immagine sez. grigia"
+    },
+    {
+      "type": "checkbox",
+      "id": "h1_control",
+      "label": "Mostra / Nascondi H1",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "icone_control",
+      "label": "Mostra / Nascondi icone",
+      "default": true
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "Hero - shopby",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

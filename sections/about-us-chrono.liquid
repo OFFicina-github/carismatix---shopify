@@ -1,0 +1,110 @@
+{%- style -%}
+{%- endstyle -%}
+
+<section id="section_slam_chrono" class="page-width">
+  <div class="about_slam_chrono_wrapper">
+    <div class="box a">
+      <h3 style="color:var(--color-blu);">{{ section.settings.about_slam_chrono_titolo }}</h3>
+      <p>{{ section.settings.about_slam_chrono_testo }}</p>
+    </div>
+
+    <div class="box b">
+      <div class="cornice_container">
+        <p class="etichetta">{{ section.settings.about_slam_timeline_occhiello }}</p>
+        <div class="image_cornice_box">
+          <img
+            calss="cornice"
+            src="{{ section.settings.about_slam_timeline_image | image_url }}"
+            alt="timeline"
+            width="auto"
+            height="auto"
+          >
+        </div>
+      </div>
+
+      <div class="about_chrono_slider">
+        {% for chrono_block in section.blocks %}
+          <div>
+            <img
+              src="{{ chrono_block.settings.chrono_image | image_url }}"
+              alt="chrono"
+              width="auto"
+              height="auto"
+            >
+            <div class="anno h2 italic">{{ chrono_block.settings.chrono_anno }}</div>
+            <div class="about_chrono_text">
+              <p class="about_chrono_testo{{ forloop.index }}">
+                {{ chrono_block.settings.chrono_testo }}
+              </p>
+              <a href="#">READ MORE...</a>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "About us chrono",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "about_slam_chrono_titolo",
+      "label": "about_slam_chrono_titolo",
+      "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna."
+    },
+    {
+      "type": "text",
+      "id": "about_slam_chrono_testo",
+      "label": "about_slam_chrono_testo",
+      "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris."
+    },
+    {
+      "type": "text",
+      "id": "about_slam_timeline_occhiello",
+      "label": "about_slam_timeline_occhiello",
+      "default": "TIMELINE"
+    },
+    {
+      "type": "image_picker",
+      "id": "about_slam_timeline_image",
+      "label": "about_slam_timeline_image"
+    }
+  ],
+
+  "blocks": [
+    {
+      "name": "chrono_block",
+      "type": "chrono_block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "chrono_image",
+          "label": "chrono_image"
+        },
+        {
+          "type": "text",
+          "id": "chrono_anno",
+          "label": "chrono_anno"
+        },
+        {
+          "type": "text",
+          "id": "chrono_testo",
+          "label": "chrono_testo"
+        }
+      ]
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "About us chrono",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

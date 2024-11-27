@@ -1,0 +1,364 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    height:100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    transition: height 300ms ease-in-out;
+    position:relative;
+    overflow:hidden;
+  }
+  @media(max-width:999px){
+    #shopify-section-{{ section.id }} .section_clean_video {
+      background-position: 72%;
+    }
+  }
+  .section_minibanner {
+    height:40%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+  }
+  .section_minibanner .container_next > div {
+
+  }
+  /*clean*/
+  .section_minibanner.versione_clean {
+
+  }
+  .section_minibanner.versione_clean h3 {
+    margin-bottom:24px;
+  }
+  /*styled*/
+  .section_minibanner.versione_styled {
+    background-color:var(--color-blu);
+    background-image: url(https://cdn.shopify.com/s/files/1/0608/3913/3321/files/banner_styled_pattern.png?v=1709714743);
+    background-position: calc(100% + 100px) top;
+    background-size:600px;
+    background-repeat: no-repeat;
+  }
+  .section_minibanner.versione_styled h2,
+  .section_minibanner.versione_styled h3 {
+    color: var(--color-bianco);
+  }
+  .section_minibanner.versione_styled a.btn_next {
+    background-color:var(--color-bianco);
+    color: var(--color-nero);
+  }
+  .section_minibanner.versione_styled a.btn_next svg path {
+    fill: var(--color-nero);
+  }
+  .section_minibanner.versione_styled .box_btn_clean,
+  .section_minibanner.versione_clean .col_styled {
+    display:none;
+  }
+  .section_minibanner .col_styled {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    margin-right: -10vw;
+    padding-right: 10vw;
+    padding-left: clamp(30px, 4vw, 60px);
+  }
+  .section_minibanner .col_styled h3 {
+    max-width: 400px;
+  }
+  .section_minibanner .col_styled a:first-of-type {
+
+  }
+  .section_minibanner.versione_styled .container_next > div:first-child h3 {
+    margin-bottom:0!important;
+  }
+  .section_minibanner.versione_styled .container_next {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap: clamp(60px, 5vw, 80px);
+  }
+
+  @media(max-width:999px){
+    .section_minibanner.versione_styled {
+    }
+    .section_minibanner h3 {
+      margin-bottom:24px;
+
+    }
+    .section_minibanner .container_next {
+      padding-left:30px !important;
+      padding-right:30px !important;
+    }
+    .section_minibanner.versione_styled .container_next {
+      display:block;
+    }
+    .section_minibanner.versione_styled .container_next > div:first-child {
+    }
+    .section_minibanner .col_styled {
+      margin-left: -30px;
+      margin-right: -30px;
+      padding-right: 30px !important;
+      padding-left: 30px !important;
+      padding-top:20px !important;
+    }
+  }
+  @media(max-width:690px){
+    .section_minibanner.versione_styled {
+      background-position: calc(100% + 300px) top;
+    }
+  }
+
+  /*section_clean_video*/
+  section.section_clean_video {
+    height:60%;
+  }
+  section.section_clean_video .container_next p {
+    color: var(--color-bianco);
+  }
+  section.section_clean_video .container_next h2 {
+    color: var(--color-bianco);
+  }
+  section.section_clean_video .container_next h3 {
+    color: var(--color-bianco);
+  }
+  section.section_clean_video .container_next {
+    display:flex;
+    flex-direction:column;
+    gap: 20px;
+    height:fit-content;
+    position:absolute;
+    bottom: 12.5vh;
+    left: 0;
+  }
+  section.section_clean_video video {
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+    width: 100%;
+  }
+  @media(min-width:768px){
+    section.section_clean_video .container_next {
+      max-width:50%;
+      min-width:650px;
+    }
+  }
+  @media(max-width:999px){
+    section.section_clean_video .container_next {
+      padding-left:30px!important;
+      padding-right:90px!important;
+    }
+  }
+  {% if section.settings.no_banner == false %}
+    #shopify-section-{{ section.id }} .section_minibanner {
+      display: none;
+    }
+    #shopify-section-{{ section.id }} section.section_clean_video {
+      height:100%;
+    }
+    @media(min-width:1000px){
+      #shopify-section-{{ section.id }} {
+        height:60vh;
+      }
+    }
+  {% endif %}
+{%- endstyle -%}
+
+{% liquid
+  case section.settings.select_option
+    when 'versione_clean'
+      assign versioneOverlay = 'versione_clean'
+    when 'versione_styled'
+      assign versioneOverlay = 'versione_styled'
+  endcase
+%}
+
+<section
+  class="section_minibanner {{ versioneOverlay }}"
+>
+  <div class="container_next">
+    <div>
+      <h2 class="h1 italic twcss-uppercase line_h_h1">{{ section.settings.titolo }}</h2>
+      {% if section.settings.sotto_titolo != blank %}
+        <h3 style="margin-bottom:24px;margin-top:12px;">{{ section.settings.sotto_titolo }}</h3>
+      {% endif %}
+      <div class="box_btn_clean">
+        {% for block in section.blocks %}
+          {% if block.type == 'link_block' %}
+            <a
+              class="twcss-text-w twcss-flex twcss-gap-4 btn_next twcss-items-center btn_special"
+              href="{{ block.settings.link_url }}"
+            >
+              {{ block.settings.link_text }}
+              {% render 'icon-arrow-link-custom' %}
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    <div class="col_styled">
+      <h2 class="twcss-uppercase">{{ section.settings.titolo_evento }}</h2>
+      {% if section.settings.sotto_titolo_evento != blank %}
+        <h3 style="margin-bottom:24px;">{{ section.settings.sotto_titolo_evento }}</h3>
+      {% endif %}
+      {% for block in section.blocks %}
+        {% if block.type == 'link_block' %}
+          <a
+            class="twcss-text-w twcss-flex twcss-gap-4 btn_next twcss-items-center btn_special"
+            href="{{ block.settings.link_url }}"
+          >
+            {{ block.settings.link_text }}
+            {% render 'icon-arrow-link-custom' %}
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<section
+  class="section_clean_video twcss-relative after_overlay zindex-1 twcss-bg-center twcss-bg-cover twcss-h-full"
+  style="background-image:url({{ section.settings.img_url }});"
+>
+  <video
+    class="object-cover object-center twcss-absolute twcss-top-0 twcss-right-0 twcss-w-full twcss-h-full"
+    autoplay
+    loop
+    muted
+    playsinline
+    height="100%"
+    width="100%"
+  >
+    <source src="{{ section.settings.video_url }}" type="video/mp4">
+  </video>
+  <div class="container_next">
+    <p class="label">{{ section.settings.titoletto }}</p>
+    <h2 class="h1 italic twcss-uppercase line_h_h1">{{ section.settings.titolo_section }}</h2>
+    <h3>{{ section.settings.sotto_titolo_section }}</h3>
+    <p>{{ section.settings.descrizione }}</p>
+    {% for block in section.blocks %}
+      {% if block.type == 'link_block_section' %}
+        <a
+          class="twcss-text-w twcss-flex twcss-gap-4 btn_next twcss-items-center"
+          href="{{ block.settings.link_url_section }}"
+        >
+          {{ block.settings.link_text_section }}
+          {% render 'icon-arrow-link-custom' -%}
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Mini banner",
+  "settings": [
+    {
+      "type": "text",
+      "id": "titolo",
+      "label": "Titolo"
+    },
+    {
+      "type": "text",
+      "id": "sotto_titolo",
+      "label": "Sottotitolo"
+    },
+    {
+      "type": "select",
+      "id": "select_option",
+      "label": "Versione",
+      "options": [
+        {
+          "value": "versione_clean",
+          "label": "Clean"
+        },
+        {
+          "value": "versione_styled",
+          "label": "Styled"
+        }
+      ],
+      "default": "versione_clean"
+    },
+    {
+      "type": "text",
+      "id": "titolo_evento",
+      "label": "Titolo evento (Styled only)"
+    },
+    {
+      "type": "text",
+      "id": "sotto_titolo_evento",
+      "label": "Sottotitolo evento (Styled only)"
+    },
+    {
+      "type": "text",
+      "id": "titolo_section",
+      "label": "Titolo Section"
+    },
+    {
+      "type": "text",
+      "id": "sotto_titolo_section",
+      "label": "Sottotitolo Section"
+    },
+    {
+      "type": "text",
+      "id": "titoletto",
+      "label": "Label Section"
+    },
+    {
+      "type": "text",
+      "id": "descrizione",
+      "label": "Descrizione Section"
+    },
+    {
+      "type": "url",
+      "id": "video_url",
+      "label": "URL del Video background Section"
+    },
+    {
+      "type": "url",
+      "id": "img_url",
+      "label": "URL Immagine background Section"
+    },
+    {
+      "type": "checkbox",
+      "id": "no_banner",
+      "label": "Vuoi vedere il banner?",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "link_block",
+      "name": "Bottone con freccia",
+      "settings": [
+        {
+          "type": "text",
+          "id": "link_text",
+          "label": "Testo del bottone"
+        },
+        {
+          "type": "url",
+          "id": "link_url",
+          "label": "URL del bottone"
+        }
+      ]
+    },
+    {
+      "type": "link_block_section",
+      "name": "Bottone Section",
+      "settings": [
+        {
+          "type": "text",
+          "id": "link_text_section",
+          "label": "Testo del bottone (sezione)"
+        },
+        {
+          "type": "url",
+          "id": "link_url_section",
+          "label": "URL del bottone (sezione)"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Mini banner",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,118 @@
+{%- style -%}
+  .section_vb > video {
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+  }
+  .banner_container {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    position: relative;
+    z-index: 2;
+  }
+  .section_banner_cta {
+    overflow: hidden;
+  }
+  .section_banner_cta::before {
+    contant: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(52, 99, 115, 0.5);
+    z-index: 0;
+    pointer-events: none;
+  }
+  .section_banner_cta > svg {
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    width: auto;
+    height: 80%;
+    z-index: 1;
+    pointer-events: none;
+  }
+{%- endstyle -%}
+
+<section
+  class="section_banner_cta section_vb twcss-relative twcss-bg-center twcss-bg-cover after_overlay"
+  style="background-image:url({{ section.settings.img_url }});"
+>
+  <video
+    class="object-cover object-center twcss-absolute twcss-top-0 twcss-left-0 twcss--z-1 twcss-w-full twcss-h-full"
+    autoplay
+    loop
+    muted
+    playsinline
+    height="100%"
+    width="100%"
+  >
+    <source src="{{ section.settings.video_url }}" type="video/mp4">
+  </video>
+  <div class="banner_container page-width">
+    <p class="twcss-text-w">{{ section.settings.titolo_sezione_eyelet }}</p>
+    <h2 class="twcss-text-w">{{ section.settings.titolo_sezione }}</h2>
+    {% for block in section.blocks %}
+      {% if block.type == 'link_block' %}
+        <a class="twcss-text-w twcss-flex twcss-gap-4 btn_next twcss-items-center" href="{{ block.settings.link_url }}">
+          {{- block.settings.link_text }}
+          {% render 'icon-arrow-link-custom' -%}
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+  {% render 'banner_element' %}
+</section>
+
+{% schema %}
+{
+  "name": "Banner CTA",
+  "settings": [
+    {
+      "type": "text",
+      "id": "titolo_sezione",
+      "label": "Titolo sezione"
+    },
+    {
+      "type": "text",
+      "id": "titolo_sezione_eyelet",
+      "label": "Titolo sezione (eyelet)"
+    },
+    {
+      "type": "url",
+      "id": "video_url",
+      "label": "URL del Video background"
+    },
+    {
+      "type": "url",
+      "id": "img_url",
+      "label": "URL Immagine background"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "link_block",
+      "name": "Bottone con freccia",
+      "settings": [
+        {
+          "type": "text",
+          "id": "link_text",
+          "label": "Testo del bottone"
+        },
+        {
+          "type": "url",
+          "id": "link_url",
+          "label": "URL del bottone"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Banner CTA",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

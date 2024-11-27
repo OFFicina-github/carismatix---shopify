@@ -1,0 +1,77 @@
+{%- style -%}
+{%- endstyle -%}
+
+<section
+  id="section_making_difference"
+  class="page-width"
+  style="margin-top:50px; margin-bottom:50px; position:relative"
+>
+  <div class="img_about_making_diff after_overlay">
+    <img src="{{ section.settings.img_about_making | image_url }}" width="100%" height="auto">
+
+    <div class="about_wrapper_making_diff">
+      <div class="box a" style="margin-left: 2vw; margin-top: 6vw;">
+        <h2 class="about_slam_difference_titolo">{{ section.settings.about_making_diff_titolo_01 }}</h2>
+        <h2 class="about_slam_difference_titolo">{{ section.settings.about_making_diff_titolo_02 }}</h2>
+        <h2 class="about_slam_difference_titolo">{{ section.settings.about_making_diff_titolo_03 }}</h2>
+        <br>
+        <h3 style="color: var(--color-bianco)">{{ section.settings.about_making_diff_sottotitolo }}</h3>
+      </div>
+
+      <div class="box b about_making_diff_testo">
+        <p style="color: var(--color-bianco)">{{ section.settings.about_making_diff_testo }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "About us making diff",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "img_about_making",
+      "label": "img_about_making"
+    },
+    {
+      "type": "text",
+      "id": "about_making_diff_titolo_01",
+      "label": "about_making_diff_titolo_01",
+      "default": "MAKING"
+    },
+    {
+      "type": "text",
+      "id": "about_making_diff_titolo_02",
+      "label": "about_making_diff_titolo_02",
+      "default": "THE"
+    },
+    {
+      "type": "text",
+      "id": "about_making_diff_titolo_03",
+      "label": "about_making_diff_titolo_03",
+      "default": "DIFFERENCE"
+    },
+    {
+      "type": "text",
+      "id": "about_making_diff_sottotitolo",
+      "label": "about_making_diff_sottotitolo",
+      "default": "DROP BY DROP"
+    },
+    {
+      "type": "text",
+      "id": "about_making_diff_testo",
+      "label": "about_making_diff_testo",
+      "default": "We often hear people hiding behind the excuse that actions aimed at sustainability are like drops in the ocean, therefore they have no effect. But the ocean is made of water drops, just like big changes are made by small actions.Taking responsibility for the products we make it's not a choice anymore, it's an obligation. We take on this challenge very seriously even if we know that we are only at the beginning of our journey."
+    }
+  ],
+  "presets": [
+    {
+      "name": "About us making diff",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

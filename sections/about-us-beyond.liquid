@@ -1,0 +1,68 @@
+{%- style -%}
+{%- endstyle -%}
+
+<section id="section_slam_beyond" class="full-width" style="position:relative">
+  <div class="about_beyond_titolo">
+    <h2 class="h1 ultra italic" style="color: var(--color-bianco);">{{ section.settings.about_slam_beyond_titolo }}</h2>
+  </div>
+
+  <div class="about_beyond_slider">
+    {% for block in section.blocks %}
+      <div>
+        <img src="{{ block.settings.beyond_image_full | image_url }}" width="100%" height="auto" alt="SLAM">
+      </div>
+    {% endfor %}
+  </div>
+
+  <img
+    class="about_beyond_img_fissa"
+    src="https://cdn.shopify.com/s/files/1/0608/3913/3321/files/layer_main_about_banner.png?v=1709629532"
+    width="50%"
+    height="auto"
+    alt="SLAM"
+  >
+  <img
+    class="bottom_overlay"
+    src="https://cdn.shopify.com/s/files/1/0608/3913/3321/files/layer_bottom_about_banner.png?v=1709629439"
+    width="50%"
+    height="auto"
+    alt="SLAM"
+  >
+</section>
+
+{% schema %}
+{
+  "name": "About us beyond",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "about_slam_beyond_titolo",
+      "label": "about_slam_beyond_titolo",
+      "default": "BEYOND HORIZON"
+    }
+  ],
+
+  "blocks": [
+    {
+      "name": "beyond_block",
+      "type": "beyond_block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "beyond_image_full",
+          "label": "beyond_image_full"
+        }
+      ]
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "About us beyond",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,123 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    padding: clamp(80px, 10vw, 160px) clamp(80px, 10vw, 160px);
+    overflow:hidden;
+  }
+  @media(max-width:999px){
+    #shopify-section-{{ section.id }} {
+    padding: 60px 10px;
+  }
+  }
+  #shopify-section-{{ section.id }} #hero * {
+    margin-bottom:20px;
+    text-align:center;
+  }
+  #shopify-section-{{ section.id }} #hero h1 {
+    font-size:38px !important;
+  }
+  #shopify-section-{{ section.id }} #hero a {
+    background-color: var(--color-nero) !important;
+    color: var(--color-bianco) !important;
+    font-family: var(--font-black) !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px;
+    line-height: 2;
+    padding: 12px 24px !important;
+    font-size: 14px;
+    display: block;
+    margin: 40px auto 60px auto;
+    max-width: 600px;
+  }
+  #shopify-section-{{ section.id }} #hero a:hover {
+    opacity:.5;
+  }
+  #shopify-section-{{ section.id }} #iub-pp-container > div {
+    height:auto !important;
+  }
+
+{%- endstyle -%}
+
+<section id="hero">
+  <h1>{{ section.settings.titolo_principlale }}</h1>
+  {% if section.settings.sottotitolo %}
+    <h2>{{ section.settings.sottotitolo }}</h2>
+  {% endif %}
+  {% if section.settings.descrizione %}
+    <p>{{ section.settings.descrizione }}</p>
+  {% endif %}
+  {% if section.settings.url_btn %}
+    <a href="{{ section.settings.url_btn }}" download target="_blank">{{ section.settings.testo_btn }}</a>
+  {% endif %}
+</section>
+
+{% assign current_language = request.locale.iso_code %}
+
+{% if current_language == 'it'%}
+  <section id="iubenda_embed" class="it">
+    <a href="https://www.iubenda.com/whistleblowing-form/it/b15c1682-a991-4d55-af3b-72b94bb3d900" class="iubenda-white iubenda-embed iub-body-embed iubenda-noiframe" title="Modulo di whistleblowing">Modulo di whistleblowing</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+  </section>
+{% elsif current_language == 'en'%}
+  <section id="iubenda_embed" class="en">
+    <a href="https://www.iubenda.com/whistleblowing-form/en-gb/b15c1682-a991-4d55-af3b-72b94bb3d900" class="iubenda-white iubenda-embed iub-body-embed iubenda-noiframe" title="Whistleblower Form">Whistleblower Form</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+  </section>
+{% elsif current_language == 'fr'%}
+  <section id="iubenda_embed" class="fr">
+    <a href="https://www.iubenda.com/whistleblowing-form/fr/b15c1682-a991-4d55-af3b-72b94bb3d900" class="iubenda-white iubenda-embed iub-body-embed iubenda-noiframe" title="Formulaire de signalement">Formulaire de signalement</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+  </section>
+{% elsif current_language == 'es'%}
+  <section id="iubenda_embed" class="de">
+    <a href="https://www.iubenda.com/whistleblowing-form/es/b15c1682-a991-4d55-af3b-72b94bb3d900" class="iubenda-white iubenda-embed iub-body-embed iubenda-noiframe" title="Formulario de denuncia de irregularidades">Formulario de denuncia de irregularidades</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+  </section>
+{% elsif current_language == 'de'%}
+  <section id="iubenda_embed" class="es">
+    <a href="https://www.iubenda.com/whistleblowing-form/de/b15c1682-a991-4d55-af3b-72b94bb3d900" class="iubenda-white iubenda-embed iub-body-embed iubenda-noiframe" title="Whistleblower-Formular">Whistleblower-Formular</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+  </section>
+{% else %}
+  <section id="iubenda_embed" class="en">
+    <a href="https://www.iubenda.com/whistleblowing-form/en-gb/b15c1682-a991-4d55-af3b-72b94bb3d900" class="iubenda-white iubenda-embed iub-body-embed iubenda-noiframe" title="Whistleblower Form">Whistleblower Form</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+  </section>
+{% endif %}
+
+
+
+
+
+
+{% schema %}
+{
+  "name": "Whistleblowing",
+  "settings": [
+    {
+      "type": "text",
+      "id": "titolo_principlale",
+      "label": "Titolo principale"
+    },
+    {
+      "type": "text",
+      "id": "sottotitolo",
+      "label": "Sottotitolo"
+    },
+    {
+      "type": "richtext",
+      "id": "descrizione",
+      "label": "Descrizione"
+    },
+    {
+      "type": "text",
+      "id": "testo_btn",
+      "label": "Etichetta del pulsante"
+    },
+    {
+      "type": "url",
+      "id": "url_btn",
+      "label": "URL del pulsante"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Whistleblowing",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

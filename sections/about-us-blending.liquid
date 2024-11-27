@@ -1,0 +1,82 @@
+{%- style -%}
+{%- endstyle -%}
+
+<section id="section_about_blending" class="page-width" style="position: relative">
+  <div class="about_wrapper_blending">
+    <div class="box a">
+      <h2 class="about_titolo_blending_riga">{{ section.settings.about_titolo_blending_riga }}</h2>
+    </div>
+
+    <div class="box b">
+      <img src="{{ section.settings.about_blending_img | image_url }}" alt="" class="img_about_blending_img">
+
+      <div class="about_wrapper_anno_blending">
+        <h2 class="about_anno_blending">{{ section.settings.about_anno_blending_riga1 }}</h2>
+        <h2 class="about_anno_blending">{{ section.settings.about_anno_blending_riga2 }}</h2>
+      </div>
+    </div>
+
+    <div class="box c">
+      <p class="etichetta" style="color:var(--color-blu);">{{ section.settings.about_occhiello_blending }}</p>
+      <h3 style="color:var(--color-blu);">{{ section.settings.about_sottotitolo_blending }}</h3>
+      <p>{{ section.settings.about_testo_blending }}</p>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "About us blending",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "about_blending_img",
+      "label": "about_blending_img"
+    },
+    {
+      "type": "text",
+      "id": "about_titolo_blending_riga",
+      "label": "about_titolo_blending_riga",
+      "default": "Blending visionary"
+    },
+    {
+      "type": "text",
+      "id": "about_anno_blending_riga1",
+      "label": "about_anno_blending_riga1",
+      "default": "SINCE"
+    },
+    {
+      "type": "text",
+      "id": "about_anno_blending_riga2",
+      "label": "about_anno_blending_riga2",
+      "default": "1979"
+    },
+    {
+      "type": "text",
+      "id": "about_occhiello_blending",
+      "label": "about_occhiello_blending",
+      "default": "ABOUT US"
+    },
+    {
+      "type": "text",
+      "id": "about_sottotitolo_blending",
+      "label": "about_sottotitolo_blending",
+      "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus."
+    },
+    {
+      "type": "text",
+      "id": "about_testo_blending",
+      "label": "about_testo_blending",
+      "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. "
+    }
+  ],
+  "presets": [
+    {
+      "name": "About us blending",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

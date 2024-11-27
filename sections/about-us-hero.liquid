@@ -1,0 +1,87 @@
+{%- style -%}
+{%- endstyle -%}
+
+<section id="section_about_hero" class="after_overlay">
+  <div style="position:relative; overflow: hidden">
+    <div>
+      {% if section.settings.url_video_bg %}
+        <video width="auto" height="auto" autoplay playsinline muted loop>
+          <source src="{{ section.settings.url_video_bg }}" type="video/mp4">
+        </video>
+      {% else %}
+        <img
+          src="{{ section.settings.about_background_hero | image_url }}"
+          alt=""
+          width="auto"
+          height="auto"
+          class="img_about_titolo_hero"
+        >
+      {% endif %}
+    </div>
+
+    <div class="position_trama_hero">
+      <img
+        src="{{ section.settings.about_trama_hero | image_url }}"
+        alt="SLAM"
+        width="auto"
+        height="auto"
+        class="img_about_trama_hero"
+      >
+    </div>
+
+    <div class="position_about_titolo_hero">
+      <h2 class="h1 italic" style="color:var(--color-bianco);">{{ section.settings.about_titolo_hero_riga1 }}</h2>
+      <h2 class="h1 italic" style="color:var(--color-bianco);">{{ section.settings.about_titolo_hero_riga2 }}</h2>
+      <h2 class="h1 italic" style="color:var(--color-bianco);">{{ section.settings.about_titolo_hero_riga3 }}</h2>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "About us hero",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "url",
+      "id": "url_video_bg",
+      "label": "URL per video Background"
+    },
+    {
+      "type": "image_picker",
+      "id": "about_background_hero",
+      "label": "about_background_hero"
+    },
+    {
+      "type": "image_picker",
+      "id": "about_trama_hero",
+      "label": "about_trama_hero"
+    },
+    {
+      "type": "text",
+      "id": "about_titolo_hero_riga1",
+      "label": "about_titolo_hero_riga1",
+      "default": "BORN IN GENOA"
+    },
+    {
+      "type": "text",
+      "id": "about_titolo_hero_riga2",
+      "label": "about_titolo_hero_riga2",
+      "default": "RAISED BY THE"
+    },
+    {
+      "type": "text",
+      "id": "about_titolo_hero_riga3",
+      "label": "about_titolo_hero_riga3",
+      "default": "SEAS"
+    }
+  ],
+  "presets": [
+    {
+      "name": "About us hero",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,122 @@
+{{ 'next_art_quote.css' | asset_url | stylesheet_tag }}
+
+{% if section.settings.numero_colonne %}
+  {% assign quante_colonne = section.settings.numero_colonne %}
+{% endif %}
+{% if section.settings.posizione_image %}
+  {% assign posizione_image = section.settings.posizione_image %}
+{% endif %}
+{% if quante_colonne == '2_col' %}
+  {% assign pagewidth = 'page-width' %}
+{% endif %}
+
+<div class="quote-section-container section-{{ section.settings.bg }}-color colonne_{{ quante_colonne }} {{ pagewidth }} {{ posizione_image }}">
+  <div class="custom-container">
+    {% if section.settings.text != blank %}
+      <div class="left-quote quote-icon h1 italic">«</div>
+      <h2 class="quote-text">
+        {{ section.settings.text }}
+      </h2>
+      <div class="right-quote quote-icon h1 italic">»</div>
+    {% endif %}
+  </div>
+  {% if quante_colonne == '2_col' %}
+    <div class="img_citazione">
+      {% if section.settings.immagine_colonna %}
+        <img src="{{ section.settings.immagine_colonna | image_url }}" height="100%" width="100%" alt="SLAM">
+        {% if section.settings.dida_image %}
+          <p class="dida">{{ section.settings.dida_image }}</p>
+        {% endif %}
+      {% endif %}
+    </div>
+  {% endif %}
+  
+</div>
+
+{% schema %}
+{
+  "name": "ART - Citazione",
+  "tag": "section",
+  "class": "section quote-section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "select",
+      "id": "bg",
+      "options": [
+        {
+          "value": "blue",
+          "label": "Blu"
+        },
+        {
+          "value": "green",
+          "label": "Verde"
+        },
+        {
+          "value": "grey",
+          "label": "Grigio"
+        },
+        {
+          "value": "white",
+          "label": "Bianco"
+        }
+      ],
+      "label": "Colore di sfondo"
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Testo"
+    },
+    {
+      "type": "select",
+      "id": "numero_colonne",
+      "label": "Quante colonne?",
+      "options": [
+        {
+          "value": "1_col",
+          "label": "1 colonna"
+        },
+        {
+          "value": "2_col",
+          "label": "2 colonne"
+        }
+      ],
+      "default": "1_col"
+    },
+    {
+      "type": "image_picker",
+      "id": "immagine_colonna",
+      "label": "Immagine colonna (2 col only)"
+    },
+    {
+      "type": "text",
+      "id": "dida_image",
+      "label": "Didascalia immagine (2 col only)"
+    },
+    {
+      "type": "select",
+      "id": "posizione_image",
+      "label": "Posizione immagine",
+      "options": [
+        {
+          "value": "image_dx",
+          "label": "Immagine dx"
+        },
+        {
+          "value": "image_sx",
+          "label": "Immagine sx"
+        }
+      ],
+      "default": "image_dx"
+    }
+  ],
+  "presets": [
+    {
+      "name": "ART - Citazione"
+    }
+  ]
+}
+{% endschema %}

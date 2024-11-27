@@ -1,0 +1,50 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} #section_tetolo_evidenza {
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
+  #shopify-section-{{ section.id }} #section_tetolo_evidenza h3 {
+    font-size:  clamp(40px, 4.5vw, 60px) !important;
+    line-height: 1;
+    text-align: center;
+    font-family: "Moderat-Black-italic", sans-serif !important;
+  }
+  #shopify-section-{{ section.id }} #section_tetolo_evidenza svg {
+    height:40px;
+    width:auto;
+    margin:5px auto;
+  }
+  #shopify-section-{{ section.id }} #section_tetolo_evidenza path {
+    fill:var(--color-rosso);
+  }
+{%- endstyle -%}
+
+<section id="section_tetolo_evidenza">
+  <h3 class="italic" style="color:#00988f;">{{ section.settings.titolo_up }}</h3>
+  {%  render 'logo_slam' %}
+  <h3 class="italic" style="color:#FA0000;">{{ section.settings.titolo_down }}</h3>
+</section>
+
+{% schema %}
+{
+  "name": "Titolo evidenza",
+  "settings": [
+    {
+      "type": "text",
+      "id": "titolo_up",
+      "label": "Titolo (up)"
+    },
+    {
+      "type": "text",
+      "id": "titolo_down",
+      "label": "Titolo (down)"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Titolo evidenza",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

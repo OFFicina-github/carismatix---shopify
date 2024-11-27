@@ -1,132 +1,254 @@
-<section>
-  {%- if blog.articles_count == 0 -%}
-    <div class="empty-state text-container">
-      <h1 class="heading h1">{{ blog.title }}</h1>
+{{ 'component-article-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'section-main-blog.css' | asset_url | stylesheet_tag }}
+{{ 'next_blog_listing.css' | asset_url | stylesheet_tag }}
+{{ 'next_blog_listing_card.css' | asset_url | stylesheet_tag }}
 
-      <p class="text--large">{{ 'blog.general.empty' | t }}</p>
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
 
-      <div class="button-wrapper">
-        <a href="{{ routes.root_url }}" class="button button--primary">{{ 'blog.general.back_to_home' | t }}</a>
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+{% assign separator = '_' %}
+{%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
+{%- assign pageUrl = contentForQuerystring
+  | split: '"pageurl":"'
+  | last
+  | split: '"'
+  | first
+  | replace: '\/', '/'
+  | split: '?'
+  | first
+-%}
+
+{%- paginate blog.articles by 50 -%}
+  <div class="main-blog page-width section-{{ section.id }}-padding">
+    <div class="description-area left-column">
+      <div class="title-with-icon">
+        {% render 'icon_stories' %}
+        <span>
+          {{ section.settings.title_with_icon_content }}
+        </span>
+      </div>
+      <h1 class="title--primary italic{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+        {% if pageUrl contains 'tagged' %}
+          {% if pageUrl contains separator -%}
+            {% assign first_level_tag = pageUrl | split: 'tagged/' | last | split: '+' | first %}
+            #{{ first_level_tag }}
+          {% else %}
+            {% assign first_level_tag = pageUrl | split: 'tagged/' | last | split: '?' | first %}
+            #{{ first_level_tag }}
+          {% endif %}
+        {% else %}
+          {{ blog.title | escape }}
+        {% endif %}
+      </h1>
+      <p class="blog-description">
+        {{ blog.metafields.custom.descrizione }}
+      </p>
+
+      <div class="tags-area">
+        {% if pageUrl contains 'tagged' %}
+          <a class="back-button" href="{{ blog.url }}">
+            {%- render 'icon-arrow-link-custom' -%}
+            {{- section.settings.btn_all_stories -}}
+          </a>
+        {% endif %}
+        <ul class="filters-container">
+          {% if pageUrl contains 'tagged' and pageUrl contains separator %}
+            <li class="back-to-first">
+              <a href="{{ pageUrl | split: '/' | last | split: '+' | first }}">
+                {%- render 'icon-arrow-link-custom' -%}
+                {{- section.settings.btn_first_level }} #{{ first_level_tag -}}
+              </a>
+            </li>
+          {% endif %}
+          {% for tag in blog.all_tags %}
+            {% if pageUrl contains 'tagged' %}
+              {% if tag contains separator %}
+                {% if tag contains first_level_tag %}
+                  {%- if current_tags contains tag -%}
+                    <li class="second-level active">
+                      {{ tag | split: '_' | last | prepend: '#' | link_to_remove_tag: tag -}}
+                    </li>
+                  {%- else -%}
+                    <li class="second-level">
+                      <a href="{{ pageUrl | split: '/' | last | split: '+' | first | append: '+' | append: tag }}">
+                        #{{ tag | split: '_' | last }}
+                      </a>
+                    </li>
+                  {%- endif -%}
+                {% endif %}
+              {% endif %}
+            {% else %}
+              {% unless tag contains separator %}
+                <li class="first-level">{{ tag | prepend: '#' | link_to_add_tag: tag }}</li>
+              {% endunless %}
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="arrow-area">
+        {% render 'freccia_blog' %}
       </div>
     </div>
-  {%- else -%}
-    {%- if section.settings.show_blog_title -%}
-      <div class="container">
-        <div class="page-header">
-          <nav aria-label="{{ 'general.breadcrumb.title' | t }}" class="breadcrumb breadcrumb--floating text--xsmall hidden-phone">
-            <ol class="breadcrumb__list" role="list">
-              <li class="breadcrumb__item">
-                <a class="breadcrumb__link" href="{{ routes.root_url }}">{{ 'general.breadcrumb.home' | t }}</a>
-              </li>
 
-              <li class="breadcrumb__item">
-                {%- if current_tags -%}
-                  <a class="breadcrumb__link" href="{{ collection.url }}">{{ blog.title }}</a>
-                {%- else -%}
-                  <span class="breadcrumb__link" aria-current="page">{{ blog.title }}</span>
-                {%- endif -%}
-              </li>
-
-              {%- if current_tags -%}
-                <li class="breadcrumb__item">
-                  <span class="breadcrumb__link" aria-current="page">{{ current_tags.first | split: '_' | last }}</span>
-                </li>
-              {%- endif -%}
-            </ol>
-          </nav>
-
-          <div class="page-header__text-wrapper text-container">
-            <h1 class="heading h1">{{ blog.title }}</h1>
+    <div class="blog-articles right-column{% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
+      <div class="articles-container">
+        {%- for article in blog.articles -%}
+          <div
+            class="blog-articles__article article{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} article_{{ article.metafields.custom.template_griglia | downcase }}"
+            {% if settings.animations_reveal_on_scroll %}
+              data-cascade
+              style="--animation-order: {{ forloop.index }};"
+            {% endif %}
+          >
+            {%- render 'article-card',
+              article: article,
+              media_height: section.settings.image_height,
+              media_aspect_ratio: article.image.aspect_ratio,
+              show_image: section.settings.show_image,
+              show_date: section.settings.show_date,
+              show_author: section.settings.show_author,
+              show_excerpt: true,
+              is_carousel: false
+            -%}
           </div>
-        </div>
-      </div>
-    {%- endif -%}
+        {%- endfor -%}
 
-    {%- if section.settings.show_tags and blog.all_tags.size > 0 -%}
-      <link-bar class="link-bar">
-        <div class="container">
-          <div class="link-bar__wrapper">
-            <span class="link-bar__title heading heading--small text--subdued">{{ 'blog.general.view' | t }}</span>
-
-            <div class="link-bar__scroller hide-scrollbar">
-              <ul class="link-bar__linklist list--unstyled" role="list">
-                <li class="link-bar__link-item {% if current_tags == blank %}link-bar__link-item--selected{% endif %}">
-                  <a href="{{ blog.url }}" class="link-bar__link link--animated {% if current_tags == blank %}text--underlined{% endif %}">{{ 'blog.general.all_posts' | t }}</a>
-                </li>
-
-                {%- for tag in blog.all_tags -%}
-                  <li class="link-bar__link-item {% if current_tags contains tag %}link-bar__link-item--selected{% endif %}">
-                    {%- capture link_to_tag_replacement -%}class="link-bar__link link--animated {% if current_tags contains tag %}text--underlined{% endif %}" title={%- endcapture -%}
-
-                    {%- if current_tags contains tag -%}
-                      {{ tag | link_to_remove_tag: tag | replace: 'title=', link_to_tag_replacement }}
-                    {%- else -%}
-                      {{- tag | link_to_tag: tag | replace: 'title=', link_to_tag_replacement -}}
-                    {%- endif -%}
-                  </li>
-                {%- endfor -%}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </link-bar>
-    {%- endif -%}
-
-    <div class="vertical-breather vertical-breather--margin vertical-breather--extra-tight">
-      <div class="container">
-        {%- paginate blog.articles by section.settings.articles_per_page -%}
-          <article-list {% if settings.stagger_blog_posts_apparition %}stagger-apparition{% endif %} class="article-list article-list--stacked">
-            {%- for article in blog.articles -%}
-              {%- render 'article-item', article: article, heading_size: 'h4' -%}
-            {%- endfor -%}
-          </article-list>
-
+        {%- if paginate.pages > 1 -%}
           {%- render 'pagination', paginate: paginate -%}
-        {%- endpaginate -%}
+        {%- endif -%}
       </div>
     </div>
-  {%- endif -%}
-</section>
+  </div>
+{%- endpaginate -%}
 
 {% schema %}
 {
-  "name": "Blog",
-  "class": "shopify-section--main-blog",
+  "name": "t:sections.main-blog.name",
+  "tag": "section",
+  "class": "section",
   "settings": [
     {
-      "type": "checkbox",
-      "id": "show_blog_title",
-      "label": "Show blog title",
-      "default": true
+      "type": "text",
+      "id": "title_with_icon_content",
+      "label": "Titoletto con icona",
+      "default": "Stories"
+    },
+    {
+      "type": "text",
+      "id": "btn_all_stories",
+      "label": "Testo bottone stories",
+      "default": "Tutte le stories"
+    },
+    {
+      "type": "text",
+      "id": "btn_first_level",
+      "label": "Testo bottone primo livello",
+      "default": "Torna a"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.main-blog.settings.header.content"
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "options": [
+        {
+          "value": "grid",
+          "label": "t:sections.main-blog.settings.layout.options__1.label"
+        },
+        {
+          "value": "collage",
+          "label": "t:sections.main-blog.settings.layout.options__2.label"
+        }
+      ],
+      "default": "collage",
+      "label": "t:sections.main-blog.settings.layout.label",
+      "info": "t:sections.main-blog.settings.layout.info"
     },
     {
       "type": "checkbox",
-      "id": "show_tags",
-      "label": "Show tags",
-      "default": true
+      "id": "show_image",
+      "default": true,
+      "label": "t:sections.main-blog.settings.show_image.label"
+    },
+    {
+      "type": "select",
+      "id": "image_height",
+      "options": [
+        {
+          "value": "adapt",
+          "label": "t:sections.main-blog.settings.image_height.options__1.label"
+        },
+        {
+          "value": "small",
+          "label": "t:sections.main-blog.settings.image_height.options__2.label"
+        },
+        {
+          "value": "medium",
+          "label": "t:sections.main-blog.settings.image_height.options__3.label"
+        },
+        {
+          "value": "large",
+          "label": "t:sections.main-blog.settings.image_height.options__4.label"
+        }
+      ],
+      "default": "medium",
+      "label": "t:sections.main-blog.settings.image_height.label",
+      "info": "t:sections.main-blog.settings.image_height.info"
     },
     {
       "type": "checkbox",
-      "id": "show_category",
-      "label": "Show category",
-      "info": "The first article's tag will be shown as category.",
-      "default": true
+      "id": "show_date",
+      "default": true,
+      "label": "t:sections.main-blog.settings.show_date.label"
     },
     {
       "type": "checkbox",
-      "id": "show_excerpt",
-      "label": "Show excerpt",
-      "info": "Change excerpts by editing your blog posts. [Learn more](https://help.shopify.com/en/manual/online-store/blogs/writing-blogs#display-an-excerpt-from-a-blog-post)",
-      "default": true
+      "id": "show_author",
+      "default": false,
+      "label": "t:sections.main-blog.settings.show_author.label"
+    },
+    {
+      "type": "paragraph",
+      "content": "t:sections.main-blog.settings.paragraph.content"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
     },
     {
       "type": "range",
-      "id": "articles_per_page",
-      "label": "Blog posts per page",
-      "min": 3,
-      "max": 48,
-      "step": 3,
-      "default": 9
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
     }
   ]
 }

@@ -1,0 +1,88 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+
+  }
+  @media(min-width:1000px) {
+    #shopify-section-{{ section.id }} {
+        margin-top:80px;
+    }
+  }
+{%- endstyle -%}
+
+{{ 'next_guida_taglie.css' | asset_url | stylesheet_tag }}
+
+{% liquid
+  assign current_language = request.locale.iso_code
+
+  case current_language
+    when 'it'
+      assign breadcrumbs_text = 'Home - Store Finder'
+    when 'en'
+      assign breadcrumbs_text = 'Home - Store Finder'
+    when 'fr'
+      assign breadcrumbs_text = 'Home - Store Finder'
+    when 'es'
+      assign breadcrumbs_text = 'Home - Store Finder'
+    when 'de'
+      assign breadcrumbs_text = 'Home - Store Finder'
+    else
+      assign breadcrumbs_text = 'Home - Store Finder'
+  endcase
+%}
+
+<section id="guida_taglie_hero" class="page-width storefinder">
+  <p class="breadcrumbs">{{ breadcrumbs_text }}</p>
+  <div>
+    <div>
+      <h1 class="italic">{{ section.settings.titolo_principlale }}</h1>
+    </div>
+    <div class="descrizione">
+      <h4>{{ section.settings.descrizione_principale }}</h4>
+      {% if section.settings.etichetta_btn %}
+        <a class="twcss-text-w twcss-flex twcss-gap-4 btn_next twcss-items-center" href="{{ section.settings.url_btn }}">
+          {{ section.settings.etichetta_btn }}
+          {% render 'icon-arrow-link-custom' -%}
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Store Finder - Hero",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "titolo_principlale",
+      "label": "Titolo pagina",
+      "default": "STORE FINDER"
+    },
+    {
+      "type": "text",
+      "id": "descrizione_principale",
+      "label": "Descrizione breve",
+      "default": "Ti aspettiamo nello Slam Shop più vicino a te!"
+    },
+    {
+      "type": "text",
+      "id": "etichetta_btn",
+      "label": "Etichetta bottone",
+      "default": "VEDI TUTTI GLI STORE"
+    },
+    {
+      "type": "url",
+      "id": "url_btn",
+      "label": "URL bottone"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Store Finder - Hero",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

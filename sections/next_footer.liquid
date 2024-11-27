@@ -1,0 +1,189 @@
+{{ 'component-newsletter.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    background-color: var(--color-blu);
+  }
+  body.etnz #shopify-section-{{ section.id }} {
+    position:relative;
+    z-index:3;
+  }
+{%- endstyle -%}
+
+<footer class="footer_next" id="footer_custom">
+  <div class="newsletter_next_bg">
+    <div class="newsletter_next page-width">
+      <div class="titolo_next">
+        <p class="label">{{ section.settings.label_titolo_newsletter }}</p>
+        <p class="h1 italic">{{ section.settings.titolo_newsletter }}</p>
+      </div>
+      <div class="form_newsletter_next">
+        {% assign current_language = request.locale.iso_code %}
+        {% if current_language == 'it'%}
+          <div id="omnisend-embedded-v2-65f30ac575b6cc4e1b8f8678"></div>
+        {% elsif current_language == 'en'%}
+          <div id="omnisend-embedded-v2-6603de9d7a3b55dd18524aa9"></div>
+        {% elsif current_language == 'fr'%}
+          <div id="omnisend-embedded-v2-6603dec77a3b55dd18524aab"></div>
+        {% elsif current_language == 'es'%}
+          <div id="omnisend-embedded-v2-6603dedc7a3b55dd18524aad"></div>
+        {% elsif current_language == 'de'%}
+          <div id="omnisend-embedded-v2-6603deb7d35343176c43fc16"></div>
+        {% else %}
+          <div id="omnisend-embedded-v2-6603de9d7a3b55dd18524aa9"></div>
+        {% endif %}
+      </div>
+      <div class="icone_footer icone_social nodesk">
+        {% for block in section.blocks %}
+          {% if block.type == 'social' %}
+            <a href="{{ block.settings.url_social }}">
+              {{
+                block.settings.icona_social
+                | image_url: width: block.settings.icona_social.width
+                | image_tag: loading: 'lazy'
+              }}
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <div class="corpo_footer page-width">
+    <div class="menu_footer_next">
+      {% if linklists.footer %}
+        {% for link in linklists.footer.links %}
+          <div>
+            <p class="h3" style="margin-bottom:20px">{{ link.title }}</p>
+            {% if link.links %}
+              {% for childlink in link.links %}
+                {% assign url = childlink.url %}
+                {% if childlink.url contains '_blank' %}
+                  {% assign url = childlink.url | remove: '_blank' %}
+                {% endif %}
+                <a href="{{ url }}" {% if childlink.url contains '_blank' %}target="_blank"{% endif %}>{{ childlink.title }}</a>
+              {% endfor %}
+            {% endif %}
+          </div>
+        {% endfor %}
+      {% endif %}
+    </div>
+    <div class="icons_footer_next">
+      <div>
+        <p class="h3" style="margin-bottom:20px; text-align:right">{{ section.settings.titolo_met_pagamento }}</p>
+        <div class="icone_footer icone_pagamento">
+          {% for block in section.blocks %}
+            {% if block.type == 'pagamento' %}
+              {{
+                block.settings.icona_pagamento
+                | image_url: width: block.settings.icona_pagamento.width
+                | image_tag: loading: 'lazy'
+              }}
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+      <div class="icone_footer icone_social">
+        {% for block in section.blocks %}
+          {% if block.type == 'social' %}
+            <a target="_blank" href="{{ block.settings.url_social }}">
+              {{
+                block.settings.icona_social
+                | image_url: width: block.settings.icona_social.width
+                | image_tag: loading: 'lazy'
+              }}
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <div id="copyright" class="page-width">
+    <div>
+      {% if linklists.copyright %}
+        {% for link in linklists.copyright.links %}
+          <a href="{{ link.url }}">{{ link.title }}</a>
+        {% endfor %}
+      {% endif %}
+      <a href="#" class="iubenda-cs-preferences-link">
+        {{ 'sections.footer.tracking_preferences' | t }}
+      </a>
+    </div>
+  </div>
+  <div class="firma page-width">
+    <p>
+      © SLAM.COM S.P.A. | Via Alessandro Manzoni 3, 20121 Milano (MI), Italia | P.I., C.F. e n.iscr. al Registro Imprese 11806840960 | REA MI-2625579 | Cap.Soc. 898.390,00 Euro i.v. | PEC vam27invest@unapec.it
+    </p>
+    <p>
+      eShop Partner: <a href="https://calicant.us/" rel="nofollow noopener noreferrer" target="_blank">Calicantus Srl</a> | Via Luigi Mazzon 30, 30020 Quarto D'Altino (VE), Italia | P.I./VAT ID 03757590272
+    </p>
+    <p>Credits: <a rel="nofollow noopener noreferrer" target="_blank" href="https://adverteam.it/">Adverteam S.r.l.</a></p>
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Footer Next",
+  "settings": [
+    {
+      "type": "text",
+      "id": "placeholder_input_newsletter",
+      "label": "Placeholder newsletter"
+    },
+    {
+      "type": "text",
+      "id": "label_titolo_newsletter",
+      "label": "Label-titolo del form newsletter"
+    },
+    {
+      "type": "text",
+      "id": "titolo_newsletter",
+      "label": "Titolo form newsletter"
+    },
+    {
+      "type": "text",
+      "id": "label_form_newsletter",
+      "label": "Label sopra form newsletter"
+    },
+    {
+      "type": "text",
+      "id": "titolo_met_pagamento",
+      "label": "Titolo metodi di pagamento"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "social",
+      "name": "Blocco icona Social",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icona_social",
+          "label": "Icona social"
+        },
+        {
+          "type": "url",
+          "id": "url_social",
+          "label": "URL social"
+        }
+      ]
+    },
+    {
+      "type": "pagamento",
+      "name": "Blocco icona Pagamento",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icona_pagamento",
+          "label": "Icona metodo pagamento"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Footer Next",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

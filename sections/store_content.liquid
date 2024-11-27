@@ -1,0 +1,161 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    
+  }
+{%- endstyle -%}
+
+{% liquid
+  assign current_language = request.locale.iso_code
+
+  case current_language
+    when 'it'
+      assign label_indirizzo = 'INDIRIZZO'
+      assign label_orari = 'ORARI'
+      assign label_indicazioni = 'INDICAZIONI STRADALI'
+
+    when 'en'
+      assign label_indirizzo = 'ADDRESS'
+      assign label_orari = 'OPENING HOURS'
+      assign label_indicazioni = 'DIRECTIONS'
+
+    when 'es'
+      assign label_indirizzo = 'DIRECCIÓN'
+      assign label_orari = 'HORARIOS'
+      assign label_indicazioni = 'INDICACIONES'
+
+    when 'fr'
+      assign label_indirizzo = 'ADRESSE'
+      assign label_orari = 'HORAIRES'
+      assign label_indicazioni = 'ITINÉRAIRE'
+
+    when 'de'
+      assign label_indirizzo = 'ADRESSE'
+      assign label_orari = 'ZEITEN'
+      assign label_indicazioni = 'WEGBESCHREIBUNG'
+
+    else
+      assign label_indirizzo = 'ADDRESS'
+      assign label_orari = 'OPENING HOURS'
+      assign label_indicazioni = 'DIRECTIONS'
+
+  endcase
+%}
+
+<section id="section_store_content">
+  <div class="results_box page-width">
+    {% for block in section.blocks %}
+      {% if block.type == 'store_block' %}
+        <a href="#{{ block.settings.nome_shop | replace: ' ', '' | downcase }}" class="store_item store_name_{{ block.settings.nome_shop }}">
+          <p class="label">SLAM SHOP</p>
+          <h2 class="h1 italic">{{ block.settings.nome_shop }}</h2>
+          <h3>{{ block.settings.indirizzo_shop }} - {{ block.settings.cap_shop }}</h3>
+          {% if block.settings.url_image_coordinate_hover %}
+            <img class="hover_img" src="{{ block.settings.url_image_coordinate_hover | image_url }}" width="100%" height="100%" alt="SLAM | {{ block.settings.nome_shop }}">
+          {% endif %}
+          <img class="main_img" src="{{ block.settings.url_image_coordinate | image_url }}" width="100%" height="100%" alt="SLAM | {{ block.settings.nome_shop }}">
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <div class="results_list">
+    {% for block in section.blocks %}
+      {% if block.type == 'store_block' %}
+        <div id="{{ block.settings.nome_shop | replace: ' ', '' | downcase }}" class="store_list_item store_name_{{ block.settings.nome_shop }}">
+          <div class="content_box page-width">
+            <img src="{{ block.settings.url_foto_shop | image_url }}" width="100%" height="100%" alt="SLAM | {{ block.settings.nome_shop }}">
+            <div class="info_item">
+              <h2 class="h1 italic">{{ block.settings.nome_shop }}</h2>
+              <div>{{ block.settings.descrizione_shop }}</div>
+              <div>
+                <div class="inner_box inner_indirizzo">
+                  <p class="titoletto label">{{label_indirizzo}}</p>
+                  <h3>{{ block.settings.indirizzo_shop }} {{ block.settings.cap_shop }} - {{ block.settings.citta_shop }}</h3>
+                  <a class="twcss-flex twcss-gap-4 btn_next twcss-items-center" target="_blank" href="{{ section.settings.url_btn }}">
+                    {{label_indicazioni}}
+                    {% render 'icon-arrow-link-custom' -%}
+                  </a>
+                </div>
+                <div class="inner_box inner_orari">
+                  <p class="titoletto label">{{label_orari}}</p>
+                  {{ block.settings.orari_shop }}
+                </div>
+              </div>
+            </div>
+            <div class="frame_linea_visiva green_version"></div>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Store Finder - Content",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "store_block",
+      "name": "Aggiungi Store",
+      "settings": [
+        {
+          "type": "text",
+          "id": "nome_shop",
+          "label": "Nome shop"
+        },
+        {
+          "type": "text",
+          "id": "indirizzo_shop",
+          "label": "Indirizzo shop"
+        },
+        {
+          "type": "text",
+          "id": "cap_shop",
+          "label": "CAP shop"
+        },
+        {
+          "type": "text",
+          "id": "citta_shop",
+          "label": "Città shop"
+        },
+        {
+          "type": "richtext",
+          "id": "descrizione_shop",
+          "label": "Descrizione shop"
+        },
+        {
+          "type": "image_picker",
+          "id": "url_image_coordinate",
+          "label": "Immagine sfondo (coordinate)"
+        },
+        {
+          "type": "image_picker",
+          "id": "url_image_coordinate_hover",
+          "label": "Immagine sfondo - HOVER (coordinate)"
+        },
+        {
+          "type": "image_picker",
+          "id": "url_foto_shop",
+          "label": "Immagine shop (foto)"
+        },
+        {
+          "type": "url",
+          "id": "url_btn",
+          "label": "Link mappa shop (foto)"
+        },
+        {
+          "type": "richtext",
+          "id": "orari_shop",
+          "label": "Orari shop"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Store Finder - Content",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

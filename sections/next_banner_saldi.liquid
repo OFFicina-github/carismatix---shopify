@@ -1,0 +1,80 @@
+{%- style -%}
+#shopify-section-{{ section.id }} {
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  z-index:99;
+  height:auto !important;
+  cursor:pointer;
+  /*pointer-events: none !important;*/
+  @media(max-width:999px){
+    bottom:unset;
+    top:0;
+  }
+}
+{%- endstyle -%}
+
+{% liquid
+    assign dummy_price = 0 | money_with_currency
+    assign current_currency_code = dummy_price | replace: '0', '' | replace: '.', '' | replace: ',', '' | strip | split: ' ' | last
+%}
+{% unless customer.b2b? %}
+    {% comment %}
+    {% if current_currency_code != 'GBP' %}
+    {% endcomment %}
+        <a href="{% if section.settings.link_banner_saldi %} {{ section.settings.link_banner_saldi }} {% endif %}" class="banner_saldi {% if section.settings.enable_banner_saldi == true %}v_rossa{% endif %}">
+            <ul class='list'>
+                {% for block in section.blocks %}
+                    {% case block.type %}
+                    {% when 'topbar_saldi' %}
+                        <li class='listitem'>
+                            <span>{{ block.settings.txt_banner_saldi }}</span>
+                            <span>{% render 'ancora' %}</span>
+                        </li>
+                    {% endcase %}
+                {% endfor %}
+            </ul>
+        </a>
+    {% comment %}
+    {% endif %}
+    {% endcomment %}
+{% endunless %}
+
+{% schema %}
+{
+ "name": "Banner Saldi Next",
+ "settings": [
+   {
+     "type": "checkbox",
+     "id": "enable_banner_saldi",
+     "label": "Versione Rossa?",
+     "default": false
+   },
+   {
+    "type": "url",
+    "id": "link_banner_saldi",
+    "label": "Link (facoltativo)"
+  }
+ ],
+ "blocks": [
+   {
+     "type": "topbar_saldi",
+     "name": "Segmento banner saldi",
+     "settings": [
+       {
+         "type": "text",
+         "id": "txt_banner_saldi",
+         "label": "Testo segmento banner saldi"
+       }
+     ]
+   }
+ ],
+ "presets": [
+   {
+     "name": "Banner Saldi Next",
+     "category": "Custom"
+   }
+ ]
+}
+{% endschema %}

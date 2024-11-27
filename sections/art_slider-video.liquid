@@ -1,0 +1,91 @@
+{{ 'next_art_slide-video.css' | asset_url | stylesheet_tag }}
+
+<div class="slider-video-section-container">
+  <h2 class="h1 italic">{{ section.settings.title }}</h2>
+  <div class="art_slider_video">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'slide' %}
+          <div>
+            <a href="https://www.youtube.com/embed/{{ block.settings.codice_youtube }}origin=https://slam.com" data-fancybox >
+              <div class="video_ctrl">
+                {% render 'icon-play-btn' %}
+                <img class="copertina_slide_video" src="{{ block.settings.copertina_video | image_url }}" height="100%" width="100%" alt="SLAM | video">
+              </div>
+              <h3>{{ block.settings.titolo_video }}</h3>
+              <p class="italic">{{ block.settings.sottotitolo_video }}</p>
+            </a>
+            {% if block.settings.url_link %}
+              <a class="twcss-text-w twcss-flex twcss-gap-4 btn_next twcss-items-center text-cta" href="{{ block.settings.url_link }}">
+                {{ block.settings.titolo_link }}
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 12 9" fill="none">
+                  <path d="M2.35352 0V2.52824H7.09684L0.5 8.97731L0.523183 9H2.91205C3.69039 9 4.44104 8.69778 4.99657 8.15407L8.92193 4.30938V8.9517H11.5V0H2.35352Z" fill="white"></path>
+                </svg>
+              </a>
+            {% endif %}
+          </div>
+      {% endcase %}
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "ART - Slider video",
+  "tag": "section",
+  "class": "section text-with-bg",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Titolo sezione"
+    }
+  ],
+  "presets": [
+    {
+      "name": "ART - Slider video"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Aggiungi slide video",
+      "type": "slide",
+      "settings": [
+        {
+          "type": "text",
+          "id": "codice_youtube",
+          "label": "Codice video Youtube"
+        },
+        {
+          "type": "image_picker",
+          "id": "copertina_video",
+          "label": "Immagine di copertina"
+        },
+        {
+          "type": "text",
+          "id": "titolo_video",
+          "label": "Titolo Video"
+        },
+        {
+          "type": "text",
+          "id": "sottotitolo_video",
+          "label": "Sottotitolo Video"
+        },
+        {
+          "type": "text",
+          "id": "titolo_link",
+          "label": "Titolo Link"
+        },
+        {
+          "type": "url",
+          "id": "url_link",
+          "label": "URL Link"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

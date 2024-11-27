@@ -1,0 +1,185 @@
+{{ 'next_art_image-columns.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  #shopify-section-{{ section.id }} .single-column .multicolumn-card__image-wrapper,
+  #shopify-section-{{ section.id }} .single-column .multicolumn-card__image-wrapper .media {
+    {% if section.settings.block_height_auto %}
+      height: auto;
+    {% else %}
+      height: {{ section.settings.block_height }}px;
+    {% endif %}
+  }
+  #shopify-section-{{ section.id }} .single-column .multicolumn-card__image-wrapper .media img {
+    {% if section.settings.block_height_auto %}
+      position: static;
+    {% endif %}
+  }
+  #shopify-section-{{ section.id }} .didascalia_box p,
+  #shopify-section-{{ section.id }} .didascalia_box a,
+  #shopify-section-{{ section.id }} .didascalia_box li,
+  #shopify-section-{{ section.id }} .didascalia_box {
+    font-size:12px !important;
+    line-height: 1.4 !important;
+  }
+  @media(max-width:999px){
+    #shopify-section-{{ section.id }} .didascalia_box p,
+    #shopify-section-{{ section.id }} .didascalia_box a,
+    #shopify-section-{{ section.id }} .didascalia_box li,
+    #shopify-section-{{ section.id }} .didascalia_box {
+      font-size:10px !important;
+    }
+  }
+{%- endstyle -%}
+
+<div class="multicolumn image-columns-section">
+  <div
+    class="page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    {% if settings.animations_reveal_on_scroll %}
+      data-cascade
+    {% endif %}
+  >
+    <ul
+      class="multicolumn-list contains-content-container grid {% if section.blocks.size == 1 %} only-one-col{% endif %}"
+      role="list"
+    >
+      {%- liquid
+        assign highest_ratio = 0
+        for block in section.blocks
+          if block.settings.image.aspect_ratio > highest_ratio
+            assign highest_ratio = block.settings.image.aspect_ratio
+          endif
+        endfor
+      -%}
+
+      {%- for block in section.blocks -%}
+        {%- assign empty_column = '' -%}
+        {%- if block.settings.image == blank and block.settings.caption == blank -%}
+          {%- assign empty_column = ' multicolumn-list__item--empty' -%}
+        {%- endif -%}
+        <li
+          id="img-{{ forloop.index }}"
+          class="single-column multicolumn-list__item grid__item {{ empty_column }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+          {{ block.shopify_attributes }}
+          {% if settings.animations_reveal_on_scroll %}
+            data-cascade
+            style="--animation-order: {{ forloop.index }};"
+          {% endif %}
+        >
+          <div class="multicolumn-card content-container">
+            {%- if block.settings.image != blank -%}
+              <div class="multicolumn-card__image-wrapper">
+                <div
+                  class="media media--transparent"
+                >
+                  {%- liquid
+                    assign number_of_columns = section.blocks.size
+                    assign number_of_columns_mobile = 1
+                    assign grid_space_desktop = number_of_columns | minus: 1 | times: settings.spacing_grid_horizontal | plus: 100 | append: 'px'
+                    assign grid_space_tablet = number_of_columns_mobile | minus: 1 | times: settings.spacing_grid_horizontal | plus: 100 | append: 'px'
+                    assign grid_space_mobile = number_of_columns_mobile | minus: 1 | times: settings.spacing_grid_horizontal | divided_by: 2 | plus: 30 | append: 'px'
+                    assign image_width = 1
+                  -%}
+                  {% capture sizes %}
+                      (min-width: {{ settings.page_width }}px) calc(({{ settings.page_width }}px - {{ grid_space_desktop }}) * {{ image_width }} /  {{ number_of_columns }}),
+                      (min-width: 990px) calc((100vw - {{ grid_space_desktop }}) * {{ image_width }} / {{ number_of_columns }}),
+                      (min-width: 750px) calc((100vw - {{ grid_space_tablet }}) * {{ image_width }} / {{ number_of_columns_mobile }}),
+                      calc((100vw - {{ grid_space_mobile }}) * {{ image_width }} / {{ number_of_columns_mobile }})
+                    {% endcapture %}
+
+                    {% if block.settings.block_objfit %} 
+                      {% assign objfit_value = 'object-fit:contain' %}
+                    {% else %}
+                      {% assign objfit_value = 'object-fit:cover' %}
+                    {% endif %}
+
+                  {{
+                    block.settings.image
+                    | image_url: width: 3200
+                    | image_tag:
+                      widths: '1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3200',
+                      sizes: sizes,
+                      class: 'multicolumn-card__image',
+                      style: objfit_value
+                  }}
+                </div>
+              </div>
+            {%- endif -%}
+            <div class="multicolumn-card__info">
+              {%- if block.settings.caption != blank -%}
+                <div class="label-medium didascalia_box">{{ block.settings.caption }}</div>
+              {%- endif -%}
+            </div>
+          </div>
+        </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "ART - Colonne con img",
+  "class": "section",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "range",
+      "id": "block_height",
+      "min": 0,
+      "max": 1000,
+      "step": 10,
+      "unit": "px",
+      "label": "Altezza immagini",
+      "default": 890
+    },
+    {
+      "type": "checkbox",
+      "id": "block_height_auto",
+      "label": "Altezza immagine 'auto'?"
+    } 
+  ],
+  "max_blocks": 3,
+  "blocks": [
+    {
+      "type": "column",
+      "name": "Colonna con img",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.multicolumn.blocks.column.settings.image.label"
+        },
+        {
+          "type": "richtext",
+          "id": "caption",
+          "label": "Didascalia"
+        },
+        {
+          "type": "checkbox",
+          "id": "block_objfit",
+          "label": "Immagine 'contain'?"
+        }  
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "ART - Colonne con img",
+      "blocks": [
+        {
+          "type": "column"
+        },
+        {
+          "type": "column"
+        },
+        {
+          "type": "column"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

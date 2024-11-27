@@ -1,0 +1,85 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+  }
+{%- endstyle -%}
+
+<section class="section_banner_shopby versione_{{ section.settings.versione }}">
+  <img src="{{ section.settings.img_banner | image_url }}" loading="lazy" width="auto" height="auto" alt="shopby">
+  <div class="banner_container page-width">
+    <p class="twcss-text-w etichetta twcss-uppercase">{{ section.settings.titolo_sezione_eyelet }}</p>
+    <h2 class="twcss-text-w">{{ section.settings.titolo_sezione }}</h2>
+    {% for block in section.blocks %}
+      {% if block.type == 'link_block' %}
+        <a class="twcss-text-w twcss-flex twcss-gap-4 btn_next twcss-items-center" href="{{ block.settings.link_url }}">
+          {{- block.settings.link_text }}
+          {% render 'icon-arrow-link-custom' -%}
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+  {% render 'bg_freccia_bianca' %}
+</section>
+
+{% schema %}
+{
+  "name": "Banner - shopby",
+  "settings": [
+    {
+      "type": "text",
+      "id": "titolo_sezione",
+      "label": "Titolo sezione"
+    },
+    {
+      "type": "text",
+      "id": "titolo_sezione_eyelet",
+      "label": "Titolo sezione (eyelet)"
+    },
+    {
+      "type": "image_picker",
+      "id": "img_banner",
+      "label": "Immagine background"
+    },
+
+    {
+      "type": "select",
+      "id": "versione",
+      "label": "Versione Chiara / Scura",
+      "options": [
+        {
+          "value": "chiara",
+          "label": "Versione Chiara"
+        },
+        {
+          "value": "scura",
+          "label": "Versione Scura"
+        }
+      ],
+      "default": "chiara"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "link_block",
+      "name": "Bottone con freccia",
+      "settings": [
+        {
+          "type": "text",
+          "id": "link_text",
+          "label": "Testo del bottone"
+        },
+        {
+          "type": "url",
+          "id": "link_url",
+          "label": "URL del bottone"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Banner - shopby",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

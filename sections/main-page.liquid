@@ -1,67 +1,57 @@
-<section>
-  <div class="container">
-    <div class="page-header">
-      <nav aria-label="{{ 'general.breadcrumb.title' | t }}" class="breadcrumb breadcrumb--floating text--xsmall hidden-phone">
-        <ol class="breadcrumb__list" role="list">
-          <li class="breadcrumb__item">
-            <a class="breadcrumb__link" href="{{ routes.root_url }}">{{ 'general.breadcrumb.home' | t }}</a>
-          </li>
+{{ 'section-main-page.css' | asset_url | stylesheet_tag }}
 
-          <li class="breadcrumb__item">
-            <span class="breadcrumb__link" aria-current="page">{{ page.title }}</span>
-          </li>
-        </ol>
-      </nav>
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
 
-      <div class="page-header__text-wrapper text-container">
-        {%- if section.settings.show_title -%}
-          <h1 class="heading h2">{{ page.title }}</h1>
-        {%- endif -%}
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
 
-        {%- if template.suffix contains 'contact' or template.suffix contains 'faq' -%}
-          {{- page.content -}}
-        {%- endif -%}
-      </div>
-    </div>
-
-    {%- unless template.suffix contains 'contact' or template.suffix contains 'faq' -%}
-      <div class="page-content page-content--{{ section.settings.page_width }} rte">
-        {{- page.content -}}
-      </div>
-    {%- endunless -%}
+<div class="page-width page-width--narrow section-{{ section.id }}-padding">
+  <h1 class="main-page-title page-title h0{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+    {{ page.title | escape }}
+  </h1>
+  <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+    {{ page.content }}
   </div>
-</section>
+</div>
 
 {% schema %}
 {
-  "name": "Page",
-  "class": "shopify-section--main-page",
+  "name": "t:sections.main-page.name",
+  "tag": "section",
+  "class": "section",
   "settings": [
     {
-      "type": "checkbox",
-      "id": "show_title",
-      "label": "Show page title",
-      "default": true
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
     },
     {
-      "type": "select",
-      "id": "page_width",
-      "label": "Page width",
-      "options": [
-        {
-          "value": "small",
-          "label": "Small"
-        },
-        {
-          "value": "medium",
-          "label": "Medium"
-        },
-        {
-          "value": "large",
-          "label": "Large"
-        }
-      ],
-      "default": "medium"
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
     }
   ]
 }

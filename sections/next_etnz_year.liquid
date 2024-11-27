@@ -1,0 +1,48 @@
+{{ 'next_etnz_year.css' | asset_url | stylesheet_tag }}
+
+<div class="etnz-year page-width {% if section.settings.hideLines == true %}hideLines{% endif %}">
+  <div class="content-area">
+    {% if section.settings.line_1 != blank %}
+      <span class="h1 italic font_v2">{{ section.settings.line_1 }}</span>
+    {% endif %}
+    {% if section.settings.line_2 != blank %}
+      <span class="h1 italic font_v2">{{ section.settings.line_2 }}</span>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "ETNZ - Sezione anno",
+  "tag": "section",
+  "class": "section etnz-year-section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "line_1",
+      "label": "Anno linea 1",
+      "default": "20"
+    },
+    {
+      "type": "text",
+      "id": "line_2",
+      "label": "Anno linea 2",
+      "default": "24"
+    },
+    {
+      "type": "checkbox",
+      "id": "hideLines",
+      "label": "Nascondi le linee sulla sx?"
+    }
+  ],
+  "presets": [
+    {
+      "name": "ETNZ - Sezione anno",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

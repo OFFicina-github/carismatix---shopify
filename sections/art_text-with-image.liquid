@@ -1,0 +1,141 @@
+{{ 'next_art_text-with-image.css' | asset_url | stylesheet_tag }}
+
+<div class="text-with-image-container page-width image-{{ section.settings.image_position }}">
+  {%- if section.settings.image != blank or section.settings.url_video != blank -%}
+    <div class="image-area">
+      <div class="media {% if section.settings.url_video != blank %}media_video{% endif %}">
+        {% if section.settings.url_video != blank %}
+          <video 
+            playsinline 
+            autoplay 
+            muted 
+            loop 
+            preload="auto"
+            style="
+              height: 100%;
+              width: 100%;
+              display: block;
+              object-fit: cover;"
+          >
+            <source src="{{ section.settings.url_video }}" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        {% else %}
+          {{
+            section.settings.image
+            | image_url: width: 3200
+            | image_tag: widths: '1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3200', class: 'image'
+          }}
+        {% endif %}
+      </div>
+      <div class="caption">
+        {%- if section.settings.caption != blank -%}
+          <p class="label-medium">{{ section.settings.caption }}</p>
+        {%- endif -%}
+      </div>
+    </div>
+  {%- endif -%}
+  <div class="content-area">
+    {% if section.settings.green_label != blank %}
+      <div class="green-text label">{{ section.settings.green_label }}</div>
+    {% endif %}
+    {% if section.settings.white_label != blank %}
+      <div class="label">{{ section.settings.white_label }}</div>
+    {% endif %}
+    {% if section.settings.title != blank %}
+      <h3 class="paragraph-title {{ section.settings.variant_color }}-color">
+        {{ section.settings.title }}
+      </h3>
+    {% endif %}
+    {% if section.settings.content != blank %}
+      <div class="paragraph-content">
+        {{ section.settings.content }}
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "ART - Text + img/video",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "select",
+      "id": "image_position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Sinistra"
+        },
+        {
+          "value": "right",
+          "label": "Destra"
+        }
+      ],
+      "label": "Posizione immagine",
+      "default": "left"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Immagine"
+    },
+    {
+      "type": "url",
+      "id": "url_video",
+      "label": "[mp4] Video (sovrascive immagine)"
+    },
+    {
+      "type": "text",
+      "id": "caption",
+      "label": "Didascalia"
+    },
+    {
+      "type": "text",
+      "id": "green_label",
+      "label": "Etichetta verde"
+    },
+    {
+      "type": "text",
+      "id": "white_label",
+      "label": "Etichetta bianca"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Titolo (facoltativo)"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Testo (facoltativo)"
+    },
+    {
+      "type": "select",
+      "id": "variant_color",
+      "options": [
+        {
+          "value": "default",
+          "label": "Default"
+        },
+        {
+          "value": "green",
+          "label": "Green"
+        }
+      ],
+      "label": "Variante colore",
+      "default": "default"
+    }
+  ],
+  "presets": [
+    {
+      "name": "ART - Text + img/video"
+    }
+  ]
+}
+{% endschema %}

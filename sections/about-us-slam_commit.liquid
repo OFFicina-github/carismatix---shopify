@@ -1,0 +1,142 @@
+{%- style -%}
+{%- endstyle -%}
+
+<section
+  id="section_slam_commit"
+  class="page-width"
+  style="background-image: url('{{ section.settings.background_inspire_challenge_grigio | image_url }}'); background-size: cover; background-repeat: no-repeat;"
+>
+  <div class="about_slam_commitment_titolo">
+    <h2 class="h1 italic" style="color:var(--color-blu);">{{ section.settings.about_slam_commitment_titolo_01 }}</h2>
+    <h2 class="h1 italic" style="padding-left:12vw; color:var(--color-blu);">
+      {{ section.settings.about_slam_commitment_titolo_02 }}
+    </h2>
+    <h2 class="h1 italic" style="color:var(--color-blu);">{{ section.settings.about_slam_commitment_titolo_03 }}</h2>
+  </div>
+
+  <div id="about_inspire_challenge_wrapper" style="position:relative">
+    <img src="{{ section.settings.background_inspire_challenge | image_url }}" width="100%" height="auto">
+
+    <div class="about_wrapper_inspire">
+      <div class="box a">
+        <p class="testopi" style="color:var(--color-bianco);">{{ section.settings.testo_inspire }}</p>
+      </div>
+
+      <div class="box c" style="background-color:var(--color-verdeh2o);margin-bottom: 0;height: 90px;">
+        <a
+          class="twcss-text-w twcss-flex twcss-gap-4 btn_next twcss-items-center"
+          style="float:right;  margin-top: 9px;"
+          onclick="toggle_inspire()"
+        >
+          {{ section.settings.testo_button_inspire }}
+          {% render 'icon-arrow-link-custom' -%}
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="about_inspire_challenge_wrapper_splash" class="about_wrapper_inspire_splash" style="display:none;">
+    <div class="box a">
+      {% render 'logo_bianco' %}
+      <br>
+      <h2 style="color:var(--color-bianco);">{{ section.settings.titolo_inspire_splash }}</h2>
+      <br>
+      <p style="color:var(--color-bianco);">{{ section.settings.testo_inspire_splash }}</p>
+    </div>
+
+    <div class="box b about_inspire_boxb" style="background-image:url({{ section.settings.image_background_comm | image_url }});background-position: -260px 0;">
+      <a
+        class="btn_next twcss-text-w twcss-flex twcss-gap-4 btn_next twcss-items-center btn_about_inspire_close"
+        onclick="toggle_inspire()"
+      >
+        {{ section.settings.testo_button_inspire_splash }}
+        {% render 'icon-arrow-link-custom' -%}
+      </a>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "About us Slam commit",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "about_slam_commitment_titolo_01",
+      "label": "about_slam_commitment_titolo_01",
+      "default": "THE"
+    },
+    {
+      "type": "text",
+      "id": "about_slam_commitment_titolo_02",
+      "label": "about_slam_commitment_titolo_02",
+      "default": "SLAM"
+    },
+    {
+      "type": "text",
+      "id": "about_slam_commitment_titolo_03",
+      "label": "about_slam_commitment_titolo_03",
+      "default": "COMMITMENT"
+    },
+
+    {
+      "type": "image_picker",
+      "id": "background_inspire_challenge_grigio",
+      "label": "background_inspire_challenge_grigio"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_inspire_challenge",
+      "label": "background_inspire_challenge"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_background_comm",
+      "label": "image_background_comm"
+    },
+    {
+      "type": "image_picker",
+      "id": "loghetto_inspire_challenge_splash",
+      "label": "loghetto_inspire_challenge_splash"
+    },
+    {
+      "type": "text",
+      "id": "testo_inspire",
+      "label": "testo_inspire",
+      "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris."
+    },
+    {
+      "type": "text",
+      "id": "testo_button_inspire",
+      "label": "testo_button_inspire",
+      "default": "READ MORE"
+    },
+    {
+      "type": "text",
+      "id": "titolo_inspire_splash",
+      "label": "titolo_inspire_splash",
+      "default": "We dare to educate the new generation through sailing"
+    },
+    {
+      "type": "text",
+      "id": "testo_inspire_splash",
+      "label": "testo_inspire_splash",
+      "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maececenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id.Lorem ipsum dolor sit amet, consectetur adipisci"
+    },
+    {
+      "type": "text",
+      "id": "testo_button_inspire_splash",
+      "label": "testo_button_inspire_splash",
+      "default": "CLOSE"
+    }
+  ],
+  "presets": [
+    {
+      "name": "About us Slam commit",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

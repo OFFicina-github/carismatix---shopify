@@ -1,0 +1,101 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    z-index:0;
+    position:relative;
+    background-color: var(--color-grigio);
+  }
+{%- endstyle -%}
+
+<section id="section_slam_partners">
+  <div class="about_slam_athletes_wrapper">
+    <div class="box a">
+      <p class="etichetta" style="color: var(--color-turchese)">
+        {{ section.settings.about_slam_partnership_occhiello }}
+      </p>
+      <br>
+      <h2 class="about_slam_partnership_titolo" style="color: var(--color-turchese)">
+        {{ section.settings.about_slam_partnership_titolo_01 }}
+      </h2>
+      <h2 class="about_slam_partnership_titolo" style="color: var(--color-turchese)">
+        {{ section.settings.about_slam_partnership_titolo_02 }}
+      </h2>
+      <br>
+      <p>{{ section.settings.about_slam_partnership_testo }}</p>
+    </div>
+
+    <div class="box b drag-scroll">
+      <div class="about_athletes_slider">
+        {% for block in section.blocks %}
+          <div style="position:relative" class="after_overlay">
+            <img src="{{ block.settings.partnership_image | image_url }}" alt="athletes">
+            <div class="titles_box">
+              <h3 style="color: var(--color-bianco);">
+                {{ block.settings.partnership_nome }}
+              </h3>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "About us partnership",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "about_slam_partnership_occhiello",
+      "label": "about_slam_partnership_occhiello",
+      "default": "SLAM TEAM"
+    },
+    {
+      "type": "text",
+      "id": "about_slam_partnership_titolo_01",
+      "label": "about_slam_partnership_titolo_01",
+      "default": "PARTNER"
+    },
+    {
+      "type": "text",
+      "id": "about_slam_partnership_titolo_02",
+      "label": "about_slam_partnership_titolo_02",
+      "default": "SHIP"
+    },
+    {
+      "type": "text",
+      "id": "about_slam_partnership_testo",
+      "label": "about_slam_partnership_testo",
+      "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus."
+    }
+  ],
+
+  "blocks": [
+    {
+      "name": "partnership_block",
+      "type": "partnership_block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "partnership_image",
+          "label": "partnership_image"
+        },
+        {
+          "type": "text",
+          "id": "partnership_nome",
+          "label": "partnership_nome"
+        }
+      ]
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "About us partnership",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

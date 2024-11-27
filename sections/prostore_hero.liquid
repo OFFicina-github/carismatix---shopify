@@ -1,0 +1,55 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+
+  }
+{%- endstyle -%}
+
+<section
+  id="section_hero_prostore"
+  class="after_overlay"
+  style="background-image:url({{ section.settings.url_image_bg | image_url }});"
+>
+  {% if section.settings.url_video_bg %}
+    <video width="auto" height="auto" autoplay playsinline muted loop>
+      <source src="{{ section.settings.url_video_bg }}" type="video/mp4">
+    </video>
+  {% endif %}
+  <div class="heading_custom">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0608/3913/3321/files/bg_prostore-min.png?v=1710858383"
+      height="auto"
+      width="auto"
+      alt="SLAM"
+    >
+    <h1 class="italic">{{ section.settings.titolo_principale }}</h1>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Pro Store - Hero",
+  "settings": [
+    {
+      "type": "text",
+      "id": "titolo_principale",
+      "label": "Titolo pagina"
+    },
+    {
+      "type": "url",
+      "id": "url_video_bg",
+      "label": "URL video"
+    },
+    {
+      "type": "image_picker",
+      "id": "url_image_bg",
+      "label": "URL image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Pro Store - Hero",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
