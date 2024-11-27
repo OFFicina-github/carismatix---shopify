@@ -3271,7 +3271,9 @@ body#index #scroll_to_nl_natale {
   * {
     font-family: Sora,sans-serif !important;
   }
-  .
+  .container.vertical-breather {
+    padding: 0 !important;
+  }
 }
 #page-programma-fedelta .bon-header {
   z-index: 1;
