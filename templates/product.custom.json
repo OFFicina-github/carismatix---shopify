@@ -1,19 +1,19 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
       "type": "custom-product",
       "blocks": {
         "16dc4fdd-3149-4a8e-9b25-708db61448fb": {
-          "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/star-rating-badge\/a103faaf-2125-4b0e-89fa-de5149736723",
+          "type": "shopify://apps/stamped-reviews/blocks/star-rating-badge/a103faaf-2125-4b0e-89fa-de5149736723",
           "settings": {
             "use_metafields": true,
             "sku_tagtype": "handle",
@@ -32,8 +32,7 @@
         },
         "quantity_selector": {
           "type": "quantity_selector",
-          "settings": {
-          }
+          "settings": {}
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -46,9 +45,8 @@
           }
         },
         "rebolt_bundle_products_single_quantity_bundle_aFhyqA": {
-          "type": "shopify:\/\/apps\/rebolt-bundle-products\/blocks\/single-quantity-bundle\/0a9e67ff-0413-4374-921d-e70fb17c7dbc",
-          "settings": {
-          }
+          "type": "shopify://apps/rebolt-bundle-products/blocks/single-quantity-bundle/0a9e67ff-0413-4374-921d-e70fb17c7dbc",
+          "settings": {}
         }
       },
       "block_order": [
@@ -79,14 +77,13 @@
       "blocks": {
         "27fcb869-d0fb-4c2b-8e8f-7a2c081f28e2": {
           "type": "description",
-          "settings": {
-          }
+          "settings": {}
         },
         "58e82b46-6d21-489f-95ed-5cffdacd23a4": {
           "type": "content",
           "settings": {
             "title": "SCHEDA TECNICA",
-            "content": "<p>{{ product.metafields.custom.specifiche_tecniche | metafield_text }}<\/p>",
+            "content": "<p>{{ product.metafields.custom.specifiche_tecniche | metafield_text }}</p>",
             "page": ""
           }
         },
@@ -94,7 +91,7 @@
           "type": "liquid",
           "settings": {
             "title": "RECENSIONI",
-            "liquid": "<!--Stamped - Begin Main Widget -->\n<p class=\"cta\"><strong>Racconta la tua esperienza<\/strong> e aiutaci a migliorare sempre di più!<\/p>\n<div \nid=\"stamped-main-widget\"   \ndata-product-id=\"{{ product.id }}\"   \ndata-name=\"{{ product.title | escape }}\"   \ndata-url=\"{{ shop.url }}{{ product.url }}\"   \ndata-image-url=\"{{ product.featured_image | product_img_url: \"large\" |replace: '?', '%3F' | replace: '&','%26'}}\" \ndata-description=\"{{ product.description | escape }}\"   \ndata-product-sku=\"{{product.handle}}\"\ndata-product-title=\"{{product.title}}\" \ndata-product-type=\"{{product.type}}\">   \n{{product.metafields.stamped.reviews}}   \n<\/div>\n<!-- Stamped - End Main Widget -->"
+            "liquid": "<!--Stamped - Begin Main Widget -->\n<p class=\"cta\"><strong>Racconta la tua esperienza</strong> e aiutaci a migliorare sempre di più!</p>\n<div \nid=\"stamped-main-widget\"   \ndata-product-id=\"{{ product.id }}\"   \ndata-name=\"{{ product.title | escape }}\"   \ndata-url=\"{{ shop.url }}{{ product.url }}\"   \ndata-image-url=\"{{ product.featured_image | product_img_url: \"large\" |replace: '?', '%3F' | replace: '&','%26'}}\" \ndata-description=\"{{ product.description | escape }}\"   \ndata-product-sku=\"{{product.handle}}\"\ndata-product-title=\"{{product.title}}\" \ndata-product-type=\"{{product.type}}\">   \n{{product.metafields.stamped.reviews}}   \n</div>\n<!-- Stamped - End Main Widget -->"
           }
         }
       },
@@ -103,13 +100,11 @@
         "58e82b46-6d21-489f-95ed-5cffdacd23a4",
         "18153e7f-3d29-4725-816e-df1b6e371011"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "9dcf7299-35df-4e4e-a291-e399561de65a": {
       "type": "modiuso",
-      "settings": {
-      }
+      "settings": {}
     },
     "16638372400e7cd77a": {
       "type": "product-recommendations",
