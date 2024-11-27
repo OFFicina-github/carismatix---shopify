@@ -116,8 +116,8 @@
               <div class="product-meta__label-list label-list" data-product-label-list>
 
                 {%- unless product.selected_or_first_available_variant.available -%}
-                  <!-- Unavailable-->
-                  <span class="label label--subdued">{{ 'collection.product.sold_out' | t }}</span>
+                  <!-- Unavailable -->
+                  <span class="mia label label--subdued">{{ 'collection.product.sold_out' | t }}</span>
                 {%- elsif product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
                   {%- if settings.discount_mode == 'percentage' -%}
                     <!-- percentage -->
