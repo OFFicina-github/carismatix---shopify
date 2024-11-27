@@ -1,0 +1,325 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "subtitle_JaXW9w": {
+          "type": "subtitle",
+          "settings": {
+            "size": "h2",
+            "content": "<h2>The first 2024 AC Preliminary regatta will take place from 22nd to 25th august in Barcelona<\/h2>"
+          }
+        },
+        "subtitle_AQAjDb": {
+          "type": "subtitle",
+          "settings": {
+            "size": "h3",
+            "content": "<h3>text: ©Elena Giolai\/SLAM<\/h3>"
+          }
+        }
+      },
+      "block_order": [
+        "subtitle_JaXW9w",
+        "subtitle_AQAjDb"
+      ],
+      "settings": {
+      }
+    },
+    "art_image_banner_T3Nj3m": {
+      "type": "art_image-banner",
+      "settings": {
+        "video_or_img": "img",
+        "image": "shopify:\/\/shop_images\/MAESTA.webp",
+        "video_id": "",
+        "is_full_width": false,
+        "overlay_text": "",
+        "caption": "",
+        "hideLines": false,
+        "block_objfit": false
+      }
+    },
+    "art_text_section_eLVGcU": {
+      "type": "art_text-section",
+      "blocks": {
+        "paragraph_LhB6B3": {
+          "type": "paragraph",
+          "settings": {
+            "green_label": "",
+            "white_label": "",
+            "title": "",
+            "h2_text": false,
+            "content": "<p>SLAM will be alongside Emirates Team New Zealand in this first competition against the challengers since they last competed for the America’s Cup, when the team won the 36th edition in Auckland, New Zealand.<\/p><p>The format of these regattas includes two days of fleet racing, followed by a match race between the top two boats in the overall ranking, where the \"there is no second\" formula remains true.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "is_new_tab": false,
+            "variant_color": "green",
+            "truncate_text": false
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_LhB6B3"
+      ],
+      "settings": {
+        "columns": "1",
+        "hideLines": false
+      }
+    },
+    "art_image_banner_fHwVLM": {
+      "type": "art_image-banner",
+      "settings": {
+        "video_or_img": "video",
+        "video_id": "pnY8oqjkBv0",
+        "preview_img": "shopify:\/\/shop_images\/SLAM_1420x900-m5534_230621_ETNZ_LEQ12_D36_414.webp",
+        "is_full_width": false,
+        "overlay_text": "",
+        "caption": "",
+        "hideLines": false,
+        "block_objfit": false
+      }
+    },
+    "art_text_section_z8tEPm": {
+      "type": "art_text-section",
+      "blocks": {
+        "paragraph_LgCnhK": {
+          "type": "paragraph",
+          "settings": {
+            "green_label": "",
+            "white_label": "",
+            "title": "",
+            "h2_text": false,
+            "content": "<p>The oldest sports trophy in the world (1851): this fact alone makes every sailor proud and amazes even those who are not sea lovers. The Cup’s motto, 'There is no second', makes it truly unique: the America's Cup is back on its first competitive occasion since the last race in March 2021, when Emirates Team New Zealand once again lifted the so-called 'Auld Mug' to the sky for the fourth time, winning the 36th America's Cup in Aukland.<\/p><p><br\/><\/p><p>SLAM will be on board the foiling AC40, crewed by the four Emirates Team New Zealand sailors chosen for the preliminary races to be held from 15th to 17th September in Spain, off the shores of Villanova i La Geltrù. Peter Burling (skipper and helmsman), Blair Tuke, Andy Maloney and Nathan Outteridge will have the honour and the burden of contesting this first test, against the five challenging teams: Luna Rossa Prada Pirelli Team (Italy), American Magic (United States), Ineos Britannia (Great Britain), Orient Express (France), and Alinghi Red Bull Racing (Switzerland). The new AC40 class, which will be used in 2024 for the Puig Women's America's Cup and the Youth America's Cup, was designed by Emirates Team New Zealand and built by McConaghy Shipyards.<\/p><p><br\/><\/p><p>Despite the 37th America's Cup itself set to be something else entirely, as it will be contested with AC75s and the different design solutions adopted by each individual team, you can still feel the anticipation! For this edition, the foiling experience of all the teams is at the highest level. The AC40s, the boats made available for the AC preliminary regatta are one-designs; the formula, which includes eliminations on the first two days with fleet races (Friday and Saturday, 15th and 16th September) and match race finals with the two best performing teams (Sunday 17th September, final after two further fleet races), will make for an event never experienced before with adrenaline-fuelled 20-minute races, both for the protagonists on board and for the spectators, who will be able to follow the races both on site and on live TV or streaming, from 3:30 pm to 5:00 pm (local time): in Italy on Mediaset channel 20 and Sky Sport (Sky Sport 258 & Sky Sport Max) and <a href=\"https:\/\/www.youtube.com\/channel\/UCo15ZYO_XDRU9LI30OPtxAg\" target=\"_blank\">streaming on the official America’s Cup YouTube channel<\/a>.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "is_new_tab": false,
+            "variant_color": "green",
+            "truncate_text": false
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_LgCnhK"
+      ],
+      "settings": {
+        "columns": "2",
+        "hideLines": false
+      }
+    },
+    "art_text_with_image_TpYJAe": {
+      "type": "art_text-with-image",
+      "settings": {
+        "image_position": "left",
+        "image": "shopify:\/\/shop_images\/SLAM_ETNZ_485x600-GD9_1931.webp",
+        "caption": "",
+        "green_label": "",
+        "white_label": "",
+        "title": "",
+        "content": "<p>Materials, design and performance combined with innovation, excellence and quality are the common thread running through all of SLAM’s clothing, designed for and with <a href=\"https:\/\/emirates-team-new-zealand.americascup.com\/en\/news\/653_SLAM-CLOTHING-A-GREAT-FIT-FOR-EMIRATES-TEAM-NEW-ZEALAND.html\" target=\"_blank\">Emirates Team New Zealand<\/a> flag-bearer of the Royal New Zealand Yacht Club. <\/p><p>At Emirates Team New Zealand, everyone involved, from the sailors to the shore team, from the engineers to the organising staff, proudly <a href=\"https:\/\/www.slam.com\/it\/collections\/emirates-team-new-zealand-official-replica-collection\" target=\"_blank\">wear our collection<\/a>, designed specially for and with them to offer the highest standards of comfort and performance for every single role.  <\/p><p>It is interesting to see Peter Burling and Blair Tuke, the 49er class crew that won Olympic gold in Rio de Janeiro in 2016 and two silver medals (London 2012 and Tokyo 2020) together. The same champions, in 2017, won their first America's Cup with Emirates Team New Zealand. <br\/>The Olympic 49er class has undoubtedly prepared a large part of the crew aboard Emirates team New Zealand: Nathan Outteridge, gold and silver medallist in London and Rio de Janeiro, has also been called up for this first event.<br\/><br\/><strong>Ready to follow this exciting 37th edition of the America's Cup from its first preliminary races?<br\/><\/strong><\/p>",
+        "variant_color": "green"
+      }
+    },
+    "art_image_banner_4mncQX": {
+      "type": "art_image-banner",
+      "settings": {
+        "video_or_img": "img",
+        "image": "shopify:\/\/shop_images\/SLAM_ETNZ_1420x900-GD9_2132.webp",
+        "video_id": "",
+        "is_full_width": false,
+        "overlay_text": "",
+        "caption": "",
+        "hideLines": false,
+        "block_objfit": false
+      }
+    },
+    "art_image_columns_UFVar7": {
+      "type": "art_image-columns",
+      "blocks": {
+        "column_qmAfRJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SLAM_1420x900-230517_ETNZ_JS_0704a.webp",
+            "caption": "",
+            "block_objfit": false
+          }
+        },
+        "column_cVEjFd": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SLAM_1420x900-m5534_230621_ETNZ_LEQ12_D36_414_08a39390-728f-4a41-a2d0-d82a2dfb5243.webp",
+            "caption": "",
+            "block_objfit": false
+          }
+        }
+      },
+      "block_order": [
+        "column_qmAfRJ",
+        "column_cVEjFd"
+      ],
+      "settings": {
+        "block_height": 0,
+        "block_height_auto": false
+      }
+    },
+    "art_text_section_bGDFg4": {
+      "type": "art_text-section",
+      "blocks": {
+        "paragraph_cjMDKB": {
+          "type": "paragraph",
+          "settings": {
+            "green_label": "",
+            "white_label": "",
+            "title": "The Kiwi are known for having introduced many out of the box innovations that have given them an advantage against their competition. For the last America’s Cup, as the Defender, you created a new flying monohull AC class. For many, those boats would never have been able to sail but instead they began an unstoppable revolution which had a tremendous impact on sailing and even more on watersports in general. What was the original idea and vision behind this choice? ",
+            "h2_text": false,
+            "content": "<p><\/p><p><strong>Kevin Shoebridge (Ocean Races and America's Cups sailor):<\/strong><em>The question often asked is why did Emirates Team New Zealand decide to design the concept of a foiling monohull for the 36th America's Cup, the same boat that is now being used for the 37th America's Cup. And I guess to answer that we really to go back a little bit. It goes back, really, to San Francisco, where I think the America’s Cup at that point has taken massive leap forward from being a fairly traditional sailing sport for over 150 years.<\/em> <\/p><p><em>The event in San Francisco (2013) with the large catamarans really was a turning point for the America’s Cup and the sport of yachting in general. It was the first time that we saw really high-performance boats that were capable of doing 40, 45, 50 knots.<\/em><\/p><p><em>And this opened up a whole new viewing audience with how spectacular these boats were. Halfway through the San Francisco event, we managed to introduce the foiling part to that design, which was something we'd worked on secretly in New Zealand for over a year and a half. And that step alone was another massive step forward for almost modernising the sport, I guess.<\/em><\/p><p><em><br\/><\/em><\/p><p><em>So, post San Francisco and leading into the Bermuda regatta, oracle was the defender. They took the step again and went for a much higher performance, a 50-foot falling catamaran, which is a really exciting boat. We at Emirates Team New Zealand managed towing that event, and it was then our responsibility to choose the direction of the sport. And at that point, we kind of thought, there's no going back. I guess there was a lot of feedback that a lot of traditionalists wanted the America’s Cup to go back to what it was, which was glamorous looking monohulls. But our feeling was that once the audience had seen boats doing 50 knots, it's very difficult to go backwards. It’s very difficult to go back and watch boats sailing at 10 knots.<\/em><\/p>",
+            "button_text": "",
+            "button_url": "",
+            "is_new_tab": false,
+            "variant_color": "default",
+            "truncate_text": false
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_cjMDKB"
+      ],
+      "settings": {
+        "columns": "1",
+        "hideLines": false
+      }
+    },
+    "art_image_columns_rbB6RH": {
+      "type": "art_image-columns",
+      "blocks": {
+        "column_XCRJ9e": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SLAM_block2-GD9_2176.webp",
+            "caption": "",
+            "block_objfit": false
+          }
+        },
+        "column_CQ3kDU": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SLAM_block2-230715_ETNZ_33909.webp",
+            "caption": "",
+            "block_objfit": false
+          }
+        }
+      },
+      "block_order": [
+        "column_XCRJ9e",
+        "column_CQ3kDU"
+      ],
+      "settings": {
+        "block_height": 800,
+        "block_height_auto": false
+      }
+    },
+    "art_text_section_RVicMj": {
+      "type": "art_text-section",
+      "blocks": {
+        "paragraph_TpGyBL": {
+          "type": "paragraph",
+          "settings": {
+            "green_label": "",
+            "white_label": "",
+            "title": "",
+            "h2_text": false,
+            "content": "<p><em>In saying that, we didn't think the catamaran had captured the whole sailing world, because if you look at the catamaran, if you look at yachting in general, catamaran owners would probably be lucky if they were 10% of the overall number, where we think monohulls were probably a far bigger percentage, and somehow, we wanted to capture that. So that started the idea of “maybe we can do a foiling monohull”, and, like the catamaran had been dragged forward with new technology, to grab hold of the monohulls and really drag that forward. So, in the early days, we set off and probably came up with about eight different concepts that were possible for AC 37. Remembering this is a decision that has tube agreed between the defender and the challenger of record, which at that time was Luna Rossa. The concept started from quite traditional through to really dynamic, really advanced, and quite out there. So, in the end, we came to a decision that we were going to go with a monohull, but it was going to be a foiling monohull. And it was a huge leap of faith and a lot of trust in our own abilities and our own design team to do that, because no one had ever seen a boat like that before. No one really knew if a boat like that was going to work.<\/em><\/p><p><em><br\/><\/em><\/p><p><em>All of that decision making was done through our design tools and our software and our simulator, our simulations, and the rule was put down and announced before any of those boats had ever been built. So, to see the boats now in the water and what they've become, and especially seeing the America’s Cup sailed in Auckland a few years ago, they really have revolutionised the sport. They are so exciting, they're so amazing to see up close, and they really are sort of a marvel of technology, the AC 75 class, and it's a real credit to the group that put those boats together. The really interesting and exciting thing about that is how quickly it has trickled down to the rest of sailing in a very short period of time, right down to children's sports and their entry into sailing. Everything now is about speed. Everything wants to be about foiling, whether it’s Moths or Waszps or whether it's foiling boards, wing boards, power boats with foils. All of those things have come very quickly, and a lot of that has come from the innovation that started with the foiling monohull, which is the AC 75!<\/em><\/p>",
+            "button_text": "",
+            "button_url": "",
+            "is_new_tab": false,
+            "variant_color": "green",
+            "truncate_text": false
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_TpGyBL"
+      ],
+      "settings": {
+        "columns": "1",
+        "hideLines": false
+      }
+    },
+    "art_image_banner_hULLKn": {
+      "type": "art_image-banner",
+      "settings": {
+        "video_or_img": "img",
+        "image": "shopify:\/\/shop_images\/SLAM_combo2-220323_ETNZ_31368.webp",
+        "video_id": "",
+        "is_full_width": false,
+        "overlay_text": "",
+        "caption": "",
+        "hideLines": false,
+        "block_objfit": false
+      }
+    },
+    "art_text_section_FKMCge": {
+      "type": "art_text-section",
+      "blocks": {
+        "paragraph_3QyUR7": {
+          "type": "paragraph",
+          "settings": {
+            "green_label": "",
+            "white_label": "",
+            "title": "What kind of innovations we can expect to see for the upcoming 37th America’s Cup?",
+            "h2_text": false,
+            "content": "<p><strong>Kevin Shoebridge: <\/strong><em>We're also asked quite frequently, what do we really want to achieve with AC 37, that was different in the past. And the answer there really is to really try and include more people in the sport. And that starts off with the inclusion this time of the Women's America's Cup and the Youth America’s Cup, which we've had amazing interest in. <br\/>And we're fully booked up with twelve teams in the Youth and twelve teams in the Women’s. So that's going to be a really exciting addition for AC 37. And it's real. It’s not a token gesture, it's real and it creates a real pathway for young sailors and women to finally get on those America's Cup boats. The AC 40 first came about probably for selfish reasons. To start with, we looked at AC 36 and where we needed to be stronger and we felt we needed to have more in house racing and the capability to race ourselves vigorously in house. <br\/>So, we wanted a one design class to do that. We also wanted to create a class that was adaptable enough that it could be used as a testing tool, so we could test sales foils concepts at a much smaller scale, which would be less cost, and we could do it quicker. It would also provide a pathway for new teams to come into the America’s Cup.<\/em><\/p><p><em><br\/>Coming into the America’s Cup cold is very difficult when you don't have the technology behind you. So, the AC 40 was a step up there to allow teams the ability to come straight in and be competitive in the early regattas. Take the French, for example. This time. I don't think that would have been possible without the inclusion of the AC 40 class. So, it's been a real success so far. We're looking forward to Villanova. That’s the real first test, and I think the racing is going to be unbelievable. The Women's and Youth regattas in Barcelona next year will be huge event, and out of that, we are hoping that there’s going to be sailors that will be able to feed directly into Team New Zealand for AC 38!<\/em><\/p>",
+            "button_text": "",
+            "button_url": "",
+            "is_new_tab": false,
+            "variant_color": "default",
+            "truncate_text": false
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_3QyUR7"
+      ],
+      "settings": {
+        "columns": "1",
+        "hideLines": false
+      }
+    },
+    "art_image_banner_3MkVnP": {
+      "type": "art_image-banner",
+      "settings": {
+        "video_or_img": "img",
+        "image": "shopify:\/\/shop_images\/SLAM_bottomimage-230531_ETNZ_JS_0913.webp",
+        "video_id": "",
+        "is_full_width": true,
+        "overlay_text": "",
+        "caption": "",
+        "hideLines": false,
+        "block_objfit": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "art_image_banner_T3Nj3m",
+    "art_text_section_eLVGcU",
+    "art_image_banner_fHwVLM",
+    "art_text_section_z8tEPm",
+    "art_text_with_image_TpYJAe",
+    "art_image_banner_4mncQX",
+    "art_image_columns_UFVar7",
+    "art_text_section_bGDFg4",
+    "art_image_columns_rbB6RH",
+    "art_text_section_RVicMj",
+    "art_image_banner_hULLKn",
+    "art_text_section_FKMCge",
+    "art_image_banner_3MkVnP"
+  ]
+}

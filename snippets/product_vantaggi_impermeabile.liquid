@@ -1,0 +1,54 @@
+<div class="livello">
+  {% assign valore_impermeabile = product.metafields.custom.waterproof %}
+  {% if valore_impermeabile == 0 %}
+    {% render 'icon_slash_grigio' %}
+    {% render 'icon_slash_grigio' %}
+    {% render 'icon_slash_grigio' %}
+    {% render 'icon_slash_grigio' %}
+    {% render 'icon_slash_grigio' %}
+    {% render 'icon_slash_grigio' %}
+  {% elsif valore_impermeabile == 1 %}
+    {% render 'icon_slash_verde' %}
+    {% render 'icon_slash_grigio' %}
+    {% render 'icon_slash_grigio' %}
+    {% render 'icon_slash_grigio' %}
+    {% render 'icon_slash_grigio' %}
+    {% render 'icon_slash_grigio' %}
+  {% elsif valore_impermeabile == 2 %}
+    {% render 'icon_slash_verde' %}
+    {% render 'icon_slash_verde' %}
+    {% render 'icon_slash_grigio' %}
+    {% render 'icon_slash_grigio' %}
+    {% render 'icon_slash_grigio' %}
+    {% render 'icon_slash_grigio' %}
+  {% elsif valore_impermeabile == 3 %}
+    {% render 'icon_slash_verde' %}
+    {% render 'icon_slash_verde' %}
+    {% render 'icon_slash_verde' %}
+    {% render 'icon_slash_grigio' %}
+    {% render 'icon_slash_grigio' %}
+    {% render 'icon_slash_grigio' %}
+  {% elsif valore_impermeabile == 4 %}
+    {% render 'icon_slash_verde' %}
+    {% render 'icon_slash_verde' %}
+    {% render 'icon_slash_verde' %}
+    {% render 'icon_slash_verde' %}
+    {% render 'icon_slash_grigio' %}
+    {% render 'icon_slash_grigio' %}
+  {% elsif valore_impermeabile == 5 %}
+    {% render 'icon_slash_verde' %}
+    {% render 'icon_slash_verde' %}
+    {% render 'icon_slash_verde' %}
+    {% render 'icon_slash_verde' %}
+    {% render 'icon_slash_verde' %}
+    {% render 'icon_slash_grigio' %}
+  {% elsif valore_impermeabile == 6 %}
+    {% render 'icon_slash_verde' %}
+    {% render 'icon_slash_verde' %}
+    {% render 'icon_slash_verde' %}
+    {% render 'icon_slash_verde' %}
+    {% render 'icon_slash_verde' %}
+    {% render 'icon_slash_verde' %}
+  {% endif %}
+</div>
+<p class="unita_misura micro"></p>

@@ -1,0 +1,212 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "subtitle_JaXW9w": {
+          "type": "subtitle",
+          "settings": {
+            "size": "h2",
+            "content": "<h2>Marsiglia dream<\/h2>"
+          }
+        }
+      },
+      "block_order": [
+        "subtitle_JaXW9w"
+      ],
+      "settings": {
+      }
+    },
+    "art_image_banner_T3Nj3m": {
+      "type": "art_image-banner",
+      "settings": {
+        "video_or_img": "img",
+        "image": "shopify:\/\/shop_images\/A03_2.jpg",
+        "video_id": "ZKhAWAEp6H8",
+        "is_full_width": true,
+        "overlay_text": "",
+        "caption": "",
+        "hideLines": false,
+        "block_objfit": false
+      }
+    },
+    "art_text_section_eLVGcU": {
+      "type": "art_text-section",
+      "blocks": {
+        "paragraph_LhB6B3": {
+          "type": "paragraph",
+          "settings": {
+            "green_label": "",
+            "white_label": "",
+            "title": "A Land Rich in History, Traditions, and Hidden Coves",
+            "h2_text": true,
+            "content": "<p>Sardinia captivates visitors with its golden beaches, turquoise waters, and a culture steeped in<br\/>history and traditions. <br\/>Beyond the popular tourist spots, the island hides lesser-known yet equally enchanting treasures: the coves. <br\/>These small paradises are often inaccessible by main roads, making sailing the best way to discover and enjoy the hidden coves of Sardinia.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "is_new_tab": false,
+            "variant_color": "green",
+            "truncate_text": false
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_LhB6B3"
+      ],
+      "settings": {
+        "columns": "1",
+        "hideLines": false
+      }
+    },
+    "art_text_section_z8tEPm": {
+      "type": "art_text-section",
+      "blocks": {
+        "paragraph_LgCnhK": {
+          "type": "paragraph",
+          "settings": {
+            "green_label": "",
+            "white_label": "",
+            "title": "The Cove as a Connection Between Nature and Well-being",
+            "h2_text": true,
+            "content": "<p>Coves are small inlets or bays, often surrounded by cliffs and reachable only through hidden paths or by sea. <br\/>They are perfect havens for those seeking peace away from the crowd and are deeply rooted in Sardinian culture. <br\/>For the locals, coves represent places of connection with nature and the sea, spaces for relaxation and reflection.<br\/>Planning a weekend on the island must include discovering the most famous coves that are close to each other, so everything is within reach, and the only concern is having the right outfit.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "is_new_tab": false,
+            "variant_color": "green",
+            "truncate_text": false
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_LgCnhK"
+      ],
+      "settings": {
+        "columns": "1",
+        "hideLines": false
+      }
+    },
+    "art_text_section_jqmDED": {
+      "type": "art_text-section",
+      "blocks": {
+        "paragraph_HxzHg3": {
+          "type": "paragraph",
+          "settings": {
+            "green_label": "",
+            "white_label": "",
+            "title": "Discover the Top 3Must-Visit Coves in the Gulf of Orosei and Our Outfit Suggestions to Enjoy Them Fully!",
+            "h2_text": true,
+            "content": "<p>The Gulf of Orosei, located in eastern Sardinia at the border between Barbagia and Ogliastra, is renowned for its extraordinary natural beauty and offers some of the island’s most spectacular coves. <br\/>If you are planning a sailing vacation in Sardinia, here are the top coves you should not miss.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "is_new_tab": false,
+            "variant_color": "green",
+            "truncate_text": false
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_HxzHg3"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "columns": "1",
+        "hideLines": false
+      }
+    },
+    "art_text_with_image_TpYJAe": {
+      "type": "art_text-with-image",
+      "settings": {
+        "image_position": "left",
+        "image": "shopify:\/\/shop_images\/A03_3.jpg",
+        "caption": "",
+        "green_label": "",
+        "white_label": "",
+        "title": "Cala Goloritzé andIts Limestone Tower",
+        "content": "<p>Cala Goloritzé is famous for its crystal-clear waters and its spectacular limestone tower rising above the bay. Arriving by sea is a stunning sight: simply set your course for Cala Goloritzé and anchor at a safe distance from the shore. <br\/>Don’t forget your <a href=\"https:\/\/www.slam.com\/products\/man-deck-summer-light-short-jacket-a123005s00?_gl=1%2A1haa6hp%2A_up%2AMQ..&gclid=CjwKCAjwyJqzBhBaEiwAWDRJVFujEf4pcRtS5FFg3PPZ-lifGeA2y-2MJDgPHL01yp0I8GRYaYSWKxoCqTsQAvD_BwE\" title=\"https:\/\/www.slam.com\/products\/man-deck-summer-light-short-jacket-a123005s00?_gl=1%2A1haa6hp%2A_up%2AMQ..&gclid=CjwKCAjwyJqzBhBaEiwAWDRJVFujEf4pcRtS5FFg3PPZ-lifGeA2y-2MJDgPHL01yp0I8GRYaYSWKxoCqTsQAvD_BwE\">Deck Light WP<\/a> Jacket or Dock Woman Jacket, perfect for shielding against the local Maestrale wind during navigation.<br\/>If you enjoy walking, the path to this cove offers breathtaking views! Wake up early, wear your <a href=\"https:\/\/www.slam.com\/products\/man-tech-pique-t-shirt-a112005s01\" title=\"https:\/\/www.slam.com\/products\/man-tech-pique-t-shirt-a112005s01\">Tech<br\/>Pique T-Shirt <\/a>or <a href=\"https:\/\/www.slam.com\/products\/woman-ws-tech-pique-t-shirt-a912004s01\" title=\"https:\/\/www.slam.com\/products\/woman-ws-tech-pique-t-shirt-a912004s01\">Woman Tech Pique T-Shirt<\/a> and your <a href=\"https:\/\/www.slam.com\/products\/man-tech-chino-short-a140006s01?_gl=1%2A1inq5i8%2A_up%2AMQ..&gclid=CjwKCAjwyJqzBhBaEiwAWDRJVFujEf4pcRtS5FFg3PPZ-lifGeA2y-2MJDgPHL01yp0I8GRYaYSWKxoCqTsQAvD_BwE\" title=\"https:\/\/www.slam.com\/products\/man-tech-chino-short-a140006s01?_gl=1%2A1inq5i8%2A_up%2AMQ..&gclid=CjwKCAjwyJqzBhBaEiwAWDRJVFujEf4pcRtS5FFg3PPZ-lifGeA2y-2MJDgPHL01yp0I8GRYaYSWKxoCqTsQAvD_BwE\">Tech Chino Shorts <\/a>or <a href=\"https:\/\/www.slam.com\/products\/woman-active-woman-s-techno-cargo-shorts-a940004s00?_gl=1%2Ad9bdk3%2A_up%2AMQ..&gclid=CjwKCAjwyJqzBhBaEiwAWDRJVFujEf4pcRtS5FFg3PPZ-lifGeA2y-2MJDgPHL01yp0I8GRYaYSWKxoCqTsQAvD_BwE\" title=\"https:\/\/www.slam.com\/products\/woman-active-woman-s-techno-cargo-shorts-a940004s00?_gl=1%2Ad9bdk3%2A_up%2AMQ..&gclid=CjwKCAjwyJqzBhBaEiwAWDRJVFujEf4pcRtS5FFg3PPZ-lifGeA2y-2MJDgPHL01yp0I8GRYaYSWKxoCqTsQAvD_BwE\">Woman Tech Cargo Shorts<\/a> for the ladies, pack a picnic, and take advantage of the cooler hours for a hike along the sea-view trails.<\/p>",
+        "variant_color": "green"
+      }
+    },
+    "art_text_with_image_TA8rcL": {
+      "type": "art_text-with-image",
+      "settings": {
+        "image_position": "right",
+        "image": "shopify:\/\/shop_images\/A03_04.jpg",
+        "caption": "",
+        "green_label": "",
+        "white_label": "",
+        "title": "Cala Luna: A Cave Framing the Blue Sardinian Sea",
+        "content": "<p>One of the must-visit coves in the Gulf of Orosei is Cala Luna, with its natural caves and long strip of golden sand, made famous by the iconic film \"Swept Away\" by Lina<br\/>Wertmüller in 1974. It can be reached both by trekking and by sea. <br\/>Exploring the cave is a unique experience, but be mindful of the temperature difference!<br\/>The cave is very humid, so <a href=\"https:\/\/www.slam.com\/pages\/shop-by-layer\" title=\"https:\/\/www.slam.com\/pages\/shop-by-layer\">dress in layers<\/a>: a light base layer like our <a href=\"https:\/\/www.slam.com\/products\/unisex-pro-lycra-long-sleeves-top-a419001s00?_pos=3&_sid=bff02f5ca&_ss=r\" title=\"https:\/\/www.slam.com\/products\/unisex-pro-lycra-long-sleeves-top-a419001s00?_pos=3&_sid=bff02f5ca&_ss=r\">Pro Lycra Top Long Sleeve<\/a>, a mid-layer like the <a href=\"https:\/\/www.slam.com\/products\/man-act-lgt-grid-fleece-a107005s00\" title=\"https:\/\/www.slam.com\/products\/man-act-lgt-grid-fleece-a107005s00\">ACTIVE LIGHT GRID FLEECE<\/a>, and a protective outer layer like the <a href=\"https:\/\/www.slam.com\/products\/man-pro-coastal-jkt-a170001s00?_pos=1&_sid=1758b5376&_ss=r\" title=\"https:\/\/www.slam.com\/products\/man-pro-coastal-jkt-a170001s00?_pos=1&_sid=1758b5376&_ss=r\">Pro Coastal Jacket.<\/a><\/p>",
+        "variant_color": "green"
+      }
+    },
+    "art_text_with_image_gJmCMa": {
+      "type": "art_text-with-image",
+      "settings": {
+        "image_position": "left",
+        "image": "shopify:\/\/shop_images\/A03_05.jpg",
+        "caption": "",
+        "green_label": "",
+        "white_label": "",
+        "title": "Cala Sisine",
+        "content": "<p>Last but not least, Cala Sisine! <br\/>Less known than other coves in the Gulf of Orosei, it will make your vacation a dream with its blue sea and white pebble seabed. <br\/>Cala Sisine is located at the end of a \"codula,\" a canyon that was once a riverbed and is now the mouth of a small stream originating from the Golgo plateau. <br\/>This cove offers a wide beach surrounded by high limestone cliffs and is immersed in a wild and unspoiled landscape.<\/p><p>For an optimal exploration experience, bring your <a href=\"https:\/\/www.slam.com\/products\/unisex-wr-backpack-a463003s00\" title=\"https:\/\/www.slam.com\/products\/unisex-wr-backpack-a463003s00\">WR Back Pack<\/a>. This backpack is perfect for keeping all essentials at hand, allowing you to fully enjoy the connection with nature and find your inner peace.<\/p>",
+        "variant_color": "green"
+      }
+    },
+    "art_text_section_beBTJ9": {
+      "type": "art_text-section",
+      "blocks": {
+        "paragraph_cECxDX": {
+          "type": "paragraph",
+          "settings": {
+            "green_label": "",
+            "white_label": "",
+            "title": "Insider Tips for Enjoying These Hidden Paradises",
+            "h2_text": true,
+            "content": "<p>Exploring the coves requires good planning. Always check trekking routes, boat mooring rules, and weather conditions before setting out.  Bring water and food; wear UV-protective clothing from our <a href=\"https:\/\/www.slam.com\/collections\/uv-protection-t-shirts\" title=\"https:\/\/www.slam.com\/collections\/uv-protection-t-shirts\">Sunblock collection<\/a>, and comfortable shoes with good grip like the <a href=\"https:\/\/www.slam.com\/products\/unisex-pro-sailing-shoes-a473001s00\" title=\"https:\/\/www.slam.com\/products\/unisex-pro-sailing-shoes-a473001s00\">PRO Sailing Shoes.  <\/a>Don’t forget a mask and snorkel to explore the underwater world!<\/p><h3><\/h3>",
+            "button_text": "",
+            "button_url": "",
+            "is_new_tab": false,
+            "variant_color": "green",
+            "truncate_text": false
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_cECxDX"
+      ],
+      "settings": {
+        "columns": "1",
+        "hideLines": false
+      }
+    },
+    "art_related_blog_posts_w6JQaY": {
+      "type": "art_related-blog-posts",
+      "settings": {
+        "subtitle": "Stories",
+        "title": "Titolo Stories"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "art_image_banner_T3Nj3m",
+    "art_text_section_eLVGcU",
+    "art_text_section_z8tEPm",
+    "art_text_section_jqmDED",
+    "art_text_with_image_TpYJAe",
+    "art_text_with_image_TA8rcL",
+    "art_text_with_image_gJmCMa",
+    "art_text_section_beBTJ9",
+    "art_related_blog_posts_w6JQaY"
+  ]
+}

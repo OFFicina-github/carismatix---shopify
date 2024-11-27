@@ -1,0 +1,203 @@
+{{ 'next_sizechart.css' | asset_url | stylesheet_tag }}
+
+{% liquid
+  assign current_language = request.locale.iso_code
+
+  case current_language
+    when 'it'
+      assign chart_title = 'Guida alle taglie'
+      assign link_chart_txt = 'Vai a tutte le guide taglie'
+      assign link_chart_prefix = '/it'
+      assign cm = 'cm'
+      assign pollici = 'pollici'
+      assign altezza_pollici = 'Altezza (pollici)'
+      assign busto_pollici = 'Torace (pollici)'
+      assign vita_pollici = 'Vita (pollici)'
+      assign fianchi_pollici = 'Bacino (pollici)'
+      assign altezza_cm = 'Altezza (cm)'
+      assign busto_cm = 'Torace (cm)'
+      assign vita_cm = 'Vita (cm)'
+      assign fianchi_cm = 'Bacino (cm)'
+      assign eta = 'Età'
+
+    when 'en'
+      assign chart_title = 'Size guide'
+      assign link_chart_txt = 'Go to all size guides'
+      assign link_chart_prefix = ''
+      assign cm = 'cm'
+      assign pollici = 'inches'
+      assign altezza_pollici = 'Height (inches)'
+      assign busto_pollici = 'Bust (inches)'
+      assign vita_pollici = 'Waist (inches)'
+      assign fianchi_pollici = 'Hips (inches)'
+      assign altezza_cm = 'Height (cm)'
+      assign busto_cm = 'Bust (cm)'
+      assign vita_cm = 'Waist (cm)'
+      assign fianchi_cm = 'Hips (cm)'
+      assign eta = 'Age'
+
+    when 'fr'
+      assign chart_title = 'Guide des tailles'
+      assign link_chart_txt = 'Accédez à tous les guides de tailles'
+      assign link_chart_prefix = '/fr'
+      assign cm = 'cm'
+      assign pollici = 'pouces'
+      assign altezza_pollici = 'Taille (pouces)'
+      assign busto_pollici = 'Poitrine (pouces)'
+      assign vita_pollici = 'Taille (pouces)'
+      assign fianchi_pollici = 'Hanches (pouces)'
+      assign altezza_cm = 'Taille (cm)'
+      assign busto_cm = 'Poitrine (cm)'
+      assign vita_cm = 'Taille (cm)'
+      assign fianchi_cm = 'Hanches (cm)'
+      assign eta = 'Âge'
+
+    when 'es'
+      assign chart_title = 'Guia de tallas'
+      assign link_chart_txt = 'Ir a todas las guías de tallas'
+      assign link_chart_prefix = '/es'
+      assign cm = 'cm'
+      assign pollici = 'pulgadas'
+      assign altezza_pollici = 'Altura (pulgadas)'
+      assign busto_pollici = 'Busto (pulgadas)'
+      assign vita_pollici = 'Cintura (pulgadas)'
+      assign fianchi_pollici = 'Caderas (pulgadas)'
+      assign altezza_cm = 'Altura (cm)'
+      assign busto_cm = 'Busto (cm)'
+      assign vita_cm = 'Cintura (cm)'
+      assign fianchi_cm = 'Caderas (cm)'
+      assign eta = 'Edad'
+
+    when 'de'
+      assign chart_title = 'Größentabelle'
+      assign link_chart_txt = 'Gehen Sie zu allen Größentabellen'
+      assign link_chart_prefix = '/de'
+      assign cm = 'cm'
+      assign pollici = 'Zoll'
+      assign altezza_pollici = 'Höhe (Zoll)'
+      assign busto_pollici = 'Brustumfang (Zoll)'
+      assign vita_pollici = 'Taille (Zoll)'
+      assign fianchi_pollici = 'Hüften (Zoll)'
+      assign altezza_cm = 'Höhe (cm)'
+      assign busto_cm = 'Brustumfang (cm)'
+      assign vita_cm = 'Taille (cm)'
+      assign fianchi_cm = 'Hüften (cm)'
+      assign eta = 'Alter'
+
+    else
+      assign chart_title = 'Size guide'
+      assign link_chart_txt = 'Go to all size guides'
+      assign link_chart_prefix = ''
+      assign cm = 'cm'
+      assign pollici = 'inches'
+      assign altezza_pollici = 'Height (inches)'
+      assign busto_pollici = 'Bust (inches)'
+      assign vita_pollici = 'Waist (inches)'
+      assign fianchi_pollici = 'Hips (inches)'
+      assign altezza_cm = 'Height (cm)'
+      assign busto_cm = 'Bust (cm)'
+      assign vita_cm = 'Waist (cm)'
+      assign fianchi_cm = 'Hips (cm)'
+      assign eta = 'Age'
+  endcase
+%}
+
+<div class="sizechart">
+  <button class="close" type="button" title="Close" aria-label="Close">×</button>
+  <div class="size-guide-modal">
+    <div class="intestazione">
+      <h2>{{ chart_title }}</h2>
+      <div class="toggle-checkbox ">
+        <span>{{ cm }}</span>
+        <input type="checkbox" id="switch"><label for="switch">Toggle</label>
+        <span>{{ pollici }}</span>
+      </div>
+    </div>
+    <div class="table_box drag-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>{{ eta }}</th>
+            <!-- <th>6</th> -->
+            <th>8</th>
+            <th>10</th>
+            <th>12</th>
+            <th>14</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-zg-role="inches" class="hidden">
+            <td>{{ altezza_pollici }}</td>
+            <!-- <td>45,¾"</td> -->
+            <td>50,4"</td>
+            <td>55,1"</td>
+            <td>59,8½"</td>
+            <td>64,5½"</td>
+          </tr>
+          <!-- <tr data-zg-role="inches" class="hidden">
+            <td>{% comment %} {{ busto_pollici }} {% endcomment %}</td>
+            <td>24"</td>
+            <td>26,3¾"</td>
+            <td>28,¾"</td>
+            <td>31,½"</td>
+            <td>33,½"</td>
+          </tr>
+          <tr data-zg-role="inches" class="hidden">
+            <td>{% comment %} {{ vita_pollici }} {% endcomment %}</td>
+            <td>22,8¼"</td>
+            <td>23,6¼"</td>
+            <td>25,2"</td>
+            <td>25,9¾"</td>
+            <td>27,5½"</td>
+          </tr>
+          <tr data-zg-role="inches" class="hidden">
+            <td>{% comment %} {{ fianchi_pollici }} {% endcomment %}</td>
+            <td>26,¾"</td>
+            <td>29,1½"</td>
+            <td>31,½"</td>
+            <td>33,8½"</td>
+            <td>35,4¼"</td>
+          </tr> -->
+          <tr data-zg-role="cm">
+            <td>{{ altezza_cm }}</td>
+            <!-- <td>116</td> -->
+            <td>136</td>
+            <td>148</td>
+            <td>158</td>
+            <td>166</td>
+          </tr>
+          <!-- <tr data-zg-role="cm">
+            <td>{% comment %} {{ busto_cm }} {% endcomment %}</td>
+            <td>61</td>
+            <td>67</td>
+            <td>73</td>
+            <td>80</td>
+            <td>85</td>
+          </tr>
+          <tr data-zg-role="cm">
+            <td>{% comment %} {{ vita_cm }} {% endcomment %}</td>
+            <td>58</td>
+            <td>60</td>
+            <td>64</td>
+            <td>66</td>
+            <td>70</td>
+          </tr>
+          <tr data-zg-role="cm">
+            <td>{% comment %} {{ fianchi_cm }} {% endcomment %}</td>
+            <td>68</td>
+            <td>74</td>
+            <td>80</td>
+            <td>86</td>
+            <td>90</td>
+          </tr> -->
+        </tbody>
+      </table>
+    </div>
+
+    <div class="sizeguide-link">
+      <a class="etichetta" target="_blank" href="{{ link_chart_prefix }}/pages/size-guide">
+        {{ link_chart_txt }}
+      </a>
+    </div>
+  </div>
+</div>

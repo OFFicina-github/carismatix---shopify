@@ -1,0 +1,60 @@
+{% if product.metafields.custom.washing.value.hiron != blank %}
+  {% if product.metafields.custom.washing.value.hiron == 'cool' %}
+    {% render 'icon_materiale_iron_cool' %}
+    {% elsif product.metafields.custom.washing.value.hiron == 'low temp' %}
+    {% render 'icon_materiale_iron_cool' %}
+    {% elsif product.metafields.custom.washing.value.hiron == 'warm' %}
+    {% render 'icon_materiale_iron_warm' %}
+    {% elsif product.metafields.custom.washing.value.hiron == 'no' %}
+    {% render 'icon_materiale_no_iron' %}
+  {% else %}
+  {% endif %}
+{% endif %}
+{% if product.metafields.custom.washing.value.bleach != blank %}
+  {% if product.metafields.custom.washing.value.bleach == 'yes' %}
+    {% render 'icon_materiale_bleach' %}
+    {% elsif product.metafields.custom.washing.value.bleach == 'no' %}
+    {% render 'icon_materiale_no_bleach' %}
+  {% else %}
+  {% endif %}
+{% endif %}
+{% if product.metafields.custom.washing.value.dry_clean != blank %}
+  {% if product.metafields.custom.washing.value.dry_clean == 'yes' %}
+    {% render 'icon_materiale_dry_clean' %}
+    {% elsif product.metafields.custom.washing.value.dry_clean == 'no' %}
+    {% render 'icon_materiale_no_dry_clean' %}
+  {% else %}
+  {% endif %}
+{% endif %}
+{% if product.metafields.custom.washing.value.dry_wash != blank %}
+  {% if product.metafields.custom.washing.value.dry_wash == 'yes' %}
+    {% comment %}{% render 'icon_materiale_dry_wash' %}{% endcomment %}
+  {% endif %}
+{% endif %}
+{% if product.metafields.custom.washing.value.tumble_dry != blank %}
+  {% if product.metafields.custom.washing.value.tumble_dry == 'yes' %}
+    {% render 'icon_materiale_tumble_dry' %}
+    {% elsif product.metafields.custom.washing.value.tumble_dry == 'no' %}
+    {% render 'icon_materiale_no_tumble_dry' %}
+    {% elsif product.metafields.custom.washing.value.tumble_dry == 'cool' %}
+    {% render 'icon_materiale_tumble_dry_cool' %}
+  {% else %}
+  {% endif %}
+{% endif %}
+{% if product.metafields.custom.washing.value.wash != blank %}
+  {% if product.metafields.custom.washing.value.wash == '30' %}
+    {% render 'icon_materiale_wash_30' %}
+    {% elsif product.metafields.custom.washing.value.wash == '40' %}
+    {% render 'icon_materiale_wash_40' %}
+    {% elsif product.metafields.custom.washing.value.wash == 'hand wash' %}
+    {% render 'icon_materiale_hand_wash' %}
+    {% elsif product.metafields.custom.washing.value.wash == 'wipe clean only' %}
+    {% comment %}{% render 'icon_materiale_wash_wipe_clean' %}{% endcomment %}
+    {% elsif product.metafields.custom.washing.value.wash == 'no' %}
+    {% render 'icon_materiale_no_wash' %}
+  {% else %}
+  {% endif %}
+{% endif %}
+{% if product.metafields.custom.washing.value.additional_info != blank %}
+  <p>{{ product.metafield.additional_info }}</p>
+{% endif %}

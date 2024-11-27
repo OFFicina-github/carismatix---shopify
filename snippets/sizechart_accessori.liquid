@@ -1,0 +1,291 @@
+{{ 'next_sizechart.css' | asset_url | stylesheet_tag }}
+
+{% liquid
+  assign current_language = request.locale.iso_code
+
+  case current_language
+    when 'it'
+      assign chart_title = 'Guida alle taglie'
+      assign link_chart_txt = 'Vai a tutte le guide taglie'
+      assign link_chart_prefix = '/it'
+      assign cm = 'cm'
+      assign pollici = 'pollici'
+      assign vita_pollici = 'Vita (pollici)'
+      assign vita_cm = 'Vita (cm)'
+      assign scarpe = 'Scarpe'
+      assign cinture = 'Cinture'
+
+      assign guanti = 'Guanti'
+      assign guanti_italia = 'ITALIA'
+      assign guanti_cee = 'CEE'
+      assign guanti_extracee = 'EXTRA CEE'
+      assign guanti_cm = 'CM'
+      assign guanti_desc = 'Determinare con precisione la misura dei tuoi guanti è estremamente semplice. Con un metro da sarto, misura la distanza dalla punta del medio al palmo. Nella tabella di corrispondenza riportata potrai trovare la tua taglia.'
+      assign gunati_desc_titolo = 'Come prendere le misure:'
+
+    when 'en'
+      assign chart_title = 'Size guide'
+      assign link_chart_txt = 'Go to all size guides'
+      assign link_chart_prefix = ''
+      assign cm = 'cm'
+      assign pollici = 'inches'
+      assign vita_pollici = 'Waist (inches)'
+      assign vita_cm = 'Waist (cm)'
+      assign scarpe = 'Shooes'
+      assign cinture = 'Belts'
+
+      assign guanti = 'Gloves'
+      assign guanti_italia = 'ITALIY'
+      assign guanti_cee = 'CEE'
+      assign guanti_extracee = 'EXTRA CEE'
+      assign guanti_cm = 'CM'
+      assign guanti_desc = 'Determining your glove size accurately is very simple. Using a tape measure, measure the distance from the tip of your middle finger to the palm of your hand. In the provided size chart, you can find your corresponding size.'
+      assign gunati_desc_titolo = 'How to Take Measurements:'
+
+    when 'fr'
+      assign chart_title = 'Guide des tailles'
+      assign link_chart_txt = 'Accédez à tous les guides de tailles'
+      assign link_chart_prefix = '/fr'
+      assign cm = 'cm'
+      assign pollici = 'pouces'
+      assign vita_pollici = 'Taille (pouces)'
+      assign vita_cm = 'Taille (cm)'
+      assign scarpe = 'Chaussures'
+      assign cinture = 'Ceintures'
+
+      assign guanti = 'Gloves'
+      assign guanti_italia = 'ITALIE'
+      assign guanti_cee = 'CEE'
+      assign guanti_extracee = 'EXTRA CEE'
+      assign guanti_cm = 'CM'
+      assign guanti_desc = 'Déterminer précisément la taille de vos gants est très simple. Avec un mètre ruban, mesurez la distance entre la pointe de votre majeur et la paume de votre main. Dans le tableau des correspondances fourni, vous trouverez votre taille.'
+      assign gunati_desc_titolo = 'Comment prendre les mesures:'
+
+    when 'es'
+      assign chart_title = 'Guia de tallas'
+      assign link_chart_txt = 'Ir a todas las guías de tallas'
+      assign link_chart_prefix = '/es'
+      assign cm = 'cm'
+      assign pollici = 'pulgadas'
+      assign vita_pollici = 'Cintura (pulgadas)'
+      assign vita_cm = 'Cintura (cm)'
+      assign scarpe = 'Zapatos'
+      assign cinture = 'Cinturones'
+
+      assign guanti = 'Gloves'
+      assign guanti_italia = 'ITALIA'
+      assign guanti_cee = 'CEE'
+      assign guanti_extracee = 'EXTRA CEE'
+      assign guanti_cm = 'CM'
+      assign guanti_desc = 'Determinar con precisión la talla de tus guantes es muy sencillo. Con una cinta métrica, mide la distancia desde la punta de tu dedo medio hasta la palma de tu mano. En la tabla de correspondencia proporcionada, podrás encontrar tu talla.'
+      assign gunati_desc_titolo = 'Cómo tomar las medidas:'
+
+    when 'de'
+      assign chart_title = 'Größentabelle'
+      assign link_chart_txt = 'Gehen Sie zu allen Größentabellen'
+      assign link_chart_prefix = '/de'
+      assign cm = 'cm'
+      assign pollici = 'Zoll'
+      assign vita_pollici = 'Taille (Zoll)'
+      assign vita_cm = 'Taille (cm)'
+      assign scarpe = 'Schuhe'
+      assign cinture = 'Gürtel'
+
+      assign guanti = 'Gloves'
+      assign guanti_italia = 'ITALIEN'
+      assign guanti_cee = 'CEE'
+      assign guanti_extracee = 'EXTRA CEE'
+      assign guanti_cm = 'CM'
+      assign guanti_desc = 'Es ist ganz einfach, die richtige Handschuhgröße zu bestimmen. Messen Sie mit einem Maßband den Abstand von der Spitze Ihres Mittelfingers bis zur Handfläche. In der beigefügten Größentabelle können Sie Ihre passende Größe finden.'
+      assign gunati_desc_titolo = 'So nehmen Sie Maß:'
+
+    else
+      assign chart_title = 'Size guide'
+      assign link_chart_txt = 'Go to all size guides'
+      assign link_chart_prefix = ''
+      assign cm = 'cm'
+      assign pollici = 'inches'
+      assign vita_pollici = 'Waist (inches)'
+      assign vita_cm = 'Waist (cm)'
+      assign scarpe = 'Shooes'
+      assign cinture = 'Belts'
+
+      assign guanti = 'Gloves'
+      assign guanti_italia = 'ITALIY'
+      assign guanti_cee = 'CEE'
+      assign guanti_extracee = 'EXTRA CEE'
+      assign guanti_cm = 'CM'
+      assign guanti_desc = 'Determining your glove size accurately is very simple. Using a tape measure, measure the distance from the tip of your middle finger to the palm of your hand. In the provided size chart, you can find your corresponding size.'
+      assign gunati_desc_titolo = 'How to Take Measurements:'
+  endcase
+%}
+
+<div class="sizechart accessori">
+  <button class="close" type="button" title="Close" aria-label="Close">×</button>
+  <div class="size-guide-modal">
+    <div class="intestazione">
+      <h2>{{ chart_title }}</h2>
+      <div class="toggle-checkbox ">
+        <span>{{ cm }}</span>
+        <input type="checkbox" id="switch"><label for="switch">Toggle</label>
+        <span>{{ pollici }}</span>
+      </div>
+    </div>
+    <div class="table_box">
+      <h3>{{ scarpe }}</h3>
+      <table>
+        <tbody>
+          <tr>
+            <td>EUR</td>
+            <td>35</td>
+            <td>36</td>
+            <td>37</td>
+            <td>38</td>
+            <td>39</td>
+            <td>40</td>
+            <td>41</td>
+            <td>42</td>
+            <td>43</td>
+            <td>44</td>
+            <td>45</td>
+            <td>46</td>
+          </tr>
+          <tr>
+            <td>UK</td>
+            <td>2.5</td>
+            <td>3.5</td>
+            <td>4.5</td>
+            <td>5</td>
+            <td>5.5</td>
+            <td>6.5</td>
+            <td>7.5</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>USA</td>
+            <td>3.5</td>
+            <td>4.5</td>
+            <td>5</td>
+            <td>5.5</td>
+            <td>6.5</td>
+            <td>7.5</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>12.5</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="table_box">
+      <h3>{{ cinture }}</h3>
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>S</th>
+            <th>M</th>
+            <th>L</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-zg-role="inches" class="hidden">
+            <td>{{ vita_pollici }}</td>
+            <td>39,37"</td>
+            <td>45,27"</td>
+            <td>51,18"</td>
+          </tr>
+          <tr data-zg-role="cm">
+            <td>{{ vita_cm }}</td>
+            <td>100</td>
+            <td>115</td>
+            <td>130</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="table_box">
+      <h3>{{ guanti }}</h3>
+      <p style="padding-bottom: 20px;font-size: 14px;line-height: 1.2;font-style: italic;"><strong>{{ gunati_desc_titolo }}</strong> {{ guanti_desc }}</p>
+      <table>
+        <thead>
+          <tr>
+            <th>{{ guanti_italia }}</th>
+            <th>{{ guanti_cee }}</th>
+            <th>{{ guanti_extracee }}</th>
+            <th>{{ guanti_cm }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>7</td>
+            <td>XXS</td>
+            <td>XXS</td>
+            <td>18</td>
+          </tr>
+          <tr>
+            <td>7½</td>
+            <td>XS</td>
+            <td>XS</td>
+            <td>19</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>S</td>
+            <td>S</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td>8½</td>
+            <td>M</td>
+            <td>M</td>
+            <td>21</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>L</td>
+            <td>L</td>
+            <td>22</td>
+          </tr>
+          <tr>
+            <td>9½</td>
+            <td>XL</td>
+            <td>XL</td>
+            <td>23</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>XXL</td>
+            <td>XXL</td>
+            <td>24</td>
+          </tr>
+          <tr>
+            <td>10½</td>
+            <td>XXXL</td>
+            <td>XXXL</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>XXXXL</td>
+            <td>XXXXL</td>
+            <td>26</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="sizeguide-link">
+      <a class="etichetta" target="_blank" href="{{ link_chart_prefix }}/pages/size-guide">
+        {{ link_chart_txt }}
+      </a>
+    </div>
+  </div>
+</div>

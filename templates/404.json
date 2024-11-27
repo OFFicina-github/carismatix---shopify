@@ -9,13 +9,67 @@
  */
 {
   "sections": {
+    "rich_text_qize7a": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_wNnzpG": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Ooops, need a compass?<\/strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_RbhdpM": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>Did you make a purchase before March 25, 2024 or clicked on an old link?<\/em><\/p><p>The route for our website has changed in the meantime!Indeed, the entire SLAM e-commerce ecosystem now sails new seas, all waiting to be discovered!<\/p><h3>So starboard tiller and happy sailing to our homepage!<\/h3>"
+          }
+        },
+        "button_yGRyUW": {
+          "type": "button",
+          "settings": {
+            "button_label": "CONTINUE SHOPPING",
+            "button_link": "https:\/\/slam.com",
+            "button_blank_1": false,
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_wNnzpG",
+        "text_RbhdpM",
+        "button_yGRyUW"
+      ],
+      "custom_css": [
+        ".rich-text {padding-top: 160px;}",
+        "@media (max-width: 999px) {.rich-text {padding-top: 60px; }}",
+        ".rich-text__text p {margin-bottom: 20px;}",
+        ".h1 {line-height: 1;}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
     "main": {
-      "type": "main-not-found",
+      "type": "main-404",
+      "disabled": true,
+      "custom_css": [
+
+      ],
       "settings": {
       }
     }
   },
   "order": [
+    "rich_text_qize7a",
     "main"
   ]
 }

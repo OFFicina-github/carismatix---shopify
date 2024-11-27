@@ -1,0 +1,500 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "subtitle_JaXW9w": {
+          "type": "subtitle",
+          "settings": {
+            "size": "h2",
+            "content": "<h2>The wait is finally over: Emirates Team New Zealand will be racing for the match of a lifetime against INEOS Britannia. For the first time in 173 years, the New Zealand team could be on the track to win the Auld Mug three times in a row</h2>"
+          }
+        },
+        "subtitle_HhpCek": {
+          "type": "subtitle",
+          "settings": {
+            "size": "h2",
+            "content": "<h3>Elena Giolai/SLAM</h3>"
+          }
+        }
+      },
+      "block_order": [
+        "subtitle_JaXW9w",
+        "subtitle_HhpCek"
+      ],
+      "settings": {
+      }
+    },
+    "art_image_banner_T3Nj3m": {
+      "type": "art_image-banner",
+      "settings": {
+        "video_or_img": "video",
+        "image": "shopify://shop_images/37AC_241013_IR207592-2.jpg",
+        "video_id": "ou-1C2kEwC0?si=jyHscSYFxQTcRaQm",
+        "preview_img": "shopify://shop_images/37AC_241013_IR207592-2.jpg",
+        "is_full_width": true,
+        "overlay_text": "",
+        "caption": "",
+        "hideLines": false,
+        "block_objfit": false
+      }
+    },
+    "art_text_section_Q8iHLG": {
+      "type": "art_text-section",
+      "blocks": {
+        "paragraph_UT4nxG": {
+          "type": "paragraph",
+          "settings": {
+            "green_label": "",
+            "white_label": "",
+            "title": "",
+            "h2_text": false,
+            "content": "<h3>For the first time in America's Cup history the Kiwis could win the Cup for the third time in a row. For Britannia, on the other hand, this is the first opportunity in 60 years to try and bring the Auld Mug back home, to the Royal Yacht Squadron's clubhouse in Cowes. The last time it made it to the final match was in Newport (USA) in 1964, when Sovereign, skippered by Peter Scott, lost 3-1 to the Americans of Constellation. But Emirates Team New Zealand won’t be making things easy for them, if the very first races are anything to go by. </h3><h3></h3>",
+            "button_text": "",
+            "button_url": "",
+            "is_new_tab": false,
+            "variant_color": "default",
+            "truncate_text": false
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_UT4nxG"
+      ],
+      "settings": {
+        "columns": "1",
+        "hideLines": false
+      }
+    },
+    "next_text_with_products_carousel_9np6fJ": {
+      "type": "next_text_with_products_carousel",
+      "blocks": {
+        "image_TxdtBW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/37AC_241012_RP1_5881.jpg"
+          }
+        },
+        "image_8mNjHi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/37AC_241011_IR109273.jpg"
+          }
+        },
+        "image_J6XtVH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/37AC_241013_RP2_2784.jpg"
+          }
+        },
+        "image_3UxmeC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/37AC_241013_RP2_2739.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_TxdtBW",
+        "image_8mNjHi",
+        "image_J6XtVH",
+        "image_3UxmeC"
+      ],
+      "settings": {
+        "carousel_type": "images",
+        "green_label": "",
+        "white_label": "",
+        "title": "",
+        "content": "<p>Thanks to the considerations of Nathan Outteridge, left helmsman of Emirates Team New Zealand, we can take a closer look at how the America's Cup has changed on a technical level. Nathan, a true star of international sailing, began his Cup experience back in 2013, continuing in 2017 with Artemis Racing.</p><p>Ken Read, considered to be one of the most active spokesmen for sailing around the world, captured an insightful exchange of views between two sailing greats during a podcast, as Read himself was helmsman in two of Dennis Conner's America's Cup campaigns, in 2000 and 2003, aboard Stars & Stripes. As skipper, he competed in two Volvo Ocean Races: in 2008-2009 and 2011-2012, where he finished third. <strong>Nathan Outteridge </strong>compared his experiences between <strong>Artemis Racing </strong>in 2017 and <strong>Emirates Team New Zealand </strong>in 2024, highlighting the differences between an emerging team and an established one. With Artemis, a new team, under the leadership of Ian Percy there was still a lot that needed to be built, and delays often occurred during the development phases, which in turn affected the overall schedule.<strong> With Emirates Team New Zealand,</strong> on the other hand, with its much more<strong> mature and efficient structure, the integration process was faster and smoother, as the team demonstrated remarkable organizational skills and punctuality</strong>.</p><p></p>",
+        "button_text": "",
+        "button_url": "",
+        "is_new_tab": false,
+        "prod_list": [
+
+        ],
+        "hideLines": false
+      }
+    },
+    "art_image_columns_rbB6RH": {
+      "type": "art_image-columns",
+      "blocks": {
+        "column_CQ3kDU": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/37AC_241012_RP1_6057.jpg",
+            "caption": "",
+            "block_objfit": false
+          }
+        }
+      },
+      "block_order": [
+        "column_CQ3kDU"
+      ],
+      "settings": {
+        "block_height": 650,
+        "block_height_auto": false
+      }
+    },
+    "art_bio_section_nPkayD": {
+      "type": "art_bio-section",
+      "settings": {
+        "image": "shopify://shop_images/37AC_241013_IR208133.jpg",
+        "title": "NATHAN OUTTERIDGE",
+        "content": "<p>Outteridge also spoke of the technological advances since 2017, when Artemis had nothing like a simulator, relying solely on in-water testing. Emirates Team New Zealand, on the other hand, already took advantage of simulators then, prompting Artemis to develop one after that very campaign. In 2024, all teams use advanced simulators, balancing the time between simulation and water testing, thus improving the accuracy of their development stages.</p><p>Outteridge also reflected on joining a well-established team like Emirates Team New Zealand, acknowledging that although his was a much more predetermined role that left little room for independent initiative, he was happy to adapt to the situation, having learned from Peter Burling's experience. The two worked together closely to develop a common sailing style, demonstrating how cooperation within a well-structured team can be just as exciting as taking on a leadership role.</p>"
+      }
+    },
+    "art_text_section_RNKd38": {
+      "type": "art_text-section",
+      "blocks": {
+        "paragraph_b47Lii": {
+          "type": "paragraph",
+          "settings": {
+            "green_label": "",
+            "white_label": "",
+            "title": "Technical insights by Nathan Outteridge",
+            "h2_text": true,
+            "content": "<p><strong>Cockpit configuration and customisation</strong></p><p>• The sailor describes the cockpit, the cabin from which they steer, as a fixed space, unlike aboard traditional boats where one can move around in order to observe the opponent from different angles.</p><p>• Cockpit elements, such as the helm and display, are fully customisable.</p>",
+            "button_text": "",
+            "button_url": "",
+            "is_new_tab": false,
+            "variant_color": "green",
+            "truncate_text": false
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_b47Lii"
+      ],
+      "settings": {
+        "columns": "2",
+        "hideLines": false
+      }
+    },
+    "art_text_section_4BkiyP": {
+      "type": "art_text-section",
+      "blocks": {
+        "paragraph_RiVraQ": {
+          "type": "paragraph",
+          "settings": {
+            "green_label": "",
+            "white_label": "",
+            "title": "Boat performance",
+            "h2_text": false,
+            "content": "<p></p><p>• The boat is described as a real “beast.” Compared to larger models such as the AC75, the AC-40 is lighter, more agile and more responsive, offering superior feedback and sensitivity.</p><p>• The heavier AC75s tend to lack that same level of control, however, they are still designed for high-speed sailing, counting on powerful sails.</p>",
+            "button_text": "",
+            "button_url": "",
+            "is_new_tab": false,
+            "variant_color": "green",
+            "truncate_text": false
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_RiVraQ"
+      ],
+      "settings": {
+        "columns": "2",
+        "hideLines": false
+      }
+    },
+    "art_text_section_J4mbpq": {
+      "type": "art_text-section",
+      "blocks": {
+        "paragraph_Ac7tEC": {
+          "type": "paragraph",
+          "settings": {
+            "green_label": "",
+            "white_label": "",
+            "title": "Performance Monitoring",
+            "h2_text": false,
+            "content": "<p>• Much of the work on board consists of monitoring the boat's performance, loads and sail shape via display systems. The sailor constantly adjusts these parameters to optimise performance.</p><p>• When at the helm, the sailor concentrates on fewer indicators, focusing mainly on speed.</p>",
+            "button_text": "",
+            "button_url": "",
+            "is_new_tab": false,
+            "variant_color": "green",
+            "truncate_text": false
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_Ac7tEC"
+      ],
+      "settings": {
+        "columns": "2",
+        "hideLines": false
+      }
+    },
+    "art_related_products_AAeEgx": {
+      "type": "art_related-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "product_list": [
+          "unisex-etnz-backpack-n463008w00",
+          "man-etnz-hoodie-n106007w00",
+          "woman-etnz-woman-s-poloshirt-n908006w00",
+          "man-etnz-pro-coastal-jkt-n170001w00"
+        ],
+        "products_to_show": 4,
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
+    "art_text_section_Gw6j8x": {
+      "type": "art_text-section",
+      "blocks": {
+        "paragraph_XUNM8p": {
+          "type": "paragraph",
+          "settings": {
+            "green_label": "",
+            "white_label": "",
+            "title": "The rudder",
+            "h2_text": false,
+            "content": "<p>• The helm is comparable to that of a Formula 1 car, with over 20 buttons. Only a handful of people are familiar with how it actually operates, having been involved in its development process.</p>",
+            "button_text": "",
+            "button_url": "",
+            "is_new_tab": false,
+            "variant_color": "green",
+            "truncate_text": false
+          }
+        },
+        "paragraph_erW4hW": {
+          "type": "paragraph",
+          "settings": {
+            "green_label": "",
+            "white_label": "",
+            "title": "Double skin sails",
+            "h2_text": false,
+            "content": "<p>• Double skin sails significantly improve performance by reducing drag and increasing thrust compared to traditional sails.</p><p>• When hoisting the mainsail, a reduction in drag is noticeable immediately. When tacking, the sail changes from convex to flat, then regains its camber without the friction typically felt when using single sails.</p><p>• The sail depth can be precisely adjusted by varying the camber from 10% to 2%, thus accurately adapting the shape to the sailing conditions.</p>",
+            "button_text": "",
+            "button_url": "",
+            "is_new_tab": false,
+            "variant_color": "green",
+            "truncate_text": false
+          }
+        },
+        "paragraph_pXCybJ": {
+          "type": "paragraph",
+          "settings": {
+            "green_label": "",
+            "white_label": "",
+            "title": "Sail Materials",
+            "h2_text": false,
+            "content": "<p>• Modern sail materials allow for quick adjustments even on the jibs, adapting the shape to different gaits, both upwind and downwind.</p>",
+            "button_text": "",
+            "button_url": "",
+            "is_new_tab": false,
+            "variant_color": "green",
+            "truncate_text": false
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_XUNM8p",
+        "paragraph_erW4hW",
+        "paragraph_pXCybJ"
+      ],
+      "settings": {
+        "columns": "2",
+        "hideLines": false
+      }
+    },
+    "art_image_columns_GMfmFd": {
+      "type": "art_image-columns",
+      "blocks": {
+        "column_WqG7Na": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/37AC_241012_IR102971.jpg",
+            "caption": "",
+            "block_objfit": false
+          }
+        },
+        "column_DDEaA7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/37AC_240717_JS_ETNZ_9504b.jpg",
+            "caption": "",
+            "block_objfit": false
+          }
+        },
+        "column_4KDdBT": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/37AC_241012_RP1_6091.jpg",
+            "caption": "",
+            "block_objfit": false
+          }
+        }
+      },
+      "block_order": [
+        "column_WqG7Na",
+        "column_DDEaA7",
+        "column_4KDdBT"
+      ],
+      "settings": {
+        "block_height": 280,
+        "block_height_auto": false
+      }
+    },
+    "art_text_section_JX7RJk": {
+      "type": "art_text-section",
+      "blocks": {
+        "paragraph_QBxjNh": {
+          "type": "paragraph",
+          "settings": {
+            "green_label": "",
+            "white_label": "",
+            "title": "",
+            "h2_text": false,
+            "content": "<p>It is abundantly clear, at this point, that technological innovation plays a crucial role in improving performance and this is one of the most fascinating elements of this edition of the America's Cup.</p><p>Outteridge explained how technology and communication are crucial in today's America's Cup, where much of the boat is a “blind spot” and tends to not allow for a complete view. Having always been used to describing the tactical situation, as he did on the 49er, Nathan trained himself to provide clear information to teammate Peter Burling so that he could make quick decisions without losing speed.</p><p>Now, with the support of screens showing the surrounding context, boats and laylines, the task of gauging the situation has become much more precise, albeit requiring even clearer communication. The race software, common to all teams, displays the boats and course boundaries, while the sailors input the wind data they have collected to determine laylines. This helps the teams make tactical decisions based on real data and not just calculated assumptions they might have.</p><p>The system of vectors and “ghost boats” makes it possible to predict where boats will be in the next 10 seconds, facilitating the anticipation of manoeuvres and the evaluation of winning tactics in good time. In this way, assumptions are minimised and decisions are based on accurate data and precise projections.ts of the match, such as starts and manoeuvres. With a nothing short of a perfect first start as the zero expired, the Kiwis proved to be a truly incredible defender. </p>",
+            "button_text": "",
+            "button_url": "",
+            "is_new_tab": false,
+            "variant_color": "green",
+            "truncate_text": false
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_QBxjNh"
+      ],
+      "settings": {
+        "columns": "1",
+        "hideLines": false
+      }
+    },
+    "art_image_banner_DkgFhc": {
+      "type": "art_image-banner",
+      "settings": {
+        "video_or_img": "img",
+        "image": "shopify://shop_images/37AC_241010ANA_0086.jpg",
+        "video_id": "",
+        "is_full_width": true,
+        "overlay_text": "",
+        "caption": "",
+        "hideLines": false,
+        "block_objfit": false
+      }
+    },
+    "art_text_section_ne8Xyw": {
+      "type": "art_text-section",
+      "blocks": {
+        "paragraph_Ujbya9": {
+          "type": "paragraph",
+          "settings": {
+            "green_label": "",
+            "white_label": "",
+            "title": "Opening Ceremony and Grand Finale",
+            "h2_text": false,
+            "content": "<p>Barcelona became the”'Lighthouse to the World” with a spectacular opening ceremony at the Platja de Bogatell, which highlighted the values and passion of the Louis Vuitton 37th America's Cup, namely the power represented by sport, mixed with art and culture as agents of change and commitment. The ceremony, inspired by the sea, wind and sailing, symbolised human ingenuity and a collective effort, creating a narrative that reconnected the audience with the power of nature and the magic of maritime exploration.</p><p>The first races between Emirates Team New Zealand and INEOS Britannia demonstrated Taihoro's speed and the team's precision in the match’s most crucial moments, such as starts and manoeuvres. With a first start that was nothing short of perfect as the counter hit zero, the Kiwis proved to be a truly incredible defender. And now the story continues as the next act begins... </p>",
+            "button_text": "",
+            "button_url": "",
+            "is_new_tab": false,
+            "variant_color": "green",
+            "truncate_text": false
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_Ujbya9"
+      ],
+      "settings": {
+        "columns": "2",
+        "hideLines": false
+      }
+    },
+    "art_bio_section_ccTQCp": {
+      "type": "art_bio-section",
+      "settings": {
+        "image": "shopify://shop_images/37AC_240823_RP2_5551.jpg",
+        "title": "Grant Dalton, CEO of the America's Cup Event",
+        "content": "<h2><em>Our connection with Barcelona, its people, culture and identity, resonates with the values we sought to promote in the Louis Vuitton 37th America</em>'<em>s Cup - </em><em><strong>Sustainability, Diversity, Inclusion, Technology and Innovation.</strong></em><em> The evening was designed to showcase those same values, in an attempt to compete with the unforgettable memories of the opening ceremony that gave way to the 1992 Olympics - a memory etched in the minds of all who experienced it</em></h2>"
+      }
+    },
+    "art_accent_text_section_ELGejA": {
+      "type": "art_accent-text-section",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "subtitle": "Caterina and Ruggero really embody the differences and – most of all – similarities of these two main characters in sailing: water and wind.  ",
+        "content": "<p>Both “main” because without one of the two you can’t fly. And we saw how sailing – and foiling in particular – is all about flying: lifting yourself up over things, while observing the world from a privileged perspective.</p><p>That privileged perspective, in 2024, will be for Ruggero and Caterina the Olympic Games in Paris.</p><p>And they are ready to fly and foil, finding – as <em>Jonathan Livingston Seagull</em> suggested – the “perfect speed of being there”.</p><h3></h3>",
+        "variant_color": "grey"
+      }
+    },
+    "art_related_products_PewzJq": {
+      "type": "art_related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "Discover the READY TO FLY Capsule Collection and dress like Ruggero and Caterina!",
+        "heading_size": "h2",
+        "product_list": [
+          "unisex-pro-lycra-tights-a419002s00",
+          "unisex-pro-lycra-long-sleeves-top-a419001s00",
+          "man-active-softshell-vest-a126002s00",
+          "woman-active-woman-s-softshell-vest-a926001s00"
+        ],
+        "products_to_show": 4,
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
+    "art_image_banner_7EKXWN": {
+      "type": "art_image-banner",
+      "settings": {
+        "video_or_img": "video",
+        "video_id": "live/miCGN3zswz8?si=o3YxbeIbQm6iLsgO",
+        "preview_img": "shopify://shop_images/37AC_241010_RP1_9911.jpg",
+        "is_full_width": true,
+        "overlay_text": "",
+        "caption": "",
+        "hideLines": false,
+        "block_objfit": false
+      }
+    },
+    "art_related_blog_posts_mrgfFp": {
+      "type": "art_related-blog-posts",
+      "settings": {
+        "subtitle": "Stories",
+        "title": "IL TIMONE AI GIOVANI"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "art_image_banner_T3Nj3m",
+    "art_text_section_Q8iHLG",
+    "next_text_with_products_carousel_9np6fJ",
+    "art_image_columns_rbB6RH",
+    "art_bio_section_nPkayD",
+    "art_text_section_RNKd38",
+    "art_text_section_4BkiyP",
+    "art_text_section_J4mbpq",
+    "art_related_products_AAeEgx",
+    "art_text_section_Gw6j8x",
+    "art_image_columns_GMfmFd",
+    "art_text_section_JX7RJk",
+    "art_image_banner_DkgFhc",
+    "art_text_section_ne8Xyw",
+    "art_bio_section_ccTQCp",
+    "art_accent_text_section_ELGejA",
+    "art_related_products_PewzJq",
+    "art_image_banner_7EKXWN",
+    "art_related_blog_posts_mrgfFp"
+  ]
+}

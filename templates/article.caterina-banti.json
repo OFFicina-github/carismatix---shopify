@@ -1,0 +1,260 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "subtitle_JaXW9w": {
+          "type": "subtitle",
+          "settings": {
+            "size": "h2",
+            "content": "<h2>An exclusive interview during training for the World Sailing Championships, the first selection to access as a nation to the Paris 2024 Olympics<\/h2>"
+          }
+        },
+        "subtitle_Hpi7Hw": {
+          "type": "subtitle",
+          "settings": {
+            "size": "h3",
+            "content": "<h3>text: ©Elena Giolai\/SLAM<\/h3>"
+          }
+        }
+      },
+      "block_order": [
+        "subtitle_JaXW9w",
+        "subtitle_Hpi7Hw"
+      ],
+      "settings": {
+      }
+    },
+    "art_image_banner_T3Nj3m": {
+      "type": "art_image-banner",
+      "settings": {
+        "video_or_img": "img",
+        "image": "shopify:\/\/shop_images\/SLAM_Banti_slideshow_0034_GD8_2160.webp",
+        "video_id": "",
+        "is_full_width": false,
+        "overlay_text": "",
+        "caption": "",
+        "hideLines": false
+      }
+    },
+    "art_text_section_MA6GqE": {
+      "type": "art_text-section",
+      "blocks": {
+        "paragraph_qCfPUb": {
+          "type": "paragraph",
+          "settings": {
+            "green_label": "",
+            "white_label": "",
+            "title": "",
+            "h2_text": false,
+            "content": "<p>During the Nacra 17 team's training sessions in Scheveningen at the end of July, we had the opportunity to sit down and chat with Caterina Banti, an example of what it means to be an all-round athlete and champion. <\/p><p>She explained how multi-disciplinarity is essential for developing sportsmanship and personal growth when it comes to young sailors, leading them to aspire to seemingly distant goals. She boarded her first sailing boat at the age of 16 and then approached the world of competitive sailing, achieving nothing less than the Olympics, demonstrating that the path to the peak of success can begin even without such an early introduction into a specific sport, where a child is taught to do nothing else from the age of 6, but with an encouraged passion for sports in general since childhood.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "is_new_tab": false,
+            "variant_color": "default",
+            "truncate_text": false
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_qCfPUb"
+      ],
+      "settings": {
+        "columns": "1",
+        "hideLines": false
+      }
+    },
+    "art_image_banner_eChxXC": {
+      "type": "art_image-banner",
+      "settings": {
+        "video_or_img": "img",
+        "image": "shopify:\/\/shop_images\/cate.webp",
+        "video_id": "",
+        "is_full_width": true,
+        "overlay_text": "",
+        "caption": "",
+        "hideLines": false
+      }
+    },
+    "art_text_section_rgcaPK": {
+      "type": "art_text-section",
+      "blocks": {
+        "paragraph_9nB8rD": {
+          "type": "paragraph",
+          "settings": {
+            "green_label": "",
+            "white_label": "",
+            "title": "You have had the good fortune to participate in quite a few sports, sailing most recently: based on your own experience, how would you approach youth sailing?",
+            "h2_text": false,
+            "content": "<p>If I had to be objective, I would have to say that I was lucky to undergo a somewhat special journey compared to many other sailors, and maybe other sportsmen and women in general, having practiced many sports from a young age and arriving at sailing a bit late in the game, especially competitive sailing. All the experience I have gained both physically\/athletically and in terms of personal growth, thanks to travelling and studying in Italy and abroad, have added to a 'baggage', which I can then put at the disposal of the team and the crew. These same experiences and skills gave me the opportunity to achieve the competitive goals we had set ourselves. <\/p><p>All I can say for children in sailing is that it is crucial not to skip stages in their development, not to put too much pressure on them from the start; the most important thing is that children have fun. You often see these stressed-out mini skippers with this competitive anxiety for 'results', which actually comes more from the pressure put upon them by their parents or coaches. Of course, it is not just about having fun. <\/p><p>The core values of sportsmanship must be firmly ingrained from the get go, something we must always strive towards, along with personal growth not just as an athlete, but as a person; studying is also good for sport and doing well in sport encourages studying.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "is_new_tab": false,
+            "variant_color": "green",
+            "truncate_text": false
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_9nB8rD"
+      ],
+      "settings": {
+        "columns": "2",
+        "hideLines": false
+      }
+    },
+    "art_quote_qMEUyQ": {
+      "type": "art_quote",
+      "settings": {
+        "bg": "white",
+        "text": "It is crucial not to skip stages in their development, not to put too much pressure on them from the start; the most important thing is that children have fun."
+      }
+    },
+    "art_text_section_M9yG9q": {
+      "type": "art_text-section",
+      "blocks": {
+        "paragraph_FqdA4U": {
+          "type": "paragraph",
+          "settings": {
+            "green_label": "",
+            "white_label": "",
+            "title": "The Sailing World Championship is a quite special event, taking place every four years like the Olympics, but with many more crews involved: from a psychological standpoint, and from a technical one, how do deal with such an event?",
+            "h2_text": false,
+            "content": "<p>Yes, the Sailing World Championship is an event that takes place every four years and is certainly an important event: it is our 'target regatta' of the year and we have prepared a great deal for it. But I don't approach it any differently from all the other important regattas: we have always said that medals are won during training and collected in the regattas, something the great Valentin Mankin taught us. <\/p><p>So, we’ll see how many medals we won in training and what we are going to collect at the Worlds! We have certainly trained well and have done what we can: the most important thing is to have fun and do our best. Scheveningen is a difficult location and it's where I started sailing with Ruggero Tita in 2017 trying out the first Nacra 17 foil catamaran; the current there can be quite strong, as well as the wind and waves, but we like it when things are difficult! Psychologically, <\/p><p>I approach the regatta by seeking out my routine, with adequate preparation and a calm mind: knowing I have done everything I can. An athlete is complete when all aspects of their personality are in balance when training: the physical, mental and tactical aspects.<\/p><p><\/p>",
+            "button_text": "",
+            "button_url": "",
+            "is_new_tab": false,
+            "variant_color": "green",
+            "truncate_text": false
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_FqdA4U"
+      ],
+      "settings": {
+        "columns": "2",
+        "hideLines": false
+      }
+    },
+    "art_accent_text_section_aJrf3h": {
+      "type": "art_accent-text-section",
+      "settings": {
+        "title": "ALLIANZ WORLD CHAMPIONSHIP 2023:",
+        "subtitle": "45 Athletes dressed by SLAM",
+        "content": "<p>One year to go before the Paris 2024 Olympics. The countdown has already begun: Olympic sailing is ready to take centre stage from 10th to 20th August with the most important event of the year. The legendary Scheveningen, located on the Netherlands’ picturesque coast, will host the 2023 Allianz World Championship, which will act as the first selection for nations seeking to earn their place at the sailing categories in the Paris Games, scheduled to take place on the shores of Marseille. From the Ocean Race to the International Kite Festival to the Olympic Class World Championship, Scheveningen is where history, tradition and the contemporary world of sailing find their home along the Hague’s coastline.<\/p><p><br\/><\/p><p>The Italian Sailing Federation (FIV), of which SLAM is a partner, is fielding 45 athletes for the 10 Olympic classes: among these, four crews have been called up for the flying Nacra 17 class, a discipline for which Italy is counting on a strong, cohesive team, as well as the Tita-Banti duo, Olympic gold medallists in the same category two years ago. <\/p><p><br\/><\/p><p>The very first Sailing World Championship was held in Cadiz (Spain) in 2003, in which Great Britain, led by Sir Ben Ainslie, topped the medals table with gold in the men's 49er and Finn classes, as well as silver in the Tornado class and bronze in the Star class. For fans who want to follow the event on TV and cheer, of course, for our Italian Azzurri, please note that the races will be broadcast LIVE on Discovery+ starting 16th August.<\/p>",
+        "variant_color": "blue"
+      }
+    },
+    "art_text_section_DtjMqk": {
+      "type": "art_text-section",
+      "blocks": {
+        "paragraph_EFiGV8": {
+          "type": "paragraph",
+          "settings": {
+            "green_label": "",
+            "white_label": "",
+            "title": "So this year you will be spending August taking part in regattas instead of Italy’s usual barbecues with friends... do you find it hard to miss out all the small traditions\/festivities?",
+            "h2_text": false,
+            "content": "<p>I don't mind it at all: I'm used to it. Of course, I like coming home, being with my boyfriend, spending time with my friends and family, but I honestly don't mind giving these things up. <\/p><p>I no longer see them as denials, but rather as opportunities, because I realise that I am very lucky to be able to lead this kind of life and above all to be able to do what I enjoy. <\/p><p>This is something I always have to remember and that all my 'colleagues' should always remember: we are truly privileged and we should be grateful to be able to do enjoy a life of outdoor sports, to be where we are today.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "is_new_tab": false,
+            "variant_color": "green",
+            "truncate_text": false
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_EFiGV8"
+      ],
+      "settings": {
+        "columns": "2",
+        "hideLines": false
+      }
+    },
+    "art_image_banner_bbdrDY": {
+      "type": "art_image-banner",
+      "settings": {
+        "video_or_img": "img",
+        "image": "shopify:\/\/shop_images\/SLAM_Banti_blockimg2_0071_GD8_2563.webp",
+        "video_id": "",
+        "is_full_width": false,
+        "overlay_text": "",
+        "caption": "",
+        "hideLines": false
+      }
+    },
+    "art_text_with_image_HHBWTP": {
+      "type": "art_text-with-image",
+      "settings": {
+        "image_position": "left",
+        "image": "shopify:\/\/shop_images\/cateee.webp",
+        "caption": "",
+        "green_label": "",
+        "white_label": "",
+        "title": "How important is it to know you have a strong Italian team in the Nacra17? There will be no less than four Italian crews in Holland: is that an advantage or something that puts more pressure on you?",
+        "content": "<p>I think he is a really great person; his best strength is that he can be very human and that he always knows how to say the right thing at the right time. He has been able to create a team and bring together people with particularly difficult personalities. <\/p><p>I remember, when I started in 2017, Ruggero and I were technically ahead of the others in the team, but from the very start he said that our strength had to be as a team, because that was what had been lacking over the previous four years. A team in which the youngest were just as included, like Gianluigi Ugolini and Maria Giubilei, who recently won the Marseille test event, as well as Porro and De Zulian, recent winners in Kiel, who have always trained with us. Team dynamics are an incredible strength, but they have to be managed well and above all there need to be people with values in the team. You have to always remember that this is a sport and you respect both the rules of the sport and above all the values of the sport, such as respecting your opponent, respecting the person.<\/p><p>Another great aspect of Ganga is that he is still a sailor: he does regattas and often tells us about his own experiences, so we are certainly very lucky to have him as a coach!<\/p>",
+        "variant_color": "green"
+      }
+    },
+    "art_text_section_nWFraU": {
+      "type": "art_text-section",
+      "blocks": {
+        "paragraph_UyE8hb": {
+          "type": "paragraph",
+          "settings": {
+            "green_label": "",
+            "white_label": "",
+            "title": "There will be no less than four Italian crews in Holland: is that an advantage or it puts more pressure on you?",
+            "h2_text": false,
+            "content": "<p>No, having a strong team doesn't mean more pressure, because we always train together and so each of us knows what the limits of the other crews are as well their strengths. I would also mention that our training team is not only made up of Italian crews. <\/p><p>Ever since 2019, the English sailor John Gimson-Anna Burnett and Santiago Lange have played an integral part: they have been and continue to be an important element within the team when it comes to training!<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "is_new_tab": false,
+            "variant_color": "green",
+            "truncate_text": false
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_UyE8hb"
+      ],
+      "settings": {
+        "columns": "2",
+        "hideLines": false
+      }
+    },
+    "art_related_blog_posts_3tPA8y": {
+      "type": "art_related-blog-posts",
+      "settings": {
+        "subtitle": "Stories",
+        "title": "Titolo Stories"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "art_image_banner_T3Nj3m",
+    "art_text_section_MA6GqE",
+    "art_image_banner_eChxXC",
+    "art_text_section_rgcaPK",
+    "art_quote_qMEUyQ",
+    "art_text_section_M9yG9q",
+    "art_accent_text_section_aJrf3h",
+    "art_text_section_DtjMqk",
+    "art_image_banner_bbdrDY",
+    "art_text_with_image_HHBWTP",
+    "art_text_section_nWFraU",
+    "art_related_blog_posts_3tPA8y"
+  ]
+}

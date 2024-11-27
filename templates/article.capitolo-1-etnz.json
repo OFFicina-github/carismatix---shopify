@@ -1,0 +1,154 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "settings": {
+      }
+    },
+    "art_image_banner_fJbJPc": {
+      "type": "art_image-banner",
+      "settings": {
+        "video_or_img": "video",
+        "video_id": "pqjONNbsFX0",
+        "is_full_width": true,
+        "overlay_text": "",
+        "caption": "",
+        "hideLines": false,
+        "block_objfit": false
+      }
+    },
+    "art_text_section_Fn4HXD": {
+      "type": "art_text-section",
+      "blocks": {
+        "paragraph_kfW9dm": {
+          "type": "paragraph",
+          "settings": {
+            "green_label": "",
+            "white_label": "",
+            "title": "",
+            "h2_text": false,
+            "content": "<p>Number 8 wire, a common 4 mm rural fencing component but also <strong>a philosophy that encapsulates New Zealand’s homegrown<br\/>approach to problem solving<\/strong>: the so-called “number 8 wire mentality”. <strong>And it is precisely this mentality that sets Emirates Team New Zealand apart as a unique team from its very roots. <\/strong><\/p><p> <\/p><p>The expression comes from the wire’s use in New Zealand's numerous sheep farms and homesteads, where Number 8 is primarily used to build fences. However, farmers often have whole rolls of wire on hand, so it has become a handy tool for solving all kinds of problems. <br\/>The expression “Number 8 wire mentality” represents <strong>the ingenuity and resourcefulness at the heart of New Zealanders and their ability to solve complex problems or create something new and effective while only using scrap parts or whatever there is at hand.<\/strong><\/p>",
+            "button_text": "",
+            "button_url": "",
+            "is_new_tab": false,
+            "variant_color": "default",
+            "truncate_text": false
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_kfW9dm"
+      ],
+      "settings": {
+        "columns": "1",
+        "hideLines": false
+      }
+    },
+    "art_text_with_image_tHkM47": {
+      "type": "art_text-with-image",
+      "settings": {
+        "image_position": "left",
+        "image": "shopify:\/\/shop_images\/Elise_Beavis.jpg",
+        "caption": "Elise Beavis, engineer at Emirates Team New Zealand.",
+        "green_label": "",
+        "white_label": "",
+        "title": "",
+        "content": "<p><strong>\"The 8 wire mentality,\"<\/strong> explains Elise Beavis, who works as an engineer at Emirates Team New Zealand, <strong>\"is something that truly sets us apart.  A philosophy that we make our own when it comes to applying simple, often low-cost solutions to complex problems.”<\/strong><\/p><p>It is often the simplest solution that proves to be the most effective, allowing us to inspire true innovation almost out of nothing.<\/p>",
+        "variant_color": "default"
+      }
+    },
+    "art_text_with_image_Ek4YFL": {
+      "type": "art_text-with-image",
+      "settings": {
+        "image_position": "right",
+        "image": "shopify:\/\/shop_images\/Ray_Davies.jpg",
+        "caption": "Ray Davies, sailing coach and Emirates Team New Zealand.",
+        "green_label": "",
+        "white_label": "",
+        "title": "",
+        "content": "<p><strong>“It's basically making do with what you have,”<\/strong> continues Ray Davies, sailing coach and Emirates Team New Zealand veteran. <br\/>“That philosophy still lives within the team now, even though we have the means to use whatever we need, the best possible equipment available. Back when we first started foiling, we had a very small budget to adapt an old catamaran and see if we could make it fly. <br\/><strong>We did make it fly and that was the catalyst that laid the foundations, not only for the America's Cup victory in Bermuda, but for an innovation that changed sailing.\"<\/strong><\/p>",
+        "variant_color": "default"
+      }
+    },
+    "art_text_with_image_PLpHLa": {
+      "type": "art_text-with-image",
+      "settings": {
+        "image_position": "left",
+        "image": "shopify:\/\/shop_images\/2021-2023.jpg",
+        "caption": "Enrico Chieffi, CEO SLAM",
+        "green_label": "",
+        "white_label": "",
+        "title": "",
+        "content": "<p><strong>“This sport,”<\/strong> comments Enrico Chieffi, CEO of Slam and tactician of Moro di Venezia, <strong>“is part of their life, it is part of their culture. <\/strong><br\/>They have a very unique way of doing things. <strong>They are<br\/>just focused on the result. Whatever it takes, whatever they have, they make it work.”<br\/><br\/><\/strong>Commitment and resourcefulness, combined with a mindset that allows them to achieve the best outcome<br\/>with what they have at their disposal, regardless of budget and whatever the other teams might be doing.<\/p>",
+        "variant_color": "default"
+      }
+    },
+    "art_text_with_image_qBmi7F": {
+      "type": "art_text-with-image",
+      "settings": {
+        "image_position": "right",
+        "image": "shopify:\/\/shop_images\/Spencer_Loxton.jpg",
+        "caption": "Spencer Loxton, the shore team’s",
+        "green_label": "",
+        "white_label": "",
+        "title": "",
+        "content": "<p>“We don't just go and buy a table: <strong>we build the table we need,” <\/strong>explains the shore team’s Spencer Loxton.  <br\/>“We are probably still using parts from ten years ago on this boat: <strong>whatever works, we don't throw away but reuse\".<br\/><br\/><\/strong>Coming from a small island in the middle of the ocean and being able to compete with the biggest nations in the world is a driving incentive to find resources where you might not find any, it inspires hard work and a unique spirit of inventiveness.<\/p>",
+        "variant_color": "default"
+      }
+    },
+    "art_text_with_image_d6R3kg": {
+      "type": "art_text-with-image",
+      "settings": {
+        "image_position": "left",
+        "image": "shopify:\/\/shop_images\/Kevin_Shoebridge.jpg",
+        "caption": "Kevin Shoebridge, Chief Operating Officer at Emirates Team NewZealand.",
+        "green_label": "",
+        "white_label": "",
+        "title": "",
+        "content": "<p>\"The way we’ve advanced our technology, I think, is not by accident but by necessity”, says Kevin Shoebridge, Chief Operating Officer at Emirates Team New Zealand. <br\/><strong>“If you look at any of our sporting successes, that idea of focusing on what really matters is definitely a kiwi thing. <\/strong>Teams can have all the money in the world and that can<br\/>be their downfall. <br\/>Having a restricted budget and knowing that it’s only this<br\/>big, often causes more discussion and thought before you commit to something.\"<\/p><p><strong>In short, you cannot buy the America's Cup: you win it with commitment and people.<\/strong><\/p>",
+        "variant_color": "default"
+      }
+    },
+    "art_image_banner_KFWPq8": {
+      "type": "art_image-banner",
+      "settings": {
+        "video_or_img": "img",
+        "image": "shopify:\/\/shop_images\/Emirates_Team_New_Zealand_2.jpg",
+        "video_id": "",
+        "is_full_width": false,
+        "overlay_text": "",
+        "caption": "",
+        "hideLines": false,
+        "block_objfit": false
+      }
+    },
+    "art_related_blog_posts_6hgCCc": {
+      "type": "art_related-blog-posts",
+      "settings": {
+        "subtitle": "Stories",
+        "title": "Titolo Stories"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "art_image_banner_fJbJPc",
+    "art_text_section_Fn4HXD",
+    "art_text_with_image_tHkM47",
+    "art_text_with_image_Ek4YFL",
+    "art_text_with_image_PLpHLa",
+    "art_text_with_image_qBmi7F",
+    "art_text_with_image_d6R3kg",
+    "art_image_banner_KFWPq8",
+    "art_related_blog_posts_6hgCCc"
+  ]
+}

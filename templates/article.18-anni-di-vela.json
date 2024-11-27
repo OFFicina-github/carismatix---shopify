@@ -1,0 +1,208 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "subtitle_JaXW9w": {
+          "type": "subtitle",
+          "settings": {
+            "size": "h2",
+            "content": "<h2>Ph Giovanni De Sandre<\/h2>"
+          }
+        }
+      },
+      "block_order": [
+        "subtitle_JaXW9w"
+      ],
+      "settings": {
+      }
+    },
+    "art_image_banner_T3Nj3m": {
+      "type": "art_image-banner",
+      "custom_css": [
+        ".banner-container .media-container {position: relative; width: 100%; aspect-ratio: unset; height: fit-content;}",
+        ".banner-container .media-container > img {width: 100%; height: auto; -o-object-fit: cover; object-fit: contain;}"
+      ],
+      "settings": {
+        "video_or_img": "img",
+        "image": "shopify:\/\/shop_images\/vela.webp",
+        "video_id": "",
+        "is_full_width": false,
+        "overlay_text": "",
+        "caption": "",
+        "hideLines": false
+      }
+    },
+    "art_text_section_eLVGcU": {
+      "type": "art_text-section",
+      "blocks": {
+        "paragraph_LhB6B3": {
+          "type": "paragraph",
+          "settings": {
+            "green_label": "",
+            "white_label": "",
+            "title": "The geometries of the sea",
+            "h2_text": false,
+            "content": "<p>An exhibition of the work of photographer Giovanni DeSandreis featured in the Genoa SLAM shop from 11 November to 04 December 2022. The exhibition tells the story of a collaboration between SLAM and the photographer that dates back 18 years,conceivedand experienced on the sea and at some of the world’s most prestigious regattas. <br\/>Some of the most important moments in Slam’s history and that of the world of sailing are reviewed through the lens of Giovanni deSandre, a world-famous photographer.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "is_new_tab": false,
+            "variant_color": "default",
+            "truncate_text": false
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_LhB6B3"
+      ],
+      "settings": {
+        "columns": "1",
+        "hideLines": false
+      }
+    },
+    "art_image_banner_fHwVLM": {
+      "type": "art_image-banner",
+      "custom_css": [
+        ".banner-container .media-container>img {margin: auto;}"
+      ],
+      "settings": {
+        "video_or_img": "img",
+        "image": "shopify:\/\/shop_images\/bb_db783508-38c1-4b9b-9b92-9a86b6dc2acc.webp",
+        "video_id": "",
+        "preview_img": "shopify:\/\/shop_images\/Rectangle_197.jpg",
+        "is_full_width": false,
+        "overlay_text": "",
+        "caption": "",
+        "hideLines": false
+      }
+    },
+    "art_text_section_z8tEPm": {
+      "type": "art_text-section",
+      "blocks": {
+        "paragraph_LgCnhK": {
+          "type": "paragraph",
+          "settings": {
+            "green_label": "",
+            "white_label": "",
+            "title": "",
+            "h2_text": false,
+            "content": "<h3>In the words of the photographer: <\/h3><h3><\/h3><h6><em>“I came to Slam via my town’s small but fierce team, with which I had taken my first steps into the world of sailing. In just a short space of time, I found myself aboard carbon vessels, rubber dinghies and helicopters, following world-famous sailors and teams in some of the most prestigious regattas. It has been a truly unique experience for someone born from the plains, like me, moreover an architect by trade and not at all sporty by nature.<br\/> Perhaps, however, it was precisely the fact of having an architecture-trained gaze that helped me stand out: during a regatta in Porto Cervo, even Carlo Borlenghi noticed my photographs for their unique, unusual geometric construction and asked me to help him with Mascalzone Latino. Perhaps I spoke a somewhat different language in this mad world of sailors. <br\/><br\/>But if on the one hand, I was a little out of place in the world of the sea, having faced up to the most diverse selection of photographic genres over the years, on the other I always felt at home in Slam, where I found first and foremost a climate of great trust and, over time, true friendship. It takes trust to take an architect to the Caribbean, expecting him to come back from the sea with good photographs taken in 30 knots of wine and it takes trust to appoint him for so many years of photographic services of the collections.<br\/><br\/> But there was an underlying partnership that made things work so well: the idea that Slam should be told for what it was: a company made up of people with salt in their hair, calloused hands and tanned skin but who love the sea more than anything else and have a permanent smile on their face. And this is exactly how I see things and how I seek to use this magnificent language of image: as an opportunity to get to know the world and the people who live there, with transport and enthusiasm towards all possible diversities. With Slam, we have travelled and smiled together and I hope to be able to continue this wonderful journey for many years yet to come.”<\/em><\/h6>",
+            "button_text": "",
+            "button_url": "",
+            "is_new_tab": false,
+            "variant_color": "green",
+            "truncate_text": false
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_LgCnhK"
+      ],
+      "settings": {
+        "columns": "2",
+        "hideLines": false
+      }
+    },
+    "art_image_columns_rbB6RH": {
+      "type": "art_image-columns",
+      "blocks": {
+        "column_XCRJ9e": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/b_1ba4660c-ee69-4c20-81c9-f51ae82a4503.webp",
+            "caption": ""
+          }
+        },
+        "column_CQ3kDU": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/v.webp",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_XCRJ9e",
+        "column_CQ3kDU"
+      ],
+      "settings": {
+        "block_height": 390
+      }
+    },
+    "art_text_section_hVW8dp": {
+      "type": "art_text-section",
+      "blocks": {
+        "paragraph_jXR6br": {
+          "type": "paragraph",
+          "settings": {
+            "green_label": "",
+            "white_label": "",
+            "title": "",
+            "h2_text": false,
+            "content": "",
+            "button_text": "",
+            "button_url": "",
+            "is_new_tab": false,
+            "variant_color": "default",
+            "truncate_text": false
+          }
+        },
+        "paragraph_7AdLHd": {
+          "type": "paragraph",
+          "settings": {
+            "green_label": "",
+            "white_label": "",
+            "title": "",
+            "h2_text": false,
+            "content": "<p>Born in 1974, Giovanni De Sandre, architect and professional photographer, has been facing up to the most diverse fields of communication for almost twenty years now, always with enthusiasm and great professionalism. <br\/>He has authored numerous advertising campaigns, and various monographs and collaborates constantly on the communication programs of artists and companies of international reach, as a photographer and creative consultant. <br\/>For more than fifteen years now, he has been lecturing on photographic and graphic language at the University of Padua and on product communication at the University of Ferrara. <br\/>He intervenes from time to time in design courses at the Polytechnic University of Milan and the Bologna Business School. <br\/>At the proverbial helm of the studio by the same name, he coordinates a team of professionals able to successfully handle any communication project.<br\/>The trust and partnership that have grown up over the years between Mr. De Sandre and the Slam brand have made it possible to describe exactly how Slam is. The photographic exhibition reviews this beautiful journey, a story of sea and passion through the geometries of the sea.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "is_new_tab": false,
+            "variant_color": "green",
+            "truncate_text": false
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_jXR6br",
+        "paragraph_7AdLHd"
+      ],
+      "settings": {
+        "columns": "1",
+        "hideLines": false
+      }
+    },
+    "art_image_banner_4mncQX": {
+      "type": "art_image-banner",
+      "settings": {
+        "video_or_img": "img",
+        "image": "shopify:\/\/shop_images\/h.webp",
+        "video_id": "",
+        "preview_img": "shopify:\/\/shop_images\/banti-ep-2-blog.jpg",
+        "is_full_width": true,
+        "overlay_text": "",
+        "caption": "",
+        "hideLines": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "art_image_banner_T3Nj3m",
+    "art_text_section_eLVGcU",
+    "art_image_banner_fHwVLM",
+    "art_text_section_z8tEPm",
+    "art_image_columns_rbB6RH",
+    "art_text_section_hVW8dp",
+    "art_image_banner_4mncQX"
+  ]
+}

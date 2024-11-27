@@ -1,0 +1,284 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "subtitle_JaXW9w": {
+          "type": "subtitle",
+          "settings": {
+            "size": "h2",
+            "content": "<h2>The magic of foiling as described by the next generation enjoying their first time flying, young champions such as Margherita Porro</h2>"
+          }
+        },
+        "subtitle_nrpVXj": {
+          "type": "subtitle",
+          "settings": {
+            "size": "h2",
+            "content": "<h3>Elena Giolai/SLAM</h3>"
+          }
+        }
+      },
+      "block_order": [
+        "subtitle_JaXW9w",
+        "subtitle_nrpVXj"
+      ],
+      "settings": {
+      }
+    },
+    "art_image_banner_T3Nj3m": {
+      "type": "art_image-banner",
+      "settings": {
+        "video_or_img": "video",
+        "video_id": "q_Ts0ILE1oI",
+        "preview_img": "shopify://shop_images/1707469355-5757e570515df1941ec205cc8a5fdb0fbd12e803af03f6c5641a190636758f7b-d_640.webp",
+        "is_full_width": true,
+        "overlay_text": "",
+        "caption": "",
+        "hideLines": false,
+        "block_objfit": false
+      }
+    },
+    "art_text_section_eLVGcU": {
+      "type": "art_text-section",
+      "blocks": {
+        "paragraph_LhB6B3": {
+          "type": "paragraph",
+          "settings": {
+            "green_label": "",
+            "white_label": "",
+            "title": "",
+            "h2_text": false,
+            "content": "<p><em><strong>Wind</strong></em> does not discriminate—it touches everyone, everything.</p><p>ssshhhhhhhhm fffhhhhh and a second later a kite, a windsurfer, or a moth, suddenly soars past you, only an inch from the dinghy in the middle of the lake or sea, flying, of course, on foils. Sailing is no longer just the 'music' of the water crashing against the hull, but the sound, or ultrasound, of the speed of the board, of the hull flying over the waves. If in the city we have electric cars silently whizzing past you, in the water we now have the new foil generation doing the exact same thing! </p><p><br/></p><p>Having founded Foiling Week ten years ago, the event’s creators were clearly visionaries; those same ten years ago, SLAM stood side-by-side with the very first edition of Foiling Week, firmly believing that this new way of sailing represented the future and, above all, could win the favour of future generations to come, who would enjoy the experience of high-speed sailing, throwing themselves into a completely new way of looking at the sport.</p><p>Foiling Week, which is making its return to Malcesine, as it does every summer (26th June – 5th July 2023), offers a 360° view of the world of foiling, bringing together all parties involved, a symposium for the insiders, but also for those who want to see what is available on the market, with the opportunity to experience material tests or simply enjoy foiling champions racing in different classes, the number of which will be 10 this year.</p>",
+            "button_text": "",
+            "button_url": "",
+            "is_new_tab": false,
+            "variant_color": "green",
+            "truncate_text": false
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_LhB6B3"
+      ],
+      "settings": {
+        "columns": "1",
+        "hideLines": false
+      }
+    },
+    "art_image_banner_fHwVLM": {
+      "type": "art_image-banner",
+      "settings": {
+        "video_or_img": "img",
+        "image": "shopify://shop_images/A3A8449.webp",
+        "video_id": "",
+        "is_full_width": false,
+        "overlay_text": "",
+        "caption": "",
+        "hideLines": false,
+        "block_objfit": false
+      }
+    },
+    "art_text_section_z8tEPm": {
+      "type": "art_text-section",
+      "blocks": {
+        "paragraph_LgCnhK": {
+          "type": "paragraph",
+          "settings": {
+            "green_label": "",
+            "white_label": "",
+            "title": "",
+            "h2_text": false,
+            "content": "<p>Italy has also been keeping pace in the Olympic classes: in the Nacra, iQFoil and Kite classes, the latest international results are showing clear signs of technical progress. The Nacra team in particular is unstoppable: after the Olympic gold medal of our SLAM ambassadors Tita-Banti, Italy has continued to consistently achieve a podium finish across the most important events, most recently at the historic International Regatta in Kiel, the Olympus of sailing, where Margherita Porro and Stefano Dezulian won gold. <br/>So, we went to hear from Margherita herself what it means to foil, a passion the<em>Fiamme Gialle</em>athlete, following a significant deal of experience in fast and modern skiff sailing, first on the 29er (with which she won the World Youth Championship in 2017) and then on the 49er FX, discovered many years ago, with the Moth and now enjoys on the Olympic Nacra 17:<br/></p>",
+            "button_text": "",
+            "button_url": "",
+            "is_new_tab": false,
+            "variant_color": "green",
+            "truncate_text": false
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_LgCnhK"
+      ],
+      "settings": {
+        "columns": "2",
+        "hideLines": false
+      }
+    },
+    "art_text_section_FJ6J36": {
+      "type": "art_text-section",
+      "blocks": {
+        "paragraph_pPAbf6": {
+          "type": "paragraph",
+          "settings": {
+            "green_label": "",
+            "white_label": "",
+            "title": "The foil flight for Margherita Porro",
+            "h2_text": false,
+            "content": "<p><em>I think foiling attracts young people and also girls because of the adrenaline, the thrill you get from going faster than the wind. It's definitely the feeling that sticks with you when you come back and never leaves you, and you say: 'Man, I really want to go out again! Because you know that adrenaline is a bit like a drug, albeit in an obviously much more positive way; going faster than the wind gives you a great deal of positive energy. And then there is the </em><em><strong>LIGHTNESS</strong></em><em> you feel, the best sensation of flying on water is feeling so light; that lightness always leaves a sweet taste in my mouth and amazes me every time I experience it. Lightness is also something you look for in everyday life, which doesn't mean acting superficial, but feeling light-hearted! Foiling helps feel these emotions</em>.”</p>",
+            "button_text": "",
+            "button_url": "",
+            "is_new_tab": false,
+            "variant_color": "green",
+            "truncate_text": false
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_pPAbf6"
+      ],
+      "settings": {
+        "columns": "2",
+        "hideLines": false
+      }
+    },
+    "art_quote_NQjR7p": {
+      "type": "art_quote",
+      "settings": {
+        "bg": "blue",
+        "text": "The most wonderful part, the magic moment of foiling, is the speed, that moment when you stand up, suspended above the water, with the wind rising in your ears.",
+        "numero_colonne": "1_col",
+        "dida_image": "",
+        "posizione_image": "image_dx"
+      }
+    },
+    "art_text_section_GhCQke": {
+      "type": "art_text-section",
+      "blocks": {
+        "paragraph_NRefMP": {
+          "type": "paragraph",
+          "settings": {
+            "green_label": "",
+            "white_label": "",
+            "title": "Margherita Porro's first flight",
+            "h2_text": false,
+            "content": "<p><em>I remember my first time foiling very well: it was on a Moth Mach 2 when I was somewhere between 11 and 12 years old; the first person who took me out was Stefano Rizzi (perhaps the first Italian to go on the Moth and certainly the first Italian champion), who was amazed because I really carried the boat very well; in fact, I hugely enjoyed that feeling of flying straight away, I could feel the boat in my hands even if initially I was a bit scared during the manoeuvres, during the gybes, because I already knew that sooner or later I would be thrown into the water. But that fear spurred me on to try and try again, until the foiling manoeuvres came naturally. </em></p>",
+            "button_text": "",
+            "button_url": "",
+            "is_new_tab": false,
+            "variant_color": "green",
+            "truncate_text": false
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_NRefMP"
+      ],
+      "settings": {
+        "columns": "2",
+        "hideLines": false
+      }
+    },
+    "art_image_banner_8iYJ4R": {
+      "type": "art_image-banner",
+      "settings": {
+        "video_or_img": "img",
+        "image": "shopify://shop_images/bottomimage_A3A7880.webp",
+        "video_id": "",
+        "is_full_width": true,
+        "overlay_text": "",
+        "caption": "",
+        "hideLines": false,
+        "block_objfit": false
+      }
+    },
+    "art_text_section_VcwrAy": {
+      "type": "art_text-section",
+      "blocks": {
+        "paragraph_QkFNYY": {
+          "type": "paragraph",
+          "settings": {
+            "green_label": "",
+            "white_label": "",
+            "title": "There was even a gold medal that came out of Kiel: apart from the more technical aspects, how was this achieved in a regatta that still represents an iconic sailing location?",
+            "h2_text": false,
+            "content": "<p><em>In Kiel, Stefano and I set off with the goal of snatching a medal, that's for sure! I had a difficult time at first, because I had so many concerns, being there alone without a coach, without our teammates, people we are always used to having by our side. But, a bit surprisingly, I found a few new faces among the racers who welcomed us and helped us out; even a foreign coach helped us a lot and that made things somewhat easier. My goal was to take on the race, listening to my heart: it's something I'm working on with my psychotherapist; I didn't have to overdo it, but do what I could in that moment, </em><em><strong>go into it with a clear head</strong></em><em>. And at that point, when you can face the race with this kind of spirit, this </em><em><strong>special feeling of serenity</strong></em><em> and of </em><em><strong>lightness</strong></em><em> came back, because we were extremely focused, but inside I knew what I had to do and it must be said that it worked, so I'm very happy with this result, for how we achieved it.</em></p><p><em>Once we reached that sensation of lightness, the technical side obviously came to the forefront: we were the fastest, the ones who flew even with little wind, always, while the others struggled, and I would say that we confirmed our results even in a strong wind, which at the moment is something of a weak point for us, having had fewer opportunities to train. In the medal race, which was held in strong winds and flat water conditions, just coming in behind the Germans Kohlhoff-Stuhlemmer (Tokyo bronze medalists) made me very happy.</em></p>",
+            "button_text": "",
+            "button_url": "",
+            "is_new_tab": false,
+            "variant_color": "green",
+            "truncate_text": false
+          }
+        }
+      },
+      "block_order": [
+        "paragraph_QkFNYY"
+      ],
+      "settings": {
+        "columns": "2",
+        "hideLines": false
+      }
+    },
+    "art_image_banner_PJnp4U": {
+      "type": "art_image-banner",
+      "settings": {
+        "video_or_img": "img",
+        "image": "shopify://shop_images/PHOTO-2023-06-23-19-08-12.jpg",
+        "video_id": "",
+        "is_full_width": true,
+        "overlay_text": "",
+        "caption": "",
+        "hideLines": false,
+        "block_objfit": false
+      }
+    },
+    "art_related_products_y9J6tg": {
+      "type": "art_related-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "product_list": [
+          "man-pro-racing-smock-top-a170008s00",
+          "unisex-pro-lycra-long-sleeves-top-a419001s00",
+          "man-foiling-week-logo-hoodie-a106009p00"
+        ],
+        "products_to_show": 3,
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
+    "art_bio_section_wjCUKj": {
+      "type": "art_bio-section",
+      "settings": {
+        "image": "shopify://shop_images/csm_kiwo-logo-2023_quer_f81b5b5e5b_jpg.webp",
+        "title": "The Kieler Woche, sailing as an event, history through sailing",
+        "content": "<p>From the gathering of sailing ships, to monotypes, to Olympic classes, to offshore sailing; over 30 classes with a 53-page regatta notice (although that does include ads!) make this the largest sailing event in the world. It all starts with the 'Glasen', the sound of the siren that kicks off the event on Saturday (the event is held on the last two weeks of June) 'ordering' people to cast off their moorings. We are talking about 5000 sailors, 2000 boats and 3 million spectators. It is a historic regatta in the truest sense of the word, since the origin dates back to 1882 with the name Kiel 'Woche' given to it in 1894. Winning in Kiel therefore carries its own weight. After all, Kiel is Kiel! </p>"
+      }
+    },
+    "art_related_blog_posts_agyabw": {
+      "type": "art_related-blog-posts",
+      "settings": {
+        "subtitle": "Stories",
+        "title": "Titolo Stories"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "art_image_banner_T3Nj3m",
+    "art_text_section_eLVGcU",
+    "art_image_banner_fHwVLM",
+    "art_text_section_z8tEPm",
+    "art_text_section_FJ6J36",
+    "art_quote_NQjR7p",
+    "art_text_section_GhCQke",
+    "art_image_banner_8iYJ4R",
+    "art_text_section_VcwrAy",
+    "art_image_banner_PJnp4U",
+    "art_related_products_y9J6tg",
+    "art_bio_section_wjCUKj",
+    "art_related_blog_posts_agyabw"
+  ]
+}
