@@ -3056,6 +3056,13 @@ body#index #scroll_to_nl_natale:hover img {
 }
 
 /* aggiustamenti css - Programma fedeltà */
+#page-programma-fedelta {
+  font-family: Sora, sans-serif !important;
+}
+#page-programma-fedelta * {
+  font-family: Sora, sans-serif !important;
+}
+
 #page-programma-fedelta .bon-header {
   z-index: 1;
 }
