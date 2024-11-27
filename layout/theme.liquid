@@ -1,491 +1,451 @@
+{%- comment -%}
+------------------------------------------------------------------------------------------------------------------------
+NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing this theme as much as we did for
+  developing it. We have put a lot of work to make this theme as developer friendly as possible by offering you
+  hooks to integrate into critical parts of the theme. You will find the complete technical documentation (including
+  all events, dependencies...) in the "custom.js" file, located in the Assets folder.
+------------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
 <!doctype html>
-<html class="no-js" lang="{{ request.locale.iso_code }}">
-  <head>
+
+{%- assign direction = 'ltr' -%}
+{%- case request.locale.iso_code -%}
+  {%- when 'ar' or 'arc' or 'dv' or 'fa' or 'ha' or 'he' or 'kwh' or 'ks' or 'ku' or 'ps' or 'ur' or 'yi' -%}
+    {%- assign direction = 'rtl' -%}
+{%- endcase -%}
+
+<html class="no-js" lang="{{ request.locale.iso_code }}" dir="{{ direction }}">
+  <head> 
+    <script
+  id="Cookiebot"
+  src="https://consent.cookiebot.com/uc.js"
+  data-cbid="f9a92597-e780-4146-a5d8-8f412b4b5731"
+  type="text/javascript"
+  defer
+></script>
+  
+    <script src='{{ 'product_restore_email.js' | asset_url }}' defer='defer' ></script> 
+    <script id='em_product_variants' type='application/json'>
+        {{ product.variants | json }}
+    </script>
+    <script id='em_product_selected_or_first_available_variant' type='application/json'>
+        {{ product.selected_or_first_available_variant | json }}
+    </script>
+    <script id='em_product_metafields' type='application/json'>
+        {{ shop.metafields.email-sealapps-app.effective-time | json }}
+    </script>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="theme-color" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="theme-color" content="{{ settings.header_background }}">
+{% if handle contains 'carpro-d-quartz-professional' or handle contains 'richiesta-inviata' or handle contains 'carpro-cquartz-professional' or handle contains 'ceramic-guard-coating-sicarbon' or handle contains 'carpro-cquartz-finest-reserve-kit' or handle contains 'sti-comby-3000' or handle contains 'sti-comby-3500' or handle contains 'sti-comby' or handle contains 'sti-comby-9000' or handle contains 'macchina-vapore-professionale-sti-comby-6000' %}
+<meta name="robots" content="noindex">
+{% endif %}
+    <title>{% if page_title == blank %}{{ shop.name }}{% else %}{{ page_title }}{% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}{% endif %}</title>
+
+    {%- if page_description -%}
+      <meta name="description" content="{{ page_description | escape }}">
+    {%- endif -%}
+
     <link rel="canonical" href="{{ canonical_url }}">
 
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src = 'https://gtm.slam.com/jqxjlpxm.js?st=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', 'PB2F8P5N');
-    </script>
-    <!-- End Google Tag Manager -->
-
-    {%- if settings.favicon != blank -%}
-      <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
+    {%- if settings.favicon -%}
+      <link rel="shortcut icon" href="{{ settings.favicon | img_url: '96x96' }}" type="image/png">
     {%- endif -%}
 
-    {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
+    {%- comment -%}Few prefech to increase performance on commonly used third-parties{%- endcomment -%}
+    <link rel="preconnect" href="https://cdn.shopify.com">
+    <link rel="dns-prefetch" href="https://productreviews.shopifycdn.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+
+    {%- unless settings.heading_font.system? and settings.text_font.system? -%}
       <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
     {%- endunless -%}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;800&display=swap" rel="stylesheet">
 
-    <title>
-      {{ page_title }}
-      {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
-      {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
-    </title>
-
-    {% if page_description %}
-      <meta name="description" content="{{ page_description | escape }}">
-    {% endif %}
-
-    {% render 'meta-tags' %}
-
-    <script src="{{ 'datalayers.js' | asset_url }}"></script>
-    <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
-    <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
-    <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
-    
-    {%- if settings.animations_reveal_on_scroll -%}
-      <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>
+    {%- comment -%}Preload important resources{%- endcomment -%}
+    <link rel="preload" as="style" href="{{ 'theme.css' | asset_url }}">
+    <link rel="preload" as="script" href="{{ 'vendor.js' | asset_url }}">
+    <link rel="preload" as="script" href="{{ 'theme.js' | asset_url }}">
+    <link rel="preload" as="script" href="{{ 'off_custom.js' | asset_url }}">
+    {%- if template contains 'custom' -%}
+      <link rel="preload" as="script" href="{{ 'off_custom_brands.js' | asset_url }}">
     {%- endif -%}
-    <!-- qui -->
+    <!-- <link rel="preload" as="script" href="{{ # 'custom_bf.js' | asset_url }}"> -->
+    <link rel="preload" as="style" href="{{ 'off_custom.css' | asset_url }}">
+    <link rel="preload" as="style" href="{{ 'off_custom_star.css' | asset_url }}">
+    <link rel="preload" as="style" href="{{ 'marco_style.css' | asset_url }}">
+    <!--  <link rel="preload" as="style" href="{{ # 'off_blackfriday.css' | asset_url }}"> -->
+
+    
+    {%- comment -%}
+      IMPLEMENTATION NOTE: for improving performance, Focal tries to preload images on known pages (such as blog page,
+      product or collection pages). In order to keep a main JS file size minimal, the theme also lazyloads non-essential
+      libraries (such as PhotoSwipe or Flickity) and only loads them on demand.
+    {%- endcomment -%}
+    {%- if request.page_type == 'product' -%}
+      {%- assign selected_media = product.selected_variant.featured_media | default: product.featured_media -%}
+
+      <link rel="preload" as="fetch" href="{{ product.url }}.js" crossorigin>
+      <link rel="preload" as="image" imagesizes="(max-width: 999px) calc(100vw - 48px), 640px" imagesrcset="{% render 'image-attributes', image: selected_media, sizes: '400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800', sizes_only: true %}">
+
+      {%- if product.media.size > 1 -%}
+        <link rel="preload" as="script" href="{{ 'flickity.js' | asset_url }}">
+      {%- endif -%}
+    {%- elsif request.page_type == 'collection' and collection.image -%}
+      <link rel="preload" as="image" media="(max-width: 740px)" imagesizes="100vw" imagesrcset="{% render 'image-attributes', image: collection.image, sizes: '400,500,600,700,800,900,1000', height_constraint: 600, crop: 'center', sizes_only: true %}">
+      <link rel="preload" as="image" media="(min-width: 741px)" imagesizes="100vw" imagesrcset="{% render 'image-attributes', image: collection.image, sizes: '600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600', sizes_only: true %}">
+    {%- endif -%}
+
+    {% render 'social-meta-tags' %}
+    {% render 'microdata-schema' %}
+    {% render 'css-variables', direction: direction %}
+    {% render 'js-variables', direction: direction %}
+
+    <link rel="stylesheet" href="{{ 'theme.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'off_custom.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'off_custom_star.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'marco_style.css' | asset_url }}">
+    <!-- <link rel="stylesheet" href="{{ # 'off_blackfriday.css' | asset_url }}"> -->
+
+    <script src="{{ 'vendor.js' | asset_url }}" defer></script>
+    <script src="{{ 'theme.js' | asset_url }}" defer></script>
+    <script src="{{ 'custom.js' | asset_url }}" defer></script>
+    <script src="{{ 'off_custom.js' | asset_url }}" defer></script>
+    {%- if template contains 'custom' -%}
+      <script src="{{ 'off_custom_brands.js' | asset_url }}" defer></script>
+    {%- endif -%}
+    
+    <!-- <script src="{{ # 'custom_bf.js' | asset_url }}" defer></script> -->
 
     {{ content_for_header }}
+{% render "cookie-consent" %}
 
-    {% include 'iub-cookie-banner-n' %}
+  
+ <!--begin-boost-pfs-filter-css-->
+   {% render 'boost-pfs-style' %}
+ <!--end-boost-pfs-filter-css-->
 
-    {%- liquid
-      assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
-      assign body_font_italic = settings.type_body_font | font_modify: 'style', 'italic'
-      assign body_font_bold_italic = body_font_bold | font_modify: 'style', 'italic'
-    %}
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap');
+</style>
+<meta name="google-site-verification" content="ddyQ-yhz_zjjBHWn3kaDwgLPA1KlZ4-w7KCgDRSlFmE" />
 
-    {% style %}
-      {{ settings.type_body_font | font_face: font_display: 'swap' }}
-      {{ body_font_bold | font_face: font_display: 'swap' }}
-      {{ body_font_italic | font_face: font_display: 'swap' }}
-      {{ body_font_bold_italic | font_face: font_display: 'swap' }}
-      {{ settings.type_header_font | font_face: font_display: 'swap' }}
+{% if content_for_header contains 'fastbundle.co' %}
+    {% render 'fast_bundle_service' %}
+{% endif %}
 
-      {% for scheme in settings.color_schemes -%}
-          {% assign scheme_classes = scheme_classes | append: ', .color-' | append: scheme.id %}
-          {% if forloop.index == 1 -%}
-              :root,
-          {%- endif %}
-          .color-{{ scheme.id }} {
-          --color-background: {{ scheme.settings.background.red }},{{ scheme.settings.background.green }},{{ scheme.settings.background.blue }};
-          {% if scheme.settings.background_gradient != empty %}
-              --gradient-background: {{ scheme.settings.background_gradient }};
-          {% else %}
-              --gradient-background: {{ scheme.settings.background }};
-          {% endif %}
+{% include "ot-cookies" %}{% include 'analyzify-gtm-body' %}
+{% capture boostersnippet %}{% include "booster-apps-common" %}{% endcapture %}{% unless boostersnippet contains "Liquid error" %}{{ boostersnippet }}{% endunless %}
 
-          {% liquid
-              assign background_color = scheme.settings.background
-              assign background_color_brightness = background_color | color_brightness
-              if background_color_brightness <= 26
-                  assign background_color_contrast = background_color | color_lighten: 50
-              elsif background_color_brightness <= 65
-                  assign background_color_contrast = background_color | color_lighten: 5
-              else
-                  assign background_color_contrast = background_color | color_darken: 25
-              endif
-          %}
+</head>
 
-          --color-foreground: {{ scheme.settings.text.red }},{{ scheme.settings.text.green }},{{ scheme.settings.text.blue }};
-          --color-background-contrast: {{ background_color_contrast.red }},{{ background_color_contrast.green }},{{ background_color_contrast.blue }};
-          --color-shadow: {{ scheme.settings.shadow.red }},{{ scheme.settings.shadow.green }},{{ scheme.settings.shadow.blue }};
-          --color-button: {{ scheme.settings.button.red }},{{ scheme.settings.button.green }},{{ scheme.settings.button.blue }};
-          --color-button-text: {{ scheme.settings.button_label.red }},{{ scheme.settings.button_label.green }},{{ scheme.settings.button_label.blue }};
-          --color-secondary-button: {{ scheme.settings.background.red }},{{ scheme.settings.background.green }},{{ scheme.settings.background.blue }};
-          --color-secondary-button-text: {{ scheme.settings.secondary_button_label.red }},{{ scheme.settings.secondary_button_label.green }},{{ scheme.settings.secondary_button_label.blue }};
-          --color-link: {{ scheme.settings.secondary_button_label.red }},{{ scheme.settings.secondary_button_label.green }},{{ scheme.settings.secondary_button_label.blue }};
-          --color-badge-foreground: {{ scheme.settings.text.red }},{{ scheme.settings.text.green }},{{ scheme.settings.text.blue }};
-          --color-badge-background: {{ scheme.settings.background.red }},{{ scheme.settings.background.green }},{{ scheme.settings.background.blue }};
-          --color-badge-border: {{ scheme.settings.text.red }},{{ scheme.settings.text.green }},{{ scheme.settings.text.blue }};
-          --payment-terms-background-color: rgb({{ scheme.settings.background.rgb }});
-          }
-      {% endfor %}
+  {%- assign feature_classes = '' -%}
 
-      {{ scheme_classes | prepend: 'body' }} {
-      color: rgba(var(--color-foreground), 0.75);
-      background-color: rgb(var(--color-background));
-      }
+  {%- if settings.show_image_zoom -%}
+    {% assign feature_classes = feature_classes | append: ' features--image-zoom' %}
+  {%- endif -%}
 
-      :root {
-      --font-body-family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};
-      --font-body-style: {{ settings.type_body_font.style }};
-      --font-body-weight: {{ settings.type_body_font.weight }};
-      --font-body-weight-bold: {{ settings.type_body_font.weight | plus: 300 | at_most: 1000 }};
+{% for collection in product.collections %}
+  {% if collection.handle == 'san-valentino' %}
+    {% assign san_valentino_bodyclass = 'san_valention_collection_prod' %}
+  {% endif %}
+{% endfor %}
 
-      --font-heading-family: {{ settings.type_header_font.family }}, {{ settings.type_header_font.fallback_families }};
-      --font-heading-style: {{ settings.type_header_font.style }};
-      --font-heading-weight: {{ settings.type_header_font.weight }};
+  <body id="{{ template | handleize }}" class="no-focus-outline handle_{{ request.path | split: '/' | last }} {{ feature_classes }} {{ san_valentino_bodyclass }}
+  {% if product.id %}product-id-{{ product.id }}{% endif %}" data-instant-allow-query-string>
+    {%- comment -%}Common SVG definitions that we are re-using in several places{%- endcomment -%}
+    <svg class="visually-hidden">
+      <linearGradient id="rating-star-gradient-half">
+        <stop offset="50%" stop-color="rgb(var(--product-star-rating))" />
+        <stop offset="50%" stop-color="rgb(var(--product-star-rating))" stop-opacity="0.4" />
+      </linearGradient>
+    </svg>
 
-      --font-body-scale: {{ settings.body_scale | divided_by: 100.0 }};
-      --font-heading-scale: {{ settings.heading_scale | times: 1.0 | divided_by: settings.body_scale }};
+    <a href="#main" class="visually-hidden skip-to-content">{{ 'general.accessibility.skip_to_content' | t }}</a>
+    <loading-bar class="loading-bar"></loading-bar>
 
-      --media-padding: {{ settings.media_padding }}px;
-      --media-border-opacity: {{ settings.media_border_opacity | divided_by: 100.0 }};
-      --media-border-width: {{ settings.media_border_thickness }}px;
-      --media-radius: {{ settings.media_radius }}px;
-      --media-shadow-opacity: {{ settings.media_shadow_opacity | divided_by: 100.0 }};
-      --media-shadow-horizontal-offset: {{ settings.media_shadow_horizontal_offset }}px;
-      --media-shadow-vertical-offset: {{ settings.media_shadow_vertical_offset }}px;
-      --media-shadow-blur-radius: {{ settings.media_shadow_blur }}px;
-      --media-shadow-visible: {% if settings.media_shadow_opacity > 0 %}1{% else %}0{% endif %};
+    {%- if request.page_type != 'gift_card' and request.page_type != 'password' -%}
+      {%- section 'announcement-bar' -%}
+      {%- section 'popup' -%}
+      {%- section 'header' -%}
 
-      --page-width: {{ settings.page_width | divided_by: 10 }}rem;
-      --page-width-margin: {% if settings.page_width == '1600' %}2{% else %}0{% endif %}rem;
-
-      --product-card-image-padding: {{ settings.card_image_padding | divided_by: 10.0 }}rem;
-      --product-card-corner-radius: {{ settings.card_corner_radius | divided_by: 10.0 }}rem;
-      --product-card-text-alignment: {{ settings.card_text_alignment }};
-      --product-card-border-width: {{ settings.card_border_thickness | divided_by: 10.0 }}rem;
-      --product-card-border-opacity: {{ settings.card_border_opacity | divided_by: 100.0 }};
-      --product-card-shadow-opacity: {{ settings.card_shadow_opacity | divided_by: 100.0 }};
-      --product-card-shadow-visible: {% if settings.card_shadow_opacity > 0 %}1{% else %}0{% endif %};
-      --product-card-shadow-horizontal-offset: {{ settings.card_shadow_horizontal_offset | divided_by: 10.0 }}rem;
-      --product-card-shadow-vertical-offset: {{ settings.card_shadow_vertical_offset | divided_by: 10.0 }}rem;
-      --product-card-shadow-blur-radius: {{ settings.card_shadow_blur | divided_by: 10.0 }}rem;
-
-      --collection-card-image-padding: {{ settings.collection_card_image_padding | divided_by: 10.0 }}rem;
-      --collection-card-corner-radius: {{ settings.collection_card_corner_radius | divided_by: 10.0 }}rem;
-      --collection-card-text-alignment: {{ settings.collection_card_text_alignment }};
-      --collection-card-border-width: {{ settings.collection_card_border_thickness | divided_by: 10.0 }}rem;
-      --collection-card-border-opacity: {{ settings.collection_card_border_opacity | divided_by: 100.0 }};
-      --collection-card-shadow-opacity: {{ settings.collection_card_shadow_opacity | divided_by: 100.0 }};
-      --collection-card-shadow-visible: {% if settings.collection_card_shadow_opacity > 0 %}1{% else %}0{% endif %};
-      --collection-card-shadow-horizontal-offset: {{ settings.collection_card_shadow_horizontal_offset | divided_by: 10.0 }}rem;
-      --collection-card-shadow-vertical-offset: {{ settings.collection_card_shadow_vertical_offset | divided_by: 10.0 }}rem;
-      --collection-card-shadow-blur-radius: {{ settings.collection_card_shadow_blur | divided_by: 10.0 }}rem;
-
-      --blog-card-image-padding: {{ settings.blog_card_image_padding | divided_by: 10.0 }}rem;
-      --blog-card-corner-radius: {{ settings.blog_card_corner_radius | divided_by: 10.0 }}rem;
-      --blog-card-text-alignment: {{ settings.blog_card_text_alignment }};
-      --blog-card-border-width: {{ settings.blog_card_border_thickness | divided_by: 10.0 }}rem;
-      --blog-card-border-opacity: {{ settings.blog_card_border_opacity | divided_by: 100.0 }};
-      --blog-card-shadow-opacity: {{ settings.blog_card_shadow_opacity | divided_by: 100.0 }};
-      --blog-card-shadow-visible: {% if settings.blog_card_shadow_opacity > 0 %}1{% else %}0{% endif %};
-      --blog-card-shadow-horizontal-offset: {{ settings.blog_card_shadow_horizontal_offset | divided_by: 10.0 }}rem;
-      --blog-card-shadow-vertical-offset: {{ settings.blog_card_shadow_vertical_offset | divided_by: 10.0 }}rem;
-      --blog-card-shadow-blur-radius: {{ settings.blog_card_shadow_blur | divided_by: 10.0 }}rem;
-
-      --badge-corner-radius: {{ settings.badge_corner_radius | divided_by: 10.0 }}rem;
-
-      --popup-border-width: {{ settings.popup_border_thickness }}px;
-      --popup-border-opacity: {{ settings.popup_border_opacity | divided_by: 100.0 }};
-      --popup-corner-radius: {{ settings.popup_corner_radius }}px;
-      --popup-shadow-opacity: {{ settings.popup_shadow_opacity | divided_by: 100.0 }};
-      --popup-shadow-horizontal-offset: {{ settings.popup_shadow_horizontal_offset }}px;
-      --popup-shadow-vertical-offset: {{ settings.popup_shadow_vertical_offset }}px;
-      --popup-shadow-blur-radius: {{ settings.popup_shadow_blur }}px;
-
-      --drawer-border-width: {{ settings.drawer_border_thickness }}px;
-      --drawer-border-opacity: {{ settings.drawer_border_opacity | divided_by: 100.0 }};
-      --drawer-shadow-opacity: {{ settings.drawer_shadow_opacity | divided_by: 100.0 }};
-      --drawer-shadow-horizontal-offset: {{ settings.drawer_shadow_horizontal_offset }}px;
-      --drawer-shadow-vertical-offset: {{ settings.drawer_shadow_vertical_offset }}px;
-      --drawer-shadow-blur-radius: {{ settings.drawer_shadow_blur }}px;
-
-      --spacing-sections-desktop: {{ settings.spacing_sections }}px;
-      --spacing-sections-mobile: {% if settings.spacing_sections < 24 %}{{ settings.spacing_sections }}{% else %}{{ settings.spacing_sections | times: 0.7 | round | at_least: 20 }}{% endif %}px;
-
-      --grid-desktop-vertical-spacing: {{ settings.spacing_grid_vertical }}px;
-      --grid-desktop-horizontal-spacing: {{ settings.spacing_grid_horizontal }}px;
-      --grid-mobile-vertical-spacing: {{ settings.spacing_grid_vertical | divided_by: 2 }}px;
-      --grid-mobile-horizontal-spacing: {{ settings.spacing_grid_horizontal | divided_by: 2 }}px;
-
-      --text-boxes-border-opacity: {{ settings.text_boxes_border_opacity | divided_by: 100.0 }};
-      --text-boxes-border-width: {{ settings.text_boxes_border_thickness }}px;
-      --text-boxes-radius: {{ settings.text_boxes_radius }}px;
-      --text-boxes-shadow-opacity: {{ settings.text_boxes_shadow_opacity | divided_by: 100.0 }};
-      --text-boxes-shadow-visible: {% if settings.text_boxes_shadow_opacity > 0 %}1{% else %}0{% endif %};
-      --text-boxes-shadow-horizontal-offset: {{ settings.text_boxes_shadow_horizontal_offset }}px;
-      --text-boxes-shadow-vertical-offset: {{ settings.text_boxes_shadow_vertical_offset }}px;
-      --text-boxes-shadow-blur-radius: {{ settings.text_boxes_shadow_blur }}px;
-
-      --buttons-radius: {{ settings.buttons_radius }}px;
-      --buttons-radius-outset: {% if settings.buttons_radius > 0 %}{{ settings.buttons_radius | plus: settings.buttons_border_thickness }}{% else %}0{% endif %}px;
-      --buttons-border-width: {% if settings.buttons_border_opacity > 0 %}{{ settings.buttons_border_thickness }}{% else %}0{% endif %}px;
-      --buttons-border-opacity: {{ settings.buttons_border_opacity | divided_by: 100.0 }};
-      --buttons-shadow-opacity: {{ settings.buttons_shadow_opacity | divided_by: 100.0 }};
-      --buttons-shadow-visible: {% if settings.buttons_shadow_opacity > 0 %}1{% else %}0{% endif %};
-      --buttons-shadow-horizontal-offset: {{ settings.buttons_shadow_horizontal_offset }}px;
-      --buttons-shadow-vertical-offset: {{ settings.buttons_shadow_vertical_offset }}px;
-      --buttons-shadow-blur-radius: {{ settings.buttons_shadow_blur }}px;
-      --buttons-border-offset: {% if settings.buttons_radius > 0 or settings.buttons_shadow_opacity > 0 %}0.3{% else %}0{% endif %}px;
-
-      --inputs-radius: {{ settings.inputs_radius }}px;
-      --inputs-border-width: {{ settings.inputs_border_thickness }}px;
-      --inputs-border-opacity: {{ settings.inputs_border_opacity | divided_by: 100.0 }};
-      --inputs-shadow-opacity: {{ settings.inputs_shadow_opacity | divided_by: 100.0 }};
-      --inputs-shadow-horizontal-offset: {{ settings.inputs_shadow_horizontal_offset }}px;
-      --inputs-margin-offset: {% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_opacity > 0 %}{{ settings.inputs_shadow_vertical_offset | abs }}{% else %}0{% endif %}px;
-      --inputs-shadow-vertical-offset: {{ settings.inputs_shadow_vertical_offset }}px;
-      --inputs-shadow-blur-radius: {{ settings.inputs_shadow_blur }}px;
-      --inputs-radius-outset: {% if settings.inputs_radius > 0 %}{{ settings.inputs_radius | plus: settings.inputs_border_thickness }}{% else %}0{% endif %}px;
-
-      --variant-pills-radius: {{ settings.variant_pills_radius }}px;
-      --variant-pills-border-width: {{ settings.variant_pills_border_thickness }}px;
-      --variant-pills-border-opacity: {{ settings.variant_pills_border_opacity | divided_by: 100.0 }};
-      --variant-pills-shadow-opacity: {{ settings.variant_pills_shadow_opacity | divided_by: 100.0 }};
-      --variant-pills-shadow-horizontal-offset: {{ settings.variant_pills_shadow_horizontal_offset }}px;
-      --variant-pills-shadow-vertical-offset: {{ settings.variant_pills_shadow_vertical_offset }}px;
-      --variant-pills-shadow-blur-radius: {{ settings.variant_pills_shadow_blur }}px;
-      }
-
-      *,
-      *::before,
-      *::after {
-      box-sizing: inherit;
-      }
-
-      html {
-      box-sizing: border-box;
-      font-size: calc(var(--font-body-scale) * 62.5%);
-      height: 100%;
-      }
-
-      body {
-      display: grid;
-      grid-template-rows: auto auto 1fr auto;
-      grid-template-columns: 100%;
-      min-height: 100%;
-      margin: 0;
-      font-size: 1.5rem;
-      letter-spacing: 0.06rem;
-      line-height: calc(1 + 0.8 / var(--font-body-scale));
-      font-family: var(--font-body-family);
-      font-style: var(--font-body-style);
-      font-weight: var(--font-body-weight);
-      }
-
-      @media screen and (min-width: 750px) {
-      body {
-      font-size: 1.6rem;
-      }
-      }
-    {% endstyle %}
-
-    {{ 'base.css' | asset_url | stylesheet_tag }}
-    {{ 'https://necolas.github.io/normalize.css/8.0.1/normalize.css' | stylesheet_tag }}
-    {{ 'tailwind.css' | asset_url | stylesheet_tag }}
-    {{ 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css' | stylesheet_tag }}
-    {{ 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css' | stylesheet_tag }}
-    {% if template contains 'about-us' or template contains 'contact' %}
-      {{ 'about_us.css' | asset_url | stylesheet_tag }}
-      {{ 'next_about_us.css' | asset_url | stylesheet_tag }}
-    {% endif %}
-    {% if template contains 'cart' %}
-      {{ 'next_user_pages.css' | asset_url | stylesheet_tag }}
-    {% endif %}
-    {% if page.template_suffix == 'etnz' %}
-      {{ 'next_etnz_page.css' | asset_url | stylesheet_tag }}
-    {% endif %}
-    {% if template contains 'Forms - B2B Access' or template contains 'prenotazione-2' %}
-      {{ 'next_prostore.css' | asset_url | stylesheet_tag }}
-    {% endif %}
-    {% if template contains 'guida-alle-taglie' %}
-      {{ 'next_guida_taglie.css' | asset_url | stylesheet_tag }}
-    {% endif %}
-    {% if template contains 'prenotazione-2' or template contains 'landing-newsletter' %}
-      {{ 'next_prenotazioni.css' | asset_url | stylesheet_tag }}
-    {% endif %}
-
-    {% # file CSS custom globale %}
-    {{ 'next_addtocompare.css' | asset_url | stylesheet_tag }}
-    {{ 'next_typo.css' | asset_url | stylesheet_tag }}
-    {{ 'next_menu.css' | asset_url | stylesheet_tag }}
-    {{ 'next_footer.css' | asset_url | stylesheet_tag }}
-    {{ 'next_user_login.css' | asset_url | stylesheet_tag }}
-    {{ 'next_hovers.css' | asset_url | stylesheet_tag }}
-    {{ 'next_style.css' | asset_url | stylesheet_tag }}
-
-    {%- unless settings.type_body_font.system? -%}
-      <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
-    {%- endunless -%}
-    {%- unless settings.type_header_font.system? -%}
-      <link rel="preload" as="font" href="{{ settings.type_header_font | font_url }}" type="font/woff2" crossorigin>
-    {%- endunless -%}
-
-    {%- if localization.available_countries.size > 1 or localization.available_languages.size > 1 -%}
-      {{ 'component-localization-form.css' | asset_url | stylesheet_tag: preload: true }}
-      <script src="{{ 'localization-form.js' | asset_url }}" defer="defer"></script>
+      {%- unless settings.cart_type == 'page' or request.page_type == 'cart' -%}
+        {%- section 'mini-cart' -%}
+      {%- endunless -%}
     {%- endif -%}
 
-    {%- if settings.predictive_search_enabled -%}
-      <link
-        rel="stylesheet"
-        href="{{ 'component-predictive-search.css' | asset_url }}"
-        media="print"
-        onload="this.media='all'"
-      >
-    {%- endif -%}
+    <div id="main" role="main" class="anchor">
+      {%- comment -%}
+      IMPLEMENTATION NOTE: on collection and search page, the theme was designed to show on mobile the filter bar and/or sort
+        by at the very top of the page. However, due to the fact that sections are isolated, I had to move the code
+        here. Then, the collection section, based on the selected settings, will eventually hide those elements in CSS
+      {%- endcomment -%}
+      {%- if request.page_type == 'collection' or request.page_type == 'search' -%}
+        {%- assign active_filters_count = 0 -%}
 
-    <script>
-      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
-      if (Shopify.designMode) {
-        document.documentElement.classList.add('shopify-design-mode');
-      }
-    </script>
+        {%- if request.page_type == 'collection' -%}
+          {%- assign filters = collection.filters -%}
+        {%- else -%}
+          {%- assign filters = search.filters -%}
+        {%- endif -%}
 
-    {% if article.id or page.template_suffix == 'etnz' %}
-      <script>
-        document.addEventListener('DOMContentLoaded', function () {
-          var showFullContentButtons = document.querySelectorAll('.showFullContent');
+        {%- for filter in filters -%}
+          {%- if filter.type == 'list' -%}
+            {%- assign active_filters_count = active_filters_count | plus: filter.active_values.size -%}
+          {%- elsif filter.type == 'price_range' and filter.min_value.value or filter.max_value.value -%}
+            {%- assign active_filters_count = active_filters_count | plus: 1 -%}
+          {%- endif -%}
+        {%- endfor -%}
 
-          showFullContentButtons.forEach(function (button) {
-            button.addEventListener('click', function (e) {
-              var btnId = e.target.id;
-              var blockId = btnId.split('btnId__')[1];
-              var previewContent = document.getElementById('preview_content_' + blockId);
-              var fullContent = document.getElementById('full_content_' + blockId);
-              var btn = document.getElementById('btnId__' + blockId);
+        {%- assign is_toolbar_collapsed = false -%}
 
-              if (fullContent.style.display == 'none') {
-                previewContent.style.display = 'none';
-                fullContent.style.display = 'block';
-                btn.innerHTML = 'Show less';
-              } else if (fullContent.style.display == 'block') {
-                previewContent.style.display = 'block';
-                fullContent.style.display = 'none';
-                btn.innerHTML = 'Read more';
-              }
-            });
-          });
-        });
-      </script>
-      <script>
-        document.addEventListener('DOMContentLoaded', function () {
-          var playButtons = document.querySelectorAll('.play_button');
+        {%- if request.page_type == 'search' and search.results.first.object_type != 'product' and search.results_count > 0 -%}
+          {%- assign is_toolbar_collapsed = true -%}
+        {%- endif -%}
 
-          playButtons.forEach(function (button) {
-            button.addEventListener('click', function (e) {
-              var btnId = button.id;
-              var sectionId = btnId.split('play_btn__')[1];
-              var previewImage = document.getElementById('preview_image_' + sectionId);
-              var videoIframe = document.getElementById('video_iframe_' + sectionId);
-              var btn = document.getElementById('play_btn__' + sectionId);
+        <div id="mobile-facet-toolbar" class="mobile-toolbar {% if is_toolbar_collapsed %}is-collapsed{% endif %} hidden-lap-and-up">
+          <button is="toggle-button" class="mobile-toolbar__item mobile-toolbar__item--filters {% if active_filters_count > 0 %}has-filters{% endif %}" aria-expanded="false" aria-controls="facet-filters" style="display: none">
+            {%- render 'icon' with 'filters' -%}
+            <span class="mobile-toolbar__item-label">{{- 'collection.general.filters' | t -}}</span>
+          </button>
 
-              btn.style.display = 'none';
-              previewImage.style.display = 'none';
-              videoIframe.src += '?autoplay=1';
-            });
-          });
-        });
-      </script>
-    {% endif %}
-    <meta name="google-site-verification" content="ZWr1huuFHmdDfqlrxSBTpKvlZEkKEAhx5rQHhI-2WbQ" />
-  </head>
-
-  <body class="{{ page_title | downcase | replace: ' ', '_' | replace: ',', '' | replace: '.', '' | replace: ':', '' | replace: ';', '' | replace: '!', '' | replace: '?', '' | replace: '&', '' | replace: '@', '' | replace: '#', '' | replace: '%', '' }} {{ page.handle }} {{ template.name }} {{ page.template_suffix }} gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
-    {% if page.template_suffix == 'etnz' %}
-      <div class="frame_linea_visiva light_version"></div>
-    {% endif %}
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-      <iframe
-        src="https://gtm.slam.com/ns.html?id=GTM-PB2F8P5N"
-        height="0"
-        width="0"
-        style="display:none;visibility:hidden"
-      ></iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <a class="skip-to-content-link button visually-hidden" href="#MainContent">
-      {{ 'accessibility.skip_to_text' | t }}
-    </a>
-
-    {%- if settings.cart_type == 'drawer' -%}
-      {%- render 'cart-drawer' -%}
-    {%- endif -%}
-
-    {% sections 'header-group' %}
-
-    <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
-      {{ content_for_layout }}
-      {% if template.name contains 'article' %}
-        <div class="article-template__back element-margin-top center{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-          <a href="{{ blog.url }}" class="article-template__link link animate-arrow">
-            <span class="icon-wrap">{% render 'icon-arrow-link-custom' %}</span>
-            {{ 'blogs.article.back_to_blog' | t: title: blog.title }}
-          </a>
+          <button is="toggle-button" class="mobile-toolbar__item mobile-toolbar__item--sort" aria-expanded="false" aria-controls="sort-by-popover" style="display: none">
+            <span class="mobile-toolbar__item-label">{{- 'collection.general.sort_by' | t -}}</span>
+            {%- render 'icon' with 'chevron' -%}
+          </button>
         </div>
-      {% endif %}
-    </main>
+      {%- endif -%}
 
-    {% sections 'footer-group' %}
+      {{ content_for_layout }}
 
-    <ul hidden>
-      <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
-      <li id="a11y-new-window-message">{{ 'accessibility.link_messages.new_window' | t }}</li>
-    </ul>
+      {%- unless request.page_type == 'index' or request.page_type == 'password' or request.page_type == 'gift_card' -%}
+        {%- section 'static-text-with-icons' -%}
+        {%- section 'static-newsletter' -%}
+      {%- endunless -%}
+    </div>
 
-    <script>
-        window.shopUrl = '{{ request.origin }}';
-        window.routes = {
-            cart_add_url: '{{ routes.cart_add_url }}',
-            cart_change_url: '{{ routes.cart_change_url }}',
-            cart_update_url: '{{ routes.cart_update_url }}',
-            cart_url: '{{ routes.cart_url }}',
-            predictive_search_url: '{{ routes.predictive_search_url }}'
-        };
+{% if collection and template == 'collection' %}
+  {% if collection.metafields.custom.descrizione_seo %}
+    <section id="descrizione_seo" class="container">
+      {{ collection.metafields.custom.descrizione_seo | metafield_tag }}
+    </section>
+  {% endif %}
+{% endif %}
 
-        window.cartStrings = {
-            error: `{{ 'sections.cart.cart_error' | t }}`,
-            quantityError: `{{ 'sections.cart.cart_quantity_error_html' | t: quantity: '[quantity]' }}`
-        };
-
-        window.variantStrings = {
-            addToCart: `{{ 'products.product.add_to_cart' | t }}`,
-            soldOut: `{{ 'products.product.sold_out' | t }}`,
-            unavailable: `{{ 'products.product.unavailable' | t }}`,
-            unavailable_with_option: `{{ 'products.product.value_unavailable' | t: option_value: '[value]' }}`
-        };
-
-        window.quickOrderListStrings = {
-            itemsAdded: `{{ 'sections.quick_order_list.items_added.other' | t: quantity: '[quantity]' }}`,
-            itemAdded: `{{ 'sections.quick_order_list.items_added.one' | t: quantity: '[quantity]' }}`,
-            itemsRemoved: `{{ 'sections.quick_order_list.items_removed.other' | t: quantity: '[quantity]' }}`,
-            itemRemoved: `{{ 'sections.quick_order_list.items_removed.one' | t: quantity: '[quantity]' }}`,
-            viewCart: `{{- 'sections.quick_order_list.view_cart' | t -}}`,
-            each: `{{- 'sections.quick_order_list.each' | t: money: '[money]' }}`
-        };
-
-        window.accessibilityStrings = {
-            imageAvailable: `{{ 'products.product.media.image_available' | t: index: '[index]' }}`,
-            shareSuccess: `{{ 'general.share.success_message' | t }}`,
-            pauseSlideshow: `{{ 'sections.slideshow.pause_slideshow' | t }}`,
-            playSlideshow: `{{ 'sections.slideshow.play_slideshow' | t }}`,
-            recipientFormExpanded: `{{ 'recipient.form.expanded' | t }}`,
-            recipientFormCollapsed: `{{ 'recipient.form.collapsed' | t }}`
-        };
-
-        window.datalayer_user = {% render 'user-datalayer' %};
-    </script>
-
-    {%- if settings.predictive_search_enabled -%}
-      <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
+    {%- if request.page_type != 'gift_card' and request.page_type != 'password' -%}
+      {%- section 'footer' -%}
     {%- endif -%}
+  
+ <!--begin-boost-pfs-js-->
+   {% render 'boost-pfs' %}
+ <!--end-boost-pfs-js-->
 
-    {% # dependences %}
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer="defer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" defer="defer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js" defer="defer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollToPlugin.min.js" defer="defer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer="defer"></script>
-    <script src="{{ 'jq-sticky-anything.min.js' | asset_url }}" defer="defer"></script>
+{% include 'swymSnippet' %}
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" defer="defer"></script>
-    {% if template contains 'about-us' %}
-      <script src="{{ 'about_us.js' | asset_url }}" defer="defer"></script>
-    {% endif %}
+<!-- Stamped - Begin Script-->
+<script async type="text/javascript" data-api-key="YOUR_PUBLIC-API-KEY" id="stamped-script-widget" src="https://cdn1.stamped.io/files/widget.min.js"></script>
+<!-- Stamped - End Script -->
 
-    {% # file JS custom globale %}
-    <script src="{{ 'next_custom.js' | asset_url }}" defer="defer"></script>
-    <script src="{{ 'next_custom_gsap.js' | asset_url }}" defer="defer"></script>
-  </body>
+<script>
+if (
+  document.querySelector(`span.stamped-summary-recommend-label`) ||
+  document.querySelector("#stamped-sort-select > option:nth-child(1)") ||
+document.querySelector("#stamped-sort-select > option:nth-child(2)") ||
+document.querySelector("#stamped-sort-select > option:nth-child(3)") ||
+document.querySelector("#stamped-sort-select > option:nth-child(4)") ||
+document.querySelector("#stamped-sort-select > option:nth-child(5)") ||
+document.querySelector("fieldset.stamped-form-review > div.stamped-form-review-body > label") ||
+document.querySelector(".stamped-form-review-recommend-label")
+){
+  setTimeout(
+    function()
+    {
+      
+document.querySelector(`span.stamped-summary-recommend-label`).textContent='dei recensori consigliano questo prodotto';
+document.querySelector("#stamped-sort-select > option:nth-child(1)").textContent='Ordina';
+document.querySelector("#stamped-sort-select > option:nth-child(2)").textContent='Più recente';
+document.querySelector("#stamped-sort-select > option:nth-child(3)").textContent='Dalla valutazione più alta';
+document.querySelector("#stamped-sort-select > option:nth-child(4)").textContent='Dalla valutazione più bassa';
+document.querySelector("#stamped-sort-select > option:nth-child(5)").textContent='La maggior parte dei voti';
+document.querySelector("fieldset.stamped-form-review > div.stamped-form-review-body > label").textContent=`Come è stata la tua esperienza generale nell'utilizzo del prodotto?`;
+document.querySelector(".stamped-form-review-recommend-label").textContent='Raccomandi questo prodotto?';
+ console.log('trad');
+ }, 5000);
+}
+ 
+</script>
+
+<style>
+.new-review-form.stamped-visible .stamped-form-review-recommend .stamped-form-label {
+  text-transform: capitalize;}
+
+    </style>
+  {% render 'th-bundle-product' %}
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+
+            <!-- BLACK FRDAY 2023 
+
+<style>
+    canvas#c {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        z-index: 8;
+        top: 0;
+        left: 0;
+        pointer-events:none!important;
+        animation: animazioneCanvas 20s infinite;
+    }
+@keyframes animazioneCanvas {
+    0%, 1.1% { /* 300ms su 7 minuti totali */
+        mix-blend-mode: color-dodge;
+    }
+    1.11%, 3.2% { /* 200ms su 7 minuti */
+        mix-blend-mode: darken;
+    }
+    3.21%, 7.3% { /* 180s su 7 minuti */
+        mix-blend-mode: difference;
+    }
+    7.31%, 10.4% { /* 100ms su 7 minuti */
+        mix-blend-mode: hard-light;
+    }
+    10.41%, 50% { /* 300ms su 7 minuti */
+        visibility:hidden;
+    }
+    25.01%, 26.1% { /* 300ms su 7 minuti totali */
+        mix-blend-mode: darken;
+    }
+    26.11%, 28.2% { /* 200ms su 7 minuti */
+        mix-blend-mode: color-dodge;
+    }
+    28.21%, 32.3% { /* 180s su 7 minuti */
+        mix-blend-mode: hard-light;
+    }
+    32.31%, 33.4% { /* 100ms su 7 minuti */
+        mix-blend-mode: difference;
+    }
+    33.41%, 50% { /* 300ms su 7 minuti */
+        visibility:hidden;
+    }
+    50.01%, 51.1% { /* 300ms su 7 minuti totali */
+        mix-blend-mode: color-dodge;
+    }
+    52.11%, 54.2% { /* 200ms su 7 minuti */
+        mix-blend-mode: darken;
+    }
+    54.21%, 57.3% { /* 180s su 7 minuti */
+        mix-blend-mode: difference;
+    }
+    57.31%, 58.4% { /* 100ms su 7 minuti */
+        mix-blend-mode: hard-light;
+    }
+    58.41%, 75% { /* 300ms su 7 minuti */
+        visibility:hidden;
+    }
+    75.01%, 76.1% { /* 300ms su 7 minuti totali */
+        mix-blend-mode: darken;
+    }
+    76.11%, 78.2% { /* 200ms su 7 minuti */
+        mix-blend-mode: color-dodge;
+    }
+    78.21%, 82.3% { /* 180s su 7 minuti */
+        mix-blend-mode: hard-light;
+    }
+    82.31%, 83.4% { /* 100ms su 7 minuti */
+        mix-blend-mode: difference;
+    }
+    83.41%, 100% { /* 300ms su 7 minuti */
+        visibility:hidden;
+    }
+}
+</style>
+<canvas id="c"></canvas>
+<script>
+    // geting canvas by Boujjou Achraf
+    var c = document.getElementById("c");
+    var ctx = c.getContext("2d");
+
+    //making the canvas full screen
+    c.height = window.innerHeight;
+    c.width = window.innerWidth;
+
+    //chinese characters - taken from the unicode charset
+    var matrix = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%+-/~{[|`]}";
+    //converting the string into an array of single characters
+    matrix = matrix.split("");
+
+    var font_size = 10;
+    var columns = c.width/font_size; //number of columns for the rain
+    //an array of drops - one per column
+    var drops = [];
+    //x below is the x coordinate
+    //1 = y co-ordinate of the drop(same for every drop initially)
+    for(var x = 0; x < columns; x++)
+        drops[x] = 1; 
+
+    //drawing the characters
+    function draw()
+    {
+        //Black BG for the canvas
+        //translucent BG to show trail
+        ctx.fillStyle = "rgba(255, 255, 255, 0.04)";
+        ctx.fillRect(0, 0, c.width, c.height);
+
+        ctx.fillStyle = "#4bdd0e";//green text
+        ctx.font = font_size + "px arial";
+        //looping over drops
+        for(var i = 0; i < drops.length; i++)
+        {
+            //a random chinese character to print
+            var text = matrix[Math.floor(Math.random()*matrix.length)];
+            //x = i*font_size, y = value of drops[i]*font_size
+            ctx.fillText(text, i*font_size, drops[i]*font_size);
+
+            //sending the drop back to the top randomly after it has crossed the screen
+            //adding a randomness to the reset to make the drops scattered on the Y axis
+            if(drops[i]*font_size > c.height && Math.random() > 0.975)
+                drops[i] = 0;
+
+            //incrementing Y coordinate
+            drops[i]++;
+        }
+    }
+    setInterval(draw, 35);
+</script>
+  
+-->
+
+
+    <!-- <div id="counter_box">
+        <p>Qualcosa sta per accadere</p>
+        <div id="counter"></div>
+        <p>rimani connesso [...]</p>
+    </div> -->
+
+          
+<!--BeginCFFPersistentCartCart-->
+{% if customer %}
+<script>
+
+    window.cffCustomer = {
+        name: '{{customer.name}}',
+        email: '{{customer.email}}',
+        hasAccount: '{{customer.has_account}}',
+        id: '{{customer.id}}'
+    };
+
+
+</script>
+
+{% endif %}
+
+<script>
+    window.cffPCLiquidPlaced = true
+</script>
+
+<!--EndCFFPersistentCartCart--></body>
 </html>
