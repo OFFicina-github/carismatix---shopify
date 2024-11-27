@@ -3069,6 +3069,8 @@ body#index #scroll_to_nl_natale:hover img {
 
 #page-programma-fedelta .bon-btn {
   text-align: center;
+  border: none;
+  border-radius: 0;
 }
 
 #page-programma-fedelta .progress-bar {
