@@ -115,6 +115,7 @@
 
               <div class="product-meta__label-list label-list" data-product-label-list>
 
+              {%- comment -%}
                 {%- unless product.selected_or_first_available_variant.available -%}
                   <!-- Unavailable -->
                   <span class="label label--subdued">{{ 'collection.product.sold_out' | t }}</span>
@@ -134,7 +135,7 @@
                   {% endif %}
 
                 {%- endunless -%}
-
+              {%- endcomment -%}
               </div>
             
             </span>
