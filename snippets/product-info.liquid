@@ -115,23 +115,6 @@
 
               <div class="product-meta__label-list label-list" data-product-label-list>
 
-                {%- assign variant = product.selected_or_first_available_variant -%}
-
-                {%- if variant.available -%}
-                  {%- if variant.compare_at_price > variant.price -%}
-                    <!-- Sconto -->
-                    {%- assign savings = settings.discount_mode == 'percentage'
-                      | if: variant.compare_at_price | minus: variant.price | times: 100.0 | divided_by: variant.compare_at_price | round | append: '%' 
-                      | else: variant.compare_at_price | minus: variant.price | money
-                    -%}
-                    <span class="label label--highlight">{{ 'collection.product.discount_html' | t: savings: savings }}</span>
-                  {%- endif -%}
-                {%- else -%}
-                  <!-- Non Disponibile -->
-                  <span class="label label--subdued">{{ 'collection.product.sold_out' | t }}</span>
-                {%- endif -%}
-
-              {%- comment -%}
                 {%- unless product.selected_or_first_available_variant.available -%}
                   <!-- Unavailable -->
                   <span class="label label--subdued">{{ 'collection.product.sold_out' | t }}</span>
@@ -151,7 +134,7 @@
                   {% endif %}
 
                 {%- endunless -%}
-              {%- endcomment -%}
+
               </div>
             
             </span>
