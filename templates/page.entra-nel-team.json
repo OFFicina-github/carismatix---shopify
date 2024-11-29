@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -35,7 +35,7 @@
         "template--16640346325221__4b0b6e0f-3879-454c-b811-b3fdeb4914ac-16684340819f89e055-0": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/Tecnico_b52e3a02-af0e-46ae-8c33-1e4e3513cec2.jpg",
+            "image": "shopify://shop_images/Tecnico-applicatore.jpg",
             "tab_label": "",
             "subheading": "POSIZIONE APERTA",
             "title": "TECNICO APPLICATORE",
@@ -169,7 +169,7 @@
         "49e00277-aa0b-4492-8099-7452931d4106": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/Tavola_disegno_11_copia.jpg",
+            "image": "shopify://shop_images/Magazzino.jpg",
             "tab_label": "Item",
             "subheading": "Posizione aperta",
             "title": "ADDETTO GESTIONE MAGAZZINO",
@@ -262,6 +262,38 @@
         "button_text_color": "rgba(0,0,0,0)"
       }
     },
+    "image_with_text_znhDWb": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_ip8VxL": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Magazzino.jpg",
+            "tab_label": "Item",
+            "subheading": "Posizioni aperte",
+            "title": "Magazziniere",
+            "content": "<p>Siamo alla ricerca di una figura con esperienza in picking e patentata per l'uso del muletto da inserire nel nostro organico.</p><p>Per candidarti compila il form sottostante.</p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_ip8VxL"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "boxed",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "#f7f7f7",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
     "55fa6ec8-0d56-448e-a293-11d293b6a138": {
       "type": "custom-html",
       "settings": {
@@ -285,6 +317,7 @@
     "d2709de4-6401-41b1-a3d4-4ed09c11096c",
     "image_with_text_KcGTmn",
     "image_with_text_gkAzLP",
+    "image_with_text_znhDWb",
     "55fa6ec8-0d56-448e-a293-11d293b6a138"
   ]
 }
