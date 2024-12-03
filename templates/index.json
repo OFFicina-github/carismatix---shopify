@@ -30,16 +30,15 @@
             "overlay_opacity": 0
           }
         },
-        "slide-1": {
+        "image_zxdDmD": {
           "type": "image",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Slide-BF2024.jpg",
+            "image": "shopify://shop_images/Slide-Detailing_Days.jpg",
             "text_position": "middle_center",
             "subheading": "",
             "title": "",
             "button_1_text": "",
-            "button_1_link": "",
+            "button_1_link": "https://carismatix.it/collections/training-days",
             "button_2_text": "",
             "button_2_link": "",
             "text_color": "#ffffff",
@@ -52,7 +51,7 @@
       },
       "block_order": [
         "f3d58442-7c50-4a38-942e-3ade70efdd99",
-        "slide-1"
+        "image_zxdDmD"
       ],
       "settings": {
         "section_height": "auto",
