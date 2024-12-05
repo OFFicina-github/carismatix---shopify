@@ -269,6 +269,29 @@
         "text_color": "rgba(0,0,0,0)"
       }
     },
+    "image_with_text_overlay_e964Qi": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "reveal_on_scroll": true,
+        "section_height": "medium",
+        "image": "shopify://shop_images/magazine-open.png",
+        "subheading": "",
+        "title": "Sfoglia il catalogo",
+        "content": "<p>Sempre aggiornato, sempre con te, sempre qui.</p>",
+        "button_text": "Vai al catalogo",
+        "button_link": "",
+        "link_style": "button",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "middle_center",
+        "text_color": "#ffffff",
+        "button_background": "#4bdd0e",
+        "button_text_color": "#ffffff",
+        "overlay_color": "#0a1320",
+        "overlay_opacity": 70
+      }
+    },
     "image-with-text-block": {
       "type": "image-with-text-block",
       "settings": {
@@ -364,6 +387,7 @@
     "166428221801c0d141",
     "166437661130d46066",
     "blog-posts",
+    "image_with_text_overlay_e964Qi",
     "image-with-text-block",
     "text-with-icons",
     "newsletter"
