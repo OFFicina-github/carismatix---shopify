@@ -12,6 +12,24 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
+        "image_4m6myB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Slide-Natale24.jpg",
+            "text_position": "middle_center",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
         "image_zxdDmD": {
           "type": "image",
           "settings": {
@@ -50,6 +68,7 @@
         }
       },
       "block_order": [
+        "image_4m6myB",
         "image_zxdDmD",
         "f3d58442-7c50-4a38-942e-3ade70efdd99"
       ],
