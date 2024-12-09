@@ -55,4 +55,13 @@ body#index .pulsanti_home .pulsante.san_valentino p {
 body#index .pulsanti_home .pulsante.san_valentino h6 {
     color: #fff;
 }
+  @media(max-width:690px){
+    #AddToCart > img {
+      position: absolute;
+      width: 80%;
+      top: -10px;
+      right: -4px;
+      filter: drop-shadow(2px 4px 6px #00000050);
+    }
+  }
 
