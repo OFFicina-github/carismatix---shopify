@@ -582,4 +582,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }, 2500);
 
+
+  /*NEVE*/
+  $('#AddToCart').append('<img style="position: absolute;width: 80%;top: -15px;right: -7px;filter: drop-shadow(2px 4px 6px #00000050);" src="https://cdn.shopify.com/s/files/1/0602/0975/8437/files/snow02.svg?v=1701878474">');
+
 });
