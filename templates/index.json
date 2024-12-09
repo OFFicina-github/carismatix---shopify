@@ -292,7 +292,6 @@
     },
     "image_with_text_overlay_e964Qi": {
       "type": "image-with-text-overlay",
-      "disabled": true,
       "settings": {
         "reveal_on_scroll": true,
         "section_height": "medium",
