@@ -49,3 +49,7 @@ div.th_pb_qty_bundle_l2_grid_inner .th_pb_qty_bundle_l2_single_variant {
 .pulsante.san_valentino {
     background-image: url(/cdn/shop/files/btn_bg_natale.jpg?v=1701957626)!important;
 }
+body#index .pulsanti_home .pulsante.san_valentino p,
+body#index .pulsanti_home .pulsante.san_valentino h6 {
+    color: #fff;
+}
