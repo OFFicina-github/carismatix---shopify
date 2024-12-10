@@ -56,13 +56,13 @@ body#index #scroll_to_nl_natale p {
 @media(max-width:999px) {
     #AddToCart img,
   .thpb_combo_atc_cta_btn img{
-        top: -20px;
+        top: -20px!important;
     }
 }
 @media(max-width:690px) {
     #AddToCart img,
   .thpb_combo_atc_cta_btn img {
-        top: -14px;
+        top: -14px!important;
     }
 }
 
