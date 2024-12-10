@@ -135,9 +135,9 @@
       "disabled": true,
       "settings": {
         "show_collection_image": true,
-        "show_collection_title": false,
-        "show_collection_description": false,
-        "section_height": "small",
+        "show_collection_title": true,
+        "show_collection_description": true,
+        "section_height": "none",
         "text_width": "medium",
         "image_text_color": "#ffffff",
         "image_overlay_color": "#000000",
