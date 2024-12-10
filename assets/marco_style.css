@@ -54,12 +54,14 @@ body#index #scroll_to_nl_natale p {
     left: 10px;
 }
 @media(max-width:999px) {
-    #AddToCart img {
+    #AddToCart img,
+  .thpb_combo_atc_cta_btn img{
         top: -20px;
     }
 }
 @media(max-width:690px) {
-    #AddToCart img {
+    #AddToCart img,
+  .thpb_combo_atc_cta_btn img {
         top: -14px;
     }
 }
