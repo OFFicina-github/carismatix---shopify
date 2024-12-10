@@ -56,7 +56,7 @@
           "type": "question",
           "settings": {
             "title": "QUALI TIPI DI PAGAMENTI ACCETTATE?",
-            "answer": "<p>• PayPal. <br/>• Le principali carte di credito appartenenti ai circuiti Visa, MasterCard e American Express. <br/>• Amazon Pay, Shop Pay, Google Pay e Apple Pay.<br/>• Bonifico bancario: IBAN IT33K0200860350000106217019.</p>"
+            "answer": "<p>• PayPal. <br/>• Le principali carte di credito appartenenti ai circuiti Visa, MasterCard e American Express. <br/>• Shop Pay, Google Pay e Apple Pay.<br/>• Bonifico bancario: IBAN IT33K0200860350000106217019.</p>"
           }
         },
         "0194b0fe-0510-4450-a69b-83e4c2855d9f": {
