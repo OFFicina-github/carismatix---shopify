@@ -81,7 +81,7 @@
           "b0000afe-8836-45c7-95a9-c13d92659cb6": {
             "type": "message",
             "settings": {
-              "text": "Spedizione Gratis da 29,9€ in Italia, da 99,9€ in EU",
+              "text": "Spedizione Gratis da 29€ in Italia, da 99€ in EU",
               "learn_more_text": "Learn more",
               "title": "",
               "content": "",
@@ -110,26 +110,13 @@
               "button_text": "Iscriviti subito",
               "button_link": "https://carismatix.it/pages/carismatix-pro-club"
             }
-          },
-          "message_MjbBk8": {
-            "type": "message",
-            "settings": {
-              "text": "",
-              "learn_more_text": "Scopri le Consegne Natalizie con CARISMATIX🎄",
-              "image": "shopify://shop_images/EX2024-2.png",
-              "title": "Durante le feste le consegne non si fermano! ",
-              "content": "<p>Durante il periodo natalizio, garantiamo le consegne regolari nei giorni lavorativi. </p><p>Per assicurarvi che il vostro ordine arrivi in tempo per Natale, vi invitiamo a completare gli acquisti entro il <strong>18 Dicembre</strong>.</p><p>Buone feste da tutto il team Carismatix! 🎅🎄</p>",
-              "button_text": "",
-              "button_link": ""
-            }
           }
         },
         "block_order": [
           "05726331-b5a6-434c-8b9e-a07fd58156a0",
           "b0000afe-8836-45c7-95a9-c13d92659cb6",
           "message_6fKPxN",
-          "0660bc8e-2b63-4900-988b-f6aba1a96ef7",
-          "message_MjbBk8"
+          "0660bc8e-2b63-4900-988b-f6aba1a96ef7"
         ],
         "settings": {
           "announcement_bar_position": "sticky",
@@ -443,8 +430,8 @@
           "show_only_for_visitors": false,
           "show_only_once": true,
           "image_position": "left",
-          "title": "TI PIACCIONO LE SORPRESE?",
-          "content": "<p>Rimani sempre aggiornato sulle <strong>novità più interessanti</strong> e goditi le <strong>promozioni esclusive</strong> a te riservate ✨</p><p>Iscriviti alla newsletter 👇</p>"
+          "title": "PREPARATI AL BLACK FRIDAY!",
+          "content": "<p>Iscriviti alla newsletter e approfitta degli sconti del Black Friday <strong>in anteprima🛸</strong></p>"
         }
       },
       "mini-cart": {

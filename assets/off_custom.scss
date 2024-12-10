@@ -979,10 +979,6 @@ body#index .pulsanti_home .pulsante {
   opacity: 1;
   transition: all 300ms;
 }
-/* Natale */
-body#index .pulsante.san_valentino {
-  background-color: #f54a4b;
-}
 
 body#index .pulsanti_home .pulsante>div {
   width: 60%;
@@ -2491,8 +2487,6 @@ body.san_valention_collection_prod h1.product-meta__title::before {
   color: #1a1a1a !important;
 }
 */
-
-
 @keyframes shake {
   0% {
     transform: translate(1px, 1px) rotate(0deg) scale(1);

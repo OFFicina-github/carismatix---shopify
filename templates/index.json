@@ -12,43 +12,6 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
-        "image_4m6myB": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Slide-Natale24.jpg",
-            "text_position": "middle_center",
-            "subheading": "",
-            "title": "",
-            "button_1_text": "",
-            "button_1_link": "https://carismatix.it/collections/kit-starter",
-            "button_2_text": "",
-            "button_2_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "image_zxdDmD": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Slide-Detailing_Days.jpg",
-            "text_position": "middle_center",
-            "subheading": "",
-            "title": "",
-            "button_1_text": "",
-            "button_1_link": "https://carismatix.it/collections/training-days",
-            "button_2_text": "",
-            "button_2_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
         "f3d58442-7c50-4a38-942e-3ade70efdd99": {
           "type": "image",
           "disabled": true,
@@ -67,12 +30,49 @@
             "overlay_color": "#000000",
             "overlay_opacity": 0
           }
+        },
+        "b3144448-2242-4de3-83bd-bf6e8fd93945": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Slide-Promo-Refinish-4000.jpg",
+            "text_position": "middle_center",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "https://carismatix.it/products/cartec-rapid-cut-4000-tampone-unipad-omaggio",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "slide-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Slide-BF2024.jpg",
+            "text_position": "middle_center",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
         }
       },
       "block_order": [
-        "image_4m6myB",
-        "image_zxdDmD",
-        "f3d58442-7c50-4a38-942e-3ade70efdd99"
+        "f3d58442-7c50-4a38-942e-3ade70efdd99",
+        "b3144448-2242-4de3-83bd-bf6e8fd93945",
+        "slide-1"
       ],
       "settings": {
         "section_height": "auto",
@@ -276,28 +276,6 @@
         "button_text_color": "rgba(0,0,0,0)"
       }
     },
-    "image_with_text_overlay_e964Qi": {
-      "type": "image-with-text-overlay",
-      "settings": {
-        "reveal_on_scroll": true,
-        "section_height": "small",
-        "image": "shopify://shop_images/magazine-open.png",
-        "subheading": "",
-        "title": "Sfoglia il catalogo",
-        "content": "<p>Sempre aggiornato, sempre con te, sempre qui.</p>",
-        "button_text": "Vai al catalogo",
-        "button_link": "https://online.fliphtml5.com/zffcw/parm/",
-        "link_style": "button",
-        "background_type": "full_width",
-        "text_width": "medium",
-        "text_position": "middle_center",
-        "text_color": "#ffffff",
-        "button_background": "#4bdd0e",
-        "button_text_color": "#ffffff",
-        "overlay_color": "#0a1320",
-        "overlay_opacity": 70
-      }
-    },
     "blog-posts": {
       "type": "blog-posts",
       "settings": {
@@ -390,9 +368,9 @@
       "type": "newsletter",
       "settings": {
         "reveal_on_scroll": true,
-        "image": "shopify://shop_images/carismatix-newsletter-bg_natele_2023.jpg",
-        "subheading": "✨ ALLACCIA LE CINTURE!",
-        "content": "<p><strong>La strada verso il Natale è piena di sorprese! 🎁🎁<br/></strong>Con un click ti iscrivi alla newsletter di Carismatix e prendi la scorciatoia verso <strong>promozioni esclusive 👀</strong></p>",
+        "image": "shopify://shop_images/DSC00538.jpg",
+        "subheading": "Iscriviti alla Newsletter",
+        "content": "<p>Ricevi tutte le anteprime sulle nostre promozioni, sulle ultime novità e gli sconti riservati!</p>",
         "text_position": "right",
         "text_alignment": "left",
         "text_background": "#0a1320",
@@ -406,7 +384,6 @@
     "slideshow",
     "166428221801c0d141",
     "166437661130d46066",
-    "image_with_text_overlay_e964Qi",
     "blog-posts",
     "image-with-text-block",
     "text-with-icons",
