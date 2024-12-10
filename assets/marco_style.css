@@ -45,8 +45,10 @@ div.th_pb_qty_bundle_l2_grid_inner .th_pb_qty_bundle_l2_single_variant {
 }
 
 
-/*btn versione san valentino*/
-
+/*btn versione san valentino e NATALE 2024*/
+body#collection-xmas .boost-pfs-filter-collection-header-wrapper {
+  display:none !important;
+}
 body#index #scroll_to_nl_natale p {
     top: 8px;
     left: 10px;
