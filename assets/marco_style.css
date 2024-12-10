@@ -47,6 +47,10 @@ div.th_pb_qty_bundle_l2_grid_inner .th_pb_qty_bundle_l2_single_variant {
 
 /*btn versione san valentino*/
 
+body#index #scroll_to_nl_natale p {
+    top: 8px;
+    left: 10px;
+}
 @media(max-width:999px) {
     #AddToCart img {
         top: -20px;
