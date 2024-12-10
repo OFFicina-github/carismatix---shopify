@@ -100,17 +100,6 @@
               "button_link": ""
             }
           },
-          "0660bc8e-2b63-4900-988b-f6aba1a96ef7": {
-            "type": "message",
-            "settings": {
-              "text": "PRO CLUB",
-              "learn_more_text": "Per i professionisti del settore",
-              "title": "",
-              "content": "<p>Sei un professionista del settore?</p><p>Compila il form per scoprire tutti i vantaggi e le promozioni a te riservate.</p><p>Cosa aspetti? E<strong>ntra a fare parte del CARISMATIX Pro Club!</strong></p>",
-              "button_text": "Iscriviti subito",
-              "button_link": "https://carismatix.it/pages/carismatix-pro-club"
-            }
-          },
           "message_MjbBk8": {
             "type": "message",
             "settings": {
@@ -122,14 +111,25 @@
               "button_text": "",
               "button_link": ""
             }
+          },
+          "0660bc8e-2b63-4900-988b-f6aba1a96ef7": {
+            "type": "message",
+            "settings": {
+              "text": "PRO CLUB",
+              "learn_more_text": "Per i professionisti del settore",
+              "title": "",
+              "content": "<p>Sei un professionista del settore?</p><p>Compila il form per scoprire tutti i vantaggi e le promozioni a te riservate.</p><p>Cosa aspetti? E<strong>ntra a fare parte del CARISMATIX Pro Club!</strong></p>",
+              "button_text": "Iscriviti subito",
+              "button_link": "https://carismatix.it/pages/carismatix-pro-club"
+            }
           }
         },
         "block_order": [
           "05726331-b5a6-434c-8b9e-a07fd58156a0",
           "b0000afe-8836-45c7-95a9-c13d92659cb6",
           "message_6fKPxN",
-          "0660bc8e-2b63-4900-988b-f6aba1a96ef7",
-          "message_MjbBk8"
+          "message_MjbBk8",
+          "0660bc8e-2b63-4900-988b-f6aba1a96ef7"
         ],
         "settings": {
           "announcement_bar_position": "sticky",
