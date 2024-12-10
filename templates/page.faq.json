@@ -206,7 +206,7 @@
           "type": "question",
           "settings": {
             "title": "HO A DISPOSIZIONE UN CODICE SCONTO, COME FACCIO AD USARLO?",
-            "answer": "<p>Prima di tutto seleziona tutti i prodotti che vuoi acquistare e inseriscili nel tuo carrello. <br/>Prima di concludere inserisci nella sezione “codice sconto” il tuo codice e clicca su “Applica”.  In automatico la promozione verrà applicata sulla tua spesa. <br/>Puoi verificare che lo sconto sia stato applicato controllando il riepilogo degli articoli: il valore dello sconto verrà detratto e il prezzo totale sarà modificato.<br/></p>"
+            "answer": "<p>Prima di tutto seleziona tutti i prodotti che vuoi acquistare e inseriscili nel tuo carrello. <br/>Prima di concludere inserisci nella sezione “Codice sconto o buono regalo” il tuo codice e clicca su “Applica”.  In automatico la promozione verrà applicata sulla tua spesa. <br/>Puoi verificare che lo sconto sia stato applicato controllando il riepilogo degli articoli: il valore dello sconto verrà detratto e il prezzo totale sarà modificato.<br/></p>"
           }
         },
         "20dbbe5a-4ba2-4970-acef-61a8e516a6f9": {
