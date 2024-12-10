@@ -43,3 +43,9 @@ div.th_pb_qty_bundle_l2_grid_inner .th_pb_qty_bundle_l2_single_variant {
 .swym-ui-component .swym-atw-notification-container .swym-atw-notification-header-container .swym-atw-notification-header-wrapper .swym-close-btn {
     margin-right: 7px !important;
 }
+
+
+/*btn versoone san valentino*/
+.pulsante.san_valentino {
+    background-image: url(/cdn/shop/files/btn_bg_natale.jpg?v=1701957626)!important;
+}
