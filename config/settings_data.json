@@ -67,6 +67,18 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "blocks": {
+          "message_MjbBk8": {
+            "type": "message",
+            "settings": {
+              "text": "",
+              "learn_more_text": "Scopri le Consegne Natalizie con CARISMATIX🎄",
+              "image": "shopify://shop_images/Grinch-Car.jpg",
+              "title": "UNA BREVE PAUSA! ",
+              "content": "<p>Le spedizioni partiranno regolarmente nei giorni lavorativi <strong>fino</strong> al <strong>30 Dicembre.</strong></p><p>Riprenderanno poi dal <strong>7 Gennaio 2025</strong>.</p><p>Buone feste da tutto il team Carismatix! 🎅🎄</p>",
+              "button_text": "",
+              "button_link": ""
+            }
+          },
           "05726331-b5a6-434c-8b9e-a07fd58156a0": {
             "type": "message",
             "settings": {
@@ -100,20 +112,9 @@
               "button_link": ""
             }
           },
-          "message_MjbBk8": {
-            "type": "message",
-            "settings": {
-              "text": "",
-              "learn_more_text": "Scopri le Consegne Natalizie con CARISMATIX🎄",
-              "image": "shopify://shop_images/Grinch-Car.jpg",
-              "title": "Durante le feste le consegne non si fermano! ",
-              "content": "<p>Durante il periodo natalizio, garantiamo le consegne regolari nei giorni lavorativi. </p><p>Per assicurarvi che il vostro ordine arrivi in tempo per Natale, vi invitiamo a completare gli acquisti entro il <strong>18 Dicembre</strong>.</p><p>Buone feste da tutto il team Carismatix! 🎅🎄</p>",
-              "button_text": "",
-              "button_link": ""
-            }
-          },
           "0660bc8e-2b63-4900-988b-f6aba1a96ef7": {
             "type": "message",
+            "disabled": true,
             "settings": {
               "text": "PRO CLUB",
               "learn_more_text": "Per i professionisti del settore",
@@ -125,10 +126,10 @@
           }
         },
         "block_order": [
+          "message_MjbBk8",
           "05726331-b5a6-434c-8b9e-a07fd58156a0",
           "b0000afe-8836-45c7-95a9-c13d92659cb6",
           "message_6fKPxN",
-          "message_MjbBk8",
           "0660bc8e-2b63-4900-988b-f6aba1a96ef7"
         ],
         "settings": {
